@@ -1,0 +1,245 @@
+name: Fetch datasets
+
+# 在 GitHub 的 runner 上下载这 9 个中药/微生物数据库。
+# 之所以放在 Actions 里跑：开发会话的出口网络被组织策略限制（见 DOWNLOAD_STATUS.md），
+# 而 GitHub runner 有完整公网出口。
+
+on:
+  # push 触发：workflow_dispatch 需要工作流位于默认分支才能手动触发，
+  # push 则直接用分支自身的这份文件，因此开发分支上也能跑通。
+  push:
+    branches: [claude/beautiful-fermi-qyx9iv]
+    paths:
+      - ".github/workflows/fetch-datasets.yml"
+      - "scripts/gh_fetch.py"
+  workflow_dispatch:
+    inputs:
+      datasets:
+        description: "要抓的数据源（逗号分隔，或 all）: symmap,herb,disbiome,dbpth,tcmid,tcmsp,hit2,mdipid,microbetcm"
+        default: "all"
+        type: string
+      mode:
+        description: "discover = 只探测链接不下载；download = 实际下载"
+        default: "download"
+        type: choice
+        options: [download, discover]
+      max_mb:
+        description: "单文件大小上限 MB（GitHub 单文件硬限 100MB，默认 90 留余量）"
+        default: "90"
+        type: string
+      release_large:
+        description: "把超过 90MB 的文件传到 GitHub Release（而不是跳过）"
+        default: false
+        type: boolean
+      include_huge:
+        description: "包含 dbPTH 整库（约 21.4GB，大概率超出 runner 磁盘）"
+        default: false
+        type: boolean
+      target_branch:
+        description: "数据提交到哪个分支"
+        default: "datasets"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+
+    # push 触发时 inputs.* 为空字符串，这里统一给默认值，下面各步只读这些环境变量
+    env:
+      DATASETS: ${{ inputs.datasets || 'all' }}
+      MODE: ${{ inputs.mode || 'download' }}
+      IN_MAX_MB: ${{ inputs.max_mb || '90' }}
+      RELEASE_LARGE: ${{ inputs.release_large || 'false' }}
+      INCLUDE_HUGE: ${{ inputs.include_huge || 'false' }}
+      TARGET_BRANCH: ${{ inputs.target_branch || 'datasets' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Show runner disk space
+        run: df -h /
+
+      - name: Resolve options
+        id: opts
+        run: |
+          set -euo pipefail
+          MAX_MB="${IN_MAX_MB}"
+          if [ "${RELEASE_LARGE}" = "true" ]; then
+            # Release 单文件上限 2GB，留余量取 1900MB
+            MAX_MB=1900
+            echo "release_large=true, 单文件上限提高到 ${MAX_MB}MB"
+          fi
+          echo "max_mb=${MAX_MB}" >> "$GITHUB_OUTPUT"
+
+          FLAGS=""
+          [ "${MODE}" = "discover" ] && FLAGS="${FLAGS} --discover-only"
+          [ "${INCLUDE_HUGE}" = "true" ] && FLAGS="${FLAGS} --include-huge"
+          # 上面两个 [ ] && 在条件为假时返回非 0，别让 set -e 在这里退出
+          true
+          echo "flags=${FLAGS}" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch datasets
+        id: fetch
+        # 单个库抓不到不应让整个 job 失败 —— 报告里会记录每个库的结果
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p "${RUNNER_TEMP}/out"
+          python3 scripts/gh_fetch.py \
+            --out "${RUNNER_TEMP}/out" \
+            --datasets "${DATASETS}" \
+            --max-mb "${{ steps.opts.outputs.max_mb }}" \
+            ${{ steps.opts.outputs.flags }} 2>&1 | tee "${RUNNER_TEMP}/fetch.log"
+
+      - name: Build job summary
+        if: always()
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os, pathlib
+          p = pathlib.Path(os.environ["RUNNER_TEMP"], "out", "fetch_report.json")
+          if not p.exists():
+              print("## 抓取报告缺失\n\n脚本未能产出 `fetch_report.json`，请看上一步日志。")
+              raise SystemExit(0)
+          rep = json.loads(p.read_text(encoding="utf-8"))
+          print("## 数据集抓取结果\n")
+          print(f"模式: `{'只发现链接' if rep['discover_only'] else '下载'}`  ·  "
+                f"单文件上限: `{rep['max_mb']} MB`\n")
+          print("| 数据源 | 发现链接 | 下载成功 | 大小 | 说明 |")
+          print("|---|---:|---:|---:|---|")
+          grand_n = grand_b = 0
+          for name, e in rep["datasets"].items():
+              oks = [f for f in e["files"] if f.get("ok")]
+              size = sum(f.get("bytes", 0) for f in oks)
+              grand_n += len(oks); grand_b += size
+              note = e.get("skipped") or e["note"]
+              print(f"| `{name}` | {len(e['discovered'])} | {len(oks)}/{len(e['files'])} "
+                    f"| {size/1e6:.1f} MB | {note} |")
+          print(f"\n**合计 {grand_n} 个文件，{grand_b/1e6:.1f} MB**\n")
+
+          # 把发现到的真实链接列出来 —— 即使这轮没下成，下次也知道该指向哪里
+          print("<details><summary>发现的下载链接（用于校正脚本）</summary>\n")
+          for name, e in rep["datasets"].items():
+              if e["discovered"]:
+                  print(f"\n**{name}**\n")
+                  for u in e["discovered"][:40]:
+                      print(f"- `{u}`")
+                  if len(e["discovered"]) > 40:
+                      print(f"- … 另有 {len(e['discovered'])-40} 条")
+          print("\n</details>")
+
+          # 失败原因聚合，便于一眼看出是站点挂了还是链接错了
+          errs = {}
+          for name, e in rep["datasets"].items():
+              for f in e["files"]:
+                  if not f.get("ok") and f.get("error"):
+                      errs.setdefault(f["error"].split(":")[0], 0)
+                      errs[f["error"].split(":")[0]] += 1
+          if errs:
+              print("\n<details><summary>失败原因分布</summary>\n")
+              for k, v in sorted(errs.items(), key=lambda x: -x[1]):
+                  print(f"- `{k}` × {v}")
+              print("\n</details>")
+          PY
+
+      - name: Split small / large files
+        if: always()
+        id: split
+        run: |
+          set -euo pipefail
+          OUT="${RUNNER_TEMP}/out"
+          LARGE_DIR="${RUNNER_TEMP}/large"
+          mkdir -p "$LARGE_DIR" "$OUT"
+          # >90MB 的不能进 git，挪去 Release
+          find "$OUT" -type f -size +90M -print0 | while IFS= read -r -d '' f; do
+            echo "大文件移出仓库提交范围: $f ($(du -h "$f" | cut -f1))"
+            mv "$f" "$LARGE_DIR/"
+          done
+          COUNT=$(find "$LARGE_DIR" -type f | wc -l)
+          echo "large_count=${COUNT}" >> "$GITHUB_OUTPUT"
+          FILES=$(find "$OUT" -type f | wc -l)
+          echo "small_count=${FILES}" >> "$GITHUB_OUTPUT"
+          echo "可提交文件 ${FILES} 个，大文件 ${COUNT} 个"
+
+      - name: Commit data to target branch
+        if: always() && steps.split.outputs.small_count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ inputs.target_branch || 'datasets' }}
+        run: |
+          set -euo pipefail
+          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          WORK="${RUNNER_TEMP}/ds"
+
+          # 分支已存在就在其上追加提交，不存在就新建孤儿分支（数据与代码史分开）
+          if git ls-remote --exit-code --heads "$REPO_URL" "$BRANCH" >/dev/null 2>&1; then
+            echo "分支 ${BRANCH} 已存在，追加提交"
+            git clone --depth 1 --branch "$BRANCH" "$REPO_URL" "$WORK"
+          else
+            echo "分支 ${BRANCH} 不存在，创建孤儿分支"
+            mkdir -p "$WORK"
+            git -C "$WORK" init -q
+            git -C "$WORK" checkout -q --orphan "$BRANCH"
+            git -C "$WORK" remote add origin "$REPO_URL"
+          fi
+
+          cp -r "${RUNNER_TEMP}/out/." "$WORK/"
+          cp "${RUNNER_TEMP}/fetch.log" "$WORK/fetch.log" 2>/dev/null || true
+
+          cd "$WORK"
+          cat > README.md <<EOF
+          # datasets 分支 — 自动抓取的原始数据
+
+          由 \`.github/workflows/fetch-datasets.yml\` 在 GitHub runner 上抓取并提交。
+
+          - 最近一次运行: ${GITHUB_RUN_ID}（${GITHUB_SHA}）
+          - 抓取时间 (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')
+          - 每个数据源一个子目录，\`fetch_report.json\` 记录发现的链接、文件大小与 sha256
+          - 超过 90MB 的文件不在此分支，见仓库 Releases
+
+          字段含义与格式说明在主分支的 \`docs/\`。
+          EOF
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "数据无变化，跳过提交"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Fetch datasets (run ${GITHUB_RUN_ID})"
+          git push -u origin "$BRANCH"
+          echo "已推送到分支 ${BRANCH}"
+
+      - name: Upload large files to Release
+        if: always() && env.RELEASE_LARGE == 'true' && steps.split.outputs.large_count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="datasets-$(date -u '+%Y%m%d-%H%M%S')"
+          gh release create "$TAG" \
+            --title "Datasets ${TAG}" \
+            --notes "超过 90MB 的数据文件（GitHub 单文件提交上限）。由 run ${GITHUB_RUN_ID} 抓取。" \
+            "${RUNNER_TEMP}"/large/*
+          echo "已发布 Release ${TAG}"
+
+      - name: Upload report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fetch-report
+          path: |
+            ${{ runner.temp }}/out/fetch_report.json
+            ${{ runner.temp }}/fetch.log
+          if-no-files-found: warn
+          retention-days: 30
