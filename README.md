@@ -2,13 +2,18 @@
 
 本仓库整理 9 个数据库的**数据格式、字段含义、下载入口与分类关系**，并给出可直接运行的下载脚本。
 
-> ⚠️ **重要说明：本次会话未能完成实际下载。**
-> 运行环境的出口网络策略只放行 GitHub 与少数包管理源，上述 9 个数据库的全部域名
+> ⚠️ **开发会话内无法直接下载，改由 GitHub Actions 下载。**
+> 本仓库的开发环境出口网络只放行 GitHub 与少数包管理源，上述 9 个数据库的全部域名
 > （symmap.org、idrblab.net、disbiome.ugent.be、microbetcm.com、dbpth.biocuckoo.cn、
-> tcmid.org、tcmsp-e.com、herb.ac.cn、hit2.badd-cao.net）在 CONNECT 阶段即被 403 拒绝。
-> 探测明细见 [`DOWNLOAD_STATUS.md`](DOWNLOAD_STATUS.md)。
-> 因此 `samples/` 下的片段是**依据各库官方文档与原始论文还原的「结构示例」，不是真实下载数据**，
-> 仅用于展示列名与取值形态；真实数据请在放行网络的机器上运行 `scripts/download_all.sh`。
+> tcmid.org、tcmsp-e.com、herb.ac.cn、hit2.badd-cao.net）在 CONNECT 阶段即被 403 拒绝，
+> 明细见 [`DOWNLOAD_STATUS.md`](DOWNLOAD_STATUS.md)。
+>
+> **解决办法：让 GitHub 的 runner 去下载**——它有完整公网出口。
+> 工作流 [`.github/workflows/fetch-datasets.yml`](.github/workflows/fetch-datasets.yml) 负责抓取，
+> 数据提交到 **`datasets` 分支**，超过 90MB 的文件发布到 **Releases**。见下方「六、用 Actions 下载」。
+>
+> `samples/` 下的片段是**依据各库官方文档与原始论文还原的「结构示例」，不是真实下载数据**，
+> 仅用于展示列名与取值形态。等 Actions 抓到真实数据后可直接替换。
 
 ---
 
@@ -94,15 +99,56 @@
 ```
 docs/       每个库一份详细字段说明（字段名、含义、取值示例、下载入口、引用文献）
 samples/    结构示例片段（*.example.tsv / .json）—— 非真实下载数据，见 samples/README.md
-scripts/    download_all.sh（一键下载）、fetch_disbiome.py（API 全量拉取）、check_hosts.sh（可达性自检）
-DOWNLOAD_STATUS.md   本会话的域名可达性探测结果
+scripts/    gh_fetch.py       链接自动发现 + 下载（Actions 用的就是它，本地也能跑）
+            download_all.sh   本地一键下载（直链方式）
+            fetch_disbiome.py Disbiome API 全量拉取
+            check_hosts.sh    9 站可达性自检
+.github/workflows/fetch-datasets.yml   在 GitHub runner 上抓取并提交数据
+DOWNLOAD_STATUS.md   开发会话内的域名可达性探测结果
 ```
 
-## 五、下一步怎么用
+## 五、用 Actions 下载（推荐路径）
+
+开发会话下载不了，但 GitHub 的 runner 可以。工作流已配好：
+
+**自动触发**：每次改动 `.github/workflows/fetch-datasets.yml` 或 `scripts/gh_fetch.py`
+并推到本分支，就会跑一次完整抓取。
+
+**手动触发**：仓库 → Actions → *Fetch datasets* → Run workflow，可选参数：
+
+| 参数 | 默认 | 说明 |
+|---|---|---|
+| `datasets` | `all` | 逗号分隔，如 `symmap,disbiome,herb` |
+| `mode` | `download` | `discover` = 只探测链接不下载，用来先看看各站给出什么文件 |
+| `max_mb` | `90` | 单文件上限。GitHub 单文件硬限 100MB，留 10MB 余量 |
+| `release_large` | `false` | 开启后上限提到 1900MB，超 90MB 的文件发布到 Release 而不是跳过 |
+| `include_huge` | `false` | 是否包含 dbPTH 整库（约 21.4GB，大概率超出 runner 磁盘） |
+| `target_branch` | `datasets` | 数据提交到哪个分支 |
+
+**产物去向**：
+
+- 小于 90MB 的文件 → `datasets` 分支，每个库一个子目录
+- 大于 90MB 的文件 → GitHub Releases（需开 `release_large`）
+- `fetch_report.json` → 记录每个库**发现的真实链接**、文件大小、sha256；同时作为 artifact 保留 30 天
+- 运行摘要 → Actions 页面的 Job Summary，含成功率表和发现的链接清单
+
+### 脚本为什么是「发现链接」而不是「硬编码 URL」
+
+这些库的静态文件名随版本变动，硬编码必然 404。`scripts/gh_fetch.py` 改为抓取各库下载页、
+解析页面里所有 `href`/`src`（外加 JS 字符串里的裸 URL），按扩展名白名单筛出数据文件再下载。
+**即使这一轮下载失败，报告里也会留下该站实际给出的链接**，据此校正比盲猜有效得多。
+
+### 抓不到的四个库怎么办
+
+TCMSP / MDIPID / MicrobeTCM / HIT 2.0 没有下载接口，工作流对它们只做链接发现。
+先看一次 `mode=discover` 的报告，确认页面结构后再决定写爬虫，还是直接找作者要数据——
+MicrobeTCM 和 MDIPID 都是人工策展的中等规模库，写信索取通常比爬取更快。
+
+## 六、本地下载（备选）
 
 ```bash
-bash scripts/check_hosts.sh      # 先确认你的网络能通哪些站
-bash scripts/download_all.sh     # 能直链下载的（SymMap / Disbiome / HERB / dbPTH）自动拉取到 data/
-python3 scripts/fetch_disbiome.py --out data/disbiome   # Disbiome 全量 JSON→CSV
+bash scripts/check_hosts.sh                              # 先确认网络能通哪些站
+python3 scripts/gh_fetch.py --out data --datasets all    # 链接发现 + 下载
+python3 scripts/fetch_disbiome.py --out data/disbiome    # Disbiome 全量 JSON→CSV
+bash scripts/download_all.sh                             # 直链方式（需链接未变）
 ```
-需要 TCMSP / MDIPID / MicrobeTCM / HIT 2.0 的爬虫（它们没有下载接口），告诉我，我按各站的实际 DOM 结构补上。

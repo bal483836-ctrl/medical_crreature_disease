@@ -40,10 +40,16 @@
 | `www.google.com` | 403 ❌ |
 | `zenodo.org` | 403 ❌ |
 
-## 要真正拿到数据，两条路
+## 解决办法：把下载挪到 GitHub runner 上
 
-1. **换环境**：在本机 / 服务器 / 放行了这些域名的环境里运行 `scripts/download_all.sh`，
-   脚本已按各库的真实下载入口写好。
-2. **改策略**：请管理员把上表左列域名加入本会话环境的出口白名单，然后在新会话里重跑脚本。
+出口受限的是**开发会话的容器**，不是 GitHub。Actions runner 有完整公网出口，
+所以下载改由 [`.github/workflows/fetch-datasets.yml`](.github/workflows/fetch-datasets.yml) 执行：
+数据落到 `datasets` 分支，超过 90MB 的文件发布到 Releases。用法见主 README「五、用 Actions 下载」。
+
+其它备选：
+
+1. **换环境**：在本机 / 服务器等放行了这些域名的环境里运行
+   `python3 scripts/gh_fetch.py --out data --datasets all`。
+2. **改策略**：请管理员把上表左列域名加入该环境的出口白名单，然后在新会话里重跑。
 
 （`scripts/check_hosts.sh` 可在任意环境复现这张表，用来确认你的网络放行到哪一步。）
