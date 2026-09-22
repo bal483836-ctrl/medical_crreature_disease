@@ -1,0 +1,6 @@
+Query	Disease	Microbe	Target	Score	Rank
+黄连 (Coptidis Rhizoma)	Type 2 diabetes mellitus	Akkermansia muciniphila	PPARG	0.912	1
+黄连 (Coptidis Rhizoma)	Type 2 diabetes mellitus	Bacteroides fragilis	TLR4	0.874	2
+黄连 (Coptidis Rhizoma)	Non-alcoholic fatty liver disease	Lactobacillus reuteri	FXR (NR1H4)	0.851	3
+黄连 (Coptidis Rhizoma)	Ulcerative colitis	Faecalibacterium prausnitzii	IL10	0.803	4
+黄连 (Coptidis Rhizoma)	Obesity	Firmicutes/Bacteroidetes ratio	LEP	0.779	5

@@ -1,0 +1,6 @@
+Microbiota	Microbiota_related_Protein	UniProt_id	Drug	Modulation_Type	Effect_on_Drug_Response	Model	Mechanism	PMID
+Eggerthella lenta	Cardiac glycoside reductase (Cgr2)	A0A0E2LKK8	Digoxin	Metabolic modification	Reduced drug efficacy	Human/Mouse	Reduction of the lactone ring inactivates digoxin	23869020
+Escherichia coli	beta-glucuronidase (GUS)	P05804	Irinotecan (SN-38G)	Metabolic modification	Increased GI toxicity	Mouse	Deconjugation regenerates toxic SN-38 in the gut lumen	21051639
+Bacteroides thetaiotaomicron	Azoreductase	Q8A1G1	Sulfasalazine	Activation	Increased efficacy	Human	Azo bond cleavage releases active 5-ASA	28843444
+Lactobacillus reuteri	Nitroreductase	NA	Nitrazepam	Metabolic modification	Increased teratogenicity	Rat	Nitro reduction yields reactive aminometabolite	6120983
+Clostridium sporogenes	Aromatic amino acid decarboxylase	NA	Levodopa	Sequestration	Reduced bioavailability	Human	Bacterial decarboxylation before host absorption	31196984

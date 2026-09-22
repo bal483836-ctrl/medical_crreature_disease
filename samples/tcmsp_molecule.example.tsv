@@ -1,0 +1,7 @@
+MOL_ID	Molecule_name	MW	AlogP	Hdon	Hacc	OB	Caco-2	BBB	DL	FASA-	HL	TPSA	RBN	Herb_pinyin_name
+MOL000098	quercetin	302.25	1.50	5	7	46.43	0.05	-0.77	0.28	0.38	14.40	131.35	1	Huai Mi
+MOL000422	kaempferol	286.25	1.77	4	6	41.88	0.26	-0.55	0.24	0.36	14.74	111.12	1	Huang Qi
+MOL001454	berberine	336.39	3.45	0	4	36.86	1.24	0.57	0.78	0.19	6.57	40.80	2	Huang Lian
+MOL000358	beta-sitosterol	414.79	8.08	1	1	36.91	1.32	0.99	0.75	0.65	5.36	20.23	6	Gan Cao
+MOL005344	ginsenoside rb1	1109.46	-0.19	11	23	6.24	-2.82	-4.25	0.04	0.77	5.12	347.79	13	Ren Shen
+MOL000497	licochalcone a	338.44	4.60	2	4	40.79	1.05	0.36	0.29	0.30	17.31	66.76	5	Gan Cao

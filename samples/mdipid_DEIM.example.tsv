@@ -1,0 +1,7 @@
+Drug	Microbiota	Variation	Sample_Site	Model	Mechanism	PMID	Note
+Finasteride	Ruminococcaceae UCG-002	Decrease	Stool	Human	Altered androgen metabolism shifts gut community composition	NA	real_record_from_MDIPID_search
+Metformin	Akkermansia muciniphila	Increase	Stool	Mouse	Promotes mucin-degrading taxa and goblet cell number	26100928	placeholder
+Metformin	Escherichia coli	Increase	Stool	Human	Enhanced microbial folate and methionine metabolism	29040411	placeholder
+Berberine	Lactobacillus	Increase	Stool	Mouse	Inhibits bile salt hydrolase activity, reshapes bile acid pool	32234529	placeholder
+Vancomycin	Firmicutes	Decrease	Stool	Human	Broad-spectrum killing of Gram-positive taxa	20847294	placeholder
+Omeprazole	Streptococcus	Increase	Oral	Human	Gastric acid suppression allows oral taxa to colonize gut	26657899	placeholder

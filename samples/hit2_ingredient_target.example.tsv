@@ -1,0 +1,7 @@
+HIT_id	Ingredient_name	PubChem_CID	CAS	Herb	Herb_latin_name	Target_name	Gene_symbol	UniProt_id	Organism	Interaction_type	Direct_or_indirect	Activity_type	Activity_value	Unit	Quality_indicator	Experiment	PMID	DrugBank_id	KEGG_id
+HIT000001	Quercetin	5280343	117-39-5	槐米	Sophora japonica	Phosphoinositide 3-kinase gamma	PIK3CG	P48736	Homo sapiens	Inhibitor	Direct	IC50	3.8	uM	High	Enzymatic assay	11602632	DB04216	C00389
+HIT000002	Berberine	2353	2086-83-1	黄连	Coptis chinensis	AMPK alpha-1	PRKAA1	Q13131	Homo sapiens	Activator	Indirect	EC50	12.0	uM	Medium	Western blot	16873688	DB04115	C00757
+HIT000003	Curcumin	969516	458-37-7	姜黄	Curcuma longa	COX-2	PTGS2	P35354	Homo sapiens	Inhibitor	Direct	IC50	1.6	uM	High	Enzymatic assay	10606773	DB11672	C10443
+HIT000004	Baicalein	5281605	491-67-8	黄芩	Scutellaria baicalensis	12-lipoxygenase	ALOX12	P18054	Homo sapiens	Inhibitor	Direct	IC50	0.12	uM	High	Enzymatic assay	8093835	NA	NA
+HIT000005	Emodin	3220	518-82-1	大黄	Rheum palmatum	Casein kinase II	CSNK2A1	P68400	Homo sapiens	Inhibitor	Direct	Ki	1.5	uM	High	Kinase assay	2176887	NA	NA
+HIT000006	Tanshinone IIA	164676	568-72-9	丹参	Salvia miltiorrhiza	Nuclear factor NF-kappa-B	RELA	Q04206	Homo sapiens	Regulator	Indirect	% inhibition	62	percent	Medium	Reporter assay	NA	NA	NA

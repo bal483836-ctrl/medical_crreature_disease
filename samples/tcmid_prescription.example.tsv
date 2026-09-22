@@ -1,0 +1,5 @@
+Prescription_id	Chinese_name	Pinyin_name	Composition	Indication	Source
+TCMID_P00001	四君子汤	Si Jun Zi Tang	人参;白术;茯苓;甘草	脾胃气虚，面色萎黄，食少便溏	太平惠民和剂局方
+TCMID_P00002	六味地黄丸	Liu Wei Di Huang Wan	熟地黄;山茱萸;山药;泽泻;牡丹皮;茯苓	肾阴亏损，头晕耳鸣，腰膝酸软	小儿药证直诀
+TCMID_P00003	葛根芩连汤	Ge Gen Qin Lian Tang	葛根;黄芩;黄连;甘草	身热下利，胸脘烦热，口干作渴	伤寒论
+TCMID_P00004	补中益气汤	Bu Zhong Yi Qi Tang	黄芪;人参;白术;当归;陈皮;升麻;柴胡;甘草	脾虚气陷，体倦乏力，食少便溏	脾胃论

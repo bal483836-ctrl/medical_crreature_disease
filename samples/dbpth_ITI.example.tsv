@@ -1,0 +1,7 @@
+Ingredient_ID	Ingredient_name	PubChem_CID	InChIKey	Target_ID	Gene_symbol	UniProt_ID	Species	Homolog_group	Interaction_type	Assay	Activity_type	Activity_value	Unit	Evidence_source	PMID	Herb
+PTH_I000001	Quercetin	5280343	REFJWTPEDVJJIY-UHFFFAOYSA-N	PTH_T000012	PIK3CG	P48736	Homo sapiens	HG000045	Inhibition	Enzymatic assay	IC50	3.8	uM	ChEMBL	11602632	Sophora japonica
+PTH_I000001	Quercetin	5280343	REFJWTPEDVJJIY-UHFFFAOYSA-N	PTH_T004417	Pik3cg	Q9JHG7	Mus musculus	HG000045	Inhibition	Enzymatic assay	IC50	5.1	uM	ChEMBL	NA	Sophora japonica
+PTH_I000002	Berberine	2353	YBHILYKTIRIUTE-UHFFFAOYSA-N	PTH_T000188	AMPK (PRKAA1)	Q13131	Homo sapiens	HG000311	Activation	Western blot	EC50	12.0	uM	Literature	16873688	Coptis chinensis
+PTH_I000003	Curcumin	969516	VFLDPWHFBUODDF-FJOGSTJASA-N	PTH_T000021	PTGS2	P35354	Homo sapiens	HG000077	Inhibition	Enzymatic assay	IC50	1.6	uM	BindingDB	10606773	Curcuma longa
+PTH_I000004	Baicalein	5281605	FXNFHKRTJBSTCS-UHFFFAOYSA-N	PTH_T000305	ALOX12	P18054	Homo sapiens	HG000412	Inhibition	Enzymatic assay	IC50	0.12	uM	ChEMBL	8093835	Scutellaria baicalensis
+PTH_I000005	Ginsenoside Rg1	441923	DVGHHMFBFOTGQM-UHFFFAOYSA-N	PTH_T001204	NR3C1	P04150	Homo sapiens	HG000523	Binding	SPR	Kd	4.5	uM	Literature	NA	Panax ginseng

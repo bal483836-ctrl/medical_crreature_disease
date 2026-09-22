@@ -1,0 +1,4 @@
+Herb_id	Herb_pinyin_name	Herb_cn_name	Herb_en_name	Herb_latin_name	Properties	Meridians	UsePart	Function	Indication	Toxicity	TCMID_id	TCMSP_id	SymMap_id
+HERB000001	Ren Shen	人参	Ginseng	Ginseng Radix et Rhizoma	甘、微苦，微温	脾、肺、心、肾经	根及根茎	大补元气，复脉固脱，补脾益肺	体虚欲脱，肢冷脉微	无毒	TCMID_1234	TCMSP_0567	SMHB00001
+HERB000002	Huang Qi	黄芪	Astragalus root	Astragali Radix	甘，微温	肺、脾经	根	补气升阳，固表止汗	气虚乏力，自汗，水肿	无毒	TCMID_1235	TCMSP_0568	SMHB00002
+HERB000003	Huang Lian	黄连	Coptis root	Coptidis Rhizoma	苦，寒	心、脾、胃、肝、胆、大肠经	根茎	清热燥湿，泻火解毒	湿热痞满，呕吐吞酸	小毒	TCMID_1240	TCMSP_0575	SMHB00021

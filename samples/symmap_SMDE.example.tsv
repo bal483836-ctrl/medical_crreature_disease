@@ -1,0 +1,4 @@
+Disease_id	Disease_name	Disease_definition	MeSH_id	OMIM_id	Orphanet_id
+SMDE00001	Type 2 diabetes mellitus	A metabolic disorder characterized by insulin resistance and hyperglycemia.	D003924	125853	NA
+SMDE00002	Rheumatoid arthritis	A chronic systemic autoimmune inflammatory disorder of the joints.	D001172	180300	ORPHA:284130
+SMDE00003	Ulcerative colitis	Chronic inflammation of the colonic mucosa.	D003093	191390	ORPHA:771

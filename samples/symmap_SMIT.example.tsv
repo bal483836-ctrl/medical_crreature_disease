@@ -1,0 +1,4 @@
+Ingredient_id	Molecule_name	Alias	Molecular_formula	Molecular_weight	OB_score	CAS_id	PubChem_id	DrugBank_id	Canonical_SMILES	Standard_InChIKey	TCMSP_id
+SMIT00001	Quercetin	3,3',4',5,7-Pentahydroxyflavone	C15H10O7	302.24	46.43	117-39-5	5280343	DB04216	O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12	REFJWTPEDVJJIY-UHFFFAOYSA-N	MOL000098
+SMIT00002	Kaempferol	Kaempferol-3	C15H10O6	286.24	41.88	520-18-3	5280863	DB01852	O=c1c(O)c(-c2ccc(O)cc2)oc2cc(O)cc(O)c12	IYRMWMYZSQPJKC-UHFFFAOYSA-N	MOL000422
+SMIT00003	Ginsenoside Rb1	NA	C54H92O23	1109.29	6.24	41753-43-9	9898279	NA	NA	NA	MOL005344

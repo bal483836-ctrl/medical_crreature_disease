@@ -1,0 +1,6 @@
+Herb_or_Formula	Type	Microbe	Variation	Disease_Model	Sample_Site	Host	Dose_and_Duration	PMID
+葛根芩连汤 (Gegen Qinlian Decoction)	Formula	Faecalibacterium prausnitzii	Increase	Type 2 diabetes mellitus	Caecum	Rat	9 g/kg/d, 12 weeks	28845165
+黄连 (Coptidis Rhizoma)	Herb	Akkermansia muciniphila	Increase	High-fat-diet obesity	Stool	Mouse	200 mg/kg/d, 8 weeks	32234529
+人参 (Ginseng Radix)	Herb	Lactobacillus	Increase	Antibiotic-induced dysbiosis	Stool	Mouse	500 mg/kg/d, 4 weeks	NA
+补中益气汤 (Buzhong Yiqi Decoction)	Formula	Escherichia-Shigella	Decrease	Ulcerative colitis	Colon	Mouse	10 g/kg/d, 2 weeks	NA
+甘草 (Glycyrrhizae Radix)	Herb	Bacteroides fragilis	Decrease	DSS-induced colitis	Stool	Mouse	100 mg/kg/d, 10 days	NA

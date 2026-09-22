@@ -1,0 +1,7 @@
+Microbiota	Disease	Variation	Sample_Site	Cohort_or_Model	Detection_Method	PMID
+Faecalibacterium prausnitzii	Crohn's disease	Decrease	Stool	Human cohort	16S rRNA sequencing	18936492
+Akkermansia muciniphila	Type 2 diabetes mellitus	Decrease	Stool	Human cohort	Shotgun metagenomics	23023125
+Fusobacterium nucleatum	Colorectal cancer	Enrich	Tissue	Human cohort	qPCR	22009989
+Bacteroides fragilis	Ulcerative colitis	Increase	Stool	Human cohort	16S rRNA sequencing	26811603
+Bifidobacterium	Allergic asthma	Decrease	Stool	Human cohort	16S rRNA sequencing	26100928
+Prevotella copri	Rheumatoid arthritis	Increase	Stool	Human cohort	Shotgun metagenomics	24192039
