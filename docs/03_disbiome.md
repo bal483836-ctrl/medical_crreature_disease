@@ -66,4 +66,5 @@ python3 scripts/fetch_disbiome.py --out data/disbiome
 - `qualitative_outcome` 只有「升高/降低」两极，没有效应量；需要定量的话要回溯原文。
 - 同一「菌-病」对常有多条来自不同研究的记录，方向可能冲突。建图前建议按
   `(organism, disease)` 聚合并统计方向一致性，把冲突比例作为边权重或置信度。
-- 疾病用 MedDRA、SymMap/HERB 用 MeSH/OMIM——跨库连接时需要一次 MedDRA↔MeSH 映射（可经 UMLS）。
+- 疾病用 MedDRA 编码。**SymMap 的 SMDE 表自带 `MedDRA_id` 和 `UMLS_id`**（已由实际下载的文件确认），所以 Disbiome ↔ SymMap 可以直接 join，不需要额外做映射。
+  HERB 用 MeSH/OMIM/DisGeNET，与 Disbiome 对接时才需要经 UMLS 绕一次。

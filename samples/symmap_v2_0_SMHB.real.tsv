@@ -1,0 +1,6 @@
+Herb_id	Chinese_name	Pinyin_name	Latin_name	English_name	Properties_Chinese	Properties_English	Meridians_Chinese	Meridians_English	Class_Chinese	Class_English	UsePart	TCMID_id	TCM-ID_id	TCMSP_id	Link_herb_id	Alias	HERBDB_ID	Suppress
+1	矮地茶	Aidicha	Ardisiae Japonicae Herba,Ardisiae Japonicae	Japanese Ardisia Herb	辛,微苦,平	Pungent,Slightly Bitter,Calm	肺,肝	Lung,Liver	止咳平喘药	Antitussive Antiasthmetics		5072	2	1			HERB000036	0
+2	艾叶	Aiye	Folium Artemisiae Argyi,Artemisiae Argyi Folium	leaf of Argy Wormwood	辛,苦,温,有小毒	Pungent,Bitter,Warm,Slightly Toxic	肝,脾,肾	Liver,Spleen,Kidney	温经止血药	Channel-Warming Hemostatic	leaf	6336	3	2			HERB000066	0
+3	安息香	Anxixiang	Benzoinum	Benzoin	辛,苦,平	Pungent,Bitter,Calm	心,脾	Heart,Spleen	开窍药	Resuscitative Stimulant; Resuscitative Medicinal	balsam	8019	6	3			HERB000090	0
+4	八角茴香	Bajiaohuixiang	Fructus Anisi Stellati,Anisi Stellati Fructus	Chinese Star Anise	辛,温	Pungent,Warm	肝,肾,脾,胃	Liver,Kidney,Spleen,Stomach	温里药	Warming Interior Drugs		6861	10	4			HERB000137	0
+5	八角莲	Bajiaolian		Dysosmae Verspiellis Rhixoma Et Radix	苦,辛,温,有毒	Bitter,Pungent,Warm,Toxic	肺,肝	Lung,Liver	清热解毒药	Antipyretic Detoxicate Drugs				5			HERB000139	0

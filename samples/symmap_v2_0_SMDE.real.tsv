@@ -1,0 +1,6 @@
+Disease_id	Disease_Name	Disease_definition	UMLS_id	MeSH_id	OMIM_id	Orphanet_id	ICD10CM_id	MedDRA_id	Version	Link_disease_id	Suppress
+1	Basal Ganglia Calcification, Idiopathic, 1		C0393590	C536275	213600|616413|606656|213600|615483|2|615007	1980.0	G23.8	10059626	v1,v2		0
+2	Generalized Junctional Epidermolysis Bullosa, Non-Herlitz Type	Generalized non-Herlitz-type junctional epidermolysis bullosa is a form of non-Herlitz-type junctional epidermolysis bullosa (JEB-nH, see this term) characterized by generalized skin blistering, atrop			226650	79402.0	Q81.8		v1		0
+3	Dominant Beta-Thalassemia	Dominant beta-thalassemia is a form of beta-thalassemia (see this term) resulting in moderate to severe anemia.	C1858990	C565834	603902	231226.0	D56.1		v1,v2		0
+4	Cataract 13 With Adult I Phenotype		C3805373		116700				v1		0
+5	Fumarase Deficiency		C0342770|C2936826|C0342770		606812				v1,v2		0

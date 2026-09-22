@@ -1,0 +1,6 @@
+Gene_id	Gene_symbol	Chromosome	Gene_name	Protein_name	HIT_id	TCMSP_id	Ensembl_id	NCBI_id	HGNC_id	Vega_id	GenBank_Gene_id	GenBank_Protein_id	UniProt_id	PDB_id	MIM_id	miRBase_id	IMGT/GENE-DB_id	Version	Suppress
+1	A2M	12	Alpha-2-macroglobulin	Alpha-2-macroglobulin			ENSG00000175899	2	7	OTTHUMG00000150267	M11313	177870	P01023	1BV8|2P9R|4ACQ	103950			v1,v2	0
+2	A2ML1	12	Alpha-2-macroglobulin Like 1				ENSG00000166535	144568	23336	OTTHUMG00000128499					610627			v1,v2	0
+3	A4GALT	22	Alpha 1,4-galactosyltransferase (P Blood Group)				ENSG00000128274	53947	18149	OTTHUMG00000150744					607922			v1,v2	0
+4	AAAS	12	Aladin WD Repeat Nucleoporin				ENSG00000094914	8086	13666	OTTHUMG00000169729					605378			v1,v2	0
+5	AAGAB	15	Alpha And Gamma Adaptin Binding Protein		T0499		ENSG00000103591	79719	25662	OTTHUMG00000172246					614888			v1,v2	0

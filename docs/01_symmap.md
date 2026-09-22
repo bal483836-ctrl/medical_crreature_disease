@@ -1,96 +1,154 @@
 # SymMap — 中药-成分-靶点-症状-疾病
 
-- 官网：http://www.symmap.org/
-- 下载：http://www.symmap.org/download/
-- 文献：Wu Y, et al. *SymMap: an integrative database of traditional Chinese medicine enhanced by symptom mapping.* Nucleic Acids Research 2019;47(D1):D1110–D1117. https://academic.oup.com/nar/article/47/D1/D1110/5150228
-- 分发格式：**Excel (.xlsx) 或制表符分隔文本 (.tsv)，每个实体一个文件**，直接点链接下载
+> ✅ **已实际下载**（GitHub Actions run #1，26 个 XLSX / 21 MB）。
+> 数据在 [`datasets` 分支的 `symmap/`](../../../tree/datasets/symmap)，
+> 真实截取见 `samples/symmap_v*_SM*.real.tsv`。
+> **本页字段说明取自下载到的真实文件表头，不是据文献推测。**
 
-## 六大实体（SymMap 的核心设计）
+- 官网：http://www.symmap.org/ ｜ 下载：http://www.symmap.org/download/
+  （注意：**只有 http 可用，https 拒绝连接**）
+- 文献：Wu Y, et al. *SymMap: an integrative database of traditional Chinese medicine
+  enhanced by symptom mapping.* Nucleic Acids Research 2019;47(D1):D1110–D1117.
+  https://academic.oup.com/nar/article/47/D1/D1110/5150228
+- 格式：**Excel (.xlsx)，每个实体一个文件**，另有配套的 `key file`（站内检索词表）
 
-SymMap 把中医与现代医学在**两个层面**对接：分子层（草药→成分→靶点→疾病）与**症状层**
-（中医症状 ↔ UMLS 现代医学症状）。六个实体对应六张表：
+## 下载页实际提供的文件
 
-| 表 | 实体 | 规模 |
-|---|---|---|
-| `SMHB` | Herb 草药 | 499（《中国药典》收录） |
-| `SMIT` | Ingredient 成分 | 19,595 |
-| `SMTT` | Target 靶点（基因/蛋白） | 4,302 |
-| `SMDE` | Disease 疾病 | 5,235 |
-| `SMTS` | TCM symptom 中医症状 | 1,717 |
-| `SMMS` | MM symptom 现代医学症状 | 961 |
-| `SMSY` | Syndrome 证候（较新版本新增） | 233 |
+**v1.0 与 v2.0 两套并存**，各 6–7 张实体表，每张表都有一个对应的 `key file`：
 
-> 每张实体表还有一个对应的 **key 文件**（检索词表），结构为
-> `<Entity>_id` + `Field_name`（该实体的可检索字段名）+ `Field_context`（检索词内容），
-> 用于站内搜索，做数据分析时通常用不到。
+| 表 | 实体 | v1.0 行数 | v2.0 行数 |
+|---|---|---:|---:|
+| `SMHB` | Herb 草药 | 499 | **703** |
+| `SMIT` | Ingredient 成分 | 19,595 | **27,690** |
+| `SMTT` | Target 靶点/基因 | 4,302 | **20,965** |
+| `SMDE` | Disease 疾病 | 5,235 | **14,434** |
+| `SMTS` | TCM symptom 中医症状 | 1,717 | **2,364** |
+| `SMMS` | MM symptom 现代医学症状 | 961 | **1,148** |
+| `SMSY` | Syndrome 证候 | — | **233** |
 
-## 字段说明
+⚠️ **文献里引用的数字（499 草药 / 19,595 成分 / 4,302 靶点 / 5,235 疾病）是 v1.0 的。**
+v2.0 规模大得多，靶点从 4,302 涨到 20,965（近 5 倍），疾病从 5,235 涨到 14,434。
+**做分析请用 v2.0**；引用文献数字时注意标明版本。`SMSY`（证候）是 v2.0 才有的表。
 
-### SMHB（草药，约 20 个字段）
+## 真实字段（下载文件的实际表头）
 
-| 字段 | 含义 |
-|---|---|
-| `Herb_id` | SymMap 草药主键，形如 `SMHB00001` |
-| `Chinese_name` | 中文名 |
-| `Pinyin_name` | 拼音名 |
-| `Latin_name` | 拉丁学名 |
-| `English_name` | 英文名 |
-| `Properties` / `Properties_English` | 药性（寒热温凉平）中/英 |
-| `Meridians` / `Meridians_English` | 归经中/英 |
-| `UsePart` | 药用部位 |
-| `Function` / `Function_English` | 功效主治 |
-| `Indication` / `Indication_English` | 适应症 |
-| `Toxicity` / `Toxicity_English` | 毒性 |
-| `Clinical_manifestations` | 临床表现 |
-| `Therapeutic_class` / `TCM_ID` 等 | 治疗分类、交叉引用 |
-| `TCMID_id`、`TCMSP_id`、`TCM-ID_id` | 到 TCMID / TCMSP / TCM-ID 的外部 ID |
+### SMHB 草药
 
-### SMIT（成分）
+**v1.0（14 列）**
+```
+Herb_id  Chinese_name  Pinyin_name  Latin_name  English_name
+Properties  Meridians  Function  Class_Chinese  Class_English  UsePart
+TCMID_id  TCM-ID_id  TCMSP_id
+```
 
-`Ingredient_id`（`SMIT…`）、`Molecule_name`、`Alias`、`Molecular_formula`、`Molecular_weight`、
-`OB_score`（口服生物利用度）、`CAS_id`、`PubChem_id`、`DrugBank_id`、`Canonical_SMILES`、`Standard_InChI`、
-`Standard_InChIKey`、`TCMID_id`、`TCMSP_id`、`TCM-ID_id`。
+**v2.0（19 列）**——药性与归经拆成中英两列，并新增别名与 HERB 交叉引用
+```
+Herb_id  Chinese_name  Pinyin_name  Latin_name  English_name
+Properties_Chinese  Properties_English  Meridians_Chinese  Meridians_English
+Class_Chinese  Class_English  UsePart
+TCMID_id  TCM-ID_id  TCMSP_id  Link_herb_id  Alias  HERBDB_ID  Suppress
+```
 
-### SMTT（靶点）
+实际数据长这样（v1.0 第 1 行）：
 
-`Target_id`（`SMTT…`）、`Gene_symbol`、`Gene_name`、`Protein_name`、`Alias`、
-`Ensembl_id`、`UniProt_id`、`HGNC_id`、`Chromosome`、`Gene_locus`、`TTD_id`、`DrugBank_id`。
+| Herb_id | Chinese_name | Pinyin_name | Properties | Meridians | Class_Chinese |
+|---|---|---|---|---|---|
+| 1 | 矮地茶 | Ai Di Cha | Mild,Pungent,Bitter | Lung,Liver | 止咳平喘药 |
 
-### SMDE（疾病）
+**要点**：
+- `Herb_id` 是**纯整数**（1, 2, 3…），不是 `SMHB00001` 那种带前缀的字符串。其它表同理。
+- `Properties` / `Meridians` 是**逗号分隔的多值字段**，英文，需要 split 后才能用。
+- `Function` 是编号的自由文本（"1. To … 2. To …"），不是结构化字段。
 
-| 字段 | 含义 |
-|---|---|
-| `Disease_id` | 主键，形如 `SMDE00001` |
-| `Disease_name` | 疾病名 |
-| `Disease_definition` | 定义（部分疾病有） |
-| `MeSH_id` | MeSH 交叉引用 |
-| `OMIM_id` | OMIM 交叉引用 |
-| `Orphanet_id` | Orphanet（罕见病）交叉引用 |
+### SMIT 成分
 
-### SMTS / SMMS（症状）
+**v1.0（12 列）**
+```
+MOL_id  Molecule_name  Molecule_structure  Molecule_formula  Molecule_weight
+OB_score  Alias  PubChem_id  CAS_id  TCMID_id  TCM-ID_id  TCMSP_id
+```
 
-- `SMTS`：`Symptom_id`、`Symptom_name`（中文）、`Symptom_pinyin`、`Symptom_definition`、`Symptom_locus`
-- `SMMS`：`MM_symptom_id`、`MM_symptom_name`、`UMLS_cui`、`UMLS_semantic_type`、`MeSH_id`、`HPO_id`
+**v2.0（15 列）**
+```
+Mol_id  Molecule_name  PubChem_CID  Molecule_structure  Molecule_formula
+Molecule_weight  OB_score  CAS_id  TCMID_id  TCM-ID_id  TCMSP_id
+Version  Type  Link_ingredient_id  Suppress
+```
 
-### SMSY（证候）
+**要点**：主键叫 `MOL_id`（v1.0）/ `Mol_id`（v2.0），**不是 `Ingredient_id`**。
+`Molecule_structure` 存的是结构串（SMILES）。**没有 InChIKey 列**——跨库按结构对齐要先自行从
+SMILES 算 InChIKey，或走 `PubChem_id` / `PubChem_CID`。
 
-`Syndrome_id`、`Syndrome_name`（中文）、`Syndrome_English`、`Syndrome_Pinyin`。
+### SMTT 靶点
+
+**v1.0（18 列）**
+```
+Gene_id  Gene_symbol  Chromosome  Gene_name  Protein_name
+HIT_id  TCMSP_id  Ensembl_id  NCBI_id  HGNC_id  Vega_id
+GenBank_Gene_id  GenBank_Protein_id  UniProt_id  PDB_id  OMIM_id
+miRBase_id  IMGT/GENE-DB_id
+```
+v2.0（20 列）把 `OMIM_id` 改名为 `MIM_id`，并加 `Version`、`Suppress`。
+
+**要点**：主键叫 `Gene_id`，**不是 `Target_id`**。交叉引用非常全（12 个外部库 ID），
+其中 **`HIT_id` 直接指向 HIT 2.0**，**`TCMSP_id` 直接指向 TCMSP**——
+这两列让 SymMap 成为现成的跨库映射表，省掉自己做基因名对齐。
+
+### SMDE 疾病
+
+**v1.0（9 列）**
+```
+Disease_id  Disease_Name  Disease_definition
+MeSH_id  OMIM_id  Orphanet_id  ICD10CM_id  UMLS_id  MedDRA_id
+```
+v2.0（12 列）额外有 `Version`、`Link_disease_id`、`Suppress`。
+
+**要点（重要）**：SMDE **自带 `MedDRA_id` 和 `UMLS_id`**。
+这意味着 **SymMap 的疾病可以直接和 Disbiome（MedDRA 编码）做 join**，
+不需要再经 UMLS 绕一圈做 MedDRA↔MeSH 映射。这是把中药链条接到微生物链条上最省事的一个接口。
+注意列名是 `Disease_Name`，**N 大写**。
+
+### SMTS 中医症状 / SMMS 现代医学症状
+
+```
+SMTS v1.0 (6):  TCM_symptom_id  TCM_symptom_name  Symptom_pinyin_name
+                Symptom_definition  Symptom_locus  Symptom_property
+SMTS v2.0 (9):  … Symptom_pinYin（拼写变了）… + Type  Version  Suppress
+SMMS v1.0 (9):  MM_symptom_id  MM_symptom_name  MM_symptom_definition
+                MeSH_tree_numbers  UMLS_id  OMIM_id  ICD10CM_id  HPO_id  MeSH_id
+SMMS v2.0 (11): … + Version  Suppress
+```
+⚠️ v1.0 的 `Symptom_pinyin_name` 在 v2.0 变成了 `Symptom_pinYin`——**跨版本合并时会踩坑**。
+
+### SMSY 证候（仅 v2.0）
+
+```
+Syndrome_id  Syndrome_name  Syndrome_English  Syndrome_PinYin
+Syndrome_definition  Version  Type  Suppress
+```
+
+实际数据：
+
+| Syndrome_id | Syndrome_name | Syndrome_English | Syndrome_PinYin | Version |
+|---|---|---|---|---|
+| 1 | 下元虚冷 | deficiency-cold of kidney | Xia Yuan Xu Leng | v1,v2 |
+| 2 | 下脘虚冷 | deficiency-cold of abdomen | Xia Wan Xu Leng | v2 |
+
+## v2.0 新增的三个管理字段
+
+`Version`（该行出现在哪些版本，如 `v1,v2`）、`Suppress`（标记是否废弃）、
+`Link_*_id`（指向合并后的主记录）。
+
+**载入数据时应当先按 `Suppress` 过滤掉废弃记录**，否则会把已撤销的条目算进统计。
 
 ## 配对关系表
 
-下载页除实体表外还提供成对关系（herb–ingredient、ingredient–target、target–disease、
-herb–TCM symptom、TCM symptom–MM symptom 等），格式为两列 ID + 证据来源。
-**拼链条时真正要的是这些关系表**，实体表只提供注释。
-
-## 示例片段
-
-见 [`samples/symmap_SMHB.example.tsv`](../samples/symmap_SMHB.example.tsv)、
-[`samples/symmap_SMIT.example.tsv`](../samples/symmap_SMIT.example.tsv)、
-[`samples/symmap_SMTT.example.tsv`](../samples/symmap_SMTT.example.tsv)、
-[`samples/symmap_SMDE.example.tsv`](../samples/symmap_SMDE.example.tsv)。
+下载页的实体表只有注释信息，**成对关系（herb–ingredient、ingredient–target、
+target–disease、herb–TCM symptom、TCM symptom–MM symptom）要单独取**。
+拼链条真正需要的是这些关系表。
 
 ## 使用提示
 
-- 实体表可直接 `pandas.read_excel` / `read_csv(sep='\t')` 载入，ID 前缀即实体类型，很适合直接建图。
-- 症状层是 SymMap 的独家资产：要做「症状驱动的方剂推荐」或「中西医术语对齐」，这条链在别的库里找不到。
-- 靶点只有 4,302 个，覆盖率明显低于 dbPTH（27,981）和 HERB（12,933）；做靶点富集建议以 dbPTH 为主、SymMap 作交叉验证。
+- `openpyxl` 直接读；`Herb_id` 等主键是整数，建图前统一转成 `str` 加前缀，避免不同表的 ID 撞号。
+- 用 v2.0，别用 v1.0（除非要复现引用 v1.0 数字的老论文）。
+- SMTT 的 `HIT_id` / `TCMSP_id` 和 SMDE 的 `MedDRA_id` / `UMLS_id` 是跨库对齐的现成锚点，优先用。

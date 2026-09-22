@@ -1,4 +1,0 @@
-Target_id	Gene_symbol	Gene_name	Protein_name	Alias	Ensembl_id	UniProt_id	HGNC_id	Chromosome	TTD_id
-SMTT00001	TNF	tumor necrosis factor	Tumor necrosis factor	TNFA; TNFSF2	ENSG00000232810	P01375	HGNC:11892	6	T47101
-SMTT00002	IL6	interleukin 6	Interleukin-6	BSF2; HGF; IFNB2	ENSG00000136244	P05231	HGNC:6018	7	T16724
-SMTT00003	PTGS2	prostaglandin-endoperoxide synthase 2	Prostaglandin G/H synthase 2	COX2; COX-2	ENSG00000073756	P35354	HGNC:9605	1	T21556

@@ -1,0 +1,6 @@
+MM_symptom_id	MM_symptom_name	MM_symptom_definition	MeSH_tree_numbers	UMLS_id	OMIM_id	ICD10CM_id	HPO_id	MeSH_id
+1	Postoperative Pain	NCI2016_02D:A sensation of discomfort secondary to surgery.|MSH2017_2016_08_12:Pain during the period after surgery.	C10.597.617.841|C23.550.767.700|C23.888.592.612.832	C0030201		G89.18		D010149
+2	Panic State	NCI2016_NCI-GLOSS_1602D:Sudden extreme anxiety or fear that may cause irrational thoughts or actions. Panic may include rapid heart rate, flushing (a hot, red face), sweating, and trouble breathing.	F01.470.361.585	C0030318		F41.0		D010200
+3	Rash	NCI2016_02D:A widespread, acute rash.(NICHD)|MEDLINEPLUS_20151021:<p>A rash is an area of irritated or swollen skin. Many rashes are itchy, red, painful, and irritated. Some rashes can also lead to blisters or patches of raw skin. Rashes are a symptom of many different medical problems. Other causes include irritating substances and allergies. Certain genes can make people more likely to get rashes.	C17.800.257	C0015230	MTHU008860|MTHU047706|MTHU011109	R21	HP:0000988	D005076
+4	Aphonia Paralytica		C08.360.940.160|C09.400.940.160|C10.597.975.100|C23.888.592.979.100	C0264599				D001044
+5	Dyssomnia	CHV2011_02:a group of disorders characterized by difficulty in going to sleep or staying asleep or excessive daytime sleepiness.	C10.886.425|F03.870.400	C0700201				D020920
