@@ -1,0 +1,7 @@
+organism	taxid	rank	disease	meddra_id	meddra_level	qualifier	sample_site	method	host	control	pmid	doi
+oribacterium	265975	genus	invasive colorectal cancer	10052358	preferred_term	decreased	feces	16S rRNA sequencing	human	early colorectal cancer patient	31609493	10.1111/jgh.14868
+paraprevotella xylaniphila	454155	species	attention deficit hyperactivity disorder	10003736	preferred_term	increased	feces	MiSeq sequencing	human	healthy control	32132899	10.3389/fnins.2020.00127
+hymenobacter	89966	genus	oral lichen planus	10030983	preferred_term	increased	buccal scraping	16S rDNA pyrosequencing	human	healthy control	28199766	10.1111/odi.12657
+staphylococcus	29387	species	irritable bowel syndrome	10023003	preferred_term	increased	tissue biopsie	Shotgun sequencing	human	healthy control	32266159	10.3389/fcimb.2020.00072
+bacteroides caccae	47678	species	attention deficit hyperactivity disorder	10003736	preferred_term	increased	feces	MiSeq sequencing	human	healthy control	32132899	10.3389/fnins.2020.00127
+lactobacillus	1591	species	hepatitis b	10008910	preferred_term	increased	feces	16S rRNA sequencing	human	healthy control		10.3389/fmicb.2020.00383

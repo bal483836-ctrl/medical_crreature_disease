@@ -1,6 +1,0 @@
-experiment_id,disease_name,meddra_id,organism_name,ncbi_id,qualitative_outcome,sample_name,method_name,host_type,control_name,pubmed_url
-1042,Stevens-Johnson syndrome,10042033,Faecalibacterium,216851,Reduced,Faeces,16S rRNA sequencing,Human,Healthy controls,https://pubmed.ncbi.nlm.nih.gov/00000000/
-1043,Crohn's disease,10011401,Faecalibacterium prausnitzii,853,Reduced,Faeces,qPCR,Human,Healthy controls,https://pubmed.ncbi.nlm.nih.gov/18936492/
-1044,Colorectal cancer,10010029,Fusobacterium nucleatum,851,Elevated,Colon tissue,Shotgun metagenomics,Human,Adjacent normal tissue,https://pubmed.ncbi.nlm.nih.gov/22009989/
-1045,Type 2 diabetes mellitus,10067585,Akkermansia muciniphila,239935,Reduced,Faeces,Shotgun metagenomics,Human,Healthy controls,https://pubmed.ncbi.nlm.nih.gov/23023125/
-1046,Rheumatoid arthritis,10039073,Prevotella copri,165179,Elevated,Faeces,Shotgun metagenomics,Human,Healthy controls,https://pubmed.ncbi.nlm.nih.gov/24192039/

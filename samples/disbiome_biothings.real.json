@@ -1,0 +1,144 @@
+[
+ {
+  "_id": "009b898ba8464889b03de9bcc2352f0d",
+  "_score": 1.0,
+  "association": {
+   "control_name": "early colorectal cancer patient",
+   "host_type": "human",
+   "method_name": "16S rRNA sequencing",
+   "predicate": "OrganismalEntityAsAModelOfDiseaseAssociation",
+   "qualifier": "decreased",
+   "sources": "feces"
+  },
+  "object": {
+   "id": "MedDRA:10052358",
+   "meddra": 10052358,
+   "meddra_level": "preferred_term",
+   "name": "invasive colorectal cancer",
+   "type": "biolink:Disease"
+  },
+  "publications": {
+   "doi": "10.1111/jgh.14868",
+   "pmid": "31609493",
+   "publication_id": 1162,
+   "title": "Microbiota profile is different for early and invasive colorectal cancer and is consistent throughout the colon",
+   "type": "biolink:Publication"
+  },
+  "subject": {
+   "id": "taxid:265975",
+   "lineage": [
+    265975,
+    186803,
+    3085636,
+    186801,
+    1239,
+    1783272,
+    2,
+    131567,
+    1
+   ],
+   "name": "oribacterium",
+   "parent_taxid": 186803,
+   "rank": "genus",
+   "scientific_name": "oribacterium",
+   "taxid": 265975,
+   "type": "biolink:Bacterium"
+  }
+ },
+ {
+  "_id": "00a62b1d026149b2aa58b96459e41789",
+  "_score": 1.0,
+  "association": {
+   "control_name": "healthy control",
+   "host_type": "human",
+   "method_name": "MiSeq sequencing",
+   "predicate": "OrganismalEntityAsAModelOfDiseaseAssociation",
+   "qualifier": "increased",
+   "sources": "feces"
+  },
+  "object": {
+   "id": "MedDRA:10003736",
+   "meddra": 10003736,
+   "meddra_level": "preferred_term",
+   "name": "attention deficit hyperactivity disorder",
+   "type": "biolink:Disease"
+  },
+  "publications": {
+   "doi": "10.3389/fnins.2020.00127",
+   "pmid": "32132899",
+   "publication_id": 1151,
+   "title": "Case-Control study of the effects of gut microbiota composition on neurotransmitter metabolic pathways in children with attention deficit hyperactivity disorder",
+   "type": "biolink:Publication"
+  },
+  "subject": {
+   "id": "taxid:454155",
+   "lineage": [
+    454155,
+    577309,
+    171552,
+    171549,
+    200643,
+    976,
+    68336,
+    1783270,
+    2,
+    131567,
+    1
+   ],
+   "name": "paraprevotella xylaniphila",
+   "parent_taxid": 577309,
+   "rank": "species",
+   "scientific_name": "paraprevotella xylaniphila",
+   "taxid": 454155,
+   "type": "biolink:Bacterium"
+  }
+ },
+ {
+  "_id": "0184cab453b543449e071a26085d56e5",
+  "_score": 1.0,
+  "association": {
+   "control_name": "healthy control",
+   "host_type": "human",
+   "method_name": "16S rDNA pyrosequencing",
+   "predicate": "OrganismalEntityAsAModelOfDiseaseAssociation",
+   "qualifier": "increased",
+   "sources": "buccal scraping"
+  },
+  "object": {
+   "efo": 8517,
+   "id": "EFO:0008517",
+   "meddra": 10030983,
+   "meddra_level": "preferred_term",
+   "name": "oral lichen planus",
+   "type": "biolink:Disease"
+  },
+  "publications": {
+   "doi": "10.1111/odi.12657",
+   "pmid": "28199766",
+   "publication_id": 1176,
+   "title": "Dysbiosis of oral buccal mucosa microbiota in patients with oral lichen planus",
+   "type": "biolink:Publication"
+  },
+  "subject": {
+   "id": "taxid:89966",
+   "lineage": [
+    89966,
+    1853232,
+    768507,
+    768503,
+    976,
+    68336,
+    1783270,
+    2,
+    131567,
+    1
+   ],
+   "name": "hymenobacter",
+   "parent_taxid": 1853232,
+   "rank": "genus",
+   "scientific_name": "hymenobacter",
+   "taxid": 89966,
+   "type": "biolink:Bacterium"
+  }
+ }
+]
