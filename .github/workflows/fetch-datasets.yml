@@ -29,7 +29,7 @@ on:
         type: string
       release_large:
         description: "把超过 90MB 的文件传到 GitHub Release（而不是跳过）"
-        default: false
+        default: true
         type: boolean
       include_huge:
         description: "包含 dbPTH 整库（约 21.4GB，大概率超出 runner 磁盘）"
@@ -53,7 +53,7 @@ jobs:
       DATASETS: ${{ inputs.datasets || 'all' }}
       MODE: ${{ inputs.mode || 'download' }}
       IN_MAX_MB: ${{ inputs.max_mb || '90' }}
-      RELEASE_LARGE: ${{ inputs.release_large || 'false' }}
+      RELEASE_LARGE: ${{ inputs.release_large || 'true' }}
       INCLUDE_HUGE: ${{ inputs.include_huge || 'false' }}
       TARGET_BRANCH: ${{ inputs.target_branch || 'datasets' }}
 
@@ -99,6 +99,7 @@ jobs:
             --out "${RUNNER_TEMP}/out" \
             --datasets "${DATASETS}" \
             --max-mb "${{ steps.opts.outputs.max_mb }}" \
+            --max-total-mb 8000 \
             ${{ steps.opts.outputs.flags }} 2>&1 | tee "${RUNNER_TEMP}/fetch.log"
 
       - name: Build job summary

@@ -46,63 +46,88 @@ DATA_EXT = re.compile(
 #   note      : 说明
 SOURCES: dict[str, dict] = {
     "symmap": {
-        "pages": ["http://www.symmap.org/download/",
-                  "https://www.symmap.org/download/"],
+        # run #1 实测：https 连接被拒，http 可用且拿到 v1.0/v2.0 全套 26 个 xlsx
+        "pages": ["http://www.symmap.org/download/"],
         "accept": re.compile(r"(SM(HB|IT|TT|DE|TS|MS|SY)|download|static)", re.I),
-        "note": "SymMap 草药/成分/靶点/疾病/症状表，XLSX 或 TSV",
+        "note": "SymMap 草药/成分/靶点/疾病/症状/证候表，XLSX（run #1 已验证可下）",
     },
     "herb": {
-        "pages": ["http://herb.ac.cn/Download/", "http://herb.ac.cn/download/"],
+        # run #1：页面抓到了但 0 个数据链接，补候选路径并 dump 页面排查
+        "pages": ["http://herb.ac.cn/Download/", "http://herb.ac.cn/download/",
+                  "http://herb.ac.cn/", "http://herb.ac.cn/Downloads/"],
         "accept": None,
         "note": "HERB 2.0 分表下载",
     },
     "disbiome": {
+        # run #1：/api/disbiome/* 返回 Angular 首页 HTML，说明路径不对。
+        # 这里给多个候选，并在 download() 里强制校验必须是合法 JSON。
         "api": {
-            "experiments": "https://disbiome.ugent.be/api/disbiome/experiments",
-            "organisms": "https://disbiome.ugent.be/api/disbiome/organisms",
-            "diseases": "https://disbiome.ugent.be/api/disbiome/diseases",
-            "publications": "https://disbiome.ugent.be/api/disbiome/publications",
-            "methods": "https://disbiome.ugent.be/api/disbiome/methods",
+            "experiments": [
+                "https://disbiome.ugent.be/api/disbiome/experiments",
+                "https://disbiome.ugent.be/api/experiments",
+                "https://disbiome.ugent.be/experiments/api",
+                "https://pending.biothings.io/disbiome/query?q=__all__&size=1000",
+            ],
+            "organisms": [
+                "https://disbiome.ugent.be/api/disbiome/organisms",
+                "https://disbiome.ugent.be/api/organisms",
+            ],
+            "diseases": [
+                "https://disbiome.ugent.be/api/disbiome/diseases",
+                "https://disbiome.ugent.be/api/diseases",
+            ],
+            "publications": [
+                "https://disbiome.ugent.be/api/disbiome/publications",
+                "https://disbiome.ugent.be/api/publications",
+            ],
+            "methods": [
+                "https://disbiome.ugent.be/api/disbiome/methods",
+                "https://disbiome.ugent.be/api/methods",
+            ],
         },
-        "pages": ["https://disbiome.ugent.be/export"],
+        "pages": ["https://disbiome.ugent.be/export", "https://disbiome.ugent.be/api"],
         "accept": None,
-        "note": "Disbiome REST API（唯一能一次拉全量的）",
+        "note": "Disbiome REST API（run #1 路径不对，本轮试多个候选并校验 JSON）",
     },
     "dbpth": {
-        "pages": ["http://dbpth.biocuckoo.cn/download.php",
-                  "http://dbpth.biocuckoo.cn/Download.php",
-                  "http://dbpth.biocuckoo.cn/"],
+        # run #1 重大发现：整库按蛋白分组/成分分类切成了 1325 个 zip 分片，
+        # 不必下 21.4GB 整包。默认取 ProtGrp/ 这一套（11 个分组即完整划分）+ SQL dump。
+        "pages": ["http://dbpth.biocuckoo.cn/Download/", "http://dbpth.biocuckoo.cn/"],
         "accept": None,
-        "note": "dbPTH 1.0，整库约 21.4 GB —— 超出 runner 磁盘，默认只发现不下载",
-        "huge": True,
+        "prefer": re.compile(r"(/ProtGrp/|PTH\.sql\.zip$)", re.I),
+        "note": "dbPTH 1.0，按 ProtGrp 分片下载（整库 PTH.zip 约 21.4GB 需 --include-huge）",
     },
     "tcmid": {
-        "pages": ["http://www.tcmid.org/download/",
-                  "http://www.megabionet.org/tcmid/download/"],
+        # run #1：/download/ 404。改从根路径发现
+        "pages": ["http://www.tcmid.org/", "http://tcmid.org/",
+                  "http://www.megabionet.org/tcmid/"],
         "accept": None,
         "note": "TCMID 2.0 复方/草药/成分/靶点分表",
     },
     "tcmsp": {
-        "pages": ["https://old.tcmsp-e.com/tcmsp.php",
-                  "https://www.tcmsp-e.com/"],
+        # run #1：old.tcmsp-e.com 连接被拒（https）；www 抓到但 0 链接
+        "pages": ["https://www.tcmsp-e.com/", "http://old.tcmsp-e.com/tcmsp.php",
+                  "https://www.tcmsp-e.com/tcmspsearch.php"],
         "accept": None,
-        "note": "TCMSP 无下载接口，这里只做链接发现，实际取数需爬虫",
+        "note": "TCMSP 无下载接口，只做链接发现，实际取数需爬虫",
     },
     "hit2": {
-        "pages": ["http://hit2.badd-cao.net/", "http://hit2.badd-cao.net/download/"],
+        "pages": ["http://hit2.badd-cao.net/", "http://hit2.badd-cao.net/download/",
+                  "http://hit2.badd-cao.net/download.php"],
         "accept": None,
         "note": "HIT 2.0 无批量下载，只做链接发现",
     },
     "mdipid": {
-        "pages": ["https://mdipid.idrblab.net/download",
-                  "https://mdipid.idrblab.net/",
-                  "https://idrblab.org/mdipid/"],
+        # run #1：mdipid.idrblab.net 全站 500。主站路径另试
+        "pages": ["https://idrblab.org/mdipid/", "https://mdipid.idrblab.net/",
+                  "https://mdipid.idrblab.net/download"],
         "accept": None,
-        "note": "MDIPID 无公开打包下载，只做链接发现",
+        "note": "MDIPID 无公开打包下载（run #1 站点 500），只做链接发现",
     },
     "microbetcm": {
-        "pages": ["https://www.microbetcm.com/download",
-                  "https://www.microbetcm.com/"],
+        # run #1：/download 404，根路径 0 链接
+        "pages": ["https://www.microbetcm.com/", "https://www.microbetcm.com/#/download",
+                  "https://www.microbetcm.com/api/download"],
         "accept": None,
         "note": "MicrobeTCM 无下载接口，只做链接发现",
     },
@@ -125,18 +150,30 @@ class LinkParser(HTMLParser):
                 self.links.append(val)
 
 
+HTML_SNIFF = re.compile(rb"^\s*(<!DOCTYPE|<html|<\?xml[^>]*>\s*<html)", re.I)
+
+
 def log(msg: str) -> None:
     print(msg, flush=True)
 
 
-def open_url(url: str, timeout: int = 90):
+def looks_like_html(head: bytes) -> bool:
+    """下载到的内容是不是 HTML 页面（而不是数据文件）。
+
+    站点把未知路由交给前端框架时会对任何 URL 都回 200 + SPA 首页，
+    只看状态码会把这种情况误判为下载成功 —— 必须嗅探内容。
+    """
+    return bool(HTML_SNIFF.match(head))
+
+
+def open_url(url: str, timeout: int = 90, accept: str = "*/*"):
     ctx = ssl.create_default_context()
     # 部分国内学术站点证书链不完整 / 过期，发现阶段不因此中断
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
     req = urllib.request.Request(url, headers={
         "User-Agent": UA,
-        "Accept": "*/*",
+        "Accept": accept,
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
     })
     return urllib.request.urlopen(req, timeout=timeout, context=ctx)
@@ -163,8 +200,12 @@ def fetch_text(url: str, retries: int = 2) -> str | None:
     return None
 
 
-def discover(name: str, cfg: dict) -> list[str]:
-    """抓取页面并解析出候选数据文件链接。"""
+def discover(name: str, cfg: dict, dump_dir: Path | None = None) -> list[str]:
+    """抓取页面并解析出候选数据文件链接。
+
+    dump_dir 不为 None 时会把每个发现页的 HTML 存下来 —— 当某个库发现 0 个链接，
+    唯一能判断「站点没给链接」还是「解析逻辑不对」的办法就是看原始页面。
+    """
     found: list[str] = []
     seen: set[str] = set()
     for page in cfg.get("pages", []):
@@ -172,6 +213,11 @@ def discover(name: str, cfg: dict) -> list[str]:
         html = fetch_text(page)
         if html is None:
             continue
+        if dump_dir is not None:
+            safe = re.sub(r"[^A-Za-z0-9._-]", "_", page)[-120:]
+            dump_dir.mkdir(parents=True, exist_ok=True)
+            (dump_dir / f"{name}__{safe}.html").write_text(html[:400_000],
+                                                           encoding="utf-8")
         parser = LinkParser()
         try:
             parser.feed(html)
@@ -194,17 +240,31 @@ def discover(name: str, cfg: dict) -> list[str]:
                 continue
             found.append(absolute)
         log(f"      命中 {len(found)} 个候选数据文件链接（累计）")
+
+    prefer = cfg.get("prefer")
+    if prefer is not None and found:
+        narrowed = [u for u in found if prefer.search(u)]
+        if narrowed:
+            log(f"      按 prefer 规则收窄: {len(found)} -> {len(narrowed)}")
+            return narrowed
+        log("      prefer 规则未命中任何链接，保留全部")
     return found
 
 
-def download(url: str, dest: Path, max_bytes: int | None) -> dict:
-    """下载单个文件，返回结果记录。"""
+def download(url: str, dest: Path, max_bytes: int | None,
+             expect: str | None = None) -> dict:
+    """下载单个文件，返回结果记录。
+
+    expect="json" 时会校验返回体确实是 JSON；任何情况下都会拒绝把
+    HTML 页面当作数据文件存下来（SPA 站点对任意路径都回 200 + 首页）。
+    """
     dest.parent.mkdir(parents=True, exist_ok=True)
     record: dict = {"url": url, "path": str(dest), "ok": False}
+    accept = "application/json" if expect == "json" else "*/*"
     delay = 2
     for attempt in range(4):
         try:
-            with open_url(url, timeout=300) as resp:
+            with open_url(url, timeout=300, accept=accept) as resp:
                 declared = resp.headers.get("Content-Length")
                 if declared and max_bytes and int(declared) > max_bytes:
                     record["skipped"] = (
@@ -214,11 +274,14 @@ def download(url: str, dest: Path, max_bytes: int | None) -> dict:
                     return record
                 sha = hashlib.sha256()
                 total = 0
+                head = b""
                 with dest.open("wb") as fh:
                     while True:
                         chunk = resp.read(1 << 20)
                         if not chunk:
                             break
+                        if len(head) < 512:
+                            head += chunk[:512]
                         total += len(chunk)
                         if max_bytes and total > max_bytes:
                             fh.close()
@@ -229,8 +292,26 @@ def download(url: str, dest: Path, max_bytes: int | None) -> dict:
                             return record
                         sha.update(chunk)
                         fh.write(chunk)
+            # ---- 内容校验：状态码 200 不等于拿到了数据 ----
+            if looks_like_html(head) and not dest.suffix.lower() in (".html", ".htm"):
+                dest.unlink(missing_ok=True)
+                record["error"] = (
+                    "ContentMismatch: 返回的是 HTML 页面而非数据文件"
+                    "（该路径可能不存在，被前端路由兜底为首页）")
+                log(f"      失败（返回 HTML 而非数据）: {url}")
+                return record
+            if expect == "json":
+                try:
+                    parsed = json.loads(dest.read_text(encoding="utf-8"))
+                except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+                    dest.unlink(missing_ok=True)
+                    record["error"] = f"ContentMismatch: 不是合法 JSON ({exc})"
+                    log(f"      失败（不是合法 JSON）: {url}")
+                    return record
+                record["records"] = len(parsed) if isinstance(parsed, list) else 1
             record.update(ok=True, bytes=total, sha256=sha.hexdigest())
-            log(f"      OK  {dest.name}  ({total / 1e6:.2f} MB)")
+            extra = f", {record['records']} 条" if "records" in record else ""
+            log(f"      OK  {dest.name}  ({total / 1e6:.2f} MB{extra})")
             return record
         except Exception as exc:  # noqa: BLE001
             record["error"] = f"{type(exc).__name__}: {exc}"
@@ -243,20 +324,21 @@ def download(url: str, dest: Path, max_bytes: int | None) -> dict:
 
 
 def fetch_api(name: str, endpoints: dict, out_dir: Path) -> list[dict]:
+    """拉 JSON API。每个端点给多个候选 base，命中一个就停。"""
     results = []
-    for key, url in endpoints.items():
-        log(f"    API {key}  <- {url}")
+    for key, urls in endpoints.items():
+        candidates = [urls] if isinstance(urls, str) else list(urls)
         dest = out_dir / f"{key}.json"
-        rec = download(url, dest, None)
-        if rec.get("ok"):
-            try:
-                data = json.loads(dest.read_text(encoding="utf-8"))
-                rec["records"] = len(data) if isinstance(data, list) else 1
-                log(f"        {rec['records']} 条记录")
-            except json.JSONDecodeError as exc:
-                rec["warning"] = f"返回的不是合法 JSON: {exc}"
-                log(f"        警告：返回的不是合法 JSON")
-        results.append(rec)
+        for i, url in enumerate(candidates):
+            log(f"    API {key}  <- {url}")
+            rec = download(url, dest, None, expect="json")
+            if rec.get("ok"):
+                results.append(rec)
+                break
+            if i < len(candidates) - 1:
+                log("      换下一个候选地址")
+        else:
+            results.append(rec)  # 全部候选失败，记最后一次
     return results
 
 
@@ -269,6 +351,8 @@ def main() -> int:
                     help="逗号分隔，或 all。可选: " + ", ".join(SOURCES))
     ap.add_argument("--max-mb", type=float, default=90.0,
                     help="单文件大小上限 MB，超过则跳过（0 = 不限）")
+    ap.add_argument("--max-total-mb", type=float, default=8000.0,
+                    help="全部下载量上限 MB，达到后停止（runner 磁盘有限，0 = 不限）")
     ap.add_argument("--discover-only", action="store_true", help="只发现链接，不下载")
     ap.add_argument("--include-huge", action="store_true",
                     help="包含标记为 huge 的数据源（dbPTH ~21.4GB）")
@@ -287,8 +371,11 @@ def main() -> int:
     out_root = Path(args.out)
     out_root.mkdir(parents=True, exist_ok=True)
     max_bytes = int(args.max_mb * 1e6) if args.max_mb > 0 else None
+    budget = int(args.max_total_mb * 1e6) if args.max_total_mb > 0 else None
+    spent = 0
 
     report: dict = {"datasets": {}, "max_mb": args.max_mb,
+                    "max_total_mb": args.max_total_mb,
                     "discover_only": args.discover_only}
 
     for name in names:
@@ -300,22 +387,29 @@ def main() -> int:
         if cfg.get("api") and not args.discover_only:
             entry["files"] += fetch_api(name, cfg["api"], out_dir)
 
-        links = discover(name, cfg)
+        links = discover(name, cfg, dump_dir=out_root / "_pages")
         entry["discovered"] = links
         log(f"    共发现 {len(links)} 个候选链接")
 
         if args.discover_only:
             report["datasets"][name] = entry
             continue
-        if cfg.get("huge") and not args.include_huge:
+        if cfg.get("huge") and not args.include_huge:  # 保留给未来的超大源
             entry["skipped"] = "标记为超大数据源，需 --include-huge 才下载"
             log("    跳过下载（超大数据源，需 --include-huge）")
             report["datasets"][name] = entry
             continue
 
         for url in links:
+            if budget is not None and spent >= budget:
+                entry.setdefault("truncated",
+                                 f"已达总量上限 {args.max_total_mb:.0f} MB，其余链接未下载")
+                log(f"    达到总量上限 {args.max_total_mb:.0f} MB，停止下载")
+                break
             fname = Path(urllib.parse.urlparse(url).path).name or "index"
-            entry["files"].append(download(url, out_dir / fname, max_bytes))
+            rec = download(url, out_dir / fname, max_bytes)
+            spent += rec.get("bytes", 0)
+            entry["files"].append(rec)
 
         report["datasets"][name] = entry
 
@@ -334,7 +428,8 @@ def main() -> int:
         status = "—" if not entry["files"] else f"{len(oks)}/{len(entry['files'])} 成功"
         log(f"  {name:12} 发现 {len(entry['discovered']):3} 链接   "
             f"{status:16} {size / 1e6:9.2f} MB")
-    log(f"\n  合计 {total_ok} 个文件，{total_bytes / 1e6:.2f} MB")
+    log(f"\n  合计 {total_ok} 个文件，{total_bytes / 1e6:.2f} MB"
+        f"（总量上限 {args.max_total_mb:.0f} MB）")
     log(f"  报告: {report_path}")
     return 0
 
