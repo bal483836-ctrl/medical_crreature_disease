@@ -1,0 +1,141 @@
+
+================================================================
+[symmap]  SymMap 草药/成分/靶点/疾病/症状表，XLSX 或 TSV
+================================================================
+    扫描 http://www.symmap.org/download/
+      命中 26 个候选数据文件链接（累计）
+    扫描 https://www.symmap.org/download/
+      页面不可达: https://www.symmap.org/download/  (URLError: <urlopen error [Errno 111] Connection refused>)
+    共发现 26 个候选链接
+      OK  SymMap%20v2.0%2C%20SMHB%20file.xlsx  (0.10 MB)
+      OK  SymMap%20v2.0%2C%20SMHB%20key%20file.xlsx  (0.07 MB)
+      OK  SymMap%20v2.0%2C%20SMTS%20file.xlsx  (0.23 MB)
+      OK  SymMap%20v2.0%2C%20SMTS%20key%20file.xlsx  (0.10 MB)
+      OK  SymMap%20v2.0%2C%20SMMS%20file.xlsx  (0.26 MB)
+      OK  SymMap%20v2.0%2C%20SMMS%20key%20file.xlsx  (0.30 MB)
+      OK  SymMap%20v2.0%2C%20SMIT%20file.xlsx  (1.89 MB)
+      OK  SymMap%20v2.0%2C%20SMIT%20key%20file.xlsx  (3.69 MB)
+      OK  SymMap%20v2.0%2C%20SMTT%20file.xlsx  (1.68 MB)
+      OK  SymMap%20v2.0%2C%20SMTT%20key%20file.xlsx  (1.28 MB)
+      OK  SymMap%20v2.0%2C%20SMDE%20file.xlsx  (2.26 MB)
+      OK  SymMap%20v2.0%2C%20SMDE%20key%20file.xlsx  (0.74 MB)
+      OK  SymMap%20v2.0%2C%20SMSY%20file.xlsx  (0.03 MB)
+      OK  SymMap%20v2.0%2C%20SMSY%20key%20file.xlsx  (0.02 MB)
+      OK  SymMap%20v1.0%2C%20SMHB%20file.xlsx  (0.07 MB)
+      OK  SymMap%20v1.0%2C%20SMHB%20key%20file.xlsx  (0.06 MB)
+      OK  SymMap%20v1.0%2C%20SMTS%20file.xlsx  (0.18 MB)
+      OK  SymMap%20v1.0%2C%20SMTS%20key%20file.xlsx  (0.09 MB)
+      OK  SymMap%20v1.0%2C%20SMMS%20file.xlsx  (0.11 MB)
+      OK  SymMap%20v1.0%2C%20SMMS%20key%20file.xlsx  (0.35 MB)
+      OK  SymMap%20v1.0%2C%20SMIT%20file.xlsx  (1.98 MB)
+      OK  SymMap%20v1.0%2C%20SMIT%20key%20file.xlsx  (3.22 MB)
+      OK  SymMap%20v1.0%2C%20SMTT%20file.xlsx  (0.63 MB)
+      OK  SymMap%20v1.0%2C%20SMTT%20key%20file.xlsx  (0.64 MB)
+      OK  SymMap%20v1.0%2C%20SMDE%20file.xlsx  (0.43 MB)
+      OK  SymMap%20v1.0%2C%20SMDE%20key%20file.xlsx  (0.59 MB)
+
+================================================================
+[herb]  HERB 2.0 分表下载
+================================================================
+    扫描 http://herb.ac.cn/Download/
+      命中 0 个候选数据文件链接（累计）
+    扫描 http://herb.ac.cn/download/
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+[disbiome]  Disbiome REST API（唯一能一次拉全量的）
+================================================================
+    API experiments  <- https://disbiome.ugent.be/api/disbiome/experiments
+      OK  experiments.json  (0.00 MB)
+        警告：返回的不是合法 JSON
+    API organisms  <- https://disbiome.ugent.be/api/disbiome/organisms
+      OK  organisms.json  (0.00 MB)
+        警告：返回的不是合法 JSON
+    API diseases  <- https://disbiome.ugent.be/api/disbiome/diseases
+      OK  diseases.json  (0.00 MB)
+        警告：返回的不是合法 JSON
+    API publications  <- https://disbiome.ugent.be/api/disbiome/publications
+      OK  publications.json  (0.00 MB)
+        警告：返回的不是合法 JSON
+    API methods  <- https://disbiome.ugent.be/api/disbiome/methods
+      OK  methods.json  (0.00 MB)
+        警告：返回的不是合法 JSON
+    扫描 https://disbiome.ugent.be/export
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+[dbpth]  dbPTH 1.0，整库约 21.4 GB —— 超出 runner 磁盘，默认只发现不下载
+================================================================
+    扫描 http://dbpth.biocuckoo.cn/download.php
+      页面不可达: http://dbpth.biocuckoo.cn/download.php  (HTTPError: HTTP Error 404: Not Found)
+    扫描 http://dbpth.biocuckoo.cn/Download.php
+      命中 1325 个候选数据文件链接（累计）
+    扫描 http://dbpth.biocuckoo.cn/
+      命中 1325 个候选数据文件链接（累计）
+    共发现 1325 个候选链接
+    跳过下载（超大数据源，需 --include-huge）
+
+================================================================
+[tcmid]  TCMID 2.0 复方/草药/成分/靶点分表
+================================================================
+    扫描 http://www.tcmid.org/download/
+      页面不可达: http://www.tcmid.org/download/  (HTTPError: HTTP Error 404: Not Found)
+    扫描 http://www.megabionet.org/tcmid/download/
+      页面不可达: http://www.megabionet.org/tcmid/download/  (HTTPError: HTTP Error 404: Not Found)
+    共发现 0 个候选链接
+
+================================================================
+[tcmsp]  TCMSP 无下载接口，这里只做链接发现，实际取数需爬虫
+================================================================
+    扫描 https://old.tcmsp-e.com/tcmsp.php
+      页面不可达: https://old.tcmsp-e.com/tcmsp.php  (URLError: <urlopen error [Errno 111] Connection refused>)
+    扫描 https://www.tcmsp-e.com/
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+[hit2]  HIT 2.0 无批量下载，只做链接发现
+================================================================
+    扫描 http://hit2.badd-cao.net/
+      命中 0 个候选数据文件链接（累计）
+    扫描 http://hit2.badd-cao.net/download/
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+[mdipid]  MDIPID 无公开打包下载，只做链接发现
+================================================================
+    扫描 https://mdipid.idrblab.net/download
+      页面不可达: https://mdipid.idrblab.net/download  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
+    扫描 https://mdipid.idrblab.net/
+      页面不可达: https://mdipid.idrblab.net/  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
+    扫描 https://idrblab.org/mdipid/
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+[microbetcm]  MicrobeTCM 无下载接口，只做链接发现
+================================================================
+    扫描 https://www.microbetcm.com/download
+      页面不可达: https://www.microbetcm.com/download  (HTTPError: HTTP Error 404: )
+    扫描 https://www.microbetcm.com/
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+汇总
+================================================================
+  symmap       发现  26 链接   26/26 成功             20.97 MB
+  herb         发现   0 链接   —                     0.00 MB
+  disbiome     发现   0 链接   5/5 成功                0.01 MB
+  dbpth        发现 1325 链接   —                     0.00 MB
+  tcmid        发现   0 链接   —                     0.00 MB
+  tcmsp        发现   0 链接   —                     0.00 MB
+  hit2         发现   0 链接   —                     0.00 MB
+  mdipid       发现   0 链接   —                     0.00 MB
+  microbetcm   发现   0 链接   —                     0.00 MB
+
+  合计 31 个文件，20.99 MB
+  报告: /home/runner/work/_temp/out/fetch_report.json
