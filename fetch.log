@@ -1,11 +1,9 @@
 
 ================================================================
-[symmap]  SymMap 草药/成分/靶点/疾病/症状表，XLSX 或 TSV
+[symmap]  SymMap 草药/成分/靶点/疾病/症状/证候表，XLSX（run #1 已验证可下）
 ================================================================
     扫描 http://www.symmap.org/download/
       命中 26 个候选数据文件链接（累计）
-    扫描 https://www.symmap.org/download/
-      页面不可达: https://www.symmap.org/download/  (URLError: <urlopen error [Errno 111] Connection refused>)
     共发现 26 个候选链接
       OK  SymMap%20v2.0%2C%20SMHB%20file.xlsx  (0.10 MB)
       OK  SymMap%20v2.0%2C%20SMHB%20key%20file.xlsx  (0.07 MB)
@@ -41,57 +39,80 @@
       命中 0 个候选数据文件链接（累计）
     扫描 http://herb.ac.cn/download/
       命中 0 个候选数据文件链接（累计）
-    共发现 0 个候选链接
-
-================================================================
-[disbiome]  Disbiome REST API（唯一能一次拉全量的）
-================================================================
-    API experiments  <- https://disbiome.ugent.be/api/disbiome/experiments
-      OK  experiments.json  (0.00 MB)
-        警告：返回的不是合法 JSON
-    API organisms  <- https://disbiome.ugent.be/api/disbiome/organisms
-      OK  organisms.json  (0.00 MB)
-        警告：返回的不是合法 JSON
-    API diseases  <- https://disbiome.ugent.be/api/disbiome/diseases
-      OK  diseases.json  (0.00 MB)
-        警告：返回的不是合法 JSON
-    API publications  <- https://disbiome.ugent.be/api/disbiome/publications
-      OK  publications.json  (0.00 MB)
-        警告：返回的不是合法 JSON
-    API methods  <- https://disbiome.ugent.be/api/disbiome/methods
-      OK  methods.json  (0.00 MB)
-        警告：返回的不是合法 JSON
-    扫描 https://disbiome.ugent.be/export
+    扫描 http://herb.ac.cn/
+      命中 0 个候选数据文件链接（累计）
+    扫描 http://herb.ac.cn/Downloads/
       命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
 
 ================================================================
-[dbpth]  dbPTH 1.0，整库约 21.4 GB —— 超出 runner 磁盘，默认只发现不下载
+[disbiome]  Disbiome REST API（run #1 路径不对，本轮试多个候选并校验 JSON）
 ================================================================
-    扫描 http://dbpth.biocuckoo.cn/download.php
-      页面不可达: http://dbpth.biocuckoo.cn/download.php  (HTTPError: HTTP Error 404: Not Found)
-    扫描 http://dbpth.biocuckoo.cn/Download.php
-      命中 1325 个候选数据文件链接（累计）
+    API experiments  <- https://disbiome.ugent.be/api/disbiome/experiments
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/experiments
+      换下一个候选地址
+    API experiments  <- https://disbiome.ugent.be/api/experiments
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/experiments
+      换下一个候选地址
+    API experiments  <- https://disbiome.ugent.be/experiments/api
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/experiments/api
+      换下一个候选地址
+    API experiments  <- https://pending.biothings.io/disbiome/query?q=__all__&size=1000
+      OK  experiments.json  (0.86 MB, 1 条)
+    API organisms  <- https://disbiome.ugent.be/api/disbiome/organisms
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/organisms
+      换下一个候选地址
+    API organisms  <- https://disbiome.ugent.be/api/organisms
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/organisms
+    API diseases  <- https://disbiome.ugent.be/api/disbiome/diseases
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/diseases
+      换下一个候选地址
+    API diseases  <- https://disbiome.ugent.be/api/diseases
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/diseases
+    API publications  <- https://disbiome.ugent.be/api/disbiome/publications
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/publications
+      换下一个候选地址
+    API publications  <- https://disbiome.ugent.be/api/publications
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/publications
+    API methods  <- https://disbiome.ugent.be/api/disbiome/methods
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/methods
+      换下一个候选地址
+    API methods  <- https://disbiome.ugent.be/api/methods
+      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/methods
+    扫描 https://disbiome.ugent.be/export
+      命中 0 个候选数据文件链接（累计）
+    扫描 https://disbiome.ugent.be/api
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
+
+================================================================
+[dbpth]  dbPTH 1.0，按 ProtGrp 分片下载（整库 PTH.zip 约 21.4GB 需 --include-huge）
+================================================================
+    扫描 http://dbpth.biocuckoo.cn/Download/
+      页面不可达: http://dbpth.biocuckoo.cn/Download/  (HTTPError: HTTP Error 403: Forbidden)
     扫描 http://dbpth.biocuckoo.cn/
-      命中 1325 个候选数据文件链接（累计）
-    共发现 1325 个候选链接
-    跳过下载（超大数据源，需 --include-huge）
+      命中 0 个候选数据文件链接（累计）
+    共发现 0 个候选链接
 
 ================================================================
 [tcmid]  TCMID 2.0 复方/草药/成分/靶点分表
 ================================================================
-    扫描 http://www.tcmid.org/download/
-      页面不可达: http://www.tcmid.org/download/  (HTTPError: HTTP Error 404: Not Found)
-    扫描 http://www.megabionet.org/tcmid/download/
-      页面不可达: http://www.megabionet.org/tcmid/download/  (HTTPError: HTTP Error 404: Not Found)
+    扫描 http://www.tcmid.org/
+      命中 0 个候选数据文件链接（累计）
+    扫描 http://tcmid.org/
+      命中 0 个候选数据文件链接（累计）
+    扫描 http://www.megabionet.org/tcmid/
+      页面不可达: http://www.megabionet.org/tcmid/  (URLError: <urlopen error timed out>)
     共发现 0 个候选链接
 
 ================================================================
-[tcmsp]  TCMSP 无下载接口，这里只做链接发现，实际取数需爬虫
+[tcmsp]  TCMSP 无下载接口，只做链接发现，实际取数需爬虫
 ================================================================
-    扫描 https://old.tcmsp-e.com/tcmsp.php
-      页面不可达: https://old.tcmsp-e.com/tcmsp.php  (URLError: <urlopen error [Errno 111] Connection refused>)
     扫描 https://www.tcmsp-e.com/
+      命中 0 个候选数据文件链接（累计）
+    扫描 http://old.tcmsp-e.com/tcmsp.php
+      页面不可达: http://old.tcmsp-e.com/tcmsp.php  (URLError: <urlopen error [Errno 111] Connection refused>)
+    扫描 https://www.tcmsp-e.com/tcmspsearch.php
       命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
 
@@ -102,26 +123,30 @@
       命中 0 个候选数据文件链接（累计）
     扫描 http://hit2.badd-cao.net/download/
       命中 0 个候选数据文件链接（累计）
+    扫描 http://hit2.badd-cao.net/download.php
+      命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
 
 ================================================================
-[mdipid]  MDIPID 无公开打包下载，只做链接发现
+[mdipid]  MDIPID 无公开打包下载（run #1 站点 500），只做链接发现
 ================================================================
-    扫描 https://mdipid.idrblab.net/download
-      页面不可达: https://mdipid.idrblab.net/download  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
-    扫描 https://mdipid.idrblab.net/
-      页面不可达: https://mdipid.idrblab.net/  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
     扫描 https://idrblab.org/mdipid/
       命中 0 个候选数据文件链接（累计）
+    扫描 https://mdipid.idrblab.net/
+      页面不可达: https://mdipid.idrblab.net/  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
+    扫描 https://mdipid.idrblab.net/download
+      页面不可达: https://mdipid.idrblab.net/download  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
     共发现 0 个候选链接
 
 ================================================================
 [microbetcm]  MicrobeTCM 无下载接口，只做链接发现
 ================================================================
-    扫描 https://www.microbetcm.com/download
-      页面不可达: https://www.microbetcm.com/download  (HTTPError: HTTP Error 404: )
     扫描 https://www.microbetcm.com/
       命中 0 个候选数据文件链接（累计）
+    扫描 https://www.microbetcm.com/#/download
+      命中 0 个候选数据文件链接（累计）
+    扫描 https://www.microbetcm.com/api/download
+      页面不可达: https://www.microbetcm.com/api/download  (HTTPError: HTTP Error 404: )
     共发现 0 个候选链接
 
 ================================================================
@@ -129,13 +154,13 @@
 ================================================================
   symmap       发现  26 链接   26/26 成功             20.97 MB
   herb         发现   0 链接   —                     0.00 MB
-  disbiome     发现   0 链接   5/5 成功                0.01 MB
-  dbpth        发现 1325 链接   —                     0.00 MB
+  disbiome     发现   0 链接   1/5 成功                0.86 MB
+  dbpth        发现   0 链接   —                     0.00 MB
   tcmid        发现   0 链接   —                     0.00 MB
   tcmsp        发现   0 链接   —                     0.00 MB
   hit2         发现   0 链接   —                     0.00 MB
   mdipid       发现   0 链接   —                     0.00 MB
   microbetcm   发现   0 链接   —                     0.00 MB
 
-  合计 31 个文件，20.99 MB
+  合计 27 个文件，21.84 MB（总量上限 8000 MB）
   报告: /home/runner/work/_temp/out/fetch_report.json

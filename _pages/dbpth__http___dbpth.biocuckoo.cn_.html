@@ -1,0 +1,635 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>dbPTH: a comprehensive database of Protein of target herbal ingredient</title>
+		<link rel="icon" href= "images/GPS.png" />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-3.3.1-min.js"></script>
+	</head><script type="text/javascript" src="js/ui/jquery.js"></script>
+<script src="js/3Dmol.js"></script>
+<script type="text/javascript" src="js/ui/jquery-ui.min.js"></script>
+<link href="js\bootstrap-3.4.1-dist\css\bootstrap.css" rel="stylesheet"/>
+<script src="js\bootstrap-3.4.1-dist\js\bootstrap.js"></script>
+<script src="js\echarts_5.4.2_dist_echarts.min.js"></script>
+<style>
+	body{
+        background-image: url("images/bg-herb.png");
+		background-size:cover;
+		background-repeat: no-repeat;
+        animation:frams 15s infinite;
+	}
+	@keyframes frams {
+		33%{
+			background-image: url("images/bg-ing.png");background-size:cover;background-repeat: no-repeat;
+		}
+		66%{
+			background-image: url("images/bg-dock.png");background-size:cover;background-repeat: no-repeat;
+		}
+		100%{
+			background-image: url("images/bg-herb.png");background-size:cover;background-repeat: no-repeat;
+		}
+	}
+	
+	#Main,#footer{background: rgb(255,255,255,0.8);}
+	
+	#OverText{width:60%;display: flex;flex-direction: column;}
+	#Overview p{font-size:1.4rem;text-indent:2em;text-align: justify;}
+	#Overview button{display: inline-block;color:#00b1ff;}
+	#Overview button+span{display:none;}
+	#Overview .highlight{color:#35b279;}
+
+	#article{height:280px;width:100%;background: rgb(255,255,255,0.8);}
+	
+	#right{
+		display: flex;
+    	flex-direction: column;
+	}
+	
+	/* echart */
+	#pie-chart, #pthData{
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		/* flex-direction: column; */
+		justify-content: space-around;
+	}
+	#pthData{margin-top:50px;}
+	#supercls, #ITIs, #dataVolume, #chemical{width:100%;height:30rem;}
+	#annoVolume{width:100%;height:60rem;margin-top:50px;}
+	
+	#Example{font-weight:bold;font-size:1.8rem;}
+	#Structure{width:31rem;}
+	#pdb{position:relative;z-index:1;height:30rem;width:30rem;margin:10px auto;border-style:dotted;border-color:#C1BCD6;background:#E6FFFF;display:flex;justify-content: center;align-items: center;}
+	.pdbspan{display: flex; gap: 2rem;justify-content: center; align-items: center;}
+	.Other{font-size:14px;border-radius:50px;background-color:#33cfff78;}
+	.Other:before{font-family:FontAwesome;content:"\f021";}
+
+	#anno {position:relative; display: flex; justify-content: center; flex-direction: column; align-content: center; flex-wrap: wrap; }
+	#anno button { font-size: 1.8rem; font-weight: bold; }
+	#anno button a { text-decoration: none; }
+	
+	#anno ul {font-size:16px; position:absolute;z-index: 5; top:calc(100% + 1px); left:50%;right:50%;transform:translate(-50%,0);max-height: 0; transition: max-height 0.25s ease-out; overflow: hidden; background: #f5f4f4; width: max-content; margin: 0; padding: 0; border-radius:1rem;text-align: center; }
+	#anno ul li { height: 3rem; padding-inline: 1rem; }
+	#anno>button:hover+ul,#anno>ul:hover { max-height: calc(14 * 3rem); transition: max-height 0.25s ease-in; width: max-content; margin: 0; padding: 0; }
+</style>
+<body>
+	<div id="header">
+		<div id="logo">
+	<div id='gps'>
+		<a href="http://www.biocuckoo.org/" target='_blank'><img src="../images/logo.png" alt="GPS"></a>
+	</div>
+	<div id='pth'>
+		<img src="../images/title.png" class='img-responsive' alt="dbPTH">
+	</div>
+</div>
+<div id="navbar">
+	<a href="index.php"><button class="headbtn"><span>HOME</span></button></a>
+	<a href="Browse.php"><button class="headbtn"><span>BROWSE</span></button></a>
+	<a href="Search.php"><button class="headbtn"><span>SEARCH</span></button></a>
+	<a href="Download.php"><button class="headbtn"><span>DOWNLOAD</span></button></a>
+	<a href="Userguide.php"><button class="headbtn"><span>USER GUIDE</span></button></a>
+	<a href="Contact.php"><button class="headbtn"><span>CONTACT</span></button></a>
+	<a href="Link.php"><button class="headbtn"><span>LINK</span></button></a>
+</div>	</div>
+	<div id="Main">
+		<div id="sidebar">
+	<h4 class="section">Products of CUCKOO</h4>
+	<div class="panel-group" id="product">
+		<div class="panel panel-primary">
+			<div class="panel-heading subtitle-grad" data-toggle="collapse" data-parent="#product" href="#Predictor">
+				PTM Predictors
+			</div>
+			<div id="Predictor" class="panel-collapse collapse">
+				<div class="panel-body">
+					<ul>
+						<li><a href="http://gps.biocuckoo.cn" title='Kinase-specific Phosphorylation Site Prediction' target="_blank"><strong>GPS</strong> (Phosphorylation)</a></li>
+						<li><a href="http://igps.biocuckoo.org" title='GPS algorithm with PPI filter' target="_blank"><strong>iGPS</strong> (Phosphorylation)</a></li>
+						<li><a href="http://pbs.biocuckoo.cn/" title='Prediction of PPBD-specific Binding p-sites' target="_blank"><strong>GPS-PBS</strong> (PPBD-binding)</a></li>
+						<li><a href="http://hybridsucc.biocuckoo.org/" title='Succinylation Site Prediction' target="_blank"><strong>HybridSucc</strong> (Succinylation)</a></li>
+						<li><a href="http://msp.biocuckoo.org" title='Calpain Cleavage Site Prediction' target="_blank"><strong>GPS-MSP</strong> (Protein Methylation)</a></li>
+						<li><a href="http://gpspalm.biocuckoo.cn/" title='Palmitoylation Site Prediction' target="_blank"><strong>GPS-Palm</strong> (Palmitoylation)</a></li>
+						<!--<li><a href="http://csspalm.biocuckoo.org"  title='Palmitoylation Site Prediction' target="_blank"><strong>CSS-Palm</strong> (Palmitoylation)</a></li>-->
+						<li><a href="http://sumosp.biocuckoo.org" title='Prediction of SUMO Modification' target="_blank"><strong>GPS-SUMO</strong> (Sumoylation)</a></li>
+						<li><a href="http://sno.biocuckoo.org" title='S-nitrosylation Site Prediction' target="_blank"><strong>GPS-SNO</strong> (<em>S</em>-nitrosylation)</a></li>
+						<li><a href="http://yno2.biocuckoo.org" title='Tyrosine Nitration Site Prediction' target="_blank"><strong>GPS-YNO2</strong> (Tyrosine Nitration)</a></li>
+						<li><a href="http://ccd.biocuckoo.org" title='Calpain Cleavage Site Prediction' target="_blank"><strong>GPS-CCD</strong> (Calpain Cleavage)</a></li>
+						<li><a href="http://polo.biocuckoo.org" title='Prediction for Polo-like Kinases' target="_blank"><strong>GPS-Polo</strong> (Polo-like Kinases)</a></li>
+						<li><a href="http://pup.biocuckoo.org" title='Pupylation Sites Prediction' target="_blank"><strong>GPS-PUP</strong> (Pupylation)</a></li>
+						<li><a href="http://mba.biocuckoo.org" title='MHC-binding Site Prediction' target="_blank"><strong>GPS-MBA</strong> (MHC-binding)</a></li>
+						<li><a href="http://arm.biocuckoo.org/" title='APC/C Recognition Motif Prediction' target="_blank"><strong>GPS-ARM</strong> (APC/C)</a></li>
+						<li><a href="http://tsp.biocuckoo.org/" title='Prediction of Tyrosine Sulfation Sites' target="_blank"><strong>GPS-TSP</strong> (Tyrosine sulfation)</a></li>
+						<li><a href="http://pail.biocuckoo.org" title='Calpain Cleavage Site Prediction' target="_blank"><strong>GPS-PAIL</strong> (Lysine acetylation)</a></li>
+						<li><a href="http://gpsuber.biocuckoo.cn" title='E3-specific lysine ubiquitination sites prediction' target="_blank"><strong>GPS-Uber</strong> (Ubiquitination)</a></li>
+						<li><a href="http://kprfunc.biocuckoo.cn/" title='Functional propionylation sites prediction' target="_blank"><strong>KprFunc</strong> (Propionylation)</a></li>
+						<!--<li><a href="http://pps.biocuckoo.org"   title='PTMs Peptide Scanner' target="_blank"><strong>DeepNitro</strong> (PTMs Peptide Scanner)</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading subtitle-grad" data-toggle="collapse" data-parent="#product" href="#Tools">
+				Tools
+			</div>
+			<div id="Tools" class="panel-collapse collapse">
+				<div class="panel-body">
+					<ul>
+						<li><a href="http://ibs.biocuckoo.org/" title='Illustrator for Biological Sequences' target="_blank"><strong>IBS</strong> (Illustrator for BioSequence)</a></li>
+						<li><a href="http://dog.biocuckoo.org/" title='Protein Domain Structure Visualization' target="_blank"><strong>DOG</strong> (Domain Illustrator)</a></li>
+						<li><a href="http://hemi.biocuckoo.org/" title='Heatmap Illustrator' target="_blank"><strong>HemI</strong> (Heatmap Illustrator)</a></li>
+						<li><a href="http://wocea.biocuckoo.org/" title='Enrichment Analysis' target="_blank"><strong>WocEA</strong> (Enrichment Analysis)</a></li>
+						<li><a href="http://deepphagy.biocuckoo.org/" title='Deeplearning for autophagy' target="_blank"><strong>DeepPhagy</strong> (Autophagy images)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading subtitle-grad" data-toggle="collapse" data-parent="#product" href="#Databases">
+				Databases
+			</div>
+			<div id="Databases" class="panel-collapse collapse">
+				<div class="panel-body">
+					<ul>
+						<!-- <li><a href="http://thanatos.biocuckoo.org/"    title='Database of Autophagy and Cell Death Related Protein' target="_blank"><strong>THANATOS</strong> (Autophagy)</a></li>-->
+						<li><a href="http://microkit.biocuckoo.org/" title='An Integrated Database of Midbody, Centrosome, Kinetochore, Telomere and Spindle' target="_blank"><strong>MiCroKiTS</strong> (Cell Cycle)</a></li>
+						<li><a href="http://cgdb.biocuckoo.org/" title='An Integrated Database of Midbody, Centrosome, Kinetochore, Telomere and Spindle' target="_blank"><strong>CGDB</strong> (Circadian)</a></li>
+						<li><a href="http://llps.biocuckoo.cn/" title='Data resource of liquid-liquid phase separation' target="_blank"><strong>DrLLPS</strong> (Phase Separation)</a></li>
+						<li><a href="http://iekpd.biocuckoo.org/" title='Eukaryotic Kinase, Phosphatase and PPBD Containing Protein Database' target="_blank"><strong>iEKPD</strong> (PK, PP &amp; PPBD)</a></li>
+						<li><a href="http://iuucd.biocuckoo.org/" title='Compendium of Enzymes for Ubiquitin and Ubiquitin-like Conjugation' target="_blank"><strong>iUUCD</strong> (Ubiquitin Regulators)</a></li>
+						<li><a href="http://weram.biocuckoo.org/" title='Met.&amp;Ace. Regulators' target="_blank"><strong>WERAM</strong> (Me. & Ace. Regulator)</a></li>
+						<li><a href="http://epsd.biocuckoo.cn/" title='Eukaryotic Phosphorylation Site Database' target="_blank"><strong>EPSD</strong> (Eukaryotic Phospho)</a></li>
+						<li><a href="http://dbpsp.biocuckoo.cn/" title='Prokaryotic Phosphorylation Sites Database' target="_blank"><strong>dbPSP</strong> (Prokaryotic Phospho)</a></li>
+						<li><a href="http://cplm.biocuckoo.cn" title='Compendium of Protein Lysine Modification' target="_blank"><strong>CPLM</strong> (Lysine Modification)</a></li>
+						<li><a href="http://ptmd.biocuckoo.org/" title='PTM &amp; Disease' target="_blank"><strong>PTMD</strong> (PTM & Disease)</a></li>
+						<li><a href="http://phossnp.biocuckoo.org/" title='Influence of protein phosphorylation by nsSNP' target="_blank"><strong>PhosSNP</strong> (PTM &amp; Variation)</a></li>
+						<li><a href="http://dbpaf.biocuckoo.org/" title='Animal Phosphorylation Sites Database' target="_blank"><strong>dbPAF</strong> (Animal Phospho)</a></li>
+						<li><a href="http://dbppt.biocuckoo.org/" title='Plant Phosphorylation Sites Database' target="_blank"><strong>dbPPT</strong> (Plant Phospho)</a></li>
+						<li><a href="http://ipcd.biocuckoo.cn/" title='Eukaryotic PCD regulators Database' target="_blank"><strong>iPCD</strong> (PCD regulators)</a></li>
+						<!-- li><a href="http://ptestis.biocuckoo.org/"    title='Database of phosphorylation sites in testis' target="_blank"><strong>pTestis</strong> (Testis Phospho)</a></li-->
+						<!--<li><a href="http://lipid.biocuckoo.org/"    title='Database of Protein Lipid Modifications' target="_blank"><strong>GPS-LipidDB</strong> (Lipid Modification)</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		<div id="OverText">
+			<div id="Overview">
+				<h3 class="section">&#8251; Overview </h3>
+				<p>Herbal plants produce an astonishing number of ingredients, namely bioactive phytochemicals. These ingredients not only function as crucial signaling molecules in plants, but also pose effects in other species such as humans by regulating relevant protein targets.
+
+				<button class="text-button">For example>></button>
+				<span>Artemisinin has not only been approved by Food and Drug Administration (FDA) as anti-malarial drug against plasmodium, but also used as a tool for discovery of the protein target, PDGFRA, the cell-surface receptor in regulation of embryonic development (<a href="https://pubmed.ncbi.nlm.nih.gov/29387451/" target="_blank">Li, <em>et al.</em>, 2017</a>). Meanwhile, artemisinin has been reported to target PF3D7_0802200, the protein involved in heme detoxification in plasmodium (<a href="https://doi.org/10.1016/j.eng.2023.06.001" target="_blank">Gao, <em>et al.</em>, 2023</a>), whereas the RPD3, the protein involved in histone deacetylase, was identified to be regulated by artemisinin in yeast (<a href="https://pubmed.ncbi.nlm.nih.gov/25263705/" target="_blank">Jensen, <em>et al.</em>, 2014</a>).</span>
+
+				Thus, collection, integration, biocuration, and annotation of experimentally identified herbal <span class="highlight_number" style="font-weight:bold">ingredient-target interactions (ITIs)</span> will be helpful for better understanding the functional impacts of herbal ingredients and serve as a resource for further pharmaceutical consideration.</p>
+
+				<!-- <p>Three herbal ingredient-target databases, HERB (<a href="https://pubmed.ncbi.nlm.nih.gov/33264402/" target="_blank">Fang, <em>et al.</em>, 2021</a>), HIT 2.0 (<a href="https://pubmed.ncbi.nlm.nih.gov/34986599/" target="_blank">Yan, <em>et al.</em>, 2022</a>) and BATMAN-TCM 2.0 (<a href="https://pubmed.ncbi.nlm.nih.gov/37904598/" target="_blank">Kong, <em>et al.</em>, 2024</a>) were mainly focused on collection human ITIs. Comparing to dbPTH in 2023, we not only increase the number of ITIs, but also integrate ITIs from various species, including <em>Homo sapiens</em>, <em>Mus musculus</em>, <em>Rattus norvegicus</em>, <em>Oryctolagus cuniculus</em>, <em>Caenorhabditis elegans</em>, <em>Arabidopsis thaliana</em>, <em>Drosophila melanogaster</em> and <em>Saccharomyces cerevisiae</em>. These ITIs with ortholog information can provide researchers with relevant data for studying the potential regulatory relationships between key protein molecules and herbal ingredients across different species.</p> -->
+
+				
+				<p>
+					Here, we report a comprehensive <span class="highlight_number">d</span>ata<span class="highlight_number">b</span>ase of <span class="highlight_number">p</span>rotein <span class="highlight_number">t</span>argets of <span class="highlight_number">h</span>erbal ingredients (<span class="highlight_number" style="font-weight:bold">dbPTH</span>), containing <span class="highlight_number">165,967</span> reported ITIs between <span class="highlight_number">4,856</span> ingredients and <span class="highlight_number">27,981</span> protein targets across <span class="highlight_number">8</span> species. The potential orthologs of these protein targets were computationally identified in up to <span class="highlight_number">1,138</span> species, containing <span class="highlight_number">36,594,449</span> highly potential ITIs for <span class="highlight_number">2,657,336</span> potential targets. Compared to four mainstream herbal ingredient-target databases, TCMSP, HERB, HIT 2.0 and BATMAN-TCM 2.0, dbPTH 1.0 achieved <span class="highlight_number">41.81</span>-, <span class="highlight_number">34.47</span>-, <span class="highlight_number">16.55</span>- and <span class="highlight_number">9.72</span>-fold increase in maintaining known ITIs, respectively. For convenience, we classified the herbal ingredients and corresponding protein targets into <span class="highlight_number">65</span> chemical subtypes and <span class="highlight_number">9</span> protein subgroups, respectively.
+					
+					<!-- Here, we report a comprehensive <span class="highlight_number">d</span>ata<span class="highlight_number">b</span>ase of <span class="highlight_number">p</span>rotein <span class="highlight_number">t</span>argets of <span class="highlight_number">h</span>erbal ingredients (<span class="highlight_number" style="font-weight:bold">dbPTH</span>), containing <span class="highlight_number">165,967</span> reported ITIs between <span class="highlight_number">4,856</span> ingredients and <span class="highlight_number">27,981</span> protein targets across <span class="highlight_number">8</span> species. The potential orthologs of these protein targets were computationally identified in up to <span class="highlight_number">1,138</span> species, containing <span class="highlight_number">36,594,449</span> highly potential ITIs for <span class="highlight_number">2,657,336</span> potential targets. Compared to four mainstream herbal ingredient-target databases, TCMSP, HIT 2.0, BATMAN-TCM 2.0 and HERB 2.0, dbPTH 1.0 achieved <span class="highlight_number">41.81</span>-, <span class="highlight_number">16.55</span>-, <span class="highlight_number">9.72</span> and <span class="highlight_number">10.85</span>-fold increase in maintaining known ITIs, respectively. For convenience, we classified the herbal ingredients and corresponding protein targets into <span class="highlight_number">65</span> chemical subtypes and <span class="highlight_number">9</span> protein subgroups, respectively. -->
+					<button class="text-button">More details>></button>
+					<span>Protein targets were categorized from ChEMBL (<a href="https://pubmed.ncbi.nlm.nih.gov/30398643/" target="_blank">Mendez, <em>et al.</em>, 2019</a>): 
+						(<em>i</em>) <span class="highlight">Enzyme; </span>
+						(<em>ii</em>) <span class="highlight">Epigenetic regulator; </span>
+						(<em>iii</em>) <span class="highlight">Ion channel; </span>
+						(<em>iv</em>) <span class="highlight">Membrane receptor; </span>
+						<em>(v</em>) <span class="highlight">Other cytosolic protein; </span>
+						(<em>vi</em>) <span class="highlight">Secreted protein; </span>
+						(<em>vii</em>) <span class="highlight">Transcription factor; </span>
+						(<em>viii</em>) <span class="highlight">Transporter</span> and
+						(<em>ix</em>) <span class="highlight">Other. </span>
+						Herbal Ingredients catalog from ClassyFire (<a href="https://pubmed.ncbi.nlm.nih.gov/27867422/" target="_blank">Djoumbou Feunang, <em>et al.</em>, 2016</a>).
+						<br>
+						<span style="display:block;text-indent:2em;margin-top:10px;">Also, we carefully annotated the data, especially for human data, using the knowledge from <span class="highlight_number">110</span> public resources that cover <span class="highlight_number">14</span> aspects: 
+							(<em>i</em>) <span class="highlight">Genetic variation & mutation; </span>
+							(<em>ii</em>) <span class="highlight">Disease-associated information; </span>
+							(<em>iii</em>) <span class="highlight">Protein-protein interaction; </span>
+							(<em>iv</em>) <span class="highlight">Protein functional annotation; </span>
+							(<em>v</em>) <span class="highlight">Post-translational modification; </span>
+							(<em>vi</em>) <span class="highlight">Target-herb relation; </span>
+							(<em>vii</em>) <span class="highlight">Protein structural annotation; </span>
+							(<em>viii</em>) <span class="highlight">Subcellular localization; </span>
+							(<em>ix</em>) <span class="highlight">Biological pathway; </span>
+							(<em>x</em>) <span class="highlight">Protein expression/Proteomics; </span>
+							(<em>xi</em>) <span class="highlight">Domain annotation; </span>
+							(<em>xii</em>) <span class="highlight">Physicochemical property; </span>
+							(<em>xiii</em>) <span class="highlight">mRNA expression; </span>
+							(<em>xiv</em>) <span class="highlight">DNA & RNA element. </span>
+							All datasets and annotations are free for use.
+						</span>
+					</span>
+				</p>
+			</div>
+			<div id="simple-search">
+				<h3 class="section">&#8251; Search 
+					<a href="Userguide.php#search" target="_blank">
+						<img src="images/help.svg" alt="">
+					</a>
+				</h3>
+				<form action="Result.php?type=simple" method="POST" role="form" id="search-form">
+					<div class="form-body form-group">
+						<select name="tag" class="form-control" required>
+							<option value="Any">Any Field</option>
+							<option value="id">PTH ID</option>
+							<option value="UniProt">UniProt</option>
+							<option value="Protein_Name">Protein Name</option>
+							<option value="Gene_Name" selected>Gene Name</option>
+							<option value="Ingredient">Ingredient</option>
+							<option value="PubChem">PubChem</option>
+							<option value="Species">Species</option>
+						</select>
+						<input type="text" class="form-control" name="search-input" value="PDGFRA" required>
+					</div>
+					<div class="form-footer">
+						<button type="button" class="btn btn-primary example">Example</button>
+						<button type="button" class="btn btn-primary clear">Clear</button>
+						<button type="submit" class="btn btn-primary search">Search</button>
+					</div>
+				</form>
+			</div>
+			<div id="statistics">
+				<h3 class="section">&#8251; Statistics </h3>
+				<div id="pie-chart">
+					<div id="ITIs"></div>
+					<div id="dataVolume"></div>
+				</div>
+				<!-- <div id="pthData">
+					<div id="supercls"></div>
+					<div id="chemical"></div>
+				</div> -->
+				<div id="annoVolume"></div>
+			</div>
+		</div>
+		<div id="right">
+			<div id="Example">
+				<h3 class="section">&#8251; Example </h3>
+				<p>&nbsp;&nbsp;<a href='View.php?id=PTHT0015048' target='_blank'>PDGFRA (<em>Homo sapiens</em>)</a></p>
+				<div id='Structure'>
+					<div id='pdb'>
+						<div class="loading"></div>
+					</div>
+					<div class='pdbspan'>
+						<span>PDB: <a href='https://www.rcsb.org/structure/1GQ5' target='_blank' >1GQ5</a></span>
+						<button id='Refresh' class='Other'>Refresh</button>
+					</div>
+					<div id="anno">
+						<button class="btn btn-default"><a href='Annotation.php?id=PTHT0015048#Protein-Structural-Annotation_PDB' target='_blank'>Intergrated Annotation</a></button>
+						<ul>
+							<li><a href='Annotation.php?id=PTHT0015048#Biological-Pathway' target="_blank">Biological pathway</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Physicochemical-Property' target="_blank">Physicochemical property</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Protein-Expression--L-Proteomics-R-' target="_blank">Protein expression/Proteomics</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Protein-Function' target="_blank">Protein functional annotation</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Protein-Structural-Annotation' target="_blank">Protein structural annotation</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#PTM' target="_blank">Post-translational modifications</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Subcellular-Localization' target="_blank">Subcellular localization</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Target-Disease' target="_blank">Disease-associated information</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Target-Herb' target="_blank">Target-herb relation</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#DNA--A--RNA-Element' target="_blank">DNA & RNA element</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#PPI' target="_blank">Protein-protein interaction</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#mRNA-Expression' target="_blank">mRNA expression</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Variation--A--Mutation' target="_blank">Genetic variation & mutation</a></li>
+							<li><a href='Annotation.php?id=PTHT0015048#Domain-Annotation' target="_blank">Domain annotation</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function keep2demical(num){
+				return ~~(num * 100) / 100;
+			}
+			function sizeFormatter(size){
+				if(size < 1024){
+					return keep2demical(size)+" B";
+				}else{
+					KBX = size / 1024;
+					if(KBX < 1024){
+						return keep2demical(KBX)+' KB';
+					}else{
+						MBX = KBX / 1024;
+						if (MBX < 1024){
+							return keep2demical(MBX)+' MB';
+						}else{
+							GBX = MBX / 1024;
+							return keep2demical(GBX)+' GB';
+						}
+					}
+				}
+			}
+			$.pdb=function($pdb,$suffix){ // http://3dmol.csb.pitt.edu/doc/tutorial-embeddable.html
+				var element=$("#pdb"+$suffix);
+				var config={backgroundColor:'#E6FFFF'};
+				let viewer = $3Dmol.createViewer( element, config );
+				$3Dmol.download("pdb:1GQ5",viewer,{onemol: true, format: "pdb"},function(){
+					viewer.setStyle({},{cartoon:{"color":"spectrum"}});
+					viewer.zoomTo();
+					viewer.render();
+				});
+				// Rotate
+				var stop="F";
+				var rotate=setInterval(function(){viewer.rotate(1);},50);// set initial state: rotate
+				element.on("mouseover",function(){clearInterval(rotate);});// stop rotate
+				element.on("mousedown",function(){clearInterval(rotate); stop="T"; });// stop rotate
+				element.on("mouseout",function(){// if no action after mouseover, continue to rotate after mouseout
+					if(stop=="F"){ rotate=setInterval(function(){viewer.rotate(2);},50); }
+				});
+				// Refresh
+				$("#Refresh"+$suffix).on("click",function(){
+					stop="F";
+					viewer.zoomTo();
+					viewer.render();
+					clearInterval(rotate);
+					rotate=setInterval(function(){viewer.rotate(1);},50);
+				});
+			};
+			$.bar=function($id,$data,$title){
+				var myChart = echarts.init(document.getElementById($id));
+				window.addEventListener('resize', function () {
+					myChart.resize();
+				});
+				option = {
+					title:{
+						show:true,
+						text:$title,
+						left:"center",
+						top:"top",
+						textStyle:{
+							fontSize:18,
+							fontWeight:"bold"
+						}
+					},
+					// echarts download
+					// toolbox: {
+					// 	show: true,
+					// 	feature: {
+					// 		saveAsImage: { 
+					// 			show: true,// 保存图表
+					// 			excludeComponents: ['toolbox'],
+					// 			pixelRatio: 2 
+					// 		}
+					// 	}
+					// },
+					// echarts download
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: 'shadow'
+						}
+					},
+					grid: {
+						left: '0%',
+						right: '0%',
+						bottom: '0%',
+						top:'15%',
+						containLabel: true
+					},
+					calculable: true,
+					xAxis:{
+						data:["dbPTH", "BATMAN-TCM 2.0", "HIT 2.0", "HERB", "TCMSP"],
+						inverse:false,
+						axisLabel:{fontWeight:"bold",interval: 0}
+					},
+					yAxis:{
+						axisLabel:{fontWeight:"bold"}
+					},
+					series:[
+						{name:"ITIs",data:$data[1],type:"bar",itemStyle:{color:"rgb(145,204,117)"},label:{show:true,position:"top"}},
+						{name:"Targets",data:$data[0],type:"bar",itemStyle:{color:"rgb(230,167,90)"},label:{show:true,position:"top"}},
+					],
+					animationDuration:6000
+				};
+				myChart.clear();
+				myChart.setOption(option);
+			};
+			$.pie=function(
+				$id,
+				$data,
+				$title,
+				$roseType=false,
+				$fontStyle="normal",
+				$colorls,
+				$tooltipFormatter="{b}<br>Count: {c} ({d}%)",
+				$labelFormatter=function(params){
+					return "{desc|"+params.name+"}";
+				}
+			){
+				var myChart = echarts.init(document.getElementById($id));
+				window.addEventListener('resize', function () {
+					myChart.resize();
+				});
+				option = {
+					title:{
+						show:true,
+						text:$title,
+						left:"center",
+						top:"top",
+						textStyle:{
+							fontSize:18
+						}
+					},
+					// echarts download
+					// toolbox: {
+					// 	show: true,
+					// 	feature: {
+					// 		saveAsImage: { 
+					// 			show: true,// 保存图表
+					// 			excludeComponents: ['toolbox'],
+					// 			pixelRatio: 2 
+					// 		}
+					// 	}
+					// },
+					// echarts download
+					tooltip: {
+						trigger: "item",
+						formatter:$tooltipFormatter,
+						confine: true
+					},
+					series: [{
+						type: 'pie',
+						roseType:$roseType,
+						data: $data,
+						avoidLabelOverlap:true,
+						minAngle:5,
+						minShowLabelAngle:10,
+						top:"3%",
+						itemStyle:{
+							color:function(colors){
+								var colorls = $colorls;
+								return colorls[colors.dataIndex];
+							}
+						},
+						label:{
+							formatter:$labelFormatter,
+							rich:{
+								desc:{
+									fontStyle:$fontStyle,
+									fontWeight:"bold"
+								}
+							}
+						},
+						animationDuration: 6000
+					}],
+				};
+				myChart.clear();
+				myChart.setOption(option);
+			};
+			$(function(){
+				$.pdb("","");
+				var ITIs = [
+					{name: "Homo sapiens", value: 61464},
+					{name: "Mus musculus", value: 34126},
+					{name: "Rattus norvegicus", value: 31767},
+					{name: "Oryctolagus cuniculus", value: 21687},
+					{name: "Saccharomyces cerevisiae", value: 12483},
+					{name: "Caenorhabditis elegans", value: 2678},
+					{name: "Drosophila melanogaster", value: 1761},
+					{name: "Plasmodium falciparum", value: 1},
+				];
+				var supercls = [
+					{name: "Vertebrate", value: 294},
+					{name: "Metazoa", value: 199},
+					{name: "Plant", value: 122},
+					{name: "Fungi", value: 412},
+					{name: "Protist", value: 233},
+				];
+				// protein targets / ITIs
+				var data = [[27981, 9927, 2208, 1205, 3339], [165967, 17068, 10031, 4815, 3970]];
+				// var data = [[27981, 2232, 9927, 2208, 3339], [165967, 15295, 17068, 10031, 3970]];
+				var chemical = [
+					{name: "Flavonoids", value: 380},
+					{name: "Small peptides", value: 262},
+					{name: "Triterpenoids", value: 198},
+					{name: "Tyrosine alkaloids", value: 181},
+					{name: "Fatty acyls", value: 179},
+					{name: "Steroids", value: 169},
+					{name: "Tryptophan alkaloids", value: 164},
+					{name: "Other subtypes", value: 3388},
+				];
+				var annoVolume = [
+					{name: "mRNA expression", value: Math.log(11757746425).toFixed(2)},
+					{name: "Genetic variation and mutation", value: Math.log(7523236511).toFixed(2)},
+					{name: "Disease-associated information", value: Math.log(6276112789).toFixed(2)},
+					{name: "Target-herb relation", value: Math.log(3400200775).toFixed(2)},
+					{name: "DNA & RNA element", value: Math.log(3251422560).toFixed(2)},
+					{name: "Protein-protein interaction", value: Math.log(1671754128).toFixed(2)},
+					{name: "Post-translational modification", value: Math.log(755298981).toFixed(2)},
+					{name: "Subcellular localization", value: Math.log(622717472).toFixed(2)},
+					{name: "Protein functional annotation", value: Math.log(604512632).toFixed(2)},
+					{name: "Biological pathway", value: Math.log(150404130).toFixed(2)},
+					{name: "Domain annotation", value: Math.log(66248049).toFixed(2)},
+					{name: "Protein expression/Proteomics", value: Math.log(39619156).toFixed(2)},
+					{name: "Protein structural annotation", value: Math.log(8361373).toFixed(2)},
+					{name: "Physicochemical property", value: Math.log(1359201).toFixed(2)},
+				];
+				function echart(){
+					$.pie("ITIs",ITIs,"Species distribution of ITIs",false,"italic",
+					[
+  "rgb(244,91,105)",     // 鲜艳珊瑚红
+  "rgb(255,153,51)",     // 活力橙色
+  "rgb(255,199,0)",      // 明亮金黄
+  "rgb(190,220,130)",    // 鲜嫩苹果绿
+  "rgb(169,209,142)",    // ★ 你的主色
+  "rgb(145,200,165)",    // 柔和绿色（与主色接近但偏冷）
+  "rgb(180,215,215)",    // 淡青色
+  "rgb(210,230,230)"     // 最浅淡蓝绿，尾部收尾
+]
+					);
+					$.bar("dataVolume",data,"Data Statistics");
+					$.pie("annoVolume",annoVolume,"Annotation Volume","area","normal",
+						[
+							"rgb(184,70,116)",
+							"rgb(197,82,104)",
+							"rgb(211,93,90)",
+							"rgb(225,105,73)",
+							"rgb(230,125,72)",
+							"rgb(234,148,79)",
+							"rgb(230,167,90)",
+							"rgb(220,180,97)",
+							"rgb(190,187,97)",
+							"rgb(155,188,119)",
+							"rgb(146,189,126)",
+							"rgb(146,189,110)",
+							"rgb(146,180,100)",
+							"rgb(146,170,100)"
+						],function(params){
+							var value = Math.exp(params.value).toFixed(2);
+							return params.name+'<br>Data Volume: '+sizeFormatter(value);
+						},function(params){
+							var value = Math.exp(params.value).toFixed(2);
+							return "{desc|"+params.name+'\n'+sizeFormatter(value)+"}";
+						}
+					);
+					return echart;
+				}
+				setInterval(echart(), 15000);
+			});
+			$("#Overview button").on("click",function(){
+				$(this).next().toggle();
+			});
+			$(".form-footer button.example").on("click",function(){
+				$(".form-body select option[value='Gene_Name']").prop("selected",true);
+				$(".form-body input").prop("value","PDGFRA");
+			});
+			$(".form-footer button.clear").on("click",function(){
+				$(".form-body select option[value='Gene_Name']").prop("selected",true);
+				$(".form-body input").prop("value","");
+			});
+		</script>
+	</div>
+	<div id="article"></div>
+	<!-- <html>
+	<body>
+		<div id=“container”> -->
+			<div id="footer">
+				<div id="foot">
+					<p>Copyright 2023, Beijing University of Chinese Medicine and the CUCKOO Workgroup, China. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			// custom alert
+			$("#info_notice").on({
+				"mouseenter": function() {
+					$("#info_notice").stop(true, true);
+				},
+				"mouseleave": function() {
+					$("#info_notice").stop().fadeOut(500);
+				}
+			});
+			function custom_alert(info, ifdelay=false) {
+				if( ifdelay ){
+					$("#info_notice").html(info).stop().delay(800).fadeIn(300).delay(3000).fadeOut(500);
+				} else {
+					$("#info_notice").html(info).stop().fadeIn(300).delay(3000).fadeOut(500);
+				}
+			}
+		</script>
+				<script>
+			$(function(){
+				var width = Math.floor($("#sidebar").width()-20);
+				var count = 96269;
+				count = count.toString().padStart(7,'0');
+				var tmp = "";
+				for(var num of count){
+					tmp += "<img src=images/"+num+".gif>";
+				}
+				var date = new Date().toString().split(" ");
+				// Sun Jun 25 2023 22:01:31 GMT+0800 (中国标准时间)
+				// Jun 25 2023
+				$("#sidebar").append(`
+					<div id="ipcount">
+						<script type='text\/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=`+width+`&t=tt&d=HpjIcUB7wCnuT69JUw_L-3RGrc0tbxIOJvpkPss1OUg&co=a9d18e&cmn=3a76cc&cmo=53d8ff'><\/script>
+					</div>
+					<div id="webcount">
+						<div id="webcountImg">`+tmp+`</div>
+						<div id="webcountDate">Last Update: `+date[1]+". "+date[2]+", "+date[3]+`</div>
+					</div>
+				`);
+			});
+		</script>
+		<!-- <script type="text/javascript" color="0,0,255" opacity='0.5' count="200" src="js\canvas-nest.js-master\dist\canvas-nest.js"></script> -->
+	</body>
+</html>

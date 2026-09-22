@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-select.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script type="text/javascript" src="/static/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap-select.js"></script>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style-responsive.css">
+
+
+
+    <!-- Latest compiled and minified Locales -->
+    <script type="text/javascript" src="/static/bootstrap-table/locale/bootstrap-table-en-US.min.js"></script>
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?443e95e883867548908aead2905ff90b";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?10389d4053bd7b9d7fe9689bc240bba1";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+    </script>
+</head>
+<body>
+
+
+    <header class="container-fluid header dark-bg">
+    <div class="container">
+        <div class="toggle-nav">
+            <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><img src="/static/images/logo.png" height="36px;"></div>
+        </div>
+
+        <!--logo start-->
+        <a href="/" class="logo">
+            SymMap
+            <span style="font-size: medium; color: #FFFFFF; margin-top: 18px;">v2</span>
+            <!--<span class="lite">SymMap</span>-->
+        </a>
+
+        <!--logo end-->
+
+        <!--sidebar start-->
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu">
+                <li><a class="" href="/"><span>Home</span></a></li>
+                <li><a class="" href="/browse/"><span>Browse</span></a></li>
+                <li><a class="" href="/search/"><span>Search</span></a></li>
+                <li><a class="" href="/download/"><span>Download</span></a></li>
+                <li><a class="" href="/help/"><span>Help</span></a></li>
+                <li><a class="" href="/contact/"><span>Contact</span></a></li>
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+        <!--sidebar end-->
+    </div>
+</header>
+
+
+<div class="container">
+    
+<style>
+    b {
+        color: #0f0f0f;
+    }
+</style>
+    <!--main content start-->
+    <section class="main-content download">
+        <div class="row">
+            <div class="panel">
+                <div class="panel-body">
+
+                    <h3>Download files</h3>
+                    <h3>Version 2.0</h3>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>SymMap component</th>
+                            <th>SymMap statistics</th>
+                            <th>Data source of SymMap</th>
+                            <th>Download description information<sup>1</sup></th>
+                            <th>Download search iterms<sup>2</sup></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Herb</td>
+                            <td>698</td>
+                            <td>Chinese pharmacopoeia(2015 and 2020), Chinese Materia Medica Dictionary(2006),<br> Chinese Materia Medica(1999), National Compilation of Chinese Herbal Medicine(1996)</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMHB%20file.xlsx" download="SymMap v2.0, SMHB file.xlsx">SMHB file (98 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMHB%20key%20file.xlsx" download="SymMap v2.0, SMHB key file.xlsx">SMHB key file (65 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>TCM symptom</td>
+                            <td>2285</td>
+                            <td>Chinese pharmacopoeia (2015 and 2020)</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMTS%20file.xlsx" download="SymMap v2.0, SMTS file.xlsx">SMTS file (221 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMTS%20key%20file.xlsx" download="SymMap v2.0, SMTS key file.xlsx">SMTS key file (101 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>MM symptom</td>
+                            <td>1148</td>
+                            <td>Manual curation to the UMLS, MeSH, CSSO and Symptom Ontology databases</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMMS%20file.xlsx" download="SymMap v2.0, SMMS file.xlsx">SMMS file (137 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMMS%20key%20file.xlsx" download="SymMap v2.0, SMMS key file.xlsx">SMMS key file (294 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ingredient</td>
+                            <td>26035</td>
+                            <td>Integration of TCMID, TCMSP, TCM-ID, HIT、HERB and DCABM-TCM databases</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMIT%20file.xlsx" download="SymMap v2.0, SMIT file.xlsx">SMIT file (1,846 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMIT%20key%20file.xlsx" download="SymMap v2.0, SMIT key file.xlsx">SMIT key file (3,601 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Target</td>
+                            <td>20965</td>
+                            <td>Integration of HIT, TCMSP, HPO, DrugBank, NCBI and HERB databases</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMTT%20file.xlsx" download="SymMap v2.0, SMTT file.xlsx">SMTT file (1,639 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMTT%20key%20file.xlsx" download="SymMap v2.0, SMTT key file.xlsx">SMTT key file (1,247 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Disease</td>
+                            <td>14086</td>
+                            <td>Integration of OMIM, MeSH, Orphanet, MalaCards and UMLS databases</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMDE%20file.xlsx" download="SymMap v2.0, SMDE file.xlsx">SMDE file (2,261 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMDE%20key%20file.xlsx" download="SymMap v2.0, SMDE key file.xlsx">SMDE key file (719 KB)</a></td>
+                        </tr>
+                        <tr>
+                            <td>Syndrome</td>
+                            <td>233</td>
+                            <td>Chinese pharmacopoeia(2015 and 2020)</td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMSY%20file.xlsx" download="SymMap v2.0, SMSY file.xlsx">SMSY file (31 KB)</a></td>
+                            <td><a href="/static/download/V2.0/SymMap%20v2.0%2C%20SMSY%20key%20file.xlsx" download="SymMap v2.0, SMSY key file.xlsx">SMSY key file (15 KB)</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <ul class="files">
+                        <li><sup>1</sup>Files containing description information of each component in SymMap.</li>
+                        <li><sup>2</sup>Files containing the search keys used in the search page of SymMap.</li>
+                    </ul>
+                    <div class="panel-heading"  style="padding-left: 0 !important;">
+                        <h4 class="panel-title">
+                            <a href="#Version1.0" data-toggle="collapse" data-parent="#accordion"><span>Datasets of Symmap V1.0</span></a>
+                        </h4>
+                    </div>
+                     <div class="panel-collapse collapse in" id="Version1.0">
+                        <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>SymMap component</th>
+                            <th>SymMap statistics</th>
+                            <th>Data source of SymMap</th>
+                            <th>Download description information<sup>1</sup></th>
+                            <th>Download search iterms<sup>2</sup></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Herb</td>
+                            <td>499</td>
+                            <td>Chinese pharmacopoeia (2015)</td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMHB%20file.xlsx" download="SymMap v1.0, SMHB file.xlsx">SMHB file (73 KB)</a></td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMHB%20key%20file.xlsx" download="SymMap v1.0, SMHB key file.xlsx">SMHB key file (60 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>TCM symptom</td>
+                            <td>1,717</td>
+                            <td>Chinese pharmacopoeia (2015)</td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMTS%20file.xlsx" download="SymMap v1.0, SMTS file.xlsx">SMTS file (174 KB)</a></td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMTS%20key%20file.xlsx" download="SymMap v1.0, SMTS key file.xlsx">SMTS key file (89 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>MM symptom</td>
+                            <td>961</td>
+                            <td>Manual curation to the UMLS database</td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMMS%20file.xlsx" download="SymMap v1.0, SMMS file.xlsx">SMMS file (113 KB)</a></td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMMS%20key%20file.xlsx" download="SymMap v1.0, SMMS key file.xlsx">SMMS key file (345 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ingredient</td>
+                            <td>19,595</td>
+                            <td>Integration of TCMID, TCMSP and TCM-ID database</td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMIT%20file.xlsx" download="SymMap v1.0, SMIT file.xlsx">SMIT file (1,930 KB)</a></td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMIT%20key%20file.xlsx" download="SymMap v1.0, SMIT key file.xlsx">SMIT key file (3,145 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Target</td>
+                            <td>4,302</td>
+                            <td>Integration of HIT, TCMSP, HPO, DrugBank and NCBI database</td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMTT%20file.xlsx" download="SymMap v1.0, SMTT file.xlsx">SMTT file (612 KB)</a></td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMTT%20key%20file.xlsx" download="SymMap v1.0, SMTT key file.xlsx">SMTT key file (623 KB)</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Disease</td>
+                            <td>5,235</td>
+                            <td>Integration of OMIM, MeSH and Orphanet database</td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMDE%20file.xlsx" download="SymMap v1.0, SMDE file.xlsx">SMDE file (416 KB)</a></td>
+                            <td><a href="/static/download/SymMap%20v1.0%2C%20SMDE%20key%20file.xlsx" download="SymMap v1.0, SMDE key file.xlsx">SMDE key file (573 KB)</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+
+                    <h3 id="file">File formats</h3>
+
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a href="#herb" data-toggle="tab">Herb</a></li>
+                        <li><a href="#syn" data-toggle="tab">Syndrome</a></li>
+                        <li><a href="#tcm" data-toggle="tab">TCM symptom</a></li>
+                        <li><a href="#mm" data-toggle="tab">MM symptom</a></li>
+                        <li><a href="#ing" data-toggle="tab">Ingredient</a></li>
+                        <li><a href="#tar" data-toggle="tab">Target</a></li>
+                        <li><a href="#dis" data-toggle="tab">Disease</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+
+                        <div class="tab-pane fade in active" id="herb">
+
+                            <p>The SMHB file in tabular format includes all descriptive information about 499 herbs recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Herb_id：the primary ID of each herb recorded in SymMap.</li>
+                                <li>Chinese_name：the herb name in Chinese.</li>
+                                <li>Pinyin_name：the herb name in Pinyin.</li>
+                                <li>Latin_name：the Latin name for the species of the herbs.</li>
+                                <li>English_name: the herb name in English.</li>
+                                <li>Properties_Chinese: the property description of the herb in Chinese using the terms from traditional Chinese medicine.</li>
+                                <li>Properties_English: the property description of the herb in English using the terms from traditional Chinese medicine.</li>
+                                <li>Meridians_Chinese: the meridian description of the herb in Chinese using the terms from traditional Chinese medicine.</li>
+                                <li>Meridians_English: the meridian description of the herb in English using the terms from traditional Chinese medicine.</li>
+                                <li>Function: the function description of the herb using the terms from traditional Chinese medicine.</li>
+                                <li>Class_Chinese: the classification of the herb in Chinese using the terms from TCM.</li>
+                                <li>Class_English: the classification of the herb in English using the terms from TCM.</li>
+                                <li>UsePart: the part of the herb plants to be used in medicine.</li>
+                                <li>TCMID_id: the cross reference of each herb in the <a href="http://www.megabionet.org/tcmid/" target="_blank">TCMID</a> database.</li>
+                                <li>TCM-ID_id: the cross reference of each herb in the <a href=" http://bidd.nus.edu.sg/group/TCMsite/" target="_blank">TCM-ID</a> database.</li>
+                                <li>TCMSP_id: the cross reference of each herb in the <a href="http://lsp.nwu.edu.cn/index.php" target="_blank">TCMSP</a> database.</li>
+                                <li>HERBDB_id: the cross reference of each herb in the <a href="http://herb.ac.cn/" target="_blank">HERB</a> database.</li>
+                                <li>Link_herb_id: the term id to which the discarded term is associated</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap</li>
+                            </ol>
+                            <p>The SMHB key file in tabular format includes all the search terms about 499 herbs recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Herb_id：the primary ID of each herb recorded in SymMap.</li>
+                                <li>Field_name:  the search field for the herb table, including the Chinese_name, pinyin_name, Latin_name and the English_name.</li>
+                                <li>Field_context：the search terms for all herbs recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                        <div class="tab-pane fade" id="syn">
+                            <p>The SMSY file in tabular format includes all descriptive information about 233 Syndrome recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Syndrome_id: the primary ID of each TCM symptom recorded in SymMap.</li>
+                                <li>Syndrome_name: the name of Syndrome in Chinese.</li>
+                                <li>Syndrome_English: the name of Syndrome in English.</li>
+                                <li>Syndrome_Pinyin: the name of Syndrome in Pinyin.</li>
+                                <li>Syndrome_definition: the definition of Syndrome using the terms from traditional Chinese medicine.</li>
+                                <li>Type: types of syndrome terminologies.</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap.</li>
+                            </ol>
+                            <p>The SMYS key file in tabular format includes all the search terms about 1,717 TCM symptoms recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Syndrome_id: the primary ID of each Syndrome recorded in SymMap.</li>
+                                <li>Field_name:  the search field of the Syndrome table, including the Syndrome_name, Syndrome_PinYin, Syndrome_English</li>
+                                <li>Field_context：the search terms of all Syndrome recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                        <div class="tab-pane fade" id="tcm">
+                            <p>The SMTS file in tabular format includes all descriptive information about 1,717 TCM symptoms recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>TCM_symptom_id: the primary ID of each TCM symptom recorded in SymMap.</li>
+                                <li>TCM_symptom_name: the name of TCM symptoms in Chinese.</li>
+                                <li>Symptom_pinyin_name: the name of TCM symptoms in Pinyin.</li>
+                                <li>Symptom_definition: the definition of TCM symptoms using the terms from traditional Chinese medicine.</li>
+                                <li>Symptom_locus: the locus of TCM symptoms using the terms from traditional Chinese medicine.</li>
+                                <li>Symptom_property: the property of TCM symptoms using the terms from traditional Chinese medicine.</li>
+                                <li>Type: type of symptom terminologies, including ontological and synonymous terms.</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap.</li>
+                            </ol>
+                            <p>The SMTS key file in tabular format includes all the search terms about 1,717 TCM symptoms recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>TCM_symptom_id: the primary ID of each TCM symptom recorded in SymMap.</li>
+                                <li>Field_name:  the search field of the TCM symptom table, including the TCM_symptom_name and the symptom_pinyin_name.</li>
+                                <li>Field_context：the search terms of all TCM symptoms recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                        <div class="tab-pane fade" id="mm">
+                            <p>The SMMS file in tabular format includes all descriptive information about 961 MM symptoms recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>MM_symptom_id：the primary ID of each MM symptom recorded in SymMap.</li>
+                                <li>MM_symptom_name: the name of each MM symptom.</li>
+                                <li>MM_symptom_definition:  the definition of each MM symptom.</li>
+                                <li>MeSH_tree_numbers: the hierarchical classification of each MM symptom in tree numbers from the MeSH database.</li>
+                                <li>UMLS_id: the cross reference of each MM symptom in the <a href="https://www.nlm.nih.gov/research/umls/" target="_blank">UMLS</a> database.</li>
+                                <li>OMIM_id: the cross reference of each MM symptom in the <a href="https://www.omim.org/" target="_blank">OMIM</a> database.</li>
+                                <li>ICD10CM_id: the cross reference of each MM symptom in the <a href="https://www.cdc.gov/nchs/icd/icd10cm.htm" target="_blank">ICD</a> (tenth clinical modification) database.</li>
+                                <li>HPO_id: the cross reference of each MM symptom in the <a href="https://human-phenotype-ontology.github.io/" target="_blank">HPO</a> database.</li>
+                                <li>MeSH_id: the cross reference of each MM symptom in the <a href="https://www.nlm.nih.gov/mesh/" target="_blank">MeSH</a> database.</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap.</li>
+                            </ol>
+                            <p>The SMMS key file in tabular format includes all the search terms about 961 MM symptoms recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>MM_symptom_id：the primary ID of each MM symptom recorded in SymMap.</li>
+                                <li>Field_name: the search field of the MM symptom table, including the MM_symptom_name, UMLS_id and the alias.</li>
+                                <li>Field_context：the search terms of all MM symptoms recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                        <div class="tab-pane fade" id="ing">
+                            <p>The SMIT file in tabular format includes all descriptive information about 19,595 ingredients recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Ingredient_id：the primary ID of each ingredient recorded in SymMap.</li>
+                                <li>Molecule_name：the common name of each ingredient. Generally, we selected the first name appeared in the PubChem database.</li>
+                                <li>Molecule_formula: the molecule formula for each ingredient.</li>
+                                <li>Molecule_weight: the molecule weight for each ingredient.</li>
+                                <li>OB_score：the oral bioavailability score for each ingredient.</li>
+                                <li>PubChem_id: the cross reference of each ingredient in the <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">PubChem</a> database.</li>
+                                <li>CAS_id: the cross reference of each ingredient in the <a href="http://support.cas.org/content/cas-databases" target="_blank">CAS</a> database.</li>
+                                <li>TCMID_id: the cross reference of each ingredient in the <a href="http://www.megabionet.org/tcmid/" target="_blank">TCMID</a> database.</li>
+                                <li>TCM-ID_id: the cross reference of each ingredient in the <a href="http://bidd.nus.edu.sg/group/TCMsite/" target="_blank">TCM-ID</a> database.</li>
+                                <li>TCMSP_id: the cross reference of each ingredient in the <a href="http://lsp.nwu.edu.cn/index.php" target="_blank">TCMSP</a> database.</li>
+                                <li>Type: types of association between herbs and the ingredient, including QC, blood, metabolic and other ingredients.</li>
+                                <li>Link_ingredient_id: the term id to which the discarded term is associated</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap</li>
+                            </ol>
+                            <p>The SMIT key file in tabular format includes all the search terms about 19,595 ingredients recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Ingredient_id：the primary ID of each ingredient recorded in SymMap.</li>
+                                <li>Field_name: the search field of the ingredient table, including the molecule_name, alias and the CAS_id.</li>
+                                <li>Field_context：the search terms of all ingredient recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                        <div class="tab-pane fade" id="tar">
+                            <p>The SMTT file in tabular format includes all descriptive information about 4,302 targets recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Target_id：the primary ID of each target recorded in SymMap.</li>
+                                <li>Gene_symbol: the gene symbol of each target.</li>
+                                <li>Chromosome: the chromosome number in which each target located.</li>
+                                <li>Gene_name: the gene name of each target.</li>
+                                <li>Protein_name: the protein name of each target.</li>
+                                <li>HIT_id: the cross reference of each target in the <a href="http://lifecenter.sgst.cn/hit/" target="_blank">HIT</a> database.</li>
+                                <li>TCMSP_id: the cross reference of each target in the <a href="http://lsp.nwu.edu.cn/index.php" target="_blank">TCMSP</a> database.</li>
+                                <li>Ensembl_id: the cross reference of each target in the <a href="https://www.ensembl.org/" target="_blank">Ensembl</a> database.</li>
+                                <li>NCBI_id: the cross reference of each target in the <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> database.</li>
+                                <li>HGNC_id: the cross reference of each target in the <a href="https://www.genenames.org/" target="_blank">HGNC</a> database.</li>
+                                <li>Vega_id: the cross reference of each target in the <a href="http://vega.archive.ensembl.org/index.html" target="_blank">Vega</a> database.</li>
+                                <li>GenBank_Gene_id: the cross reference of each target in the <a href="https://www.ncbi.nlm.nih.gov/nuccore/" target="_blank">GenBank_Gene</a> database.</li>
+                                <li>GenBank_Protein_id: the cross reference of each target in the <a href="https://www.ncbi.nlm.nih.gov/protein/" target="_blank">GenBank_Protein</a> database.</li>
+                                <li>Uniprot_id: the cross reference of each target in the <a href="http://www.uniprot.org/" target="_blank">Uniprot</a> database.</li>
+                                <li>PDB_id: the cross reference of each target in the <a href="https://www.rcsb.org/" target="_blank">PDB</a> database.</li>
+                                <li>OMIM_id: the cross reference of each target in the <a href="https://www.omim.org/" target="_blank">OMIM</a> database.</li>
+                                <li>miRBase_id: the cross reference of each target in the <a href="http://www.mirbase.org/" target="_blank">miRBase</a> database.</li>
+                                <li>IMGT/GENE-DB_id: the cross reference of each target in the <a href="https://www.imgt.org/genedb/" target="_blank">IMGT/GENE-DB</a> database.</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap</li>
+                            </ol>
+                            <p>The SMTT key file in tabular format includes all the search terms about 4,302 targets recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Target_id ：the primary ID of each target recorded in SymMap.</li>
+                                <li>Field_name: the search field of the target table, including the gene_symbol, gene_name, protein_name, alias and the Ensembl_id.</li>
+                                <li>Field_context：the search terms of all target recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                        <div class="tab-pane fade" id="dis">
+                            <p>The SMDE file in tabular format includes all descriptive information about 5,235 diseases recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Disease_id: the primary ID of each disease recorded in SymMap.</li>
+                                <li>Disease_name: the name of each disease.</li>
+                                <li>Disease_definition: the definition for some diseases.</li>
+                                <li>MeSH_id: the cross reference of each disease in the <a href="https://www.nlm.nih.gov/mesh/" target="_blank">MeSH</a> database.</li>
+                                <li>OMIM_id: the cross reference of each disease in the <a href="https://www.omim.org/" target="_blank">OMIM</a> database.</li>
+                                <li>Orphanet_id: the cross reference of each disease in the <a href="https://www.orpha.net/" target="_blank">Orphanet</a> database.</li>
+                                <li>ICD10CM_id: the cross reference of each disease in the <a href="https://www.cdc.gov/nchs/icd/icd10cm.htm" target="_blank">ICD</a> (tenth clinical modification) database.</li>
+                                <li>UMLS_id: the cross reference of each disease in the <a href="https://www.nlm.nih.gov/research/umls/" target="_blank">UMLS</a> database.</li>
+                                <li>MedDRA_id: the cross reference of each disease in the <a href="https://www.meddra.org/" target="_blank">MedDRA</a> database.</li>
+                                <li>Suppress: the term has been discarded in new version of SymMap</li>
+                            </ol>
+                            <p>The SMDE key file in tabular format includes all the search terms about 5,235 diseases recorded in SymMap. The details of each column are as follows:</p>
+                            <ol>
+                                <li>Disease_id: the primary ID of each disease recorded in SymMap.</li>
+                                <li>Field_name: the search field of the disease table, including the disease_name and the alias.</li>
+                                <li>Field_context：the search terms of all disease recorded in SymMap.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--main content end-->
+
+
+</div>
+
+
+
+    <footer class="footer">
+    <div class="text-center">
+        Copyright © 2022, <a target="_blank" href="http://english.bucm.edu.cn/" style="color: #337ab7">Beijing University of Chinese Medicine;</a><br>
+        <a target="_blank" href="http://www.ict.ac.cn/" style="color: #337ab7">Institute of Computing Technology, Chinese Academy of Sciences;</a><br>
+        <a target="_blank" href="http://www.bjtu.edu.cn" style="color: #337ab7">Beijing Jiaotong University</a>, China
+    </div>
+</footer>
+
+</body>
+</html>
