@@ -141,11 +141,24 @@ Syndrome_definition  Version  Type  Suppress
 
 **载入数据时应当先按 `Suppress` 过滤掉废弃记录**，否则会把已撤销的条目算进统计。
 
-## 配对关系表
+## ⚠️ 关键限制：下载页**没有**配对关系表
 
-下载页的实体表只有注释信息，**成对关系（herb–ingredient、ingredient–target、
-target–disease、herb–TCM symptom、TCM symptom–MM symptom）要单独取**。
-拼链条真正需要的是这些关系表。
+实测下载页上的全部静态链接共 26 个，**就是上面那 6–7 张实体表及其 key 文件，
+再无其它**。herb–ingredient、ingredient–target、target–disease、
+herb–TCM symptom、TCM symptom–MM symptom 这些**成对关系表不在批量下载范围内**。
+
+这意味着：
+
+- **光靠批量下载无法建出 SymMap 的网络**，拿到的只是各实体的注释信息。
+- 关系数据只能从网页检索结果里取（每查一个实体返回其关联列表），需要按实体逐个抓取。
+  以 v2.0 的 703 味草药为起点逐个请求，是最小可行的抓取规模。
+- 若只需要注释和跨库 ID 映射（如用 `SMTT.HIT_id` / `SMTT.TCMSP_id` / `SMDE.MedDRA_id`
+  做对齐），批量下载的这 26 个文件已经够用。
+
+> 本仓库早先的版本称「下载页除实体表外还提供成对关系」，与实测不符，已更正。
+
+另注：v2.0 `SMIT` 的 `Type` 列记录的是**草药与成分的关联类型**
+（QC / blood / metabolic 等），可据此区分质控成分、入血成分与代谢产物。
 
 ## 使用提示
 
