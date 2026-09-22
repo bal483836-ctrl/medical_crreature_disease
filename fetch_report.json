@@ -1,7 +1,7 @@
 {
   "datasets": {
     "symmap": {
-      "note": "SymMap 草药/成分/靶点/疾病/症状/证候表，XLSX（run #1 已验证可下）",
+      "note": "SymMap 全套实体表 XLSX（已稳定下载）",
       "discovered": [
         "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMHB%20file.xlsx",
         "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMHB%20key%20file.xlsx",
@@ -216,75 +216,194 @@
       ]
     },
     "herb": {
-      "note": "HERB 2.0 分表下载",
-      "discovered": [],
-      "files": []
-    },
-    "disbiome": {
-      "note": "Disbiome REST API（run #1 路径不对，本轮试多个候选并校验 JSON）",
+      "note": "HERB 2.0（站点为 SPA，靠直连候选文件名探测）",
       "discovered": [],
       "files": [
         {
-          "url": "https://pending.biothings.io/disbiome/query?q=__all__&size=1000",
-          "path": "/home/runner/work/_temp/out/disbiome/experiments.json",
-          "ok": true,
-          "records": 1,
-          "bytes": 862383,
-          "sha256": "fcfffb7256b993676455fd563e6dea20411f379153ffe584f9eb78e4c6bf88bc"
-        },
-        {
-          "url": "https://disbiome.ugent.be/api/organisms",
-          "path": "/home/runner/work/_temp/out/disbiome/organisms.json",
+          "url": "http://herb.ac.cn/download/HERB_herb_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_herb_info.txt",
           "ok": false,
           "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
         },
         {
-          "url": "https://disbiome.ugent.be/api/diseases",
-          "path": "/home/runner/work/_temp/out/disbiome/diseases.json",
+          "url": "http://herb.ac.cn/download/HERB_ingredient_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_ingredient_info.txt",
           "ok": false,
           "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
         },
         {
-          "url": "https://disbiome.ugent.be/api/publications",
-          "path": "/home/runner/work/_temp/out/disbiome/publications.json",
+          "url": "http://herb.ac.cn/download/HERB_target_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_target_info.txt",
           "ok": false,
           "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
         },
         {
-          "url": "https://disbiome.ugent.be/api/methods",
-          "path": "/home/runner/work/_temp/out/disbiome/methods.json",
+          "url": "http://herb.ac.cn/download/HERB_disease_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_disease_info.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
+        },
+        {
+          "url": "http://herb.ac.cn/download/HERB_experiment_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_experiment_info.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
+        },
+        {
+          "url": "http://herb.ac.cn/download/HERB_reference_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_reference_info.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
+        },
+        {
+          "url": "http://herb.ac.cn/download/herb_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/herb_info.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
+        },
+        {
+          "url": "http://herb.ac.cn/download/ingredient_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/ingredient_info.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
+        },
+        {
+          "url": "http://herb.ac.cn/download/target_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/target_info.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
+        },
+        {
+          "url": "http://herb.ac.cn/download/disease_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/disease_info.txt",
           "ok": false,
           "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）"
         }
       ]
     },
-    "dbpth": {
-      "note": "dbPTH 1.0，按 ProtGrp 分片下载（整库 PTH.zip 约 21.4GB 需 --include-huge）",
+    "disbiome": {
+      "note": "Disbiome（经 BioThings 镜像全量拉取）",
       "discovered": [],
-      "files": []
+      "files": [
+        {
+          "url": "https://pending.biothings.io/disbiome",
+          "path": "/home/runner/work/_temp/out/disbiome/experiments.json",
+          "ok": true,
+          "bytes": 11753990,
+          "records": 10866,
+          "sha256": "fe59a3119079aa2e2229b70dc181bf13a2ee0118fd83d79dc936d8f4d888959f"
+        }
+      ]
+    },
+    "dbpth": {
+      "note": "dbPTH 1.0，取 ProtGrp 分片（整库 PTH.zip 约 21.4GB，需 --include-huge）",
+      "discovered": [
+        "http://dbpth.biocuckoo.cn/Download/PTH.sql.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Enzyme.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Epigenetic_Regulator.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Ion_Channel.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Membrane_Receptor.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Other_Cytosolic_Protein.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Secreted_Protein.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Transcription_Factor.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Transporter.zip",
+        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Other.zip"
+      ],
+      "files": [
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/PTH.sql.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/PTH.sql.zip",
+          "ok": true,
+          "bytes": 346175909,
+          "sha256": "a395c00dca58b67986e4c7462f44c1b03ed49b11cefe03d9e94210167597927a"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Enzyme.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Enzyme.zip",
+          "ok": true,
+          "bytes": 297801943,
+          "sha256": "d3f344d18b2ff56e426f83dae4ba4e2743b784fb5aa8f684bdc984abd2e6a2dd"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Epigenetic_Regulator.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Epigenetic_Regulator.zip",
+          "ok": true,
+          "bytes": 20191684,
+          "sha256": "4c0c4c80e7c3a5e14b8e0d5ca5068bf462e58dd8a139e88c94357ab607c50fcc"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Ion_Channel.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Ion_Channel.zip",
+          "ok": true,
+          "bytes": 16623158,
+          "sha256": "086732a61f222c89e9effae7e3aad5650702906b342cfe7911eebba49fe1c390"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Membrane_Receptor.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Membrane_Receptor.zip",
+          "ok": true,
+          "bytes": 14507801,
+          "sha256": "67cc863366b570d7edae749a3a313eebb4f31903435bcb5f5e0a2fc30d855595"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Other_Cytosolic_Protein.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Other_Cytosolic_Protein.zip",
+          "ok": true,
+          "bytes": 67395386,
+          "sha256": "7b01d64af97360ea44dcd51156534173944a1033cfbd702eee3853ad35dfd0fe"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Secreted_Protein.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Secreted_Protein.zip",
+          "ok": true,
+          "bytes": 8975104,
+          "sha256": "f2aa504e0ea7602cf23fad9471971fda780ca50de10c11877be33500ce662654"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Transcription_Factor.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Transcription_Factor.zip",
+          "ok": true,
+          "bytes": 22860248,
+          "sha256": "3c25f8a4e376c707990a9f06912254acae4a3e1d17f649ef88921fae4dfab690"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Transporter.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Transporter.zip",
+          "ok": true,
+          "bytes": 12047474,
+          "sha256": "f34179ff9b99b250dd27eb900ec89854aea9671c5e3b90d5a7c0b3c76a4a0e69"
+        },
+        {
+          "url": "http://dbpth.biocuckoo.cn/Download/ProtGrp/Other.zip",
+          "path": "/home/runner/work/_temp/out/dbpth/Other.zip",
+          "ok": true,
+          "bytes": 125784540,
+          "sha256": "ceaf5925440255b0906c71311e913f422426c37fb6b828ab0f36ef8a12199add"
+        }
+      ]
     },
     "tcmid": {
-      "note": "TCMID 2.0 复方/草药/成分/靶点分表",
+      "note": "TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）",
       "discovered": [],
       "files": []
     },
     "tcmsp": {
-      "note": "TCMSP 无下载接口，只做链接发现，实际取数需爬虫",
+      "note": "TCMSP（确认无下载链接，取数需爬虫）",
       "discovered": [],
       "files": []
     },
     "hit2": {
-      "note": "HIT 2.0 无批量下载，只做链接发现",
+      "note": "HIT 2.0（真实站点在 badd-cao.net:2345，非标准端口）",
       "discovered": [],
       "files": []
     },
     "mdipid": {
-      "note": "MDIPID 无公开打包下载（run #1 站点 500），只做链接发现",
+      "note": "MDIPID（站点持续返回 500，服务疑似故障）",
       "discovered": [],
       "files": []
     },
     "microbetcm": {
-      "note": "MicrobeTCM 无下载接口，只做链接发现",
+      "note": "MicrobeTCM（SPA，无静态下载链接）",
       "discovered": [],
       "files": []
     }

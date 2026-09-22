@@ -1,6 +1,6 @@
 
 ================================================================
-[symmap]  SymMap 草药/成分/靶点/疾病/症状/证候表，XLSX（run #1 已验证可下）
+[symmap]  SymMap 全套实体表 XLSX（已稳定下载）
 ================================================================
     扫描 http://www.symmap.org/download/
       命中 26 个候选数据文件链接（累计）
@@ -33,134 +33,124 @@
       OK  SymMap%20v1.0%2C%20SMDE%20key%20file.xlsx  (0.59 MB)
 
 ================================================================
-[herb]  HERB 2.0 分表下载
+[herb]  HERB 2.0（站点为 SPA，靠直连候选文件名探测）
 ================================================================
+    直链候选 HERB_herb_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_herb_info.txt
+    直链候选 HERB_ingredient_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_ingredient_info.txt
+    直链候选 HERB_target_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_target_info.txt
+    直链候选 HERB_disease_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_disease_info.txt
+    直链候选 HERB_experiment_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_experiment_info.txt
+    直链候选 HERB_reference_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_reference_info.txt
+    直链候选 herb_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/herb_info.txt
+    直链候选 ingredient_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/ingredient_info.txt
+    直链候选 target_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/target_info.txt
+    直链候选 disease_info.txt
+      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/disease_info.txt
     扫描 http://herb.ac.cn/Download/
       命中 0 个候选数据文件链接（累计）
-    扫描 http://herb.ac.cn/download/
-      命中 0 个候选数据文件链接（累计）
-    扫描 http://herb.ac.cn/
-      命中 0 个候选数据文件链接（累计）
-    扫描 http://herb.ac.cn/Downloads/
-      命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
 
 ================================================================
-[disbiome]  Disbiome REST API（run #1 路径不对，本轮试多个候选并校验 JSON）
+[disbiome]  Disbiome（经 BioThings 镜像全量拉取）
 ================================================================
-    API experiments  <- https://disbiome.ugent.be/api/disbiome/experiments
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/experiments
-      换下一个候选地址
-    API experiments  <- https://disbiome.ugent.be/api/experiments
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/experiments
-      换下一个候选地址
-    API experiments  <- https://disbiome.ugent.be/experiments/api
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/experiments/api
-      换下一个候选地址
-    API experiments  <- https://pending.biothings.io/disbiome/query?q=__all__&size=1000
-      OK  experiments.json  (0.86 MB, 1 条)
-    API organisms  <- https://disbiome.ugent.be/api/disbiome/organisms
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/organisms
-      换下一个候选地址
-    API organisms  <- https://disbiome.ugent.be/api/organisms
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/organisms
-    API diseases  <- https://disbiome.ugent.be/api/disbiome/diseases
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/diseases
-      换下一个候选地址
-    API diseases  <- https://disbiome.ugent.be/api/diseases
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/diseases
-    API publications  <- https://disbiome.ugent.be/api/disbiome/publications
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/publications
-      换下一个候选地址
-    API publications  <- https://disbiome.ugent.be/api/publications
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/publications
-    API methods  <- https://disbiome.ugent.be/api/disbiome/methods
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/disbiome/methods
-      换下一个候选地址
-    API methods  <- https://disbiome.ugent.be/api/methods
-      失败（返回 HTML 而非数据）: https://disbiome.ugent.be/api/methods
-    扫描 https://disbiome.ugent.be/export
-      命中 0 个候选数据文件链接（累计）
-    扫描 https://disbiome.ugent.be/api
-      命中 0 个候选数据文件链接（累计）
+      第 1 页 +1000 条（累计 1000）
+      第 2 页 +1000 条（累计 2000）
+      第 3 页 +1000 条（累计 3000）
+      第 4 页 +1000 条（累计 4000）
+      第 5 页 +1000 条（累计 5000）
+      第 6 页 +1000 条（累计 6000）
+      第 7 页 +1000 条（累计 7000）
+      第 8 页 +1000 条（累计 8000）
+      第 9 页 +1000 条（累计 9000）
+      第 10 页 +1000 条（累计 10000）
+      第 11 页 +866 条（累计 10866）
+      OK  experiments.json  (11.75 MB, 10866 条)
     共发现 0 个候选链接
 
 ================================================================
-[dbpth]  dbPTH 1.0，按 ProtGrp 分片下载（整库 PTH.zip 约 21.4GB 需 --include-huge）
+[dbpth]  dbPTH 1.0，取 ProtGrp 分片（整库 PTH.zip 约 21.4GB，需 --include-huge）
 ================================================================
-    扫描 http://dbpth.biocuckoo.cn/Download/
-      页面不可达: http://dbpth.biocuckoo.cn/Download/  (HTTPError: HTTP Error 403: Forbidden)
+    扫描 http://dbpth.biocuckoo.cn/Download.php
+      命中 1325 个候选数据文件链接（累计）
     扫描 http://dbpth.biocuckoo.cn/
-      命中 0 个候选数据文件链接（累计）
-    共发现 0 个候选链接
+      命中 1325 个候选数据文件链接（累计）
+      按 prefer 规则收窄: 1325 -> 10
+    共发现 10 个候选链接
+      OK  PTH.sql.zip  (346.18 MB)
+      OK  Enzyme.zip  (297.80 MB)
+      OK  Epigenetic_Regulator.zip  (20.19 MB)
+      OK  Ion_Channel.zip  (16.62 MB)
+      OK  Membrane_Receptor.zip  (14.51 MB)
+      OK  Other_Cytosolic_Protein.zip  (67.40 MB)
+      OK  Secreted_Protein.zip  (8.98 MB)
+      OK  Transcription_Factor.zip  (22.86 MB)
+      OK  Transporter.zip  (12.05 MB)
+      OK  Other.zip  (125.78 MB)
 
 ================================================================
-[tcmid]  TCMID 2.0 复方/草药/成分/靶点分表
+[tcmid]  TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）
 ================================================================
-    扫描 http://www.tcmid.org/
-      命中 0 个候选数据文件链接（累计）
-    扫描 http://tcmid.org/
-      命中 0 个候选数据文件链接（累计）
     扫描 http://www.megabionet.org/tcmid/
       页面不可达: http://www.megabionet.org/tcmid/  (URLError: <urlopen error timed out>)
     共发现 0 个候选链接
 
 ================================================================
-[tcmsp]  TCMSP 无下载接口，只做链接发现，实际取数需爬虫
+[tcmsp]  TCMSP（确认无下载链接，取数需爬虫）
 ================================================================
     扫描 https://www.tcmsp-e.com/
       命中 0 个候选数据文件链接（累计）
-    扫描 http://old.tcmsp-e.com/tcmsp.php
-      页面不可达: http://old.tcmsp-e.com/tcmsp.php  (URLError: <urlopen error [Errno 111] Connection refused>)
     扫描 https://www.tcmsp-e.com/tcmspsearch.php
       命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
 
 ================================================================
-[hit2]  HIT 2.0 无批量下载，只做链接发现
+[hit2]  HIT 2.0（真实站点在 badd-cao.net:2345，非标准端口）
 ================================================================
-    扫描 http://hit2.badd-cao.net/
-      命中 0 个候选数据文件链接（累计）
-    扫描 http://hit2.badd-cao.net/download/
-      命中 0 个候选数据文件链接（累计）
-    扫描 http://hit2.badd-cao.net/download.php
-      命中 0 个候选数据文件链接（累计）
+    扫描 http://www.badd-cao.net:2345/
+      页面不可达: http://www.badd-cao.net:2345/  (URLError: <urlopen error [Errno 111] Connection refused>)
+    扫描 http://www.badd-cao.net:2345/download.php
+      页面不可达: http://www.badd-cao.net:2345/download.php  (URLError: <urlopen error [Errno 111] Connection refused>)
+    扫描 http://www.badd-cao.net:2345/download/
+      页面不可达: http://www.badd-cao.net:2345/download/  (URLError: <urlopen error [Errno 111] Connection refused>)
     共发现 0 个候选链接
 
 ================================================================
-[mdipid]  MDIPID 无公开打包下载（run #1 站点 500），只做链接发现
+[mdipid]  MDIPID（站点持续返回 500，服务疑似故障）
 ================================================================
-    扫描 https://idrblab.org/mdipid/
-      命中 0 个候选数据文件链接（累计）
     扫描 https://mdipid.idrblab.net/
       页面不可达: https://mdipid.idrblab.net/  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
-    扫描 https://mdipid.idrblab.net/download
-      页面不可达: https://mdipid.idrblab.net/download  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
+    扫描 https://idrblab.org/mdipid/
+      命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
 
 ================================================================
-[microbetcm]  MicrobeTCM 无下载接口，只做链接发现
+[microbetcm]  MicrobeTCM（SPA，无静态下载链接）
 ================================================================
     扫描 https://www.microbetcm.com/
       命中 0 个候选数据文件链接（累计）
-    扫描 https://www.microbetcm.com/#/download
-      命中 0 个候选数据文件链接（累计）
-    扫描 https://www.microbetcm.com/api/download
-      页面不可达: https://www.microbetcm.com/api/download  (HTTPError: HTTP Error 404: )
     共发现 0 个候选链接
 
 ================================================================
 汇总
 ================================================================
   symmap       发现  26 链接   26/26 成功             20.97 MB
-  herb         发现   0 链接   —                     0.00 MB
-  disbiome     发现   0 链接   1/5 成功                0.86 MB
-  dbpth        发现   0 链接   —                     0.00 MB
+  herb         发现   0 链接   0/10 成功               0.00 MB
+  disbiome     发现   0 链接   1/1 成功               11.75 MB
+  dbpth        发现  10 链接   10/10 成功            932.36 MB
   tcmid        发现   0 链接   —                     0.00 MB
   tcmsp        发现   0 链接   —                     0.00 MB
   hit2         发现   0 链接   —                     0.00 MB
   mdipid       发现   0 链接   —                     0.00 MB
   microbetcm   发现   0 链接   —                     0.00 MB
 
-  合计 27 个文件，21.84 MB（总量上限 8000 MB）
+  合计 37 个文件，965.09 MB（总量上限 8000 MB）
   报告: /home/runner/work/_temp/out/fetch_report.json
