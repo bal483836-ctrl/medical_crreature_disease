@@ -46,90 +46,74 @@ DATA_EXT = re.compile(
 #   note      : 说明
 SOURCES: dict[str, dict] = {
     "symmap": {
-        # run #1 实测：https 连接被拒，http 可用且拿到 v1.0/v2.0 全套 26 个 xlsx
+        # run #1/#2 实测：https 拒绝连接，http 可用，稳定拿到 v1.0/v2.0 全套 26 个 xlsx
         "pages": ["http://www.symmap.org/download/"],
         "accept": re.compile(r"(SM(HB|IT|TT|DE|TS|MS|SY)|download|static)", re.I),
-        "note": "SymMap 草药/成分/靶点/疾病/症状/证候表，XLSX（run #1 已验证可下）",
+        "note": "SymMap 全套实体表 XLSX（已稳定下载）",
     },
     "herb": {
-        # run #1：页面抓到了但 0 个数据链接，补候选路径并 dump 页面排查
-        "pages": ["http://herb.ac.cn/Download/", "http://herb.ac.cn/download/",
-                  "http://herb.ac.cn/", "http://herb.ac.cn/Downloads/"],
+        # run #2 实测：herb.ac.cn 是 umi.js 单页应用，HTML 里没有任何数据链接，
+        # 下载走接口。这里直接试常见的静态文件名 —— 猜错会被 HTML 校验挡下，不会假成功。
+        "pages": ["http://herb.ac.cn/Download/"],
+        "direct": [f"http://herb.ac.cn/download/{f}" for f in (
+            "HERB_herb_info.txt", "HERB_ingredient_info.txt",
+            "HERB_target_info.txt", "HERB_disease_info.txt",
+            "HERB_experiment_info.txt", "HERB_reference_info.txt",
+            "herb_info.txt", "ingredient_info.txt", "target_info.txt",
+            "disease_info.txt",
+        )],
         "accept": None,
-        "note": "HERB 2.0 分表下载",
+        "note": "HERB 2.0（站点为 SPA，靠直连候选文件名探测）",
     },
     "disbiome": {
-        # run #1：/api/disbiome/* 返回 Angular 首页 HTML，说明路径不对。
-        # 这里给多个候选，并在 download() 里强制校验必须是合法 JSON。
-        "api": {
-            "experiments": [
-                "https://disbiome.ugent.be/api/disbiome/experiments",
-                "https://disbiome.ugent.be/api/experiments",
-                "https://disbiome.ugent.be/experiments/api",
-                "https://pending.biothings.io/disbiome/query?q=__all__&size=1000",
-            ],
-            "organisms": [
-                "https://disbiome.ugent.be/api/disbiome/organisms",
-                "https://disbiome.ugent.be/api/organisms",
-            ],
-            "diseases": [
-                "https://disbiome.ugent.be/api/disbiome/diseases",
-                "https://disbiome.ugent.be/api/diseases",
-            ],
-            "publications": [
-                "https://disbiome.ugent.be/api/disbiome/publications",
-                "https://disbiome.ugent.be/api/publications",
-            ],
-            "methods": [
-                "https://disbiome.ugent.be/api/disbiome/methods",
-                "https://disbiome.ugent.be/api/methods",
-            ],
-        },
-        "pages": ["https://disbiome.ugent.be/export", "https://disbiome.ugent.be/api"],
+        # run #2 实测：官方 disbiome.ugent.be/api/* 全部返回 Angular 首页（假 200），
+        # 唯一真正可用的是 BioThings 镜像。用 scroll 分页拉全量。
+        "biothings": "https://pending.biothings.io/disbiome",
+        "pages": [],
         "accept": None,
-        "note": "Disbiome REST API（run #1 路径不对，本轮试多个候选并校验 JSON）",
+        "note": "Disbiome（经 BioThings 镜像全量拉取）",
     },
     "dbpth": {
-        # run #1 重大发现：整库按蛋白分组/成分分类切成了 1325 个 zip 分片，
-        # 不必下 21.4GB 整包。默认取 ProtGrp/ 这一套（11 个分组即完整划分）+ SQL dump。
-        "pages": ["http://dbpth.biocuckoo.cn/Download/", "http://dbpth.biocuckoo.cn/"],
+        # run #2 教训：把 Download.php 换成 Download/ 导致发现数从 1325 掉到 0（后者 403）。
+        # Download.php 才是真正列出分片的页面，恢复并置于首位。
+        "pages": ["http://dbpth.biocuckoo.cn/Download.php",
+                  "http://dbpth.biocuckoo.cn/"],
         "accept": None,
         "prefer": re.compile(r"(/ProtGrp/|PTH\.sql\.zip$)", re.I),
-        "note": "dbPTH 1.0，按 ProtGrp 分片下载（整库 PTH.zip 约 21.4GB 需 --include-huge）",
+        "note": "dbPTH 1.0，取 ProtGrp 分片（整库 PTH.zip 约 21.4GB，需 --include-huge）",
     },
     "tcmid": {
-        # run #1：/download/ 404。改从根路径发现
-        "pages": ["http://www.tcmid.org/", "http://tcmid.org/",
-                  "http://www.megabionet.org/tcmid/"],
+        # ⚠️ run #2 实测：tcmid.org 域名已易主，现为无关的慈善机构网站，绝不可从该域取数。
+        # 历史地址 megabionet.org/tcmid/ 超时。TCMID 很可能已停止服务。
+        "pages": ["http://www.megabionet.org/tcmid/"],
         "accept": None,
-        "note": "TCMID 2.0 复方/草药/成分/靶点分表",
+        "note": "TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）",
     },
     "tcmsp": {
-        # run #1：old.tcmsp-e.com 连接被拒（https）；www 抓到但 0 链接
-        "pages": ["https://www.tcmsp-e.com/", "http://old.tcmsp-e.com/tcmsp.php",
-                  "https://www.tcmsp-e.com/tcmspsearch.php"],
+        # run #2：站点可达但页面是检索界面，无任何下载链接 —— 与文档结论一致
+        "pages": ["https://www.tcmsp-e.com/", "https://www.tcmsp-e.com/tcmspsearch.php"],
         "accept": None,
-        "note": "TCMSP 无下载接口，只做链接发现，实际取数需爬虫",
+        "note": "TCMSP（确认无下载链接，取数需爬虫）",
     },
     "hit2": {
-        "pages": ["http://hit2.badd-cao.net/", "http://hit2.badd-cao.net/download/",
-                  "http://hit2.badd-cao.net/download.php"],
+        # run #2 实测：hit2.badd-cao.net 只是个 frameset，真正的站在 2345 端口
+        "pages": ["http://www.badd-cao.net:2345/",
+                  "http://www.badd-cao.net:2345/download.php",
+                  "http://www.badd-cao.net:2345/download/"],
         "accept": None,
-        "note": "HIT 2.0 无批量下载，只做链接发现",
+        "note": "HIT 2.0（真实站点在 badd-cao.net:2345，非标准端口）",
     },
     "mdipid": {
-        # run #1：mdipid.idrblab.net 全站 500。主站路径另试
-        "pages": ["https://idrblab.org/mdipid/", "https://mdipid.idrblab.net/",
-                  "https://mdipid.idrblab.net/download"],
+        # run #2：idrblab.org/mdipid/ 是 meta 跳转页，目标 mdipid.idrblab.net 持续 500
+        "pages": ["https://mdipid.idrblab.net/", "https://idrblab.org/mdipid/"],
         "accept": None,
-        "note": "MDIPID 无公开打包下载（run #1 站点 500），只做链接发现",
+        "note": "MDIPID（站点持续返回 500，服务疑似故障）",
     },
     "microbetcm": {
-        # run #1：/download 404，根路径 0 链接
-        "pages": ["https://www.microbetcm.com/", "https://www.microbetcm.com/#/download",
-                  "https://www.microbetcm.com/api/download"],
+        # run #2：确认为单页应用，HTML 内无数据链接
+        "pages": ["https://www.microbetcm.com/"],
         "accept": None,
-        "note": "MicrobeTCM 无下载接口，只做链接发现",
+        "note": "MicrobeTCM（SPA，无静态下载链接）",
     },
 }
 
@@ -323,6 +307,54 @@ def download(url: str, dest: Path, max_bytes: int | None,
     return record
 
 
+def fetch_biothings(base: str, out_dir: Path) -> list[dict]:
+    """用 BioThings 的 scroll 分页把整个索引拉下来。
+
+    单次 query 最多 1000 条，必须用 fetch_all=true 拿 _scroll_id 再翻页，
+    否则只会拿到第一页还误以为是全量。
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    records: list = []
+    url = f"{base}/query?q=__all__&fetch_all=true"
+    page = 0
+    while url and page < 500:
+        try:
+            with open_url(url, timeout=180, accept="application/json") as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+        except Exception as exc:  # noqa: BLE001
+            log(f"      分页在第 {page} 页中断: {type(exc).__name__}: {exc}")
+            break
+        hits = payload.get("hits", [])
+        if not hits:
+            break
+        records.extend(hits)
+        page += 1
+        log(f"      第 {page} 页 +{len(hits)} 条（累计 {len(records)}）")
+        scroll_id = payload.get("_scroll_id")
+        url = f"{base}/query?scroll_id={urllib.parse.quote(scroll_id)}" if scroll_id else None
+
+    if not records:
+        return [{"url": base, "ok": False,
+                 "error": "BioThings 未返回任何记录"}]
+    dest = out_dir / "experiments.json"
+    dest.write_text(json.dumps(records, ensure_ascii=False, indent=1), encoding="utf-8")
+    size = dest.stat().st_size
+    log(f"      OK  {dest.name}  ({size / 1e6:.2f} MB, {len(records)} 条)")
+    return [{"url": base, "path": str(dest), "ok": True,
+             "bytes": size, "records": len(records),
+             "sha256": hashlib.sha256(dest.read_bytes()).hexdigest()}]
+
+
+def fetch_direct(urls: list[str], out_dir: Path, max_bytes: int | None) -> list[dict]:
+    """试一批候选直链。猜错的会被 HTML 校验挡下，不会产生假成功。"""
+    results = []
+    for url in urls:
+        fname = Path(urllib.parse.urlparse(url).path).name
+        log(f"    直链候选 {fname}")
+        results.append(download(url, out_dir / fname, max_bytes))
+    return results
+
+
 def fetch_api(name: str, endpoints: dict, out_dir: Path) -> list[dict]:
     """拉 JSON API。每个端点给多个候选 base，命中一个就停。"""
     results = []
@@ -384,8 +416,13 @@ def main() -> int:
         entry: dict = {"note": cfg["note"], "discovered": [], "files": []}
         out_dir = out_root / name
 
-        if cfg.get("api") and not args.discover_only:
-            entry["files"] += fetch_api(name, cfg["api"], out_dir)
+        if not args.discover_only:
+            if cfg.get("api"):
+                entry["files"] += fetch_api(name, cfg["api"], out_dir)
+            if cfg.get("biothings"):
+                entry["files"] += fetch_biothings(cfg["biothings"], out_dir)
+            if cfg.get("direct"):
+                entry["files"] += fetch_direct(cfg["direct"], out_dir, max_bytes)
 
         links = discover(name, cfg, dump_dir=out_root / "_pages")
         entry["discovered"] = links

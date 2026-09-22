@@ -1,9 +1,16 @@
 # TCMID 2.0 — 复方粒度 + 质谱数据
 
-- 官网：http://www.tcmid.org/ （历史地址 http://www.megabionet.org/tcmid/）
+> 🚨 **域名已易主，不要访问 tcmid.org 取数。**
+> GitHub Actions run #2 实测：`tcmid.org` / `www.tcmid.org` 现在解析到一个名为
+> "My Sheep Gate" 的慈善机构网站，页面上 67 个链接全部指向该机构自己的内容
+> （捐车、申请、社交账号等），与 TCMID 毫无关系。该域名过期后被第三方重新注册。
+> 历史地址 `www.megabionet.org/tcmid/` 在同一次运行中**连接超时**。
+> **TCMID 2.0 疑似已停止服务**，抓取脚本已把 tcmid.org 从数据源中移除。
+
+- 原官网（**已失效/易主**）：~~http://www.tcmid.org/~~ ｜ 历史地址：http://www.megabionet.org/tcmid/（超时）
 - 文献：Huang L, Xie D, et al. *TCMID 2.0: a comprehensive resource for TCM.* Nucleic Acids Research 2018;46(D1):D1117–D1120. https://academic.oup.com/nar/article/46/D1/D1117/4584630
-- 分发格式：**纯文本（.txt）分表打包下载**
-- 注意：站点历史上多次迁移/不可用，下载前先确认可达
+- 分发格式：**纯文本（.txt）分表打包下载**（依据文献，未能实测验证）
+- 若确需 TCMID 数据：联系原作者，或改用 HERB（其 herb 表带 `TCMID_id` 交叉引用）
 
 ## 规模
 
