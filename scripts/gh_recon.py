@@ -108,6 +108,15 @@ LIVE_SITES: dict[str, dict] = {
 # ---------------------------------------------------------------- B 类：死站
 DEAD_SITES: dict[str, list[str]] = {
     "tcmid": ["tcmid.org", "www.tcmid.org", "megabionet.org/tcmid"],
+    # HERB：下载接口本身是好的，但它指向的文件在服务端已不存在
+    # （/download/file/?file_path=static/... 回 "file_path dose not exists"），
+    # 即官方下载功能已损坏，转存档兜底。
+    "herb": ["herb.ac.cn", "www.herb.ac.cn"],
+    # MicrobeTCM：SPA 且 /api/index/* 是上传接口，无取数路径，转存档兜底。
+    "microbetcm": ["microbetcm.com", "www.microbetcm.com"],
+    # HIT 2.0：课题组 Resources 页确认官方地址就是 hit2.badd-cao.net，
+    # 而它只是个指向 2345 端口的 frameset，该端口拒连 —— 服务已停。存档兜底。
+    "hit2": ["hit2.badd-cao.net", "hit.badd-cao.net", "badd-cao.net"],
     # hit2 不在此列：第一轮已查过 Wayback，只存到一个 SEPPA3 的批量提交工具
     # 和 9 行示例文件，都不是 HIT 的数据。改到 LIVE_SITES 里探其它主机。
     "mdipid": ["mdipid.idrblab.net", "idrblab.org/mdipid"],
@@ -386,12 +395,20 @@ def main() -> int:
 
     for name in names:
         log(f"\n{'=' * 64}\n[{name}]\n{'=' * 64}")
+        entry: dict = {}
         if name in LIVE_SITES:
-            report["targets"][name] = recon_live(
-                name, LIVE_SITES[name], out_root, args.delay, args.max_probes)
-        else:
-            report["targets"][name] = recon_dead(
-                name, DEAD_SITES[name], out_root, args.delay, max_bytes, args.max_files)
+            entry = recon_live(name, LIVE_SITES[name], out_root,
+                               args.delay, args.max_probes)
+        if name in DEAD_SITES:
+            # 活站探测无果的库仍可从存档兜底，两者结果合并
+            dead = recon_dead(name, DEAD_SITES[name], out_root,
+                              args.delay, max_bytes, args.max_files)
+            if entry:
+                entry["wayback"] = dead
+                entry.setdefault("files", []).extend(dead.get("files", []))
+            else:
+                entry = dead
+        report["targets"][name] = entry
 
     rdir = out_root / "_recon"
     rdir.mkdir(parents=True, exist_ok=True)
@@ -400,10 +417,13 @@ def main() -> int:
 
     log(f"\n{'=' * 64}\n侦察汇总\n{'=' * 64}")
     for name, e in report["targets"].items():
-        if e["kind"] == "live":
+        if e.get("kind") == "live":
             hits = [p for p in e["probes"] if p.get("ok")]
+            wb = e.get("wayback") or {}
+            wbok = [f for f in wb.get("files", []) if f.get("ok")]
+            extra = f"  存档取回 {len(wbok)}" if wb else ""
             log(f"  {name:12} [活站] bundle {len(e['bundles'])}  "
-                f"候选 {len(e['candidates']):4}  可用接口 {len(hits)}")
+                f"候选 {len(e['candidates']):4}  可用接口 {len(hits)}{extra}")
             for h in hits[:5]:
                 log(f"               ✅ {h['url'][:88]}")
         else:

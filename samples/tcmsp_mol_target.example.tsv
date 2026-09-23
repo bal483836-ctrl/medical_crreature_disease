@@ -1,7 +1,0 @@
-MOL_ID	Molecule_name	Target_name	Gene_symbol	UniProt_id	Organism
-MOL000098	quercetin	Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma	PIK3CG	P48736	Homo sapiens
-MOL000098	quercetin	Prostaglandin G/H synthase 2	PTGS2	P35354	Homo sapiens
-MOL000098	quercetin	Nuclear factor NF-kappa-B p65 subunit	RELA	Q04206	Homo sapiens
-MOL000422	kaempferol	Androgen receptor	AR	P10275	Homo sapiens
-MOL001454	berberine	5'-AMP-activated protein kinase catalytic subunit alpha-1	PRKAA1	Q13131	Homo sapiens
-MOL000358	beta-sitosterol	Prostaglandin G/H synthase 1	PTGS1	P23219	Homo sapiens

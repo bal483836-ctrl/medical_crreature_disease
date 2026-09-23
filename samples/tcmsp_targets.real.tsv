@@ -1,0 +1,6 @@
+target_ID	TAR_ID	drugbank_ID	target_name	kegg
+1	TAR00001	1	Penicillin binding protein 3	
+2	TAR00002	3	Histidine decarboxylase	
+3	TAR00003	7	Nitric oxide synthase, inducible	
+4	TAR00004	16	Adenosine A1 receptor	
+5	TAR00005	19	Coagulation Factor VIIIa	

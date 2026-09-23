@@ -1,0 +1,6 @@
+disease_ID	DIS_ID	disease_name	ICD9	ICD10
+1	DIS00001	Abdominal aortic aneurysm	442	172
+2	DIS00002	Abortion, Spontaneous		
+3	DIS00003	Achondroplasia	756.4	Q77.4
+4	DIS00004	Acid-related diseases	531-534	K25-K27
+5	DIS00005	Acne	706.1    	L70.0
