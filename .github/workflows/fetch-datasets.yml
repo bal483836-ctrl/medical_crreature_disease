@@ -16,7 +16,6 @@ on:
     paths:
       - ".github/workflows/fetch-datasets.yml"
       - "scripts/gh_fetch.py"
-      - "scripts/gh_recon.py"
       - "scripts/fetchlib.py"
   workflow_dispatch:
     inputs:

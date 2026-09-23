@@ -1,0 +1,151 @@
+name: Recon datasets
+
+# 侦察剩余 6 个库的取数路径。独立于 fetch-datasets.yml，因为侦察是一次性的探查动作，
+# 产出的是证据（bundle 原文、接口探测结果、存档清单）而不是数据集本身。
+#
+# 用 push 触发：本会话的令牌没有 actions:write，无法用 API 触发 workflow_dispatch，
+# 改动 scripts/gh_recon.py 并推送即可跑起来。手动触发按钮也保留给人用。
+
+on:
+  push:
+    paths:
+      - "scripts/gh_recon.py"
+      - "scripts/fetchlib.py"
+      - ".github/workflows/recon.yml"
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: "目标：herb,microbetcm,tcmsp,tcmid,hit2,mdipid 或 all"
+        default: "all"
+        type: string
+      delay:
+        description: "请求间隔秒（对学术站点限速）"
+        default: "1.0"
+        type: string
+      max_probes:
+        description: "每个活站最多探测多少个候选接口"
+        default: "120"
+        type: string
+      max_files:
+        description: "每个死站最多从存档取多少文件"
+        default: "60"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      TARGETS: ${{ inputs.targets || 'all' }}
+      DELAY: ${{ inputs.delay || '1.0' }}
+      MAX_PROBES: ${{ inputs.max_probes || '120' }}
+      MAX_FILES: ${{ inputs.max_files || '60' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run reconnaissance
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p "${RUNNER_TEMP}/out"
+          python3 scripts/gh_recon.py \
+            --out "${RUNNER_TEMP}/out" \
+            --targets "${TARGETS}" \
+            --delay "${DELAY}" \
+            --max-probes "${MAX_PROBES}" \
+            --max-files "${MAX_FILES}" \
+            --max-mb 90 2>&1 | tee "${RUNNER_TEMP}/recon.log"
+
+      - name: Build job summary
+        if: always()
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os, pathlib
+          p = pathlib.Path(os.environ["RUNNER_TEMP"], "out", "_recon", "recon_report.json")
+          if not p.exists():
+              print("## 侦察报告缺失\n\n请看上一步日志。")
+              raise SystemExit(0)
+          rep = json.loads(p.read_text(encoding="utf-8"))
+          print("## 侦察结果\n")
+          print("| 目标 | 类型 | 候选 / 存档 | 可用 |")
+          print("|---|---|---:|---:|")
+          for name, e in rep["targets"].items():
+              if e["kind"] == "live":
+                  hits = [x for x in e["probes"] if x.get("ok")]
+                  print(f"| `{name}` | 活站 | {len(e['candidates'])} 候选接口 | **{len(hits)}** 可用 |")
+              else:
+                  ok = [f for f in e["files"] if f.get("ok")]
+                  print(f"| `{name}` | 死站 | {len(e['archived'])} 存档文件 | **{len(ok)}** 取回 |")
+          print("\n<details><summary>可用接口</summary>\n")
+          for name, e in rep["targets"].items():
+              if e["kind"] != "live":
+                  continue
+              for h in [x for x in e["probes"] if x.get("ok")][:30]:
+                  extra = ""
+                  if h.get("payload_key"):
+                      extra = f" — payload `{h['payload_key']}` × {h['payload_len']}"
+                  elif h.get("json_len") is not None:
+                      extra = f" — 数组 × {h['json_len']}"
+                  print(f"- `{name}` ✅ `{h['url']}`{extra}")
+          print("\n</details>\n")
+          print("<details><summary>存档来源（含快照日期）</summary>\n")
+          for name, e in rep["targets"].items():
+              if e["kind"] != "dead":
+                  continue
+              for pr in e.get("provenance", [])[:40]:
+                  print(f"- `{name}` 📦 `{pr['file']}` ← 快照 `{pr['snapshot']}` — `{pr['original_url']}`")
+          print("\n</details>")
+          PY
+
+      - name: Commit recon evidence to datasets branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: datasets
+        run: |
+          set -euo pipefail
+          OUT="${RUNNER_TEMP}/out"
+          mkdir -p "$OUT"
+          # >90MB 的不能进 git
+          find "$OUT" -type f -size +90M -delete 2>/dev/null || true
+          if [ -z "$(find "$OUT" -type f 2>/dev/null)" ]; then
+            echo "没有任何产出，跳过提交"; exit 0
+          fi
+          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          WORK="${RUNNER_TEMP}/ds"
+          if git ls-remote --exit-code --heads "$REPO_URL" "$BRANCH" >/dev/null 2>&1; then
+            git clone --depth 1 --branch "$BRANCH" "$REPO_URL" "$WORK"
+          else
+            mkdir -p "$WORK"; git -C "$WORK" init -q
+            git -C "$WORK" checkout -q --orphan "$BRANCH"
+            git -C "$WORK" remote add origin "$REPO_URL"
+          fi
+          cp -r "$OUT/." "$WORK/"
+          cp "${RUNNER_TEMP}/recon.log" "$WORK/recon.log" 2>/dev/null || true
+          cd "$WORK"
+          git add -A
+          if git diff --cached --quiet; then echo "无变化"; exit 0; fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Recon evidence (run ${GITHUB_RUN_ID})"
+          git push -u origin "$BRANCH"
+          echo "已推送到 ${BRANCH}"
+
+      - name: Upload recon report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recon-report
+          path: |
+            ${{ runner.temp }}/out/_recon/recon_report.json
+            ${{ runner.temp }}/recon.log
+          if-no-files-found: warn
+          retention-days: 30
