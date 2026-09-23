@@ -26,12 +26,16 @@
     共发现 0 个候选链接
 
 ================================================================
-[tcmsp]  TCMSP（确认无下载链接，取数需爬虫）
+[tcmsp]  TCMSP（browse.php 内联全表，无需爬虫）
 ================================================================
-    扫描 https://www.tcmsp-e.com/
-      命中 0 个候选数据文件链接（累计）
-    扫描 https://www.tcmsp-e.com/tcmspsearch.php
-      命中 0 个候选数据文件链接（累计）
+    内联表 herbs  <- https://www.tcmsp-e.com/browse.php?qc=herbs
+      OK  502 行 × 5 列  (0.10 MB)
+    内联表 ingredients  <- https://www.tcmsp-e.com/browse.php?qc=ingredients
+      OK  13729 行 × 15 列  (4.65 MB)
+    内联表 targets  <- https://www.tcmsp-e.com/browse.php?qc=targets
+      OK  3339 行 × 5 列  (0.48 MB)
+    内联表 diseases  <- https://www.tcmsp-e.com/browse.php?qc=diseases
+      OK  867 行 × 5 列  (0.12 MB)
     共发现 0 个候选链接
 
 ================================================================
@@ -66,10 +70,10 @@
 ================================================================
   herb         发现   0 链接   7/7 成功                0.00 MB
   tcmid        发现   0 链接   —                     0.00 MB
-  tcmsp        发现   0 链接   —                     0.00 MB
+  tcmsp        发现   0 链接   4/4 成功                5.35 MB
   hit2         发现   0 链接   —                     0.00 MB
   mdipid       发现   0 链接   —                     0.00 MB
   microbetcm   发现   0 链接   —                     0.00 MB
 
-  合计 7 个文件，0.00 MB（总量上限 8000 MB）
+  合计 11 个文件，5.35 MB（总量上限 8000 MB）
   报告: /home/runner/work/_temp/out/fetch_report.json

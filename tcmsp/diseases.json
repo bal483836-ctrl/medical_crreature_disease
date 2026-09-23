@@ -1,0 +1,6071 @@
+[
+ {
+  "disease_ID": "1",
+  "DIS_ID": "DIS00001",
+  "disease_name": "Abdominal aortic aneurysm",
+  "ICD9": "442",
+  "ICD10": "172"
+ },
+ {
+  "disease_ID": "2",
+  "DIS_ID": "DIS00002",
+  "disease_name": "Abortion, Spontaneous",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "3",
+  "DIS_ID": "DIS00003",
+  "disease_name": "Achondroplasia",
+  "ICD9": "756.4",
+  "ICD10": "Q77.4"
+ },
+ {
+  "disease_ID": "4",
+  "DIS_ID": "DIS00004",
+  "disease_name": "Acid-related diseases",
+  "ICD9": "531-534",
+  "ICD10": "K25-K27"
+ },
+ {
+  "disease_ID": "5",
+  "DIS_ID": "DIS00005",
+  "disease_name": "Acne",
+  "ICD9": "706.1 \n\n\n",
+  "ICD10": "L70.0"
+ },
+ {
+  "disease_ID": "6",
+  "DIS_ID": "DIS00006",
+  "disease_name": "Acromegaly and pituitary gigantism",
+  "ICD9": "253",
+  "ICD10": "E22.0,E34.4"
+ },
+ {
+  "disease_ID": "7",
+  "DIS_ID": "DIS00007",
+  "disease_name": "Acute allograft rejection",
+  "ICD9": "996.8",
+  "ICD10": "T86"
+ },
+ {
+  "disease_ID": "8",
+  "DIS_ID": "DIS00008",
+  "disease_name": "Acute coronary syndromes",
+  "ICD9": "411.1",
+  "ICD10": "I20.0"
+ },
+ {
+  "disease_ID": "9",
+  "DIS_ID": "DIS00009",
+  "disease_name": "Acute graft-versus-host disease",
+  "ICD9": "279.5",
+  "ICD10": "T86.0"
+ },
+ {
+  "disease_ID": "10",
+  "DIS_ID": "DIS00010",
+  "disease_name": "Acute lymphoblastic leukaemia",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "11",
+  "DIS_ID": "DIS00011",
+  "disease_name": "Acute lymphoblastic leukaemia (therapy-refractory)",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "12",
+  "DIS_ID": "DIS00012",
+  "disease_name": "Acute lymphoblastic leukemia (ALL)",
+  "ICD9": "204.0",
+  "ICD10": "C91.0"
+ },
+ {
+  "disease_ID": "13",
+  "DIS_ID": "DIS00013",
+  "disease_name": "Acute migraine",
+  "ICD9": "346.0",
+  "ICD10": "G43"
+ },
+ {
+  "disease_ID": "14",
+  "DIS_ID": "DIS00014",
+  "disease_name": "Acute myeloid leukemia",
+  "ICD9": "205.0",
+  "ICD10": "C92.0"
+ },
+ {
+  "disease_ID": "15",
+  "DIS_ID": "DIS00015",
+  "disease_name": "Acute myeloid leukemia (AML)",
+  "ICD9": "205.0",
+  "ICD10": "C92.0"
+ },
+ {
+  "disease_ID": "16",
+  "DIS_ID": "DIS00016",
+  "disease_name": "Acute nasopharyngitis [common cold]",
+  "ICD9": "462,472.1",
+  "ICD10": "J02,J31.2"
+ },
+ {
+  "disease_ID": "17",
+  "DIS_ID": "DIS00017",
+  "disease_name": "Acute non-lymphocytic leukaemia",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "18",
+  "DIS_ID": "DIS00018",
+  "disease_name": "Acute otitis media",
+  "ICD9": "381.0, 381.1, 381.2, 381.3, 381.4",
+  "ICD10": "H65, H66, H67"
+ },
+ {
+  "disease_ID": "19",
+  "DIS_ID": "DIS00019",
+  "disease_name": "Acute promyelocytic leukemia",
+  "ICD9": "205.0",
+  "ICD10": "C92.4"
+ },
+ {
+  "disease_ID": "20",
+  "DIS_ID": "DIS00020",
+  "disease_name": "Acute respiratory distress syndrome",
+  "ICD9": "518.5, 518.82",
+  "ICD10": "J80"
+ },
+ {
+  "disease_ID": "21",
+  "DIS_ID": "DIS00021",
+  "disease_name": "Acute T-lymphoid leukemia",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "22",
+  "DIS_ID": "DIS00022",
+  "disease_name": "Acute ureteric colic",
+  "ICD9": "788.0",
+  "ICD10": "N23"
+ },
+ {
+  "disease_ID": "23",
+  "DIS_ID": "DIS00023",
+  "disease_name": "Acutely decompensated Congestive Heart Failure",
+  "ICD9": "428.0",
+  "ICD10": "I50"
+ },
+ {
+  "disease_ID": "24",
+  "DIS_ID": "DIS00024",
+  "disease_name": "Adenomatous polyposis",
+  "ICD9": "153,154",
+  "ICD10": "C18-C21"
+ },
+ {
+  "disease_ID": "25",
+  "DIS_ID": "DIS00025",
+  "disease_name": "Adrenocortical tumour",
+  "ICD9": "140-199,210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "26",
+  "DIS_ID": "DIS00026",
+  "disease_name": "Adrenocorticotrophic hormone-secreting pituitary tumors",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "27",
+  "DIS_ID": "DIS00027",
+  "disease_name": "Adrenocorticotrophic hormone-secreting tumors",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "28",
+  "DIS_ID": "DIS00028",
+  "disease_name": "Adult respiratory distress syndrome",
+  "ICD9": "518.5, 518.82",
+  "ICD10": "J80"
+ },
+ {
+  "disease_ID": "29",
+  "DIS_ID": "DIS00029",
+  "disease_name": "Advanced cancers, age-related macular degeneration",
+  "ICD9": "140-229, 362.50",
+  "ICD10": "C00-C96, H35.3"
+ },
+ {
+  "disease_ID": "30",
+  "DIS_ID": "DIS00030",
+  "disease_name": "Advanced lung cancer",
+  "ICD9": "140-229, 162",
+  "ICD10": "C00-C96, C33-C34"
+ },
+ {
+  "disease_ID": "31",
+  "DIS_ID": "DIS00031",
+  "disease_name": "Advanced or metastatic non-small cell lung cancer",
+  "ICD9": "162",
+  "ICD10": "C33-C34"
+ },
+ {
+  "disease_ID": "32",
+  "DIS_ID": "DIS00032",
+  "disease_name": "Advanced solid tumors",
+  "ICD9": "140-199",
+  "ICD10": "C00-C75, C7A, C7B"
+ },
+ {
+  "disease_ID": "33",
+  "DIS_ID": "DIS00033",
+  "disease_name": "Advanced, Relapsed/Refractory Multiple Myeloma",
+  "ICD9": "203.0",
+  "ICD10": "C90.0"
+ },
+ {
+  "disease_ID": "34",
+  "DIS_ID": "DIS00034",
+  "disease_name": "African trypanosomiasis",
+  "ICD9": "086.5",
+  "ICD10": "B56"
+ },
+ {
+  "disease_ID": "35",
+  "DIS_ID": "DIS00035",
+  "disease_name": "Age-related macular degeneration",
+  "ICD9": "362.50",
+  "ICD10": "H35.3"
+ },
+ {
+  "disease_ID": "36",
+  "DIS_ID": "DIS00036",
+  "disease_name": "Aggregation and activation of platelets",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "37",
+  "DIS_ID": "DIS00037",
+  "disease_name": "AIDS related dementia",
+  "ICD9": "042, 290-294",
+  "ICD10": "B20, F01-F07"
+ },
+ {
+  "disease_ID": "38",
+  "DIS_ID": "DIS00038",
+  "disease_name": "AIDS-related Kaposi's Sarcoma",
+  "ICD9": "176",
+  "ICD10": "C46"
+ },
+ {
+  "disease_ID": "39",
+  "DIS_ID": "DIS00039",
+  "disease_name": "Airway hyperreactivity",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "40",
+  "DIS_ID": "DIS00040",
+  "disease_name": "Alcohol dependence",
+  "ICD9": "303",
+  "ICD10": "F10.2"
+ },
+ {
+  "disease_ID": "41",
+  "DIS_ID": "DIS00041",
+  "disease_name": "Alcoholism",
+  "ICD9": "086.5",
+  "ICD10": "B56"
+ },
+ {
+  "disease_ID": "42",
+  "DIS_ID": "DIS00042",
+  "disease_name": "Allergen-triggered inflammatory tissue injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "43",
+  "DIS_ID": "DIS00043",
+  "disease_name": "Allergic airway inflammation",
+  "ICD9": "",
+  "ICD10": "J00-J99, T78.4"
+ },
+ {
+  "disease_ID": "44",
+  "DIS_ID": "DIS00044",
+  "disease_name": "Allergic diseases",
+  "ICD9": "995.3",
+  "ICD10": "T78.4"
+ },
+ {
+  "disease_ID": "45",
+  "DIS_ID": "DIS00045",
+  "disease_name": "Allergic inflammation",
+  "ICD9": "995.3",
+  "ICD10": "T78.4"
+ },
+ {
+  "disease_ID": "46",
+  "DIS_ID": "DIS00046",
+  "disease_name": "Allergic Reaction",
+  "ICD9": "995.3",
+  "ICD10": "T78.4"
+ },
+ {
+  "disease_ID": "47",
+  "DIS_ID": "DIS00047",
+  "disease_name": "Allergic rhinitis, unspecified",
+  "ICD9": "472.0, 477, 995.3",
+  "ICD10": "J00, J30, J31.0, T78.4"
+ },
+ {
+  "disease_ID": "48",
+  "DIS_ID": "DIS00048",
+  "disease_name": "Allergy, unspecified",
+  "ICD9": "995.3",
+  "ICD10": "T78.4"
+ },
+ {
+  "disease_ID": "49",
+  "DIS_ID": "DIS00049",
+  "disease_name": "Alopecia, unspecified",
+  "ICD9": "704.09",
+  "ICD10": "L65.9"
+ },
+ {
+  "disease_ID": "50",
+  "DIS_ID": "DIS00050",
+  "disease_name": "Alpha 1 Antitrypsin Deficiency",
+  "ICD9": "273.4, 691.8, 692.9 \n",
+  "ICD10": "E88.0, L20, L20-L30"
+ },
+ {
+  "disease_ID": "51",
+  "DIS_ID": "DIS00051",
+  "disease_name": "Alzheimer's Disease",
+  "ICD9": "331.0",
+  "ICD10": "G30"
+ },
+ {
+  "disease_ID": "52",
+  "DIS_ID": "DIS00052",
+  "disease_name": "Amebiasis",
+  "ICD9": "006",
+  "ICD10": "A06"
+ },
+ {
+  "disease_ID": "53",
+  "DIS_ID": "DIS00053",
+  "disease_name": "Amyloidosis",
+  "ICD9": "277.3",
+  "ICD10": "E85"
+ },
+ {
+  "disease_ID": "54",
+  "DIS_ID": "DIS00054",
+  "disease_name": "Amyotrophic lateral sclerosis",
+  "ICD9": "335.20",
+  "ICD10": "G12.2"
+ },
+ {
+  "disease_ID": "55",
+  "DIS_ID": "DIS00055",
+  "disease_name": "Analgesics",
+  "ICD9": "338",
+  "ICD10": "R52"
+ },
+ {
+  "disease_ID": "56",
+  "DIS_ID": "DIS00056",
+  "disease_name": "Anaplastic Large Cell Lymphomas",
+  "ICD9": "202.8",
+  "ICD10": "C81-C96"
+ },
+ {
+  "disease_ID": "57",
+  "DIS_ID": "DIS00057",
+  "disease_name": "Androgen-dependent diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "58",
+  "DIS_ID": "DIS00058",
+  "disease_name": "Anemia",
+  "ICD9": "280-285",
+  "ICD10": "D50-D64"
+ },
+ {
+  "disease_ID": "59",
+  "DIS_ID": "DIS00059",
+  "disease_name": "Anemia, unspecified",
+  "ICD9": "280-285",
+  "ICD10": "D50-D64"
+ },
+ {
+  "disease_ID": "60",
+  "DIS_ID": "DIS00060",
+  "disease_name": "Anesthesia",
+  "ICD9": "338",
+  "ICD10": "R52"
+ },
+ {
+  "disease_ID": "61",
+  "DIS_ID": "DIS00061",
+  "disease_name": "Anesthetic",
+  "ICD9": "338",
+  "ICD10": "R52"
+ },
+ {
+  "disease_ID": "62",
+  "DIS_ID": "DIS00062",
+  "disease_name": "Angina",
+  "ICD9": "413",
+  "ICD10": "I20"
+ },
+ {
+  "disease_ID": "63",
+  "DIS_ID": "DIS00063",
+  "disease_name": "Angina pectoris",
+  "ICD9": "413",
+  "ICD10": "I20"
+ },
+ {
+  "disease_ID": "64",
+  "DIS_ID": "DIS00064",
+  "disease_name": "Angioedema",
+  "ICD9": "277.6",
+  "ICD10": "D84.1"
+ },
+ {
+  "disease_ID": "65",
+  "DIS_ID": "DIS00065",
+  "disease_name": "Angiogenesis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "66",
+  "DIS_ID": "DIS00066",
+  "disease_name": "Angiogenesis in metastatic and atherosclerotic processes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "67",
+  "DIS_ID": "DIS00067",
+  "disease_name": "Anorexia nervosa",
+  "ICD9": "307.1",
+  "ICD10": "F50.0-F50.1"
+ },
+ {
+  "disease_ID": "68",
+  "DIS_ID": "DIS00068",
+  "disease_name": "Anthrax infection",
+  "ICD9": "001-139, 022",
+  "ICD10": "A00-B99, A22"
+ },
+ {
+  "disease_ID": "69",
+  "DIS_ID": "DIS00069",
+  "disease_name": "Anticoagulant",
+  "ICD9": "995.0",
+  "ICD10": "T78.2"
+ },
+ {
+  "disease_ID": "70",
+  "DIS_ID": "DIS00070",
+  "disease_name": "Antigen-induced decrease in coronary flow and cardiac anaphylaxis",
+  "ICD9": "995.0",
+  "ICD10": "T78.2"
+ },
+ {
+  "disease_ID": "71",
+  "DIS_ID": "DIS00071",
+  "disease_name": "Antiphospholipid syndrome",
+  "ICD9": "289.81",
+  "ICD10": "D68.8"
+ },
+ {
+  "disease_ID": "72",
+  "DIS_ID": "DIS00072",
+  "disease_name": "Anxiety disorder, unspecified",
+  "ICD9": "300",
+  "ICD10": "F40-F42"
+ },
+ {
+  "disease_ID": "73",
+  "DIS_ID": "DIS00073",
+  "disease_name": "Anxiety Disorders",
+  "ICD9": "300",
+  "ICD10": "F40-F42"
+ },
+ {
+  "disease_ID": "74",
+  "DIS_ID": "DIS00074",
+  "disease_name": "Arterial embolism and thrombosis",
+  "ICD9": "437.6, 444.9, 453, 671.5, 671.9",
+  "ICD10": "I74, I80-I82, I82, O88, T79.0-T79.1"
+ },
+ {
+  "disease_ID": "75",
+  "DIS_ID": "DIS00075",
+  "disease_name": "Arthritis",
+  "ICD9": "710-719",
+  "ICD10": "M00-M25"
+ },
+ {
+  "disease_ID": "76",
+  "DIS_ID": "DIS00076",
+  "disease_name": "Arthritis, Rheumatoid",
+  "ICD9": "696.0, 710-719, 714",
+  "ICD10": "L40.5, M00-M25, M05-M06, M07"
+ },
+ {
+  "disease_ID": "77",
+  "DIS_ID": "DIS00077",
+  "disease_name": "Asthma",
+  "ICD9": "493",
+  "ICD10": "J45"
+ },
+ {
+  "disease_ID": "78",
+  "DIS_ID": "DIS00078",
+  "disease_name": "Asthmatic bronchial mucosal inflammation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "79",
+  "DIS_ID": "DIS00079",
+  "disease_name": "Atherosclerosis",
+  "ICD9": "414.0, 440",
+  "ICD10": "I70"
+ },
+ {
+  "disease_ID": "80",
+  "DIS_ID": "DIS00080",
+  "disease_name": "Atherosclerotic cardiovascular disease",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "81",
+  "DIS_ID": "DIS00081",
+  "disease_name": "Atopic asthma",
+  "ICD9": "493",
+  "ICD10": "J45"
+ },
+ {
+  "disease_ID": "82",
+  "DIS_ID": "DIS00082",
+  "disease_name": "Atopic Dermatitis",
+  "ICD9": "691.8",
+  "ICD10": "L20"
+ },
+ {
+  "disease_ID": "83",
+  "DIS_ID": "DIS00083",
+  "disease_name": "Atrial fibrillation and flutter",
+  "ICD9": "427.31, 487, 488",
+  "ICD10": "I48, J10, J11"
+ },
+ {
+  "disease_ID": "84",
+  "DIS_ID": "DIS00084",
+  "disease_name": "Attention-deficit hyperactivity disorder",
+  "ICD9": "314.0",
+  "ICD10": "F90"
+ },
+ {
+  "disease_ID": "85",
+  "DIS_ID": "DIS00085",
+  "disease_name": "Attenuated coronary flow reserve and myocardial dysfunction",
+  "ICD9": "410",
+  "ICD10": "I21, I22"
+ },
+ {
+  "disease_ID": "86",
+  "DIS_ID": "DIS00086",
+  "disease_name": "Autoimmune and sudden sensorineural hearing loss",
+  "ICD9": "389",
+  "ICD10": "H90-H91"
+ },
+ {
+  "disease_ID": "87",
+  "DIS_ID": "DIS00087",
+  "disease_name": "Autoimmune cardiomyopathy",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "88",
+  "DIS_ID": "DIS00088",
+  "disease_name": "Autoimmune Diseases",
+  "ICD9": "279.4",
+  "ICD10": "D84.9, M35.9"
+ },
+ {
+  "disease_ID": "89",
+  "DIS_ID": "DIS00089",
+  "disease_name": "B cell acute lymphoblastic leukemia (B-ALL)",
+  "ICD9": "204.0, 208.9",
+  "ICD10": "C91-C95, C91.0"
+ },
+ {
+  "disease_ID": "90",
+  "DIS_ID": "DIS00090",
+  "disease_name": "B cell immunodeficiency",
+  "ICD9": "279.3",
+  "ICD10": "D84.9"
+ },
+ {
+  "disease_ID": "91",
+  "DIS_ID": "DIS00091",
+  "disease_name": "B12 deficiency",
+  "ICD9": "266.2",
+  "ICD10": "E53.8"
+ },
+ {
+  "disease_ID": "92",
+  "DIS_ID": "DIS00092",
+  "disease_name": "Bacillus subtilis infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "93",
+  "DIS_ID": "DIS00093",
+  "disease_name": "Bacterial Infections",
+  "ICD9": "001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104",
+  "ICD10": "A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79"
+ },
+ {
+  "disease_ID": "94",
+  "DIS_ID": "DIS00094",
+  "disease_name": "Basal cell carcinoma",
+  "ICD9": "173",
+  "ICD10": "C44"
+ },
+ {
+  "disease_ID": "95",
+  "DIS_ID": "DIS00095",
+  "disease_name": "B-cell lymphoma",
+  "ICD9": "202.8",
+  "ICD10": "C85.1"
+ },
+ {
+  "disease_ID": "96",
+  "DIS_ID": "DIS00096",
+  "disease_name": "B-cell malignancies",
+  "ICD9": "202.8",
+  "ICD10": "C85.1"
+ },
+ {
+  "disease_ID": "97",
+  "DIS_ID": "DIS00097",
+  "disease_name": "Behcet's disease",
+  "ICD9": "136.1",
+  "ICD10": "M35.2"
+ },
+ {
+  "disease_ID": "98",
+  "DIS_ID": "DIS00098",
+  "disease_name": "Benign prostate hyperplasia",
+  "ICD9": "600",
+  "ICD10": "N40"
+ },
+ {
+  "disease_ID": "99",
+  "DIS_ID": "DIS00099",
+  "disease_name": "Benign prostatic hyperplasia",
+  "ICD9": "600",
+  "ICD10": "N40"
+ },
+ {
+  "disease_ID": "100",
+  "DIS_ID": "DIS00100",
+  "disease_name": "Bipolar Affective Disorder",
+  "ICD9": "296.0, 296.1, 296.4, 296.5, 296.6, 296.7, 296.8",
+  "ICD10": "F31"
+ },
+ {
+  "disease_ID": "101",
+  "DIS_ID": "DIS00101",
+  "disease_name": "Bipolar Disorder",
+  "ICD9": "296.0, 296.1, 296.4, 296.5, 296.6, 296.7, 296.8",
+  "ICD10": "F31"
+ },
+ {
+  "disease_ID": "102",
+  "DIS_ID": "DIS00102",
+  "disease_name": "Biventricular heart failure",
+  "ICD9": "428",
+  "ICD10": "I50"
+ },
+ {
+  "disease_ID": "103",
+  "DIS_ID": "DIS00103",
+  "disease_name": "Bladder cancer",
+  "ICD9": "188",
+  "ICD10": "C67"
+ },
+ {
+  "disease_ID": "104",
+  "DIS_ID": "DIS00104",
+  "disease_name": "Blepharospasm",
+  "ICD9": "333.81",
+  "ICD10": "G24.5"
+ },
+ {
+  "disease_ID": "105",
+  "DIS_ID": "DIS00105",
+  "disease_name": "B-lineage malignancies",
+  "ICD9": "140-239",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "106",
+  "DIS_ID": "DIS00106",
+  "disease_name": "Blood, Blood Forming Organ Disorders, Unspecified",
+  "ICD9": "280-289",
+  "ICD10": "D50-D89"
+ },
+ {
+  "disease_ID": "107",
+  "DIS_ID": "DIS00107",
+  "disease_name": "Bone Diseases, Metabolic",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "108",
+  "DIS_ID": "DIS00108",
+  "disease_name": "Bone disorders",
+  "ICD9": "710-739",
+  "ICD10": "M00-M99"
+ },
+ {
+  "disease_ID": "109",
+  "DIS_ID": "DIS00109",
+  "disease_name": "Bone marrow transplant",
+  "ICD9": "279.5, 996",
+  "ICD10": "D89.8, T86"
+ },
+ {
+  "disease_ID": "110",
+  "DIS_ID": "DIS00110",
+  "disease_name": "Bone Metastases",
+  "ICD9": "198.5",
+  "ICD10": "C79.51"
+ },
+ {
+  "disease_ID": "111",
+  "DIS_ID": "DIS00111",
+  "disease_name": "Brain Cancer",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "112",
+  "DIS_ID": "DIS00112",
+  "disease_name": "Brain inflammation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "113",
+  "DIS_ID": "DIS00113",
+  "disease_name": "Brain injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "114",
+  "DIS_ID": "DIS00114",
+  "disease_name": "Brain ischemia",
+  "ICD9": "435, 437",
+  "ICD10": "G45.9, I67.8"
+ },
+ {
+  "disease_ID": "115",
+  "DIS_ID": "DIS00115",
+  "disease_name": "Brain ischemic insult",
+  "ICD9": "435, 437",
+  "ICD10": "G45.9, I67.8"
+ },
+ {
+  "disease_ID": "116",
+  "DIS_ID": "DIS00116",
+  "disease_name": "Brain tumors",
+  "ICD9": "191, 225.0",
+  "ICD10": "C71, D33"
+ },
+ {
+  "disease_ID": "117",
+  "DIS_ID": "DIS00117",
+  "disease_name": "Breast cancer",
+  "ICD9": "174, 175",
+  "ICD10": "C50"
+ },
+ {
+  "disease_ID": "118",
+  "DIS_ID": "DIS00118",
+  "disease_name": "Breast cancer (hormone-sensitive)",
+  "ICD9": "140-229, 174, 175",
+  "ICD10": "C00-C96, C50"
+ },
+ {
+  "disease_ID": "119",
+  "DIS_ID": "DIS00119",
+  "disease_name": "Breast Cancer, Cancers",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "120",
+  "DIS_ID": "DIS00120",
+  "disease_name": "Breast cancer, prostate cancer",
+  "ICD9": "140-229, 174, 175, 185",
+  "ICD10": "C00-C96, C50, C61"
+ },
+ {
+  "disease_ID": "121",
+  "DIS_ID": "DIS00121",
+  "disease_name": "Breast Neoplasms",
+  "ICD9": "140-229, 140-239, 174, 175, 610-611",
+  "ICD10": "C00-C96, C00-C96, C00-D48, C50, N60-N64"
+ },
+ {
+  "disease_ID": "122",
+  "DIS_ID": "DIS00122",
+  "disease_name": "Bronchial asthma",
+  "ICD9": "493",
+  "ICD10": "J45"
+ },
+ {
+  "disease_ID": "123",
+  "DIS_ID": "DIS00123",
+  "disease_name": "Bronchiolar carcinoma",
+  "ICD9": "162",
+  "ICD10": "C34"
+ },
+ {
+  "disease_ID": "124",
+  "DIS_ID": "DIS00124",
+  "disease_name": "Bronchoconstriction (cold air-induced)",
+  "ICD9": "493",
+  "ICD10": "J45"
+ },
+ {
+  "disease_ID": "125",
+  "DIS_ID": "DIS00125",
+  "disease_name": "Bronchospasm (histamine induced)",
+  "ICD9": "728.85",
+  "ICD10": "R25.2"
+ },
+ {
+  "disease_ID": "126",
+  "DIS_ID": "DIS00126",
+  "disease_name": "Burns and Burn Infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "127",
+  "DIS_ID": "DIS00127",
+  "disease_name": "Cachexia",
+  "ICD9": "799.4",
+  "ICD10": "R64"
+ },
+ {
+  "disease_ID": "128",
+  "DIS_ID": "DIS00128",
+  "disease_name": "Cancer",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "129",
+  "DIS_ID": "DIS00129",
+  "disease_name": "Cancer (multidrug resistant)",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "130",
+  "DIS_ID": "DIS00130",
+  "disease_name": "Cancer, unspecific",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "131",
+  "DIS_ID": "DIS00131",
+  "disease_name": "Cancer, unspecified",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "132",
+  "DIS_ID": "DIS00132",
+  "disease_name": "Cancer-associated morbidity",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "133",
+  "DIS_ID": "DIS00133",
+  "disease_name": "Cancers",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "134",
+  "DIS_ID": "DIS00134",
+  "disease_name": "Carcinoma in situ, unspecified",
+  "ICD9": "230-234",
+  "ICD10": "D00-D09"
+ },
+ {
+  "disease_ID": "135",
+  "DIS_ID": "DIS00135",
+  "disease_name": "Carcinoma, Non-Small-Cell Lung",
+  "ICD9": "162",
+  "ICD10": "C33, C34"
+ },
+ {
+  "disease_ID": "136",
+  "DIS_ID": "DIS00136",
+  "disease_name": "Cardiac allograft vasculopathy",
+  "ICD9": "996.8",
+  "ICD10": "T86"
+ },
+ {
+  "disease_ID": "137",
+  "DIS_ID": "DIS00137",
+  "disease_name": "Cardiac arrhythmias",
+  "ICD9": "427",
+  "ICD10": "I47-I49"
+ },
+ {
+  "disease_ID": "138",
+  "DIS_ID": "DIS00138",
+  "disease_name": "Cardiac diseases",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "139",
+  "DIS_ID": "DIS00139",
+  "disease_name": "Cardiac dysrhythmias",
+  "ICD9": "427",
+  "ICD10": "I47-I49"
+ },
+ {
+  "disease_ID": "140",
+  "DIS_ID": "DIS00140",
+  "disease_name": "Cardiac hypertrophy",
+  "ICD9": "429.3",
+  "ICD10": "I51.7"
+ },
+ {
+  "disease_ID": "141",
+  "DIS_ID": "DIS00141",
+  "disease_name": "Cardiac Surgery",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "142",
+  "DIS_ID": "DIS00142",
+  "disease_name": "Cardiomyopathies",
+  "ICD9": "413, 428",
+  "ICD10": "I20, I50"
+ },
+ {
+  "disease_ID": "143",
+  "DIS_ID": "DIS00143",
+  "disease_name": "Cardiovascular disease",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "144",
+  "DIS_ID": "DIS00144",
+  "disease_name": "Cardiovascular disease, unspecified",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "145",
+  "DIS_ID": "DIS00145",
+  "disease_name": "Cardiovascular Disorders",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "146",
+  "DIS_ID": "DIS00146",
+  "disease_name": "Cardiovascular Disorders (CVD)",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "147",
+  "DIS_ID": "DIS00147",
+  "disease_name": "Carpal tunnel syndrome",
+  "ICD9": "354",
+  "ICD10": "G56.0"
+ },
+ {
+  "disease_ID": "148",
+  "DIS_ID": "DIS00148",
+  "disease_name": "Cell Carcinoma",
+  "ICD9": "157.4",
+  "ICD10": "C25.4"
+ },
+ {
+  "disease_ID": "149",
+  "DIS_ID": "DIS00149",
+  "disease_name": "Central and peripheral nervous system diseases",
+  "ICD9": "320-389",
+  "ICD10": "G00-G99"
+ },
+ {
+  "disease_ID": "150",
+  "DIS_ID": "DIS00150",
+  "disease_name": "Central nervous system diseases",
+  "ICD9": "294.1, 307.23, 314.00, 314.01, 320-322, 323, 331.0, 332, 333.4, 340, 344.1, 344.81, 348.0",
+  "ICD10": "A83-A86, B94.1, F02.2, F02.3, F90, F95.2, G00-G37, G83.5, G93.0"
+ },
+ {
+  "disease_ID": "151",
+  "DIS_ID": "DIS00151",
+  "disease_name": "Central nervous system injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "152",
+  "DIS_ID": "DIS00152",
+  "disease_name": "Cerebral circulatory disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "153",
+  "DIS_ID": "DIS00153",
+  "disease_name": "Cerebral edema",
+  "ICD9": "348.5",
+  "ICD10": "G93.6"
+ },
+ {
+  "disease_ID": "154",
+  "DIS_ID": "DIS00154",
+  "disease_name": "Cerebral Infarction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "155",
+  "DIS_ID": "DIS00155",
+  "disease_name": "Cerebral ischemia",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "156",
+  "DIS_ID": "DIS00156",
+  "disease_name": "Cerebral oxidative damage",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "157",
+  "DIS_ID": "DIS00157",
+  "disease_name": "Cerebral vasospasm",
+  "ICD9": "443.9",
+  "ICD10": "I73.9"
+ },
+ {
+  "disease_ID": "158",
+  "DIS_ID": "DIS00158",
+  "disease_name": "Cervical cancer",
+  "ICD9": "180",
+  "ICD10": "C53"
+ },
+ {
+  "disease_ID": "159",
+  "DIS_ID": "DIS00159",
+  "disease_name": "Chagas' disease",
+  "ICD9": "86",
+  "ICD10": "B57"
+ },
+ {
+  "disease_ID": "160",
+  "DIS_ID": "DIS00160",
+  "disease_name": "Chemotherapy-induced nausea and vomiting",
+  "ICD9": "787, 787.0",
+  "ICD10": "R11"
+ },
+ {
+  "disease_ID": "161",
+  "DIS_ID": "DIS00161",
+  "disease_name": "Chemotherapy-induced thrombocytopenia",
+  "ICD9": "287.3, 287.4, 287.5",
+  "ICD10": "D69.6, P61.0"
+ },
+ {
+  "disease_ID": "162",
+  "DIS_ID": "DIS00162",
+  "disease_name": "Childhood seizure disorders",
+  "ICD9": "345",
+  "ICD10": "G40"
+ },
+ {
+  "disease_ID": "163",
+  "DIS_ID": "DIS00163",
+  "disease_name": "Cholestasis",
+  "ICD9": "576.2",
+  "ICD10": "K83.1"
+ },
+ {
+  "disease_ID": "164",
+  "DIS_ID": "DIS00164",
+  "disease_name": "Chondrosarcoma",
+  "ICD9": "170.9",
+  "ICD10": "C41.9"
+ },
+ {
+  "disease_ID": "165",
+  "DIS_ID": "DIS00165",
+  "disease_name": "Chronic airway inflammation",
+  "ICD9": "460-519",
+  "ICD10": "J00-J99"
+ },
+ {
+  "disease_ID": "166",
+  "DIS_ID": "DIS00166",
+  "disease_name": "Chronic angina pectoris",
+  "ICD9": "413",
+  "ICD10": "I20"
+ },
+ {
+  "disease_ID": "167",
+  "DIS_ID": "DIS00167",
+  "disease_name": "Chronic arthritis",
+  "ICD9": "710-719",
+  "ICD10": "M00-M25"
+ },
+ {
+  "disease_ID": "168",
+  "DIS_ID": "DIS00168",
+  "disease_name": "Chronic bronchitis",
+  "ICD9": "491",
+  "ICD10": "J42"
+ },
+ {
+  "disease_ID": "169",
+  "DIS_ID": "DIS00169",
+  "disease_name": "Chronic experimental allergic encephalomyelitis",
+  "ICD9": "204.0, 995.3",
+  "ICD10": "C91.0, T78.4"
+ },
+ {
+  "disease_ID": "170",
+  "DIS_ID": "DIS00170",
+  "disease_name": "Chronic graft-versus-host disease",
+  "ICD9": "279.5",
+  "ICD10": "T86.0"
+ },
+ {
+  "disease_ID": "171",
+  "DIS_ID": "DIS00171",
+  "disease_name": "Chronic heart failure",
+  "ICD9": "428",
+  "ICD10": "I50"
+ },
+ {
+  "disease_ID": "172",
+  "DIS_ID": "DIS00172",
+  "disease_name": "Chronic hepatitis C",
+  "ICD9": "070.4, 070.5, 070.70",
+  "ICD10": "B17.1, B18.2"
+ },
+ {
+  "disease_ID": "173",
+  "DIS_ID": "DIS00173",
+  "disease_name": "Chronic ileitis",
+  "ICD9": "555-558",
+  "ICD10": "K50-K52"
+ },
+ {
+  "disease_ID": "174",
+  "DIS_ID": "DIS00174",
+  "disease_name": "Chronic inflammatory diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "175",
+  "DIS_ID": "DIS00175",
+  "disease_name": "Chronic lung diseases",
+  "ICD9": "490-496, 770.7",
+  "ICD10": "J40-J44, J45, J47, P27.1"
+ },
+ {
+  "disease_ID": "176",
+  "DIS_ID": "DIS00176",
+  "disease_name": "Chronic lymphocytic leukemia",
+  "ICD9": "204.1",
+  "ICD10": "C91.1"
+ },
+ {
+  "disease_ID": "177",
+  "DIS_ID": "DIS00177",
+  "disease_name": "Chronic lymphocytic leukemia (CLL)",
+  "ICD9": "204.1, 208.9",
+  "ICD10": "C91-C95, C91.1"
+ },
+ {
+  "disease_ID": "178",
+  "DIS_ID": "DIS00178",
+  "disease_name": "Chronic Myelogenous Leukemia (CML)",
+  "ICD9": "205.1, 208.9",
+  "ICD10": "C91-C95, C92.1"
+ },
+ {
+  "disease_ID": "179",
+  "DIS_ID": "DIS00179",
+  "disease_name": "Chronic myeloid leukemia",
+  "ICD9": "205.1",
+  "ICD10": "C92.1"
+ },
+ {
+  "disease_ID": "180",
+  "DIS_ID": "DIS00180",
+  "disease_name": "Chronic myeloproliferative diseases",
+  "ICD9": "205.1, 238.4, 289.89, 289.9",
+  "ICD10": "D47.1"
+ },
+ {
+  "disease_ID": "181",
+  "DIS_ID": "DIS00181",
+  "disease_name": "Chronic obstructive pulmonary disease",
+  "ICD9": "490-492, 493, 494-496",
+  "ICD10": "J40-J44, J45, J47"
+ },
+ {
+  "disease_ID": "182",
+  "DIS_ID": "DIS00182",
+  "disease_name": "Chronic Obstructive Pulmonary Disease (COPD)",
+  "ICD9": "460-519, 490-492, 493, 494-496",
+  "ICD10": "J00-J99, J40-J44, J45, J47"
+ },
+ {
+  "disease_ID": "183",
+  "DIS_ID": "DIS00183",
+  "disease_name": "Chronic obstructive pulmonary disease, unspecified",
+  "ICD9": "460-519, 490-492, 494-496",
+  "ICD10": "J00-J99, J40-J44, J47"
+ },
+ {
+  "disease_ID": "184",
+  "DIS_ID": "DIS00184",
+  "disease_name": "Chronic pain",
+  "ICD9": "338.2,780",
+  "ICD10": "R52.1-R52.2, G89"
+ },
+ {
+  "disease_ID": "185",
+  "DIS_ID": "DIS00185",
+  "disease_name": "Chronic pathological pain",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "186",
+  "DIS_ID": "DIS00186",
+  "disease_name": "Chronic Primary Insomnia",
+  "ICD9": "307.41, 307.42, 327.0, 780.51, 780.52",
+  "ICD10": "F51.0, G47.0"
+ },
+ {
+  "disease_ID": "187",
+  "DIS_ID": "DIS00187",
+  "disease_name": "Chronic Renal Failure",
+  "ICD9": "585.9585.1-585.5403",
+  "ICD10": "N18"
+ },
+ {
+  "disease_ID": "188",
+  "DIS_ID": "DIS00188",
+  "disease_name": "Chronic rhinitis",
+  "ICD9": "472.0, 477",
+  "ICD10": "J00, J30, J31.0"
+ },
+ {
+  "disease_ID": "189",
+  "DIS_ID": "DIS00189",
+  "disease_name": "Chronic stable angina",
+  "ICD9": "413",
+  "ICD10": "I20"
+ },
+ {
+  "disease_ID": "190",
+  "DIS_ID": "DIS00190",
+  "disease_name": "Chronic urticaria",
+  "ICD9": "708",
+  "ICD10": "L50"
+ },
+ {
+  "disease_ID": "191",
+  "DIS_ID": "DIS00191",
+  "disease_name": "Clotting Disorders",
+  "ICD9": "286",
+  "ICD10": "D65-D69"
+ },
+ {
+  "disease_ID": "192",
+  "DIS_ID": "DIS00192",
+  "disease_name": "Coagulative disorders",
+  "ICD9": "286",
+  "ICD10": "D65-D69"
+ },
+ {
+  "disease_ID": "193",
+  "DIS_ID": "DIS00193",
+  "disease_name": "Cocaine dependence",
+  "ICD9": "304.2",
+  "ICD10": "F14.2"
+ },
+ {
+  "disease_ID": "194",
+  "DIS_ID": "DIS00194",
+  "disease_name": "Cocaine overdose",
+  "ICD9": "304.2",
+  "ICD10": "F14.2"
+ },
+ {
+  "disease_ID": "195",
+  "DIS_ID": "DIS00195",
+  "disease_name": "Coeliac disease",
+  "ICD9": "579",
+  "ICD10": "K90.0"
+ },
+ {
+  "disease_ID": "196",
+  "DIS_ID": "DIS00196",
+  "disease_name": "Cognitive deficits",
+  "ICD9": "290-294, 294.0, 780.09, 780.9, 780.93",
+  "ICD10": "F01-F07, F04, R41.3"
+ },
+ {
+  "disease_ID": "197",
+  "DIS_ID": "DIS00197",
+  "disease_name": "Cognitive deficits (age- and dementia-associated)",
+  "ICD9": "290-294",
+  "ICD10": "F01-F07"
+ },
+ {
+  "disease_ID": "198",
+  "DIS_ID": "DIS00198",
+  "disease_name": "Colitis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "199",
+  "DIS_ID": "DIS00199",
+  "disease_name": "Colon cancer",
+  "ICD9": "153, 154",
+  "ICD10": "C18-C21"
+ },
+ {
+  "disease_ID": "200",
+  "DIS_ID": "DIS00200",
+  "disease_name": "Colorectal cancer",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "201",
+  "DIS_ID": "DIS00201",
+  "disease_name": "Colorectal Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "202",
+  "DIS_ID": "DIS00202",
+  "disease_name": "Conformational diseases (polymer formation associated liver disease)",
+  "ICD9": "570-574",
+  "ICD10": "K70-K77"
+ },
+ {
+  "disease_ID": "203",
+  "DIS_ID": "DIS00203",
+  "disease_name": "Congestive Heart Failure",
+  "ICD9": "428",
+  "ICD10": "I50"
+ },
+ {
+  "disease_ID": "204",
+  "DIS_ID": "DIS00204",
+  "disease_name": "Convulsions",
+  "ICD9": "780.3",
+  "ICD10": "R56.0"
+ },
+ {
+  "disease_ID": "205",
+  "DIS_ID": "DIS00205",
+  "disease_name": "Coronary Artery Disease",
+  "ICD9": "410-414, 429.2",
+  "ICD10": "I20-I25"
+ },
+ {
+  "disease_ID": "206",
+  "DIS_ID": "DIS00206",
+  "disease_name": "Coronary atherosclerosis",
+  "ICD9": "414.0, 440",
+  "ICD10": "I70"
+ },
+ {
+  "disease_ID": "207",
+  "DIS_ID": "DIS00207",
+  "disease_name": "Coronary heart disease",
+  "ICD9": "414",
+  "ICD10": "I25.1"
+ },
+ {
+  "disease_ID": "208",
+  "DIS_ID": "DIS00208",
+  "disease_name": "Coronary syndromes",
+  "ICD9": "411.1",
+  "ICD10": "I20.0"
+ },
+ {
+  "disease_ID": "209",
+  "DIS_ID": "DIS00209",
+  "disease_name": "Coronaviruses infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "210",
+  "DIS_ID": "DIS00210",
+  "disease_name": "Cough",
+  "ICD9": "786.2",
+  "ICD10": "R05"
+ },
+ {
+  "disease_ID": "211",
+  "DIS_ID": "DIS00211",
+  "disease_name": "Crescentic glomerulonephritis",
+  "ICD9": "580-582",
+  "ICD10": "N00, N01, N03, N18"
+ },
+ {
+  "disease_ID": "212",
+  "DIS_ID": "DIS00212",
+  "disease_name": "Crohns's Disease",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "213",
+  "DIS_ID": "DIS00213",
+  "disease_name": "Crohns's Disease, unspecified",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "214",
+  "DIS_ID": "DIS00214",
+  "disease_name": "Cushing's disease",
+  "ICD9": "255",
+  "ICD10": "E24.0"
+ },
+ {
+  "disease_ID": "215",
+  "DIS_ID": "DIS00215",
+  "disease_name": "Cushing's syndrome",
+  "ICD9": "255",
+  "ICD10": "E24"
+ },
+ {
+  "disease_ID": "216",
+  "DIS_ID": "DIS00216",
+  "disease_name": "Cushing's syndrome (ACTH independent)",
+  "ICD9": "255",
+  "ICD10": "E24"
+ },
+ {
+  "disease_ID": "217",
+  "DIS_ID": "DIS00217",
+  "disease_name": "Cutaneous leishmaniasis",
+  "ICD9": "007.1, 085.1-085.4",
+  "ICD10": "A07.1, B55.1"
+ },
+ {
+  "disease_ID": "218",
+  "DIS_ID": "DIS00218",
+  "disease_name": "Cutaneous T-Cell Lymphoma",
+  "ICD9": "202.1, 202.2",
+  "ICD10": "C84.0, C84.1"
+ },
+ {
+  "disease_ID": "219",
+  "DIS_ID": "DIS00219",
+  "disease_name": "Cystic Fibrosis",
+  "ICD9": "277",
+  "ICD10": "E84"
+ },
+ {
+  "disease_ID": "220",
+  "DIS_ID": "DIS00220",
+  "disease_name": "Cystitis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "221",
+  "DIS_ID": "DIS00221",
+  "disease_name": "Cytokine-mediated diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "222",
+  "DIS_ID": "DIS00222",
+  "disease_name": "Cytomegalovirus retinitis",
+  "ICD9": "78.5",
+  "ICD10": "B25.8, H30.9"
+ },
+ {
+  "disease_ID": "223",
+  "DIS_ID": "DIS00223",
+  "disease_name": "Death",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "224",
+  "DIS_ID": "DIS00224",
+  "disease_name": "Delirium",
+  "ICD9": "293",
+  "ICD10": "F05"
+ },
+ {
+  "disease_ID": "225",
+  "DIS_ID": "DIS00225",
+  "disease_name": "Delusional disorder",
+  "ICD9": "297.1",
+  "ICD10": "F22.0"
+ },
+ {
+  "disease_ID": "226",
+  "DIS_ID": "DIS00226",
+  "disease_name": "Dementia",
+  "ICD9": "290-294",
+  "ICD10": "F01-F07"
+ },
+ {
+  "disease_ID": "227",
+  "DIS_ID": "DIS00227",
+  "disease_name": "Dengue virus infection",
+  "ICD9": "001-139, 042-075, 061",
+  "ICD10": "A00-B99, A80-A99, A90, B00-B34"
+ },
+ {
+  "disease_ID": "228",
+  "DIS_ID": "DIS00228",
+  "disease_name": "Depression",
+  "ICD9": "311",
+  "ICD10": "F32"
+ },
+ {
+  "disease_ID": "229",
+  "DIS_ID": "DIS00229",
+  "disease_name": "Depressive Disorder",
+  "ICD9": "296.2, 296.3, 332",
+  "ICD10": "F02.3, F32, F33, G20"
+ },
+ {
+  "disease_ID": "230",
+  "DIS_ID": "DIS00230",
+  "disease_name": "Depressive Disorder, Major",
+  "ICD9": "296.2, 296.3, 332",
+  "ICD10": "F02.3, F32, F33, G20"
+ },
+ {
+  "disease_ID": "231",
+  "DIS_ID": "DIS00231",
+  "disease_name": "Dermatological disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "232",
+  "DIS_ID": "DIS00232",
+  "disease_name": "Detrusor hyperreflexia",
+  "ICD9": "596.51",
+  "ICD10": "N32.81"
+ },
+ {
+  "disease_ID": "233",
+  "DIS_ID": "DIS00233",
+  "disease_name": "Diabetes insipidus",
+  "ICD9": "250, 253.5, 307.6, 588.1, 788.30, 788.42",
+  "ICD10": "E08-E13, E23.2, F98.0, N25.1, R32, R35"
+ },
+ {
+  "disease_ID": "234",
+  "DIS_ID": "DIS00234",
+  "disease_name": "Diabetes mellitus",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "235",
+  "DIS_ID": "DIS00235",
+  "disease_name": "Diabetes Mellitus Type 1 and 2",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "236",
+  "DIS_ID": "DIS00236",
+  "disease_name": "Diabetes Mellitus Type 2",
+  "ICD9": "250",
+  "ICD10": "E11"
+ },
+ {
+  "disease_ID": "237",
+  "DIS_ID": "DIS00237",
+  "disease_name": "Diabetes Mellitus, Type 2",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "238",
+  "DIS_ID": "DIS00238",
+  "disease_name": "Diabetic cardiovascular dysfunction",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "239",
+  "DIS_ID": "DIS00239",
+  "disease_name": "Diabetic complications",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "240",
+  "DIS_ID": "DIS00240",
+  "disease_name": "Diabetic disorders",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "241",
+  "DIS_ID": "DIS00241",
+  "disease_name": "Diabetic endothelial dysfunction",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "242",
+  "DIS_ID": "DIS00242",
+  "disease_name": "Diabetic nephropathy",
+  "ICD9": "250.4",
+  "ICD10": "E10.2, E11.2, E13.2"
+ },
+ {
+  "disease_ID": "243",
+  "DIS_ID": "DIS00243",
+  "disease_name": "Diabetic neuropathy",
+  "ICD9": "250.6",
+  "ICD10": "E10.4, E11.4, E13.4"
+ },
+ {
+  "disease_ID": "244",
+  "DIS_ID": "DIS00244",
+  "disease_name": "Diabetic retinopathy",
+  "ICD9": "250.5",
+  "ICD10": "H36, E10.3, E11.3, E13.3"
+ },
+ {
+  "disease_ID": "245",
+  "DIS_ID": "DIS00245",
+  "disease_name": "Diagnosis of pancreatic exocrine dysfunction and gastrinoma",
+  "ICD9": "157.4, 577.8",
+  "ICD10": "C25.4, K86.8"
+ },
+ {
+  "disease_ID": "246",
+  "DIS_ID": "DIS00246",
+  "disease_name": "Diarrhea",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "247",
+  "DIS_ID": "DIS00247",
+  "disease_name": "Diarrhea (secretory)",
+  "ICD9": "787.91",
+  "ICD10": "A09, K59.1"
+ },
+ {
+  "disease_ID": "248",
+  "DIS_ID": "DIS00248",
+  "disease_name": "Diarrhoea-predominant irritable bowel syndrome",
+  "ICD9": "564.1",
+  "ICD10": "K58"
+ },
+ {
+  "disease_ID": "249",
+  "DIS_ID": "DIS00249",
+  "disease_name": "Dietary shortage",
+  "ICD9": "260-269",
+  "ICD10": "E40-E46"
+ },
+ {
+  "disease_ID": "250",
+  "DIS_ID": "DIS00250",
+  "disease_name": "Dilated cardiomyopathy",
+  "ICD9": "425.4",
+  "ICD10": "I42.0"
+ },
+ {
+  "disease_ID": "251",
+  "DIS_ID": "DIS00251",
+  "disease_name": "Disabling peak-dose dyskinesias",
+  "ICD9": "333.8",
+  "ICD10": "G24.9"
+ },
+ {
+  "disease_ID": "252",
+  "DIS_ID": "DIS00252",
+  "disease_name": "Disorders associated with NMDAR hypofunction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "253",
+  "DIS_ID": "DIS00253",
+  "disease_name": "Disorders of bone mineralization",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "254",
+  "DIS_ID": "DIS00254",
+  "disease_name": "Disorders of cystine excretion",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "255",
+  "DIS_ID": "DIS00255",
+  "disease_name": "Disorders of initiating and maintaining sleep [insomnias]",
+  "ICD9": "710",
+  "ICD10": "M32"
+ },
+ {
+  "disease_ID": "256",
+  "DIS_ID": "DIS00256",
+  "disease_name": "Disseminated intravascular coagulation",
+  "ICD9": "286.6",
+  "ICD10": "D65"
+ },
+ {
+  "disease_ID": "257",
+  "DIS_ID": "DIS00257",
+  "disease_name": "Documented iron deficiency",
+  "ICD9": "280.9",
+  "ICD10": "E61.1"
+ },
+ {
+  "disease_ID": "258",
+  "DIS_ID": "DIS00258",
+  "disease_name": "Drug dependence",
+  "ICD9": "303-304",
+  "ICD10": "F10.2-F19.2"
+ },
+ {
+  "disease_ID": "259",
+  "DIS_ID": "DIS00259",
+  "disease_name": "Drug Toxicity",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "260",
+  "DIS_ID": "DIS00260",
+  "disease_name": "Drug-induced dyskinesias",
+  "ICD9": "333.8",
+  "ICD10": "G24.9"
+ },
+ {
+  "disease_ID": "261",
+  "DIS_ID": "DIS00261",
+  "disease_name": "Dry eye",
+  "ICD9": "370.33",
+  "ICD10": "H16.229"
+ },
+ {
+  "disease_ID": "262",
+  "DIS_ID": "DIS00262",
+  "disease_name": "Dyskinesia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "263",
+  "DIS_ID": "DIS00263",
+  "disease_name": "Dyslipidemia",
+  "ICD9": "272",
+  "ICD10": "E78"
+ },
+ {
+  "disease_ID": "264",
+  "DIS_ID": "DIS00264",
+  "disease_name": "Dysmenorrhea, unspecified",
+  "ICD9": "625.3",
+  "ICD10": "N94.4-N94.6"
+ },
+ {
+  "disease_ID": "265",
+  "DIS_ID": "DIS00265",
+  "disease_name": "Dyspnea",
+  "ICD9": "786.09",
+  "ICD10": "R06.0"
+ },
+ {
+  "disease_ID": "266",
+  "DIS_ID": "DIS00266",
+  "disease_name": "Dysregulation of apoptosis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "267",
+  "DIS_ID": "DIS00267",
+  "disease_name": "Eicosanoid-mediated disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "268",
+  "DIS_ID": "DIS00268",
+  "disease_name": "Emotional diseases",
+  "ICD9": "312-314",
+  "ICD10": "F90-F98"
+ },
+ {
+  "disease_ID": "269",
+  "DIS_ID": "DIS00269",
+  "disease_name": "Emphysema",
+  "ICD9": "492",
+  "ICD10": "J43"
+ },
+ {
+  "disease_ID": "270",
+  "DIS_ID": "DIS00270",
+  "disease_name": "Endocrine independent cancer",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "271",
+  "DIS_ID": "DIS00271",
+  "disease_name": "Endometrial carcinoma",
+  "ICD9": "182",
+  "ICD10": "C54.1"
+ },
+ {
+  "disease_ID": "272",
+  "DIS_ID": "DIS00272",
+  "disease_name": "Endometrial Neoplasms",
+  "ICD9": "140-239",
+  "ICD10": "C00-C96, C00-D48"
+ },
+ {
+  "disease_ID": "273",
+  "DIS_ID": "DIS00273",
+  "disease_name": "Endometriosis",
+  "ICD9": "617",
+  "ICD10": "N80"
+ },
+ {
+  "disease_ID": "274",
+  "DIS_ID": "DIS00274",
+  "disease_name": "Endotoxemia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "275",
+  "DIS_ID": "DIS00275",
+  "disease_name": "Endotoxin-induced myocardial neutrophil accumulation and contractile dysfunction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "276",
+  "DIS_ID": "DIS00276",
+  "disease_name": "Endotoxin-mediated diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "277",
+  "DIS_ID": "DIS00277",
+  "disease_name": "Ependymoma",
+  "ICD9": "191, 225",
+  "ICD10": "C71, D33"
+ },
+ {
+  "disease_ID": "278",
+  "DIS_ID": "DIS00278",
+  "disease_name": "Epidermal hyperplasia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "279",
+  "DIS_ID": "DIS00279",
+  "disease_name": "Epilepsy",
+  "ICD9": "345",
+  "ICD10": "G40"
+ },
+ {
+  "disease_ID": "280",
+  "DIS_ID": "DIS00280",
+  "disease_name": "Epileptic seizures",
+  "ICD9": "345.9, 780.3",
+  "ICD10": "G40, P90, R56"
+ },
+ {
+  "disease_ID": "281",
+  "DIS_ID": "DIS00281",
+  "disease_name": "ER alpha-positive prostate tumors",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "282",
+  "DIS_ID": "DIS00282",
+  "disease_name": "ER beta-positive prostate tumors",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "283",
+  "DIS_ID": "DIS00283",
+  "disease_name": "Erectile dysfunction",
+  "ICD9": "302.72, 607.84",
+  "ICD10": "F52.2, N48.4"
+ },
+ {
+  "disease_ID": "284",
+  "DIS_ID": "DIS00284",
+  "disease_name": "Esophageal Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "285",
+  "DIS_ID": "DIS00285",
+  "disease_name": "Esophageal squamous cell cancer",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "286",
+  "DIS_ID": "DIS00286",
+  "disease_name": "Essential (primary) hypertension",
+  "ICD9": "401",
+  "ICD10": "I10, I11, I12, I13, I15"
+ },
+ {
+  "disease_ID": "287",
+  "DIS_ID": "DIS00287",
+  "disease_name": "Essential hypertension",
+  "ICD9": "325, 390-459, 401, 430-459",
+  "ICD10": "G45-G46, I00-I99, I10, I11, I12, I13, I15, I60-I95"
+ },
+ {
+  "disease_ID": "288",
+  "DIS_ID": "DIS00288",
+  "disease_name": "Estrogen disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "289",
+  "DIS_ID": "DIS00289",
+  "disease_name": "Ewing's sarcoma",
+  "ICD9": "140-229, 162, 170, 174, 175",
+  "ICD10": "C00-C96, C33, C34, C41, C50"
+ },
+ {
+  "disease_ID": "290",
+  "DIS_ID": "DIS00290",
+  "disease_name": "Exanthema",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "291",
+  "DIS_ID": "DIS00291",
+  "disease_name": "Excessive collagen deposition",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "292",
+  "DIS_ID": "DIS00292",
+  "disease_name": "Excessive postoperative bleeding",
+  "ICD9": "459",
+  "ICD10": "R58"
+ },
+ {
+  "disease_ID": "293",
+  "DIS_ID": "DIS00293",
+  "disease_name": "Eye inflammation",
+  "ICD9": "360-379",
+  "ICD10": "H00-H59"
+ },
+ {
+  "disease_ID": "294",
+  "DIS_ID": "DIS00294",
+  "disease_name": "Fabry Disease",
+  "ICD9": "272.7",
+  "ICD10": "E75.2"
+ },
+ {
+  "disease_ID": "295",
+  "DIS_ID": "DIS00295",
+  "disease_name": "Fatigue",
+  "ICD9": "780.71",
+  "ICD10": "R53.82"
+ },
+ {
+  "disease_ID": "296",
+  "DIS_ID": "DIS00296",
+  "disease_name": "Febrile neutropenia",
+  "ICD9": "288",
+  "ICD10": "D70"
+ },
+ {
+  "disease_ID": "297",
+  "DIS_ID": "DIS00297",
+  "disease_name": "Fever",
+  "ICD9": "477",
+  "ICD10": "J30"
+ },
+ {
+  "disease_ID": "298",
+  "DIS_ID": "DIS00298",
+  "disease_name": "Fibrosing alveolitis",
+  "ICD9": "516.3",
+  "ICD10": "J84.1"
+ },
+ {
+  "disease_ID": "299",
+  "DIS_ID": "DIS00299",
+  "disease_name": "Fibrosis",
+  "ICD9": "277",
+  "ICD10": "E84"
+ },
+ {
+  "disease_ID": "300",
+  "DIS_ID": "DIS00300",
+  "disease_name": "Focal ischemia",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "301",
+  "DIS_ID": "DIS00301",
+  "disease_name": "Folic acid deficiency",
+  "ICD9": "266.2",
+  "ICD10": "E53.8"
+ },
+ {
+  "disease_ID": "302",
+  "DIS_ID": "DIS00302",
+  "disease_name": "Fractures, Bone",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "303",
+  "DIS_ID": "DIS00303",
+  "disease_name": "Frontal lobe epilepsy",
+  "ICD9": "345",
+  "ICD10": "G40"
+ },
+ {
+  "disease_ID": "304",
+  "DIS_ID": "DIS00304",
+  "disease_name": "Fungal diseases",
+  "ICD9": "110-118",
+  "ICD10": "B35-B49"
+ },
+ {
+  "disease_ID": "305",
+  "DIS_ID": "DIS00305",
+  "disease_name": "fungal infections",
+  "ICD9": "110-118",
+  "ICD10": "B35-B49"
+ },
+ {
+  "disease_ID": "306",
+  "DIS_ID": "DIS00306",
+  "disease_name": "Gain weight in patients with morbid obesity",
+  "ICD9": "278",
+  "ICD10": "E66"
+ },
+ {
+  "disease_ID": "307",
+  "DIS_ID": "DIS00307",
+  "disease_name": "Gastric acid hypersecretion",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "308",
+  "DIS_ID": "DIS00308",
+  "disease_name": "Gastric Cancer",
+  "ICD9": "140-229, 151, 188",
+  "ICD10": "C00-C96, C16, C67"
+ },
+ {
+  "disease_ID": "309",
+  "DIS_ID": "DIS00309",
+  "disease_name": "Gastric disease",
+  "ICD9": "536, 750",
+  "ICD10": "K30-K31, Q40-Q41"
+ },
+ {
+  "disease_ID": "310",
+  "DIS_ID": "DIS00310",
+  "disease_name": "Gastric emptying disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "311",
+  "DIS_ID": "DIS00311",
+  "disease_name": "Gastric ulcer",
+  "ICD9": "531",
+  "ICD10": "K25"
+ },
+ {
+  "disease_ID": "312",
+  "DIS_ID": "DIS00312",
+  "disease_name": "Gastrin sensitive tumours",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "313",
+  "DIS_ID": "DIS00313",
+  "disease_name": "Gastroesophageal reflux disease",
+  "ICD9": "530",
+  "ICD10": "K21"
+ },
+ {
+  "disease_ID": "314",
+  "DIS_ID": "DIS00314",
+  "disease_name": "Gastroesophageal Reflux Disease (GERD)",
+  "ICD9": "530",
+  "ICD10": "K21"
+ },
+ {
+  "disease_ID": "315",
+  "DIS_ID": "DIS00315",
+  "disease_name": "Gastrointestinal adenocarcinomas",
+  "ICD9": "140-199",
+  "ICD10": "C00-C75, C7A, C7B"
+ },
+ {
+  "disease_ID": "316",
+  "DIS_ID": "DIS00316",
+  "disease_name": "Gastrointestinal Cancers",
+  "ICD9": "150-159",
+  "ICD10": "C15-C26"
+ },
+ {
+  "disease_ID": "317",
+  "DIS_ID": "DIS00317",
+  "disease_name": "Gastrointestinal Diseases and Disorders, miscellaneous",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "318",
+  "DIS_ID": "DIS00318",
+  "disease_name": "Gastrointestinal motility disorders",
+  "ICD9": "536.8",
+  "ICD10": "K30"
+ },
+ {
+  "disease_ID": "319",
+  "DIS_ID": "DIS00319",
+  "disease_name": "Gastrointestinal Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "320",
+  "DIS_ID": "DIS00320",
+  "disease_name": "Gastrointestinal stromal tumors",
+  "ICD9": "150-159",
+  "ICD10": "C15-C26"
+ },
+ {
+  "disease_ID": "321",
+  "DIS_ID": "DIS00321",
+  "disease_name": "Gastrointestinal Stromal Tumors (GIST)",
+  "ICD9": "140-199, 150-159, 210-229",
+  "ICD10": "C00-C75, C15-C26, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "322",
+  "DIS_ID": "DIS00322",
+  "disease_name": "Gastro-intestinal ulcers",
+  "ICD9": "531",
+  "ICD10": "K25"
+ },
+ {
+  "disease_ID": "323",
+  "DIS_ID": "DIS00323",
+  "disease_name": "GCV-resistant HCMV",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "324",
+  "DIS_ID": "DIS00324",
+  "disease_name": "Genital warts",
+  "ICD9": "78.11",
+  "ICD10": "A63.0"
+ },
+ {
+  "disease_ID": "325",
+  "DIS_ID": "DIS00325",
+  "disease_name": "Genitourinary tumors",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "326",
+  "DIS_ID": "DIS00326",
+  "disease_name": "Geographic atrophy associated with age-related macular degeneration",
+  "ICD9": "362.5",
+  "ICD10": "H35.3"
+ },
+ {
+  "disease_ID": "327",
+  "DIS_ID": "DIS00327",
+  "disease_name": "Gestational hypertension",
+  "ICD9": "401",
+  "ICD10": "I10, I11, I12, I13, I15"
+ },
+ {
+  "disease_ID": "328",
+  "DIS_ID": "DIS00328",
+  "disease_name": "Giardiasis infections",
+  "ICD9": "001-139, 007.1",
+  "ICD10": "A00-B99, A07.1"
+ },
+ {
+  "disease_ID": "329",
+  "DIS_ID": "DIS00329",
+  "disease_name": "Gilles de la Tourette's disorder",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "330",
+  "DIS_ID": "DIS00330",
+  "disease_name": "Glaucoma",
+  "ICD9": "365",
+  "ICD10": "H40-H42"
+ },
+ {
+  "disease_ID": "331",
+  "DIS_ID": "DIS00331",
+  "disease_name": "Glial proliferation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "332",
+  "DIS_ID": "DIS00332",
+  "disease_name": "Glioblastoma multiforme",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "333",
+  "DIS_ID": "DIS00333",
+  "disease_name": "Glioblastoma Multiforme (GBM)",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "334",
+  "DIS_ID": "DIS00334",
+  "disease_name": "Gliomas",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "335",
+  "DIS_ID": "DIS00335",
+  "disease_name": "Glomerulonephritis",
+  "ICD9": "580-582",
+  "ICD10": "N00, N01, N03, N18"
+ },
+ {
+  "disease_ID": "336",
+  "DIS_ID": "DIS00336",
+  "disease_name": "Gout",
+  "ICD9": "274",
+  "ICD10": "M10"
+ },
+ {
+  "disease_ID": "337",
+  "DIS_ID": "DIS00337",
+  "disease_name": "Graft-versus-host disease, acute",
+  "ICD9": "279.5",
+  "ICD10": "T86.0"
+ },
+ {
+  "disease_ID": "338",
+  "DIS_ID": "DIS00338",
+  "disease_name": "Graft-versus-host disease, chronic",
+  "ICD9": "279.5",
+  "ICD10": "T86.0"
+ },
+ {
+  "disease_ID": "339",
+  "DIS_ID": "DIS00339",
+  "disease_name": "Gram-negative bacterial infection",
+  "ICD9": "001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104",
+  "ICD10": "A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79"
+ },
+ {
+  "disease_ID": "340",
+  "DIS_ID": "DIS00340",
+  "disease_name": "Graves' disease",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "341",
+  "DIS_ID": "DIS00341",
+  "disease_name": "Growth Hormone Deficiencies/Abnormalities",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "342",
+  "DIS_ID": "DIS00342",
+  "disease_name": "Guillain-Barre syndrome",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "343",
+  "DIS_ID": "DIS00343",
+  "disease_name": "Haemorrhagic conditions",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "344",
+  "DIS_ID": "DIS00344",
+  "disease_name": "Hairy cell leukemia",
+  "ICD9": "202.4",
+  "ICD10": "C91.4"
+ },
+ {
+  "disease_ID": "345",
+  "DIS_ID": "DIS00345",
+  "disease_name": "HCV infection",
+  "ICD9": "070.4, 070.5, 070.70",
+  "ICD10": "B17.1, B18.2"
+ },
+ {
+  "disease_ID": "346",
+  "DIS_ID": "DIS00346",
+  "disease_name": "Head and Neck Cancer",
+  "ICD9": "140-149",
+  "ICD10": "C07-C14, C32-C33"
+ },
+ {
+  "disease_ID": "347",
+  "DIS_ID": "DIS00347",
+  "disease_name": "Head and Neck Neoplasms",
+  "ICD9": "199",
+  "ICD10": "C44"
+ },
+ {
+  "disease_ID": "348",
+  "DIS_ID": "DIS00348",
+  "disease_name": "Head and neck squamous cell carcinomas",
+  "ICD9": "199",
+  "ICD10": "C44"
+ },
+ {
+  "disease_ID": "349",
+  "DIS_ID": "DIS00349",
+  "disease_name": "Head and neck tumors",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "350",
+  "DIS_ID": "DIS00350",
+  "disease_name": "Hearing Loss",
+  "ICD9": "389",
+  "ICD10": "H90-H91"
+ },
+ {
+  "disease_ID": "351",
+  "DIS_ID": "DIS00351",
+  "disease_name": "Heart Disease",
+  "ICD9": "390-429",
+  "ICD10": "I00-I52"
+ },
+ {
+  "disease_ID": "352",
+  "DIS_ID": "DIS00352",
+  "disease_name": "Heart disease, unspecified",
+  "ICD9": "390-429",
+  "ICD10": "I00-I52"
+ },
+ {
+  "disease_ID": "353",
+  "DIS_ID": "DIS00353",
+  "disease_name": "Heart Failure",
+  "ICD9": "428",
+  "ICD10": "I50"
+ },
+ {
+  "disease_ID": "354",
+  "DIS_ID": "DIS00354",
+  "disease_name": "Heart transplant",
+  "ICD9": "996",
+  "ICD10": "T86"
+ },
+ {
+  "disease_ID": "355",
+  "DIS_ID": "DIS00355",
+  "disease_name": "Helicobacter pylori infection",
+  "ICD9": "41.86",
+  "ICD10": "B96.81"
+ },
+ {
+  "disease_ID": "356",
+  "DIS_ID": "DIS00356",
+  "disease_name": "Helminth infection",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "357",
+  "DIS_ID": "DIS00357",
+  "disease_name": "Hematological Malignancies",
+  "ICD9": "200-209",
+  "ICD10": "C81-C96"
+ },
+ {
+  "disease_ID": "358",
+  "DIS_ID": "DIS00358",
+  "disease_name": "Hemorrhage",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "359",
+  "DIS_ID": "DIS00359",
+  "disease_name": "Heparin-induced thrombocytopenia type II",
+  "ICD9": "287.3, 287.4, 287.5",
+  "ICD10": "D69.6, P61.0"
+ },
+ {
+  "disease_ID": "360",
+  "DIS_ID": "DIS00360",
+  "disease_name": "Hepatic fibrosis",
+  "ICD9": "709.2",
+  "ICD10": "L90.5"
+ },
+ {
+  "disease_ID": "361",
+  "DIS_ID": "DIS00361",
+  "disease_name": "Hepatitis C",
+  "ICD9": "070.4, 070.5, 070.70",
+  "ICD10": "B17.1, B18.2"
+ },
+ {
+  "disease_ID": "362",
+  "DIS_ID": "DIS00362",
+  "disease_name": "Hepatitis, Viral, C",
+  "ICD9": "573.3",
+  "ICD10": "K75.9"
+ },
+ {
+  "disease_ID": "363",
+  "DIS_ID": "DIS00363",
+  "disease_name": "Hepatitis, virus not identified",
+  "ICD9": "573.3",
+  "ICD10": "K75.9"
+ },
+ {
+  "disease_ID": "364",
+  "DIS_ID": "DIS00364",
+  "disease_name": "Hepatocellular carcinoma",
+  "ICD9": "155",
+  "ICD10": "C22.0"
+ },
+ {
+  "disease_ID": "365",
+  "DIS_ID": "DIS00365",
+  "disease_name": "Hepatocellular Carcinoma (HCC)",
+  "ICD9": "155",
+  "ICD10": "C22.0"
+ },
+ {
+  "disease_ID": "366",
+  "DIS_ID": "DIS00366",
+  "disease_name": "Hepatorenal syndrome",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "367",
+  "DIS_ID": "DIS00367",
+  "disease_name": "HER2-positive Metastatic Breast Cancer",
+  "ICD9": "174, 175",
+  "ICD10": "C50"
+ },
+ {
+  "disease_ID": "368",
+  "DIS_ID": "DIS00368",
+  "disease_name": "Hereditary Angioedema",
+  "ICD9": "277.6",
+  "ICD10": "D84.1"
+ },
+ {
+  "disease_ID": "369",
+  "DIS_ID": "DIS00369",
+  "disease_name": "Hereditary Angioedema (HAE)",
+  "ICD9": "277.6",
+  "ICD10": "D84.1"
+ },
+ {
+  "disease_ID": "370",
+  "DIS_ID": "DIS00370",
+  "disease_name": "Hereditary Polyposis Syndromes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "371",
+  "DIS_ID": "DIS00371",
+  "disease_name": "Heroin Dependence",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "372",
+  "DIS_ID": "DIS00372",
+  "disease_name": "Herpes virus infection",
+  "ICD9": "001-139, 042-075",
+  "ICD10": "A00-B99, A80-A99, B00-B34"
+ },
+ {
+  "disease_ID": "373",
+  "DIS_ID": "DIS00373",
+  "disease_name": "Hirsutism",
+  "ICD9": "704.1",
+  "ICD10": "L68.0"
+ },
+ {
+  "disease_ID": "374",
+  "DIS_ID": "DIS00374",
+  "disease_name": "HIV",
+  "ICD9": "42",
+  "ICD10": "B20"
+ },
+ {
+  "disease_ID": "375",
+  "DIS_ID": "DIS00375",
+  "disease_name": "HIV Infection",
+  "ICD9": "42",
+  "ICD10": "B20"
+ },
+ {
+  "disease_ID": "376",
+  "DIS_ID": "DIS00376",
+  "disease_name": "Hodgkins disease, unspecified",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "377",
+  "DIS_ID": "DIS00377",
+  "disease_name": "Homocysteine-related vascular disease",
+  "ICD9": "325, 430-459",
+  "ICD10": "G45-G46, I60-I95"
+ },
+ {
+  "disease_ID": "378",
+  "DIS_ID": "DIS00378",
+  "disease_name": "Homocystinuria",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "379",
+  "DIS_ID": "DIS00379",
+  "disease_name": "Hormone Deficiencies",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "380",
+  "DIS_ID": "DIS00380",
+  "disease_name": "Hormone-refractory Prostate cancer",
+  "ICD9": "140-229, 185, 203.0, 208.9",
+  "ICD10": "C00-C96, C61, C90.0, C91-C95"
+ },
+ {
+  "disease_ID": "381",
+  "DIS_ID": "DIS00381",
+  "disease_name": "Hot Flashes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "382",
+  "DIS_ID": "DIS00382",
+  "disease_name": "Human cytomegalovirus infections",
+  "ICD9": "001-139, 078.5",
+  "ICD10": "A00-B99, B25"
+ },
+ {
+  "disease_ID": "383",
+  "DIS_ID": "DIS00383",
+  "disease_name": "Human immunodeficiency virus [HIV] disease",
+  "ICD9": "279.3",
+  "ICD10": "D84.9"
+ },
+ {
+  "disease_ID": "384",
+  "DIS_ID": "DIS00384",
+  "disease_name": "Huntington's disease",
+  "ICD9": "294.1, 333.4",
+  "ICD10": "F02.2, G10"
+ },
+ {
+  "disease_ID": "385",
+  "DIS_ID": "DIS00385",
+  "disease_name": "Hydronephrosis",
+  "ICD9": "591",
+  "ICD10": "N13.0-N13.3"
+ },
+ {
+  "disease_ID": "386",
+  "DIS_ID": "DIS00386",
+  "disease_name": "Hyperammonemia",
+  "ICD9": "270.6",
+  "ICD10": "E72.2"
+ },
+ {
+  "disease_ID": "387",
+  "DIS_ID": "DIS00387",
+  "disease_name": "Hypercalcemia of malignancy",
+  "ICD9": "275.42",
+  "ICD10": "E83.5"
+ },
+ {
+  "disease_ID": "388",
+  "DIS_ID": "DIS00388",
+  "disease_name": "Hypercholesterolaemia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "389",
+  "DIS_ID": "DIS00389",
+  "disease_name": "Hypercholesterolemia",
+  "ICD9": "272",
+  "ICD10": "E78.0"
+ },
+ {
+  "disease_ID": "390",
+  "DIS_ID": "DIS00390",
+  "disease_name": "Hypereosinophilic syndrome",
+  "ICD9": "288.3",
+  "ICD10": "D72.1"
+ },
+ {
+  "disease_ID": "391",
+  "DIS_ID": "DIS00391",
+  "disease_name": "Hyperglycemia",
+  "ICD9": "790.29",
+  "ICD10": "R73.9"
+ },
+ {
+  "disease_ID": "392",
+  "DIS_ID": "DIS00392",
+  "disease_name": "Hyperimmunoglobulinemia D",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "393",
+  "DIS_ID": "DIS00393",
+  "disease_name": "Hyperinflammatory provoked organ injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "394",
+  "DIS_ID": "DIS00394",
+  "disease_name": "Hyperinsulinemia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "395",
+  "DIS_ID": "DIS00395",
+  "disease_name": "Hyperlipidemia",
+  "ICD9": "272.0-272.4",
+  "ICD10": "E78"
+ },
+ {
+  "disease_ID": "396",
+  "DIS_ID": "DIS00396",
+  "disease_name": "Hyperparathyroidism, unspecified",
+  "ICD9": "252",
+  "ICD10": "E21"
+ },
+ {
+  "disease_ID": "397",
+  "DIS_ID": "DIS00397",
+  "disease_name": "Hypertension",
+  "ICD9": "325, 390-459, 401, 430-459",
+  "ICD10": "G45-G46, I00-I99, I10, I11, I12, I13, I15, I60-I95"
+ },
+ {
+  "disease_ID": "398",
+  "DIS_ID": "DIS00398",
+  "disease_name": "Hypertension, Angina",
+  "ICD9": "401, 413",
+  "ICD10": "I10, I11, I12, I13, I15, I20"
+ },
+ {
+  "disease_ID": "399",
+  "DIS_ID": "DIS00399",
+  "disease_name": "Hypertensive vascular disease",
+  "ICD9": "325, 430-459",
+  "ICD10": "G45-G46, I60-I95"
+ },
+ {
+  "disease_ID": "400",
+  "DIS_ID": "DIS00400",
+  "disease_name": "Hypertonicity of bladder",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "401",
+  "DIS_ID": "DIS00401",
+  "disease_name": "Hypertriglyceridemia",
+  "ICD9": "272.1",
+  "ICD10": "E78.1, E78.2, E78.3"
+ },
+ {
+  "disease_ID": "402",
+  "DIS_ID": "DIS00402",
+  "disease_name": "Hypertrophic vascular disease",
+  "ICD9": "325, 430-459",
+  "ICD10": "G45-G46, I60-I95"
+ },
+ {
+  "disease_ID": "403",
+  "DIS_ID": "DIS00403",
+  "disease_name": "Hypoglycemia",
+  "ICD9": "250.8, 251.0, 251.1, 251.2, 270.3, 775.6, 962.3",
+  "ICD10": "E16.0-E16.2"
+ },
+ {
+  "disease_ID": "404",
+  "DIS_ID": "DIS00404",
+  "disease_name": "Hypogonadotropic hypogonadism",
+  "ICD9": "257.2",
+  "ICD10": "E23.0, E28.3, E29.1"
+ },
+ {
+  "disease_ID": "405",
+  "DIS_ID": "DIS00405",
+  "disease_name": "Hypoinsulinemia",
+  "ICD9": "251.3",
+  "ICD10": "E89.1"
+ },
+ {
+  "disease_ID": "406",
+  "DIS_ID": "DIS00406",
+  "disease_name": "Hyponatremia",
+  "ICD9": "276.1",
+  "ICD10": "E87.1"
+ },
+ {
+  "disease_ID": "407",
+  "DIS_ID": "DIS00407",
+  "disease_name": "Hypotension",
+  "ICD9": "458.0, 780.7",
+  "ICD10": "I95.1, R53"
+ },
+ {
+  "disease_ID": "408",
+  "DIS_ID": "DIS00408",
+  "disease_name": "Hypothalamic-pituitary ACTH function",
+  "ICD9": "253.7",
+  "ICD10": "E23.0, E89.3"
+ },
+ {
+  "disease_ID": "409",
+  "DIS_ID": "DIS00409",
+  "disease_name": "Hypothermia",
+  "ICD9": "991.6",
+  "ICD10": "T68"
+ },
+ {
+  "disease_ID": "410",
+  "DIS_ID": "DIS00410",
+  "disease_name": "Hypoxic-ischemic encephalopathy",
+  "ICD9": "768.7",
+  "ICD10": "P91.60"
+ },
+ {
+  "disease_ID": "411",
+  "DIS_ID": "DIS00411",
+  "disease_name": "Idiopathic pulmonary fibrosis",
+  "ICD9": "516.3",
+  "ICD10": "J84.1"
+ },
+ {
+  "disease_ID": "412",
+  "DIS_ID": "DIS00412",
+  "disease_name": "Immune disease",
+  "ICD9": "279.4",
+  "ICD10": "D84.9, M35.9"
+ },
+ {
+  "disease_ID": "413",
+  "DIS_ID": "DIS00413",
+  "disease_name": "Immunodeficiency",
+  "ICD9": "279.3",
+  "ICD10": "D84.9"
+ },
+ {
+  "disease_ID": "414",
+  "DIS_ID": "DIS00414",
+  "disease_name": "Immunosuppression",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "415",
+  "DIS_ID": "DIS00415",
+  "disease_name": "Infections",
+  "ICD9": "001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104",
+  "ICD10": "A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79"
+ },
+ {
+  "disease_ID": "416",
+  "DIS_ID": "DIS00416",
+  "disease_name": "Inflammation",
+  "ICD9": "360-379",
+  "ICD10": "H00-H59"
+ },
+ {
+  "disease_ID": "417",
+  "DIS_ID": "DIS00417",
+  "disease_name": "Inflammatory Bowel Disease",
+  "ICD9": "555, 556",
+  "ICD10": "K50, K51"
+ },
+ {
+  "disease_ID": "418",
+  "DIS_ID": "DIS00418",
+  "disease_name": "Inflammatory diseases",
+  "ICD9": "360-379",
+  "ICD10": "H00-H59"
+ },
+ {
+  "disease_ID": "419",
+  "DIS_ID": "DIS00419",
+  "disease_name": "Inflammatory diseases associated with hypoxia",
+  "ICD9": "799.02",
+  "ICD10": "R09.02"
+ },
+ {
+  "disease_ID": "420",
+  "DIS_ID": "DIS00420",
+  "disease_name": "Inflammatory Disorders, Unspecified",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "421",
+  "DIS_ID": "DIS00421",
+  "disease_name": "Inflammatory lung disease",
+  "ICD9": "490-492,494-496",
+  "ICD10": "J40-J44, J47"
+ },
+ {
+  "disease_ID": "422",
+  "DIS_ID": "DIS00422",
+  "disease_name": "Inflammatory neurological disease",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "423",
+  "DIS_ID": "DIS00423",
+  "disease_name": "Inflammatory pain",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "424",
+  "DIS_ID": "DIS00424",
+  "disease_name": "Inflammatory response in alcoholic liver disease",
+  "ICD9": "570-574",
+  "ICD10": "K70-K77"
+ },
+ {
+  "disease_ID": "425",
+  "DIS_ID": "DIS00425",
+  "disease_name": "Inflammatory skin disorder",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "426",
+  "DIS_ID": "DIS00426",
+  "disease_name": "Influenza A virus infection",
+  "ICD9": "001-139, 042-075, 487, 488",
+  "ICD10": "A00-B99, A80-A99, B00-B34, J10, J11"
+ },
+ {
+  "disease_ID": "427",
+  "DIS_ID": "DIS00427",
+  "disease_name": "Influenza, virus not identified",
+  "ICD9": "487, 488",
+  "ICD10": "J10, J11"
+ },
+ {
+  "disease_ID": "428",
+  "DIS_ID": "DIS00428",
+  "disease_name": "Injury to spine and spinal cord",
+  "ICD9": "767.4",
+  "ICD10": "G95.9, T09.3"
+ },
+ {
+  "disease_ID": "429",
+  "DIS_ID": "DIS00429",
+  "disease_name": "Insomnia",
+  "ICD9": "300, 307.4",
+  "ICD10": "F40-F42, F51.0, G47.0"
+ },
+ {
+  "disease_ID": "430",
+  "DIS_ID": "DIS00430",
+  "disease_name": "Insulin resistance",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "431",
+  "DIS_ID": "DIS00431",
+  "disease_name": "Insulin resistance (obesity-related)",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "432",
+  "DIS_ID": "DIS00432",
+  "disease_name": "Insulin-dependent diabetes mellitus",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "433",
+  "DIS_ID": "DIS00433",
+  "disease_name": "Intestinal ischemia-reperfusion associated with lung injury and the acute respiratory distress syndrome",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "434",
+  "DIS_ID": "DIS00434",
+  "disease_name": "Intimal hyperplasia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "435",
+  "DIS_ID": "DIS00435",
+  "disease_name": "Intrahepatic cholestasis",
+  "ICD9": "576.2",
+  "ICD10": "K83.1"
+ },
+ {
+  "disease_ID": "436",
+  "DIS_ID": "DIS00436",
+  "disease_name": "Invasive candidiasis",
+  "ICD9": "112",
+  "ICD10": "B37"
+ },
+ {
+  "disease_ID": "437",
+  "DIS_ID": "DIS00437",
+  "disease_name": "Iron-deficiency anemia",
+  "ICD9": "280",
+  "ICD10": "D50"
+ },
+ {
+  "disease_ID": "438",
+  "DIS_ID": "DIS00438",
+  "disease_name": "Irritable bowel syndrome",
+  "ICD9": "564.1",
+  "ICD10": "K58"
+ },
+ {
+  "disease_ID": "439",
+  "DIS_ID": "DIS00439",
+  "disease_name": "Irritable Bowel Syndrome (IBS)",
+  "ICD9": "250, 250.00, 250.02, 278, 564.1",
+  "ICD10": "E08-E13, E11, E66, K58"
+ },
+ {
+  "disease_ID": "440",
+  "DIS_ID": "DIS00440",
+  "disease_name": "Irritation",
+  "ICD9": "360-379",
+  "ICD10": "H00-H59"
+ },
+ {
+  "disease_ID": "441",
+  "DIS_ID": "DIS00441",
+  "disease_name": "Ischemia",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "442",
+  "DIS_ID": "DIS00442",
+  "disease_name": "Ischemia reperfusion injuries",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "443",
+  "DIS_ID": "DIS00443",
+  "disease_name": "Ischemic heart disease",
+  "ICD9": "410-414",
+  "ICD10": "I20-I25"
+ },
+ {
+  "disease_ID": "444",
+  "DIS_ID": "DIS00444",
+  "disease_name": "Ischemic injury of the liver",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "445",
+  "DIS_ID": "DIS00445",
+  "disease_name": "Ischemic Stroke",
+  "ICD9": "434.91",
+  "ICD10": "I61-I63"
+ },
+ {
+  "disease_ID": "446",
+  "DIS_ID": "DIS00446",
+  "disease_name": "Kaposi's Sarcoma",
+  "ICD9": "176",
+  "ICD10": "C46"
+ },
+ {
+  "disease_ID": "447",
+  "DIS_ID": "DIS00447",
+  "disease_name": "Kidney Cancer",
+  "ICD9": "189",
+  "ICD10": "C64"
+ },
+ {
+  "disease_ID": "448",
+  "DIS_ID": "DIS00448",
+  "disease_name": "Kidney Disease",
+  "ICD9": "280",
+  "ICD10": "D50, N00-N29"
+ },
+ {
+  "disease_ID": "449",
+  "DIS_ID": "DIS00449",
+  "disease_name": "Kidney Transplantation",
+  "ICD9": "996",
+  "ICD10": "T86"
+ },
+ {
+  "disease_ID": "450",
+  "DIS_ID": "DIS00450",
+  "disease_name": "Kinetoplastida parasite infection",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "451",
+  "DIS_ID": "DIS00451",
+  "disease_name": "Korsakov's alcoholic psychosis",
+  "ICD9": "290-299",
+  "ICD10": "F20-F29"
+ },
+ {
+  "disease_ID": "452",
+  "DIS_ID": "DIS00452",
+  "disease_name": "Lasting tachycardia",
+  "ICD9": "427, 785.0",
+  "ICD10": "I47-I49, R00.0"
+ },
+ {
+  "disease_ID": "453",
+  "DIS_ID": "DIS00453",
+  "disease_name": "Late-stage Solid tumors",
+  "ICD9": "140-199, 200, 202, 202.8, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "454",
+  "DIS_ID": "DIS00454",
+  "disease_name": "Leishmania Infections",
+  "ICD9": "001-139, 296.0, 296.4, 296.6",
+  "ICD10": "A00-B99, F30"
+ },
+ {
+  "disease_ID": "455",
+  "DIS_ID": "DIS00455",
+  "disease_name": "Leprosy, unspecified",
+  "ICD9": "030.9",
+  "ICD10": "A30.9"
+ },
+ {
+  "disease_ID": "456",
+  "DIS_ID": "DIS00456",
+  "disease_name": "Lesch-Nyhan syndrome",
+  "ICD9": "277.2",
+  "ICD10": "E79.2"
+ },
+ {
+  "disease_ID": "457",
+  "DIS_ID": "DIS00457",
+  "disease_name": "Leukemia, Lymphoid",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "458",
+  "DIS_ID": "DIS00458",
+  "disease_name": "Leukemia, Myeloid",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "459",
+  "DIS_ID": "DIS00459",
+  "disease_name": "Leukemia, Myeloid, Acute",
+  "ICD9": "205.0",
+  "ICD10": "E92.0"
+ },
+ {
+  "disease_ID": "460",
+  "DIS_ID": "DIS00460",
+  "disease_name": "Leukemia, Unspecified",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "461",
+  "DIS_ID": "DIS00461",
+  "disease_name": "Lipid metabolic disorders",
+  "ICD9": "270-279",
+  "ICD10": "E70-E89"
+ },
+ {
+  "disease_ID": "462",
+  "DIS_ID": "DIS00462",
+  "disease_name": "Lipodystrophy",
+  "ICD9": "272.6",
+  "ICD10": "E88.1"
+ },
+ {
+  "disease_ID": "463",
+  "DIS_ID": "DIS00463",
+  "disease_name": "Liver Cancer",
+  "ICD9": "140-229, 155",
+  "ICD10": "C00-C96, C22.0"
+ },
+ {
+  "disease_ID": "464",
+  "DIS_ID": "DIS00464",
+  "disease_name": "Liver cirrhosis",
+  "ICD9": "571",
+  "ICD10": "K70.3, K71.7, K74"
+ },
+ {
+  "disease_ID": "465",
+  "DIS_ID": "DIS00465",
+  "disease_name": "Liver Disease",
+  "ICD9": "571.8",
+  "ICD10": "K76.0"
+ },
+ {
+  "disease_ID": "466",
+  "DIS_ID": "DIS00466",
+  "disease_name": "Liver fibrogenesis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "467",
+  "DIS_ID": "DIS00467",
+  "disease_name": "Local anesthesia",
+  "ICD9": "338",
+  "ICD10": "R52"
+ },
+ {
+  "disease_ID": "468",
+  "DIS_ID": "DIS00468",
+  "disease_name": "Low high density lipoprotein syndromes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "469",
+  "DIS_ID": "DIS00469",
+  "disease_name": "LPS-induced left ventricular dysfunction",
+  "ICD9": "428",
+  "ICD10": "I50"
+ },
+ {
+  "disease_ID": "470",
+  "DIS_ID": "DIS00470",
+  "disease_name": "Lung adenocarcinomas",
+  "ICD9": "140-199",
+  "ICD10": "C00-C75, C7A, C7B"
+ },
+ {
+  "disease_ID": "471",
+  "DIS_ID": "DIS00471",
+  "disease_name": "Lung Cancer",
+  "ICD9": "140-229, 162",
+  "ICD10": "C00-C96, C33-C34"
+ },
+ {
+  "disease_ID": "472",
+  "DIS_ID": "DIS00472",
+  "disease_name": "Lung injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "473",
+  "DIS_ID": "DIS00473",
+  "disease_name": "Lung Neoplasms",
+  "ICD9": "140-229, 162",
+  "ICD10": "C00-C96, C33-C34"
+ },
+ {
+  "disease_ID": "474",
+  "DIS_ID": "DIS00474",
+  "disease_name": "Lymphangiomatosis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "475",
+  "DIS_ID": "DIS00475",
+  "disease_name": "Lymphoblast tumor",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "476",
+  "DIS_ID": "DIS00476",
+  "disease_name": "Lymphoma",
+  "ICD9": "202.1, 202.2",
+  "ICD10": "C84.0, C84.1"
+ },
+ {
+  "disease_ID": "477",
+  "DIS_ID": "DIS00477",
+  "disease_name": "Lymphoma, B-Cell",
+  "ICD9": "202.8",
+  "ICD10": "C81-C96"
+ },
+ {
+  "disease_ID": "478",
+  "DIS_ID": "DIS00478",
+  "disease_name": "Lymphoma, Follicular",
+  "ICD9": "200, 202, 202.8",
+  "ICD10": "C81-C96, C82-C85"
+ },
+ {
+  "disease_ID": "479",
+  "DIS_ID": "DIS00479",
+  "disease_name": "Lymphoma, Large B-Cell, Diffuse",
+  "ICD9": "202.8",
+  "ICD10": "C81-C96"
+ },
+ {
+  "disease_ID": "480",
+  "DIS_ID": "DIS00480",
+  "disease_name": "Lymphoma, Large-Cell, Diffuse",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "481",
+  "DIS_ID": "DIS00481",
+  "disease_name": "Lymphoma, Non-Hodgkin",
+  "ICD9": "183, 200, 200.0, 200.4, 201, 202, 202.8",
+  "ICD10": "C56, C81, C81-C96, C82-C85, C83.3, C85.1, C85.7"
+ },
+ {
+  "disease_ID": "482",
+  "DIS_ID": "DIS00482",
+  "disease_name": "Lymphoma, Non-Hodgkin's",
+  "ICD9": "183, 200, 200.0, 200.4, 201, 202, 202.8",
+  "ICD10": "C56, C81, C81-C96, C82-C85, C83.3, C85.1, C85.7"
+ },
+ {
+  "disease_ID": "483",
+  "DIS_ID": "DIS00483",
+  "disease_name": "Lymphoma, T-Cell",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "484",
+  "DIS_ID": "DIS00484",
+  "disease_name": "Lymphoma, Unspecified",
+  "ICD9": "200, 202, 202.8",
+  "ICD10": "C81-C96, C82-C85"
+ },
+ {
+  "disease_ID": "485",
+  "DIS_ID": "DIS00485",
+  "disease_name": "Macular Degeneration",
+  "ICD9": "362.5",
+  "ICD10": "H35.3"
+ },
+ {
+  "disease_ID": "486",
+  "DIS_ID": "DIS00486",
+  "disease_name": "Macular edema",
+  "ICD9": "362.07",
+  "ICD10": "E08.3, E09.3, E10.3, E11.3, E13.3"
+ },
+ {
+  "disease_ID": "487",
+  "DIS_ID": "DIS00487",
+  "disease_name": "Magnesium deficiency dermatitis",
+  "ICD9": "692.9",
+  "ICD10": "L20-L30"
+ },
+ {
+  "disease_ID": "488",
+  "DIS_ID": "DIS00488",
+  "disease_name": "Major Depressive Disorder",
+  "ICD9": "296.2, 296.3, 332",
+  "ICD10": "F02.3, F32, F33, G20"
+ },
+ {
+  "disease_ID": "489",
+  "DIS_ID": "DIS00489",
+  "disease_name": "Malaria",
+  "ICD9": "84",
+  "ICD10": "B50-B54"
+ },
+ {
+  "disease_ID": "490",
+  "DIS_ID": "DIS00490",
+  "disease_name": "Male infertility",
+  "ICD9": "628",
+  "ICD10": "N97.0"
+ },
+ {
+  "disease_ID": "491",
+  "DIS_ID": "DIS00491",
+  "disease_name": "Malignancies",
+  "ICD9": "200-209",
+  "ICD10": "C81-C96"
+ },
+ {
+  "disease_ID": "492",
+  "DIS_ID": "DIS00492",
+  "disease_name": "Malignancy-associated hypercalcemia",
+  "ICD9": "275.42",
+  "ICD10": "E83.5"
+ },
+ {
+  "disease_ID": "493",
+  "DIS_ID": "DIS00493",
+  "disease_name": "Malignant Gliomas",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "494",
+  "DIS_ID": "DIS00494",
+  "disease_name": "Malignant hyperthermia",
+  "ICD9": "995.86",
+  "ICD10": "995.86"
+ },
+ {
+  "disease_ID": "495",
+  "DIS_ID": "DIS00495",
+  "disease_name": "Malignant melanoma",
+  "ICD9": "172, 202.4, 208.9",
+  "ICD10": "C43, C91-C95, C91.4"
+ },
+ {
+  "disease_ID": "496",
+  "DIS_ID": "DIS00496",
+  "disease_name": "Malignant mesothelioma",
+  "ICD9": "163",
+  "ICD10": "C45"
+ },
+ {
+  "disease_ID": "497",
+  "DIS_ID": "DIS00497",
+  "disease_name": "Malignant pain",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "498",
+  "DIS_ID": "DIS00498",
+  "disease_name": "Malignant phyllodes tumours",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "499",
+  "DIS_ID": "DIS00499",
+  "disease_name": "Manic disorder",
+  "ICD9": "296.0,296.4,296.6",
+  "ICD10": "F30"
+ },
+ {
+  "disease_ID": "500",
+  "DIS_ID": "DIS00500",
+  "disease_name": "McCune-Albright syndrome",
+  "ICD9": "756.54",
+  "ICD10": "Q78.1"
+ },
+ {
+  "disease_ID": "501",
+  "DIS_ID": "DIS00501",
+  "disease_name": "Measure kidney function",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "502",
+  "DIS_ID": "DIS00502",
+  "disease_name": "Medullary thyroid cancer",
+  "ICD9": "193",
+  "ICD10": "C73"
+ },
+ {
+  "disease_ID": "503",
+  "DIS_ID": "DIS00503",
+  "disease_name": "Medullary thyroid carcinoma",
+  "ICD9": "193",
+  "ICD10": "C73"
+ },
+ {
+  "disease_ID": "504",
+  "DIS_ID": "DIS00504",
+  "disease_name": "Medulloblastoma",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "505",
+  "DIS_ID": "DIS00505",
+  "disease_name": "Melanoma",
+  "ICD9": "172",
+  "ICD10": "C43"
+ },
+ {
+  "disease_ID": "506",
+  "DIS_ID": "DIS00506",
+  "disease_name": "Melanoma metastasis",
+  "ICD9": "172",
+  "ICD10": "C43"
+ },
+ {
+  "disease_ID": "507",
+  "DIS_ID": "DIS00507",
+  "disease_name": "Melanoma; Prostate cancer",
+  "ICD9": "140-229, 172, 185",
+  "ICD10": "C00-C96, C43, C61"
+ },
+ {
+  "disease_ID": "508",
+  "DIS_ID": "DIS00508",
+  "disease_name": "Meningioma",
+  "ICD9": "225.2",
+  "ICD10": "C70, D32"
+ },
+ {
+  "disease_ID": "509",
+  "DIS_ID": "DIS00509",
+  "disease_name": "Mesothelioma",
+  "ICD9": "163",
+  "ICD10": "C45"
+ },
+ {
+  "disease_ID": "510",
+  "DIS_ID": "DIS00510",
+  "disease_name": "Metabolic Disease",
+  "ICD9": "270-279",
+  "ICD10": "E70-E89"
+ },
+ {
+  "disease_ID": "511",
+  "DIS_ID": "DIS00511",
+  "disease_name": "Metabolic disorder, unspecified",
+  "ICD9": "270-279",
+  "ICD10": "E70-E89"
+ },
+ {
+  "disease_ID": "512",
+  "DIS_ID": "DIS00512",
+  "disease_name": "Metabolic syndrome X",
+  "ICD9": "277.7",
+  "ICD10": "E88.81"
+ },
+ {
+  "disease_ID": "513",
+  "DIS_ID": "DIS00513",
+  "disease_name": "Metastatic hormone refractory Prostate cancer",
+  "ICD9": "185",
+  "ICD10": "C61"
+ },
+ {
+  "disease_ID": "514",
+  "DIS_ID": "DIS00514",
+  "disease_name": "Metastatic osteosarcoma in the lung",
+  "ICD9": "170",
+  "ICD10": "C40-C41"
+ },
+ {
+  "disease_ID": "515",
+  "DIS_ID": "DIS00515",
+  "disease_name": "Methanol Poisoning",
+  "ICD9": "980.1, 982",
+  "ICD10": "T51.1, T52.3"
+ },
+ {
+  "disease_ID": "516",
+  "DIS_ID": "DIS00516",
+  "disease_name": "Microbial infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "517",
+  "DIS_ID": "DIS00517",
+  "disease_name": "Migraine",
+  "ICD9": "346",
+  "ICD10": "G43"
+ },
+ {
+  "disease_ID": "518",
+  "DIS_ID": "DIS00518",
+  "disease_name": "Migraine and Cluster Headaches",
+  "ICD9": "339.00, 339.01, 339.02, 346",
+  "ICD10": "G43, G44.0"
+ },
+ {
+  "disease_ID": "519",
+  "DIS_ID": "DIS00519",
+  "disease_name": "Mitochondrial Diseases",
+  "ICD9": "277.87",
+  "ICD10": "E88.49"
+ },
+ {
+  "disease_ID": "520",
+  "DIS_ID": "DIS00520",
+  "disease_name": "MLL-rearranged acute lymphoblastic leukemias",
+  "ICD9": "204.0, 208.9",
+  "ICD10": "C91-C95, C91.0"
+ },
+ {
+  "disease_ID": "521",
+  "DIS_ID": "DIS00521",
+  "disease_name": "Moderate to Severe Plaque Psoriasis",
+  "ICD9": "696",
+  "ICD10": "L40"
+ },
+ {
+  "disease_ID": "522",
+  "DIS_ID": "DIS00522",
+  "disease_name": "Mood [affective] disorders",
+  "ICD9": "296",
+  "ICD10": "F30-F39"
+ },
+ {
+  "disease_ID": "523",
+  "DIS_ID": "DIS00523",
+  "disease_name": "Motion sickness",
+  "ICD9": "994.6",
+  "ICD10": "T75.3"
+ },
+ {
+  "disease_ID": "524",
+  "DIS_ID": "DIS00524",
+  "disease_name": "Motor disorder",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "525",
+  "DIS_ID": "DIS00525",
+  "disease_name": "Motor neurone disease",
+  "ICD9": "335.2",
+  "ICD10": "G12.2"
+ },
+ {
+  "disease_ID": "526",
+  "DIS_ID": "DIS00526",
+  "disease_name": "Mucociliary dysfunction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "527",
+  "DIS_ID": "DIS00527",
+  "disease_name": "Multiple Myeloma",
+  "ICD9": "203",
+  "ICD10": "C90.0"
+ },
+ {
+  "disease_ID": "528",
+  "DIS_ID": "DIS00528",
+  "disease_name": "Multiple organ failure",
+  "ICD9": "995.92",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "529",
+  "DIS_ID": "DIS00529",
+  "disease_name": "Multiple Sclerosis",
+  "ICD9": "340",
+  "ICD10": "G35"
+ },
+ {
+  "disease_ID": "530",
+  "DIS_ID": "DIS00530",
+  "disease_name": "Myelodysplastic Syndrome",
+  "ICD9": "238.7",
+  "ICD10": "D46"
+ },
+ {
+  "disease_ID": "531",
+  "DIS_ID": "DIS00531",
+  "disease_name": "Myeloma disease",
+  "ICD9": "203",
+  "ICD10": "C90.0"
+ },
+ {
+  "disease_ID": "532",
+  "DIS_ID": "DIS00532",
+  "disease_name": "Myeloneuropathy",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "533",
+  "DIS_ID": "DIS00533",
+  "disease_name": "Myocardial Infarction",
+  "ICD9": "410",
+  "ICD10": "I21-I22"
+ },
+ {
+  "disease_ID": "534",
+  "DIS_ID": "DIS00534",
+  "disease_name": "Myocardial infarction (MI)",
+  "ICD9": "410",
+  "ICD10": "I21, I22"
+ },
+ {
+  "disease_ID": "535",
+  "DIS_ID": "DIS00535",
+  "disease_name": "Myocardial ischemia",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "536",
+  "DIS_ID": "DIS00536",
+  "disease_name": "Myocardial ischemia and reperfusion injury",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "537",
+  "DIS_ID": "DIS00537",
+  "disease_name": "Nasopharyngeal Cancer (NPC)",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "538",
+  "DIS_ID": "DIS00538",
+  "disease_name": "Nausea and vomiting",
+  "ICD9": "698, 787, 787.0, 995.3",
+  "ICD10": "L29, R11, T78.4"
+ },
+ {
+  "disease_ID": "539",
+  "DIS_ID": "DIS00539",
+  "disease_name": "Neonatal Hyperbilirubinemia, jaundice",
+  "ICD9": "773, 774, 782.4",
+  "ICD10": "P58, P59, R17"
+ },
+ {
+  "disease_ID": "540",
+  "DIS_ID": "DIS00540",
+  "disease_name": "Neonatal jaundice",
+  "ICD9": "782.4",
+  "ICD10": "R17"
+ },
+ {
+  "disease_ID": "541",
+  "DIS_ID": "DIS00541",
+  "disease_name": "Neoplasm Metastasis",
+  "ICD9": "140-199, 140-239, 210-229",
+  "ICD10": "C00-C75, C00-C96, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "542",
+  "DIS_ID": "DIS00542",
+  "disease_name": "Neoplasms",
+  "ICD9": "140-239",
+  "ICD10": "C00-C96, C00-D48"
+ },
+ {
+  "disease_ID": "543",
+  "DIS_ID": "DIS00543",
+  "disease_name": "Neoplasms (CNS)",
+  "ICD9": "140-239",
+  "ICD10": "C00-D48"
+ },
+ {
+  "disease_ID": "544",
+  "DIS_ID": "DIS00544",
+  "disease_name": "Neoplastic diseases",
+  "ICD9": "140-239.99",
+  "ICD10": "C00-D48"
+ },
+ {
+  "disease_ID": "545",
+  "DIS_ID": "DIS00545",
+  "disease_name": "Nephrogenic diabetes insipidus",
+  "ICD9": "250, 253.5, 588.1",
+  "ICD10": "E08-E13, E23.2, N25.1"
+ },
+ {
+  "disease_ID": "546",
+  "DIS_ID": "DIS00546",
+  "disease_name": "Nephrosis",
+  "ICD9": "591",
+  "ICD10": "N13.0-N13.3"
+ },
+ {
+  "disease_ID": "547",
+  "DIS_ID": "DIS00547",
+  "disease_name": "Net blotch",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "548",
+  "DIS_ID": "DIS00548",
+  "disease_name": "Neural Tube Defects",
+  "ICD9": "740,741,742",
+  "ICD10": "Q00,Q01,Q05"
+ },
+ {
+  "disease_ID": "549",
+  "DIS_ID": "DIS00549",
+  "disease_name": "Neuroblastoma",
+  "ICD9": "194",
+  "ICD10": "C74.9"
+ },
+ {
+  "disease_ID": "550",
+  "DIS_ID": "DIS00550",
+  "disease_name": "Neurodegenerative diseases",
+  "ICD9": "330-337",
+  "ICD10": "G30-G32"
+ },
+ {
+  "disease_ID": "551",
+  "DIS_ID": "DIS00551",
+  "disease_name": "Neuroendocrine tumors",
+  "ICD9": "209",
+  "ICD10": "C7A, C7B, D3A"
+ },
+ {
+  "disease_ID": "552",
+  "DIS_ID": "DIS00552",
+  "disease_name": "Neurogenic bladder",
+  "ICD9": "188",
+  "ICD10": "C67"
+ },
+ {
+  "disease_ID": "553",
+  "DIS_ID": "DIS00553",
+  "disease_name": "Neurogenic inflammation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "554",
+  "DIS_ID": "DIS00554",
+  "disease_name": "Neuroimmunological diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "555",
+  "DIS_ID": "DIS00555",
+  "disease_name": "Neuroleptic malignant syndrome",
+  "ICD9": "333.92",
+  "ICD10": "G21.0"
+ },
+ {
+  "disease_ID": "556",
+  "DIS_ID": "DIS00556",
+  "disease_name": "Neurologic and psychiatric diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "557",
+  "DIS_ID": "DIS00557",
+  "disease_name": "Neurologic Disorders",
+  "ICD9": "320-359",
+  "ICD10": "G00-G99"
+ },
+ {
+  "disease_ID": "558",
+  "DIS_ID": "DIS00558",
+  "disease_name": "Neurological diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "559",
+  "DIS_ID": "DIS00559",
+  "disease_name": "Neurological symptom",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "560",
+  "DIS_ID": "DIS00560",
+  "disease_name": "Neuronal injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "561",
+  "DIS_ID": "DIS00561",
+  "disease_name": "Neuropathic pain",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "562",
+  "DIS_ID": "DIS00562",
+  "disease_name": "Neuropsychiatric disorders",
+  "ICD9": "290-319",
+  "ICD10": "F01-F99"
+ },
+ {
+  "disease_ID": "563",
+  "DIS_ID": "DIS00563",
+  "disease_name": "Neurotoxicity Syndromes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "564",
+  "DIS_ID": "DIS00564",
+  "disease_name": "Neutropenia",
+  "ICD9": "288",
+  "ICD10": "D70"
+ },
+ {
+  "disease_ID": "565",
+  "DIS_ID": "DIS00565",
+  "disease_name": "Non-Hodgkin's Lymphoma",
+  "ICD9": "140-199, 200, 202, 202.8, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "566",
+  "DIS_ID": "DIS00566",
+  "disease_name": "Non-Hodgkin's lymphoma, unspecified type",
+  "ICD9": "200, 202, 202.8",
+  "ICD10": "C81-C96, C82-C85"
+ },
+ {
+  "disease_ID": "567",
+  "DIS_ID": "DIS00567",
+  "disease_name": "Noninsulin-dependent diabetes mellitus",
+  "ICD9": "250",
+  "ICD10": "E08-E13"
+ },
+ {
+  "disease_ID": "568",
+  "DIS_ID": "DIS00568",
+  "disease_name": "Non-myeloid cancer",
+  "ICD9": "140-199",
+  "ICD10": "C00-C75, C7A, C7B"
+ },
+ {
+  "disease_ID": "569",
+  "DIS_ID": "DIS00569",
+  "disease_name": "Non-small Cell Lung Cancer",
+  "ICD9": "140-229, 162, 204.0",
+  "ICD10": "C00-C96, C33, C33-C34, C34, C91.0"
+ },
+ {
+  "disease_ID": "570",
+  "DIS_ID": "DIS00570",
+  "disease_name": "Non-small Cell Lung Cancer (NSCLC)",
+  "ICD9": "162",
+  "ICD10": "C33, C34"
+ },
+ {
+  "disease_ID": "571",
+  "DIS_ID": "DIS00571",
+  "disease_name": "Not Available",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "572",
+  "DIS_ID": "DIS00572",
+  "disease_name": "Obesity",
+  "ICD9": "278",
+  "ICD10": "E66"
+ },
+ {
+  "disease_ID": "573",
+  "DIS_ID": "DIS00573",
+  "disease_name": "Obsessive-compulsive disorder",
+  "ICD9": "300.3",
+  "ICD10": "F42"
+ },
+ {
+  "disease_ID": "574",
+  "DIS_ID": "DIS00574",
+  "disease_name": "Obstructive airway disease",
+  "ICD9": "490-492, 494-496",
+  "ICD10": "J40-J44, J47"
+ },
+ {
+  "disease_ID": "575",
+  "DIS_ID": "DIS00575",
+  "disease_name": "Occlusive peripheral vascular disease",
+  "ICD9": "325, 430-459, 443.9",
+  "ICD10": "G45-G46, I60-I95, I73.9"
+ },
+ {
+  "disease_ID": "576",
+  "DIS_ID": "DIS00576",
+  "disease_name": "Ocular hypertension",
+  "ICD9": "365, 365.04",
+  "ICD10": "H40-H42, H40.0"
+ },
+ {
+  "disease_ID": "577",
+  "DIS_ID": "DIS00577",
+  "disease_name": "Oesophageal cancer",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "578",
+  "DIS_ID": "DIS00578",
+  "disease_name": "Opioid dependence",
+  "ICD9": "304",
+  "ICD10": "F11.2"
+ },
+ {
+  "disease_ID": "579",
+  "DIS_ID": "DIS00579",
+  "disease_name": "Opioid-induced bowel dysfunction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "580",
+  "DIS_ID": "DIS00580",
+  "disease_name": "Opioid-Related Disorders",
+  "ICD9": "250, 250.6, 292, 304.0, 305.50, 356.0, 356.8",
+  "ICD10": "E08-E13, E10.4, E11.4, E13.4, F11, G64, G90.0"
+ },
+ {
+  "disease_ID": "581",
+  "DIS_ID": "DIS00581",
+  "disease_name": "Oral cancer",
+  "ICD9": "140-146",
+  "ICD10": "C00-C08"
+ },
+ {
+  "disease_ID": "582",
+  "DIS_ID": "DIS00582",
+  "disease_name": "Oral Facial Pain",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "583",
+  "DIS_ID": "DIS00583",
+  "disease_name": "Organ rejection",
+  "ICD9": "279.5, 996",
+  "ICD10": "D89.8, T86"
+ },
+ {
+  "disease_ID": "584",
+  "DIS_ID": "DIS00584",
+  "disease_name": "Oropharyngeal candidiasis",
+  "ICD9": "112",
+  "ICD10": "B37"
+ },
+ {
+  "disease_ID": "585",
+  "DIS_ID": "DIS00585",
+  "disease_name": "Oropharyngeal squamous cell carcinoma",
+  "ICD9": "199",
+  "ICD10": "C44"
+ },
+ {
+  "disease_ID": "586",
+  "DIS_ID": "DIS00586",
+  "disease_name": "Osteoarthritis",
+  "ICD9": "715",
+  "ICD10": "M15-M19, M47"
+ },
+ {
+  "disease_ID": "587",
+  "DIS_ID": "DIS00587",
+  "disease_name": "Osteoarthritis pain",
+  "ICD9": "338, 715,780",
+  "ICD10": "M15-M19, M47, R52, G89"
+ },
+ {
+  "disease_ID": "588",
+  "DIS_ID": "DIS00588",
+  "disease_name": "Osteolysis",
+  "ICD9": "",
+  "ICD10": "M89.5"
+ },
+ {
+  "disease_ID": "589",
+  "DIS_ID": "DIS00589",
+  "disease_name": "Osteolytic metastatic cancer",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "590",
+  "DIS_ID": "DIS00590",
+  "disease_name": "Osteonecrosis",
+  "ICD9": "733.0, 733.4",
+  "ICD10": "M80-M81, M87"
+ },
+ {
+  "disease_ID": "591",
+  "DIS_ID": "DIS00591",
+  "disease_name": "Osteopenic disorders",
+  "ICD9": "733.90",
+  "ICD10": "M85.8"
+ },
+ {
+  "disease_ID": "592",
+  "DIS_ID": "DIS00592",
+  "disease_name": "Osteoporosis",
+  "ICD9": "733",
+  "ICD10": "M80-M81"
+ },
+ {
+  "disease_ID": "593",
+  "DIS_ID": "DIS00593",
+  "disease_name": "Osteoporosis and other bone-related diseases",
+  "ICD9": "733",
+  "ICD10": "M80-M81"
+ },
+ {
+  "disease_ID": "594",
+  "DIS_ID": "DIS00594",
+  "disease_name": "Osteoporosis, Postmenopausal",
+  "ICD9": "733",
+  "ICD10": "M80-M82"
+ },
+ {
+  "disease_ID": "595",
+  "DIS_ID": "DIS00595",
+  "disease_name": "Osteoporosis, unspecified",
+  "ICD9": "733",
+  "ICD10": "M80-M81"
+ },
+ {
+  "disease_ID": "596",
+  "DIS_ID": "DIS00596",
+  "disease_name": "Osteosarcoma",
+  "ICD9": "170",
+  "ICD10": "C40-C41"
+ },
+ {
+  "disease_ID": "597",
+  "DIS_ID": "DIS00597",
+  "disease_name": "Ovarian cancer",
+  "ICD9": "183",
+  "ICD10": "C56"
+ },
+ {
+  "disease_ID": "598",
+  "DIS_ID": "DIS00598",
+  "disease_name": "Ovarian Neoplasms",
+  "ICD9": "183, 220",
+  "ICD10": "C56"
+ },
+ {
+  "disease_ID": "599",
+  "DIS_ID": "DIS00599",
+  "disease_name": "Overactive bladder disorder",
+  "ICD9": "188, 596.51",
+  "ICD10": "C67, N32.81"
+ },
+ {
+  "disease_ID": "600",
+  "DIS_ID": "DIS00600",
+  "disease_name": "Over-expression of TF",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "601",
+  "DIS_ID": "DIS00601",
+  "disease_name": "Oxidative and free radical damage",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "602",
+  "DIS_ID": "DIS00602",
+  "disease_name": "Oxidative tissue injuries",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "603",
+  "DIS_ID": "DIS00603",
+  "disease_name": "Oxygen-induced retinopathy",
+  "ICD9": "362.0-362.2",
+  "ICD10": "H35-H35.2"
+ },
+ {
+  "disease_ID": "604",
+  "DIS_ID": "DIS00604",
+  "disease_name": "P. aeruginosa infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "605",
+  "DIS_ID": "DIS00605",
+  "disease_name": "P. carinii pneumonia",
+  "ICD9": "480-486, 770.0",
+  "ICD10": "J12, J13, J14, J15, J16, J17, J18, P23"
+ },
+ {
+  "disease_ID": "606",
+  "DIS_ID": "DIS00606",
+  "disease_name": "Paget's disease",
+  "ICD9": "731.0, 733.0",
+  "ICD10": "M80-M81, M88"
+ },
+ {
+  "disease_ID": "607",
+  "DIS_ID": "DIS00607",
+  "disease_name": "Pain",
+  "ICD9": "789.0,338,780",
+  "ICD10": "R10, G89, R52"
+ },
+ {
+  "disease_ID": "608",
+  "DIS_ID": "DIS00608",
+  "disease_name": "Pain (anesthesia, neuropathic)",
+  "ICD9": "338, 356.0, 356.8,780",
+  "ICD10": "G64, G90.0, R52, G89"
+ },
+ {
+  "disease_ID": "609",
+  "DIS_ID": "DIS00609",
+  "disease_name": "Pain, Acute or Chronic",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "610",
+  "DIS_ID": "DIS00610",
+  "disease_name": "Pain, unspecific",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "611",
+  "DIS_ID": "DIS00611",
+  "disease_name": "Pain, unspecified",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "612",
+  "DIS_ID": "DIS00612",
+  "disease_name": "Pancreatic Cancer",
+  "ICD9": "140-229, 157, 172, 185",
+  "ICD10": "C00-C96, C25, C43, C61"
+ },
+ {
+  "disease_ID": "613",
+  "DIS_ID": "DIS00613",
+  "disease_name": "Pancreatic cancer, Prostate cancer",
+  "ICD9": "140-229, 157, 185",
+  "ICD10": "C00-C96, C25, C61"
+ },
+ {
+  "disease_ID": "614",
+  "DIS_ID": "DIS00614",
+  "disease_name": "Pancreatic disease",
+  "ICD9": "577, 751.7",
+  "ICD10": "K85-K86, Q45.0-Q45.3"
+ },
+ {
+  "disease_ID": "615",
+  "DIS_ID": "DIS00615",
+  "disease_name": "Pancreatic Neoplasms",
+  "ICD9": "157.0-157.9",
+  "ICD10": "C25"
+ },
+ {
+  "disease_ID": "616",
+  "DIS_ID": "DIS00616",
+  "disease_name": "Pancreatic, prostate and a number of other cancers",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "617",
+  "DIS_ID": "DIS00617",
+  "disease_name": "Pancreatitis",
+  "ICD9": "577.0-577.1",
+  "ICD10": "K85, K86.0K86.1"
+ },
+ {
+  "disease_ID": "618",
+  "DIS_ID": "DIS00618",
+  "disease_name": "Parasitic diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "619",
+  "DIS_ID": "DIS00619",
+  "disease_name": "Parkinson Disease",
+  "ICD9": "332",
+  "ICD10": "G20, F02.3"
+ },
+ {
+  "disease_ID": "620",
+  "DIS_ID": "DIS00620",
+  "disease_name": "Parkinsonian symptoms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "621",
+  "DIS_ID": "DIS00621",
+  "disease_name": "Parkinson's disease",
+  "ICD9": "332",
+  "ICD10": "F02.3, G20"
+ },
+ {
+  "disease_ID": "622",
+  "DIS_ID": "DIS00622",
+  "disease_name": "Pathological angiogenesis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "623",
+  "DIS_ID": "DIS00623",
+  "disease_name": "P-chloroamphetamine-induced hyperglycemia",
+  "ICD9": "790.29",
+  "ICD10": "R73.9"
+ },
+ {
+  "disease_ID": "624",
+  "DIS_ID": "DIS00624",
+  "disease_name": "Pediatric",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "625",
+  "DIS_ID": "DIS00625",
+  "disease_name": "Peptic ulcer",
+  "ICD9": "531-534",
+  "ICD10": "K25-K27"
+ },
+ {
+  "disease_ID": "626",
+  "DIS_ID": "DIS00626",
+  "disease_name": "Periodic fever syndrome",
+  "ICD9": "780.6",
+  "ICD10": "R50"
+ },
+ {
+  "disease_ID": "627",
+  "DIS_ID": "DIS00627",
+  "disease_name": "Periodontitis",
+  "ICD9": "523.4, 523.5",
+  "ICD10": "K05.3, K05.4"
+ },
+ {
+  "disease_ID": "628",
+  "DIS_ID": "DIS00628",
+  "disease_name": "Peripheral and cutaneous T-cell lymphomas",
+  "ICD9": "202.1, 202.2, 202.8",
+  "ICD10": "C81-C96, C84.0, C84.1"
+ },
+ {
+  "disease_ID": "629",
+  "DIS_ID": "DIS00629",
+  "disease_name": "Peripheral Nervous System Diseases",
+  "ICD9": "320-389",
+  "ICD10": "G00-G99"
+ },
+ {
+  "disease_ID": "630",
+  "DIS_ID": "DIS00630",
+  "disease_name": "Peripheral neuroectodermal tumor",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "631",
+  "DIS_ID": "DIS00631",
+  "disease_name": "Peripheral precocious puberty",
+  "ICD9": "259.1",
+  "ICD10": "E22.8, E30.1"
+ },
+ {
+  "disease_ID": "632",
+  "DIS_ID": "DIS00632",
+  "disease_name": "Peripheral Vascular Disease",
+  "ICD9": "325, 430-459, 443.9",
+  "ICD10": "G45-G46, I60-I95, I73.9"
+ },
+ {
+  "disease_ID": "633",
+  "DIS_ID": "DIS00633",
+  "disease_name": "Peutz-Jeghers syndrome",
+  "ICD9": "759.6",
+  "ICD10": "Q85.8"
+ },
+ {
+  "disease_ID": "634",
+  "DIS_ID": "DIS00634",
+  "disease_name": "Peyronie's disease",
+  "ICD9": "607.85",
+  "ICD10": "N48.6"
+ },
+ {
+  "disease_ID": "635",
+  "DIS_ID": "DIS00635",
+  "disease_name": "Pheochromocytoma",
+  "ICD9": "194.0, 227.0, 255.6",
+  "ICD10": "C74.1, D35.0"
+ },
+ {
+  "disease_ID": "636",
+  "DIS_ID": "DIS00636",
+  "disease_name": "Philadelphia-positive leukemia",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "637",
+  "DIS_ID": "DIS00637",
+  "disease_name": "Photoaging",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "638",
+  "DIS_ID": "DIS00638",
+  "disease_name": "Photodynamic therapy",
+  "ICD9": "706.1",
+  "ICD10": "L70.0"
+ },
+ {
+  "disease_ID": "639",
+  "DIS_ID": "DIS00639",
+  "disease_name": "Photodynamic tumor",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "640",
+  "DIS_ID": "DIS00640",
+  "disease_name": "Phyllodes tumours",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "641",
+  "DIS_ID": "DIS00641",
+  "disease_name": "Platelet adhesion",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "642",
+  "DIS_ID": "DIS00642",
+  "disease_name": "Pneumocystis infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "643",
+  "DIS_ID": "DIS00643",
+  "disease_name": "Polyarthritis, unspecified",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "644",
+  "DIS_ID": "DIS00644",
+  "disease_name": "Porphyrin-derived photocytotoxicity",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "645",
+  "DIS_ID": "DIS00645",
+  "disease_name": "Postherpetic neuralgia",
+  "ICD9": "053.19, 250, 250.6, 356.0, 356.8",
+  "ICD10": "B02.2, E08-E13, E10.4, E11.4, E13.4, G44.847, G53.0, G64, G90.0"
+ },
+ {
+  "disease_ID": "646",
+  "DIS_ID": "DIS00646",
+  "disease_name": "Post-menopausal osteoporosis",
+  "ICD9": "627.2, 733.0",
+  "ICD10": "M80-M81, N95.0"
+ },
+ {
+  "disease_ID": "647",
+  "DIS_ID": "DIS00647",
+  "disease_name": "Postmenopausal symptoms",
+  "ICD9": "627.2",
+  "ICD10": "N95.0"
+ },
+ {
+  "disease_ID": "648",
+  "DIS_ID": "DIS00648",
+  "disease_name": "Postmenopausal Women with Osteoporosis",
+  "ICD9": "733",
+  "ICD10": "M80-M81"
+ },
+ {
+  "disease_ID": "649",
+  "DIS_ID": "DIS00649",
+  "disease_name": "Postoperative nausea and vomiting",
+  "ICD9": "787, 787.0",
+  "ICD10": "R11"
+ },
+ {
+  "disease_ID": "650",
+  "DIS_ID": "DIS00650",
+  "disease_name": "Postoperative residual curarisation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "651",
+  "DIS_ID": "DIS00651",
+  "disease_name": "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "652",
+  "DIS_ID": "DIS00652",
+  "disease_name": "Predominantly eosinophil mediated disease states",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "653",
+  "DIS_ID": "DIS00653",
+  "disease_name": "Primary biliary cirrhosis",
+  "ICD9": "571.6",
+  "ICD10": "K74.3"
+ },
+ {
+  "disease_ID": "654",
+  "DIS_ID": "DIS00654",
+  "disease_name": "Primary pulmonary hypertension",
+  "ICD9": "401, 416.0",
+  "ICD10": "I10, I11, I12, I13, I15, I27.0, I27.2"
+ },
+ {
+  "disease_ID": "655",
+  "DIS_ID": "DIS00655",
+  "disease_name": "Prion diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "656",
+  "DIS_ID": "DIS00656",
+  "disease_name": "Prokaryotic and eukaryotic anaerobic pathogens infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "657",
+  "DIS_ID": "DIS00657",
+  "disease_name": "Proliferative diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "658",
+  "DIS_ID": "DIS00658",
+  "disease_name": "Proliferative vitreoretinopathy",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "659",
+  "DIS_ID": "DIS00659",
+  "disease_name": "Prostate cancer",
+  "ICD9": "185",
+  "ICD10": "C61"
+ },
+ {
+  "disease_ID": "660",
+  "DIS_ID": "DIS00660",
+  "disease_name": "Prostate cancer (early stage hormone sensitive)",
+  "ICD9": "140-229, 185",
+  "ICD10": "C00-C96, C61"
+ },
+ {
+  "disease_ID": "661",
+  "DIS_ID": "DIS00661",
+  "disease_name": "Prostate cancer (hormone refractory)",
+  "ICD9": "140-229, 185",
+  "ICD10": "C00-C96, C61"
+ },
+ {
+  "disease_ID": "662",
+  "DIS_ID": "DIS00662",
+  "disease_name": "Prostate cancer (metastatic)",
+  "ICD9": "140-229, 185",
+  "ICD10": "C00-C96, C61"
+ },
+ {
+  "disease_ID": "663",
+  "DIS_ID": "DIS00663",
+  "disease_name": "Prostate carcinoma",
+  "ICD9": "185",
+  "ICD10": "C61"
+ },
+ {
+  "disease_ID": "664",
+  "DIS_ID": "DIS00664",
+  "disease_name": "Prostate Disorders",
+  "ICD9": "600",
+  "ICD10": "N40"
+ },
+ {
+  "disease_ID": "665",
+  "DIS_ID": "DIS00665",
+  "disease_name": "Prostatic Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "666",
+  "DIS_ID": "DIS00666",
+  "disease_name": "Protection against chemical weapons like Sarin, Soman and VX gas",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "667",
+  "DIS_ID": "DIS00667",
+  "disease_name": "Pruritus in chronic liver disease",
+  "ICD9": "570-574, 698",
+  "ICD10": "K70-K77, L29"
+ },
+ {
+  "disease_ID": "668",
+  "DIS_ID": "DIS00668",
+  "disease_name": "Psoriasis",
+  "ICD9": "696",
+  "ICD10": "L40"
+ },
+ {
+  "disease_ID": "669",
+  "DIS_ID": "DIS00669",
+  "disease_name": "Psoriasis and Psoriatic Disorders",
+  "ICD9": "696",
+  "ICD10": "L40"
+ },
+ {
+  "disease_ID": "670",
+  "DIS_ID": "DIS00670",
+  "disease_name": "Psychiatric illness",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "671",
+  "DIS_ID": "DIS00671",
+  "disease_name": "Psychosis",
+  "ICD9": "278, 290-299",
+  "ICD10": "E66, F20-F29"
+ },
+ {
+  "disease_ID": "672",
+  "DIS_ID": "DIS00672",
+  "disease_name": "Pulmonary Disease, Chronic Obstructive",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "673",
+  "DIS_ID": "DIS00673",
+  "disease_name": "Pulmonary edema (thrombin-induced)",
+  "ICD9": "782.3",
+  "ICD10": "R60.9"
+ },
+ {
+  "disease_ID": "674",
+  "DIS_ID": "DIS00674",
+  "disease_name": "Pulmonary fibrosis",
+  "ICD9": "516.3",
+  "ICD10": "J84.1"
+ },
+ {
+  "disease_ID": "675",
+  "DIS_ID": "DIS00675",
+  "disease_name": "Pulmonary hypertension",
+  "ICD9": "416",
+  "ICD10": "I27.0, I27.2"
+ },
+ {
+  "disease_ID": "676",
+  "DIS_ID": "DIS00676",
+  "disease_name": "Pyresis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "677",
+  "DIS_ID": "DIS00677",
+  "disease_name": "Radiation enteropathy",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "678",
+  "DIS_ID": "DIS00678",
+  "disease_name": "Ras-dependent tumourigenesis",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "679",
+  "DIS_ID": "DIS00679",
+  "disease_name": "Raynaud's syndrome",
+  "ICD9": "443",
+  "ICD10": "I73.0"
+ },
+ {
+  "disease_ID": "680",
+  "DIS_ID": "DIS00680",
+  "disease_name": "Rectal Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "681",
+  "DIS_ID": "DIS00681",
+  "disease_name": "Recurrent Malignant Glioma",
+  "ICD9": "191",
+  "ICD10": "C71"
+ },
+ {
+  "disease_ID": "682",
+  "DIS_ID": "DIS00682",
+  "disease_name": "Refractory Cutaneous T-cell Lymphoma (CTCL)",
+  "ICD9": "202.1, 202.2, 202.8",
+  "ICD10": "C81-C96, C84.0, C84.1"
+ },
+ {
+  "disease_ID": "683",
+  "DIS_ID": "DIS00683",
+  "disease_name": "Refractory Hematological Malignancies",
+  "ICD9": "140-239, 200-209",
+  "ICD10": "C00-C96, C81-C96"
+ },
+ {
+  "disease_ID": "684",
+  "DIS_ID": "DIS00684",
+  "disease_name": "Refractory partial epilepsy",
+  "ICD9": "345",
+  "ICD10": "G40"
+ },
+ {
+  "disease_ID": "685",
+  "DIS_ID": "DIS00685",
+  "disease_name": "Refractory Renal Cell Carcinoma",
+  "ICD9": "189",
+  "ICD10": "C64"
+ },
+ {
+  "disease_ID": "686",
+  "DIS_ID": "DIS00686",
+  "disease_name": "Refractory, Rare Sarcoma's",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "687",
+  "DIS_ID": "DIS00687",
+  "disease_name": "Relapsing-remitting multiple sclerosis",
+  "ICD9": "340",
+  "ICD10": "G35"
+ },
+ {
+  "disease_ID": "688",
+  "DIS_ID": "DIS00688",
+  "disease_name": "Renal cancer",
+  "ICD9": "189",
+  "ICD10": "C64"
+ },
+ {
+  "disease_ID": "689",
+  "DIS_ID": "DIS00689",
+  "disease_name": "Renal Cell Carcinoma",
+  "ICD9": "189",
+  "ICD10": "C64"
+ },
+ {
+  "disease_ID": "690",
+  "DIS_ID": "DIS00690",
+  "disease_name": "Renal colic",
+  "ICD9": "788",
+  "ICD10": "N23"
+ },
+ {
+  "disease_ID": "691",
+  "DIS_ID": "DIS00691",
+  "disease_name": "Renal diseases",
+  "ICD9": "580-599",
+  "ICD10": "N00-N39"
+ },
+ {
+  "disease_ID": "692",
+  "DIS_ID": "DIS00692",
+  "disease_name": "Renal failure",
+  "ICD9": "584, 585",
+  "ICD10": "N17, N18, N19"
+ },
+ {
+  "disease_ID": "693",
+  "DIS_ID": "DIS00693",
+  "disease_name": "Renal fibrosis",
+  "ICD9": "709.2",
+  "ICD10": "L90.5"
+ },
+ {
+  "disease_ID": "694",
+  "DIS_ID": "DIS00694",
+  "disease_name": "Renal ischemia-reperfusion injury",
+  "ICD9": "459.89",
+  "ICD10": "I99.8"
+ },
+ {
+  "disease_ID": "695",
+  "DIS_ID": "DIS00695",
+  "disease_name": "Renal transplant rejection",
+  "ICD9": "279.5, 996",
+  "ICD10": "D89.8, T86"
+ },
+ {
+  "disease_ID": "696",
+  "DIS_ID": "DIS00696",
+  "disease_name": "Reperfusion Injury associated with Heart Attacks, or Acute Myocardial Infarction (AMI)",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "697",
+  "DIS_ID": "DIS00697",
+  "disease_name": "Reproductive disorder",
+  "ICD9": "600-629",
+  "ICD10": "N40-N99"
+ },
+ {
+  "disease_ID": "698",
+  "DIS_ID": "DIS00698",
+  "disease_name": "Respiratory diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "699",
+  "DIS_ID": "DIS00699",
+  "disease_name": "Respiratory distress syndrome",
+  "ICD9": "518.5, 518.82",
+  "ICD10": "J80"
+ },
+ {
+  "disease_ID": "700",
+  "DIS_ID": "DIS00700",
+  "disease_name": "Restenosis",
+  "ICD9": "250, 250.00, 250.02, 250.4, 338, 437.6, 443.9, 453, 580-599, 671.5, 671.9,780",
+  "ICD10": "E08-E13, E10.2, E11, E11.2, E13.2, I73.9, I80-I82, N00-N29, R52, G89"
+ },
+ {
+  "disease_ID": "701",
+  "DIS_ID": "DIS00701",
+  "disease_name": "Rheumatic diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "702",
+  "DIS_ID": "DIS00702",
+  "disease_name": "Rheumatoid arthritis",
+  "ICD9": "714",
+  "ICD10": "M05, M06"
+ },
+ {
+  "disease_ID": "703",
+  "DIS_ID": "DIS00703",
+  "disease_name": "Rheumatoid arthritis, unspecified",
+  "ICD9": "710-719, 714",
+  "ICD10": "M00-M25, M05-M06"
+ },
+ {
+  "disease_ID": "704",
+  "DIS_ID": "DIS00704",
+  "disease_name": "Rheumatoid-arthritis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "705",
+  "DIS_ID": "DIS00705",
+  "disease_name": "Riboflavin deficiency",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "706",
+  "DIS_ID": "DIS00706",
+  "disease_name": "Risk of administering penicillin",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "707",
+  "DIS_ID": "DIS00707",
+  "disease_name": "Salivary glands cancer",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "708",
+  "DIS_ID": "DIS00708",
+  "disease_name": "Sarcoma",
+  "ICD9": "176",
+  "ICD10": "C46"
+ },
+ {
+  "disease_ID": "709",
+  "DIS_ID": "DIS00709",
+  "disease_name": "Scar Tissue",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "710",
+  "DIS_ID": "DIS00710",
+  "disease_name": "Schistosomiasis [bilharziasis]",
+  "ICD9": "120",
+  "ICD10": "B65"
+ },
+ {
+  "disease_ID": "711",
+  "DIS_ID": "DIS00711",
+  "disease_name": "Schizophrenia",
+  "ICD9": "295",
+  "ICD10": "F20"
+ },
+ {
+  "disease_ID": "712",
+  "DIS_ID": "DIS00712",
+  "disease_name": "Schizophrenia and Schizoaffective Disorders",
+  "ICD9": "295, 295.70",
+  "ICD10": "F20, F25"
+ },
+ {
+  "disease_ID": "713",
+  "DIS_ID": "DIS00713",
+  "disease_name": "Seasonal allergic rhinitis",
+  "ICD9": "472.0, 477",
+  "ICD10": "J00, J30, J31.0"
+ },
+ {
+  "disease_ID": "714",
+  "DIS_ID": "DIS00714",
+  "disease_name": "Sedation",
+  "ICD9": "338",
+  "ICD10": "R52"
+ },
+ {
+  "disease_ID": "715",
+  "DIS_ID": "DIS00715",
+  "disease_name": "Seizure",
+  "ICD9": "345.4",
+  "ICD10": "G40.2"
+ },
+ {
+  "disease_ID": "716",
+  "DIS_ID": "DIS00716",
+  "disease_name": "Seizures",
+  "ICD9": "345.4",
+  "ICD10": "G40.2"
+ },
+ {
+  "disease_ID": "717",
+  "DIS_ID": "DIS00717",
+  "disease_name": "Seizures in epilepsy",
+  "ICD9": "345, 345.9, 780.3",
+  "ICD10": "G40, G40, P90, R56"
+ },
+ {
+  "disease_ID": "718",
+  "DIS_ID": "DIS00718",
+  "disease_name": "Seizures of Lennox-Gastaut syndrome",
+  "ICD9": "345.9, 780.3",
+  "ICD10": "G40, P90, R56"
+ },
+ {
+  "disease_ID": "719",
+  "DIS_ID": "DIS00719",
+  "disease_name": "Selenium deficiency",
+  "ICD9": "269.3",
+  "ICD10": "E59"
+ },
+ {
+  "disease_ID": "720",
+  "DIS_ID": "DIS00720",
+  "disease_name": "Sepsis",
+  "ICD9": "995.0, 995.91",
+  "ICD10": "A40, A41, T78.2"
+ },
+ {
+  "disease_ID": "721",
+  "DIS_ID": "DIS00721",
+  "disease_name": "Septic shock",
+  "ICD9": "785, 785.52",
+  "ICD10": "R57.8, R65.21"
+ },
+ {
+  "disease_ID": "722",
+  "DIS_ID": "DIS00722",
+  "disease_name": "Severe acute respiratory syndrome",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "723",
+  "DIS_ID": "DIS00723",
+  "disease_name": "Severe Acute Respiratory Syndrome(SARS)",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "724",
+  "DIS_ID": "DIS00724",
+  "disease_name": "Severe Coronary Heart Disease",
+  "ICD9": "414",
+  "ICD10": "I25.1"
+ },
+ {
+  "disease_ID": "725",
+  "DIS_ID": "DIS00725",
+  "disease_name": "Sexual arousal disorders",
+  "ICD9": "302.72",
+  "ICD10": "F52.22"
+ },
+ {
+  "disease_ID": "726",
+  "DIS_ID": "DIS00726",
+  "disease_name": "Shy-Drager syndrome",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "727",
+  "DIS_ID": "DIS00727",
+  "disease_name": "Sickle cell anemia",
+  "ICD9": "280-285",
+  "ICD10": "D50-D64"
+ },
+ {
+  "disease_ID": "728",
+  "DIS_ID": "DIS00728",
+  "disease_name": "Sinoatrial node dysfunction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "729",
+  "DIS_ID": "DIS00729",
+  "disease_name": "Sitosterolemia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "730",
+  "DIS_ID": "DIS00730",
+  "disease_name": "Sjogren-Larsson syndrome",
+  "ICD9": "757.1",
+  "ICD10": "Q87.1"
+ },
+ {
+  "disease_ID": "731",
+  "DIS_ID": "DIS00731",
+  "disease_name": "Sjogren's syndrome",
+  "ICD9": "710.2",
+  "ICD10": "M35.0"
+ },
+ {
+  "disease_ID": "732",
+  "DIS_ID": "DIS00732",
+  "disease_name": "Skeletal disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "733",
+  "DIS_ID": "DIS00733",
+  "disease_name": "Skeletal muscle associated spasticity",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "734",
+  "DIS_ID": "DIS00734",
+  "disease_name": "Skeletal muscle wasting",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "735",
+  "DIS_ID": "DIS00735",
+  "disease_name": "Skeletal muscle weakness",
+  "ICD9": "728.87",
+  "ICD10": "M62.8"
+ },
+ {
+  "disease_ID": "736",
+  "DIS_ID": "DIS00736",
+  "disease_name": "Skin cancer",
+  "ICD9": "172, 173",
+  "ICD10": "C43, C44"
+ },
+ {
+  "disease_ID": "737",
+  "DIS_ID": "DIS00737",
+  "disease_name": "Skin diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "738",
+  "DIS_ID": "DIS00738",
+  "disease_name": "Skin Infections/Disorders",
+  "ICD9": "680-709",
+  "ICD10": "L00-L99"
+ },
+ {
+  "disease_ID": "739",
+  "DIS_ID": "DIS00739",
+  "disease_name": "Sleeping Sickness",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "740",
+  "DIS_ID": "DIS00740",
+  "disease_name": "Small cell lung cancer",
+  "ICD9": "140-229, 162, 162.9, 204.0",
+  "ICD10": "C00-C96, C33-C34, C34.90, C91.0"
+ },
+ {
+  "disease_ID": "741",
+  "DIS_ID": "DIS00741",
+  "disease_name": "Smooth muscle hyperplasia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "742",
+  "DIS_ID": "DIS00742",
+  "disease_name": "Social phobias",
+  "ICD9": "300.23",
+  "ICD10": "F40.1"
+ },
+ {
+  "disease_ID": "743",
+  "DIS_ID": "DIS00743",
+  "disease_name": "Solid Tumor",
+  "ICD9": "140-199, 200, 202, 202.8, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "744",
+  "DIS_ID": "DIS00744",
+  "disease_name": "Solid tumors",
+  "ICD9": "140-199, 200, 202, 202.8, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "745",
+  "DIS_ID": "DIS00745",
+  "disease_name": "Specific cognitive deficits associated with aging and neurological diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "746",
+  "DIS_ID": "DIS00746",
+  "disease_name": "Sphingolipid storage disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "747",
+  "DIS_ID": "DIS00747",
+  "disease_name": "Spinal and bulbar muscular atrophy",
+  "ICD9": "728.2",
+  "ICD10": "M62.5"
+ },
+ {
+  "disease_ID": "748",
+  "DIS_ID": "DIS00748",
+  "disease_name": "Spinal Muscular Atrophy",
+  "ICD9": "335.0-335.1",
+  "ICD10": "G12.0-G12.1"
+ },
+ {
+  "disease_ID": "749",
+  "DIS_ID": "DIS00749",
+  "disease_name": "Squamous cell carcinoma",
+  "ICD9": "199",
+  "ICD10": "C44"
+ },
+ {
+  "disease_ID": "750",
+  "DIS_ID": "DIS00750",
+  "disease_name": "Stiff-man syndrome",
+  "ICD9": "333.91",
+  "ICD10": "G25.82"
+ },
+ {
+  "disease_ID": "751",
+  "DIS_ID": "DIS00751",
+  "disease_name": "Stomatitis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "752",
+  "DIS_ID": "DIS00752",
+  "disease_name": "Streptococcus pneumoniae infections",
+  "ICD9": "001-139, 480-486, 770.0",
+  "ICD10": "A00-B99, J12, J13, J14, J15, J16, J17, J18, P23"
+ },
+ {
+  "disease_ID": "753",
+  "DIS_ID": "DIS00753",
+  "disease_name": "Stress-related disorders",
+  "ICD9": "296",
+  "ICD10": "F30-F39"
+ },
+ {
+  "disease_ID": "754",
+  "DIS_ID": "DIS00754",
+  "disease_name": "Stroke",
+  "ICD9": "434.91",
+  "ICD10": "I61-I63"
+ },
+ {
+  "disease_ID": "755",
+  "DIS_ID": "DIS00755",
+  "disease_name": "Stromal ovarian tumors",
+  "ICD9": "140-199, 183, 210-229",
+  "ICD10": "C00-C75, C56, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "756",
+  "DIS_ID": "DIS00756",
+  "disease_name": "Substance-Related Disorders",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "757",
+  "DIS_ID": "DIS00757",
+  "disease_name": "Sustained ventricular tachycardia",
+  "ICD9": "427, 427.1, 785.0",
+  "ICD10": "I47-I49, I47.2, R00.0"
+ },
+ {
+  "disease_ID": "758",
+  "DIS_ID": "DIS00758",
+  "disease_name": "Syndrome of inappropriate secretion of antidiuretic hormone",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "759",
+  "DIS_ID": "DIS00759",
+  "disease_name": "Systemic arterial vasodilation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "760",
+  "DIS_ID": "DIS00760",
+  "disease_name": "Systemic Lupus Erythematosus",
+  "ICD9": "710",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "761",
+  "DIS_ID": "DIS00761",
+  "disease_name": "Systemic Lupus Erythematosus (SLE)",
+  "ICD9": "695, 710.0",
+  "ICD10": "L51-L54, M32"
+ },
+ {
+  "disease_ID": "762",
+  "DIS_ID": "DIS00762",
+  "disease_name": "Systemic-onset juvenile idiopathic arthritis",
+  "ICD9": "710-719",
+  "ICD10": "M00-M25"
+ },
+ {
+  "disease_ID": "763",
+  "DIS_ID": "DIS00763",
+  "disease_name": "T cell leukemias",
+  "ICD9": "208.9",
+  "ICD10": "C91-C95"
+ },
+ {
+  "disease_ID": "764",
+  "DIS_ID": "DIS00764",
+  "disease_name": "T(4;14) myeloma",
+  "ICD9": "203",
+  "ICD10": "C90.0"
+ },
+ {
+  "disease_ID": "765",
+  "DIS_ID": "DIS00765",
+  "disease_name": "Tardive dyskinesia",
+  "ICD9": "333.85",
+  "ICD10": "G24.0"
+ },
+ {
+  "disease_ID": "766",
+  "DIS_ID": "DIS00766",
+  "disease_name": "T-cell proliferation",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "767",
+  "DIS_ID": "DIS00767",
+  "disease_name": "Testicular cancer",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "768",
+  "DIS_ID": "DIS00768",
+  "disease_name": "Thrombocytopenia",
+  "ICD9": "287.3, 287.4, 287.5",
+  "ICD10": "D69.6, P61.0"
+ },
+ {
+  "disease_ID": "769",
+  "DIS_ID": "DIS00769",
+  "disease_name": "Thromboembolic disease",
+  "ICD9": "437.6, 453, 671.5, 671.9",
+  "ICD10": "I80-I82"
+ },
+ {
+  "disease_ID": "770",
+  "DIS_ID": "DIS00770",
+  "disease_name": "Thromboembolic disorders",
+  "ICD9": "437.6, 453, 671.5, 671.9",
+  "ICD10": "I80-I82"
+ },
+ {
+  "disease_ID": "771",
+  "DIS_ID": "DIS00771",
+  "disease_name": "Thromboembolism",
+  "ICD9": "453",
+  "ICD10": "I80-I82"
+ },
+ {
+  "disease_ID": "772",
+  "DIS_ID": "DIS00772",
+  "disease_name": "Thrombosis",
+  "ICD9": "414.8",
+  "ICD10": "I24.0"
+ },
+ {
+  "disease_ID": "773",
+  "DIS_ID": "DIS00773",
+  "disease_name": "Thrombotic disease",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "774",
+  "DIS_ID": "DIS00774",
+  "disease_name": "Thyroid follicular carcinoma",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "775",
+  "DIS_ID": "DIS00775",
+  "disease_name": "Thyroid hormone resistance syndrome",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "776",
+  "DIS_ID": "DIS00776",
+  "disease_name": "Thyrotoxicosis [hyperthyroidism]",
+  "ICD9": "242.9",
+  "ICD10": "E05"
+ },
+ {
+  "disease_ID": "777",
+  "DIS_ID": "DIS00777",
+  "disease_name": "Tissue injury",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "778",
+  "DIS_ID": "DIS00778",
+  "disease_name": "Tobacco Dependence",
+  "ICD9": "305.1",
+  "ICD10": "F17"
+ },
+ {
+  "disease_ID": "779",
+  "DIS_ID": "DIS00779",
+  "disease_name": "Tobacco Use Disorder",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "780",
+  "DIS_ID": "DIS00780",
+  "disease_name": "Torsades de Pointes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "781",
+  "DIS_ID": "DIS00781",
+  "disease_name": "Toxoplasma infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "782",
+  "DIS_ID": "DIS00782",
+  "disease_name": "Toxoplasmosis",
+  "ICD9": "130",
+  "ICD10": "B58"
+ },
+ {
+  "disease_ID": "783",
+  "DIS_ID": "DIS00783",
+  "disease_name": "Transmissible spongiform encephalopathies",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "784",
+  "DIS_ID": "DIS00784",
+  "disease_name": "Transplant failure or rejection",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "785",
+  "DIS_ID": "DIS00785",
+  "disease_name": "Traumatic brain injuries",
+  "ICD9": "800, 801, 803, 804, 850-854",
+  "ICD10": "S06"
+ },
+ {
+  "disease_ID": "786",
+  "DIS_ID": "DIS00786",
+  "disease_name": "Traumatic brain injury",
+  "ICD9": "800, 801, 803, 804, 850-854",
+  "ICD10": "S06"
+ },
+ {
+  "disease_ID": "787",
+  "DIS_ID": "DIS00787",
+  "disease_name": "Traumatic head injury",
+  "ICD9": "800-879",
+  "ICD10": "S00.0S09"
+ },
+ {
+  "disease_ID": "788",
+  "DIS_ID": "DIS00788",
+  "disease_name": "Treatment-refractory psychoses",
+  "ICD9": "290-299",
+  "ICD10": "F20-F29"
+ },
+ {
+  "disease_ID": "789",
+  "DIS_ID": "DIS00789",
+  "disease_name": "Tremor, unspecified",
+  "ICD9": "781",
+  "ICD10": "R25.1"
+ },
+ {
+  "disease_ID": "790",
+  "DIS_ID": "DIS00790",
+  "disease_name": "Trichomoniasis",
+  "ICD9": "131",
+  "ICD10": "A59"
+ },
+ {
+  "disease_ID": "791",
+  "DIS_ID": "DIS00791",
+  "disease_name": "Trypanolytic infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "792",
+  "DIS_ID": "DIS00792",
+  "disease_name": "Trypanosomatid infections",
+  "ICD9": "001-139",
+  "ICD10": "A00-B99"
+ },
+ {
+  "disease_ID": "793",
+  "DIS_ID": "DIS00793",
+  "disease_name": "Trypanosomiasis",
+  "ICD9": "86.5",
+  "ICD10": "B56"
+ },
+ {
+  "disease_ID": "794",
+  "DIS_ID": "DIS00794",
+  "disease_name": "Tuberculosis",
+  "ICD9": "001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104",
+  "ICD10": "A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79"
+ },
+ {
+  "disease_ID": "795",
+  "DIS_ID": "DIS00795",
+  "disease_name": "Tumor angiogenesis",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "796",
+  "DIS_ID": "DIS00796",
+  "disease_name": "Tumor angiogenesis and metastasis",
+  "ICD9": "140-199, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "797",
+  "DIS_ID": "DIS00797",
+  "disease_name": "Tumors",
+  "ICD9": "140-199, 200, 202, 202.8, 210-229",
+  "ICD10": "C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A"
+ },
+ {
+  "disease_ID": "798",
+  "DIS_ID": "DIS00798",
+  "disease_name": "Type IV and V hyperlipidemia",
+  "ICD9": "272.0-272.4",
+  "ICD10": "E78"
+ },
+ {
+  "disease_ID": "799",
+  "DIS_ID": "DIS00799",
+  "disease_name": "Tyrosinase-positive Melanomas",
+  "ICD9": "172",
+  "ICD10": "C43"
+ },
+ {
+  "disease_ID": "800",
+  "DIS_ID": "DIS00800",
+  "disease_name": "Ulcerative colitis",
+  "ICD9": "555, 556, 556.9, 696, 696.0, 710-719, 714, 720.0",
+  "ICD10": "K50, K50-K52, K51, L40, L40.5, M00-M25, M05-M06, M07, M08.1, M45"
+ },
+ {
+  "disease_ID": "801",
+  "DIS_ID": "DIS00801",
+  "disease_name": "Ulcers",
+  "ICD9": "528.2",
+  "ICD10": "K12.0"
+ },
+ {
+  "disease_ID": "802",
+  "DIS_ID": "DIS00802",
+  "disease_name": "Urge incontinence",
+  "ICD9": "787.6, 788.3",
+  "ICD10": "N39.3-N39.4, R15, R32"
+ },
+ {
+  "disease_ID": "803",
+  "DIS_ID": "DIS00803",
+  "disease_name": "Urinary Bladder Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "804",
+  "DIS_ID": "DIS00804",
+  "disease_name": "Urinary incontinence",
+  "ICD9": "788.3",
+  "ICD10": "N39.3, N39.4, R32"
+ },
+ {
+  "disease_ID": "805",
+  "DIS_ID": "DIS00805",
+  "disease_name": "Urinary tract infection",
+  "ICD9": "001-139, 595, 599.0",
+  "ICD10": "A00-B99, N30, N39.0"
+ },
+ {
+  "disease_ID": "806",
+  "DIS_ID": "DIS00806",
+  "disease_name": "Urinary tract infections",
+  "ICD9": "001-139, 595, 599.0",
+  "ICD10": "A00-B99, N30, N39.0"
+ },
+ {
+  "disease_ID": "807",
+  "DIS_ID": "DIS00807",
+  "disease_name": "Urologic Neoplasms",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "808",
+  "DIS_ID": "DIS00808",
+  "disease_name": "Urological cancers",
+  "ICD9": "140-229",
+  "ICD10": "C00-C96"
+ },
+ {
+  "disease_ID": "809",
+  "DIS_ID": "DIS00809",
+  "disease_name": "Varicose and spider veins of the leg",
+  "ICD9": "454-456, 671",
+  "ICD10": "I83, I85, I86"
+ },
+ {
+  "disease_ID": "810",
+  "DIS_ID": "DIS00810",
+  "disease_name": "Vascular disease",
+  "ICD9": "390-459",
+  "ICD10": "I00-I99"
+ },
+ {
+  "disease_ID": "811",
+  "DIS_ID": "DIS00811",
+  "disease_name": "Vascular Diseases",
+  "ICD9": "390-459, 411.1, 414.0, 440",
+  "ICD10": "I00-I99, I20.0, I25.1, I70"
+ },
+ {
+  "disease_ID": "812",
+  "DIS_ID": "DIS00812",
+  "disease_name": "Vascular headache",
+  "ICD9": "339, 784.0",
+  "ICD10": "G43-G44, R51"
+ },
+ {
+  "disease_ID": "813",
+  "DIS_ID": "DIS00813",
+  "disease_name": "Vascular injury response",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "814",
+  "DIS_ID": "DIS00814",
+  "disease_name": "Vascular lesion regression",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "815",
+  "DIS_ID": "DIS00815",
+  "disease_name": "Vasoconstriction",
+  "ICD9": "443",
+  "ICD10": "I73"
+ },
+ {
+  "disease_ID": "816",
+  "DIS_ID": "DIS00816",
+  "disease_name": "Vasospasm",
+  "ICD9": "443.9",
+  "ICD10": "I73.9"
+ },
+ {
+  "disease_ID": "817",
+  "DIS_ID": "DIS00817",
+  "disease_name": "Vasospastic angina",
+  "ICD9": "413",
+  "ICD10": "I20"
+ },
+ {
+  "disease_ID": "818",
+  "DIS_ID": "DIS00818",
+  "disease_name": "Venous Thromboembolism",
+  "ICD9": "453",
+  "ICD10": "I80-I82"
+ },
+ {
+  "disease_ID": "819",
+  "DIS_ID": "DIS00819",
+  "disease_name": "Ventricular dysfunction",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "820",
+  "DIS_ID": "DIS00820",
+  "disease_name": "Ventricular hypertrophy",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "821",
+  "DIS_ID": "DIS00821",
+  "disease_name": "Vertigo of central and peripheral origin",
+  "ICD9": "438.85, 780.4",
+  "ICD10": "H81, R42"
+ },
+ {
+  "disease_ID": "822",
+  "DIS_ID": "DIS00822",
+  "disease_name": "Viral infection",
+  "ICD9": "042-075",
+  "ICD10": "A80-A99, B00-B34"
+ },
+ {
+  "disease_ID": "823",
+  "DIS_ID": "DIS00823",
+  "disease_name": "Viral infection, unspecified",
+  "ICD9": "001-139, 042-075",
+  "ICD10": "A00-B99, A80-A99, B00-B34"
+ },
+ {
+  "disease_ID": "824",
+  "DIS_ID": "DIS00824",
+  "disease_name": "viral infections",
+  "ICD9": "042-075",
+  "ICD10": "A80-A99, B00-B34"
+ },
+ {
+  "disease_ID": "825",
+  "DIS_ID": "DIS00825",
+  "disease_name": "Visceral leishmaniasis",
+  "ICD9": "085.0, 110-118",
+  "ICD10": "B35-B49, B55.0"
+ },
+ {
+  "disease_ID": "826",
+  "DIS_ID": "DIS00826",
+  "disease_name": "Visceral pain",
+  "ICD9": "338780",
+  "ICD10": "R52, G89"
+ },
+ {
+  "disease_ID": "827",
+  "DIS_ID": "DIS00827",
+  "disease_name": "Vitamin A deficiency",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "828",
+  "DIS_ID": "DIS00828",
+  "disease_name": "Vitamin B12 deficiency",
+  "ICD9": "266.2",
+  "ICD10": "E53.8"
+ },
+ {
+  "disease_ID": "829",
+  "DIS_ID": "DIS00829",
+  "disease_name": "Vitamin B6 deficiency",
+  "ICD9": "266.1",
+  "ICD10": "E53.1"
+ },
+ {
+  "disease_ID": "830",
+  "DIS_ID": "DIS00830",
+  "disease_name": "Vitamin D deficiency",
+  "ICD9": "268",
+  "ICD10": "E55"
+ },
+ {
+  "disease_ID": "831",
+  "DIS_ID": "DIS00831",
+  "disease_name": "Vomiting",
+  "ICD9": "698, 787, 787.0, 995.3",
+  "ICD10": "L29, R11, T78.4"
+ },
+ {
+  "disease_ID": "832",
+  "DIS_ID": "DIS00832",
+  "disease_name": "Von Willebrand's disease",
+  "ICD9": "286.4",
+  "ICD10": "D68.0"
+ },
+ {
+  "disease_ID": "833",
+  "DIS_ID": "DIS00833",
+  "disease_name": "Waldenstrom's macroglobulinemia",
+  "ICD9": "273.3",
+  "ICD10": "C88.0"
+ },
+ {
+  "disease_ID": "834",
+  "DIS_ID": "DIS00834",
+  "disease_name": "Water-retaining diseases",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "835",
+  "DIS_ID": "DIS00835",
+  "disease_name": "West's syndrome",
+  "ICD9": "345.6",
+  "ICD10": "G40.4"
+ },
+ {
+  "disease_ID": "836",
+  "DIS_ID": "DIS00836",
+  "disease_name": "X-linked congenital adrenal hypoplasia",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "837",
+  "DIS_ID": "DIS00837",
+  "disease_name": "Zollinger-Ellison syndrome",
+  "ICD9": "251.5",
+  "ICD10": "E16.4"
+ },
+ {
+  "disease_ID": "1001",
+  "DIS_ID": "DIS01001",
+  "disease_name": "Blood group, Yt system",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1002",
+  "DIS_ID": "DIS01002",
+  "disease_name": "Androgen insensitivity",
+  "ICD9": "259.5",
+  "ICD10": "?E34.51"
+ },
+ {
+  "disease_ID": "1003",
+  "DIS_ID": "DIS01003",
+  "disease_name": "Hypospadias 1, X-linked",
+  "ICD9": "752.6",
+  "ICD10": "Q54"
+ },
+ {
+  "disease_ID": "1004",
+  "DIS_ID": "DIS01004",
+  "disease_name": "Spinal and bulbar muscular atrophy of Kennedy",
+  "ICD9": "335.1",
+  "ICD10": "G12.1"
+ },
+ {
+  "disease_ID": "1005",
+  "DIS_ID": "DIS01005",
+  "disease_name": "XY disorders of sex development (Disorders in androgen synthesis or action)",
+  "ICD9": "",
+  "ICD10": "E25.0 E34.5 Q56.1 Q87.1"
+ },
+ {
+  "disease_ID": "1006",
+  "DIS_ID": "DIS01006",
+  "disease_name": "XY disorders of sex development (Other)",
+  "ICD9": "",
+  "ICD10": "E25.0 E34.5 Q56.1 Q87.2"
+ },
+ {
+  "disease_ID": "1007",
+  "DIS_ID": "DIS01007",
+  "disease_name": "Lyme disease?",
+  "ICD9": "88.81",
+  "ICD10": "A69.2"
+ },
+ {
+  "disease_ID": "1008",
+  "DIS_ID": "DIS01008",
+  "disease_name": "Tropical calcific pancreatitis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1009",
+  "DIS_ID": "DIS01009",
+  "disease_name": "Hereditary pancreatitis",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1010",
+  "DIS_ID": "DIS01010",
+  "disease_name": "Oropharyngeal candidiasis?",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1011",
+  "DIS_ID": "DIS01011",
+  "disease_name": "syndrome 5A",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1012",
+  "DIS_ID": "DIS01012",
+  "disease_name": "XX disorders of sex development (Disorders related to androgen excess)",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1013",
+  "DIS_ID": "DIS01013",
+  "disease_name": "Other phagocyte defects",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1014",
+  "DIS_ID": "DIS01014",
+  "disease_name": "Anemia due to disorders of glutathione metabolism",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1015",
+  "DIS_ID": "DIS01015",
+  "disease_name": "Hypertension, early-onset, autosomal dominant, with exacerbation in pregnancy",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1016",
+  "DIS_ID": "DIS01016",
+  "disease_name": "Pseudohypoaldosteronism type I, autosomal dominant",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1017",
+  "DIS_ID": "DIS01017",
+  "disease_name": "Hyperkalemic distal renal tubular acidosis (RTA type 4)",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1018",
+  "DIS_ID": "DIS01018",
+  "disease_name": "Injury to nervous tissue or neurons?",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1019",
+  "DIS_ID": "DIS01019",
+  "disease_name": "Dysprothrombinemia",
+  "ICD9": "286.3",
+  "ICD10": "D68.2"
+ },
+ {
+  "disease_ID": "1020",
+  "DIS_ID": "DIS01020",
+  "disease_name": "Hypoprothrombinemia",
+  "ICD9": "286.3",
+  "ICD10": "D68.2"
+ },
+ {
+  "disease_ID": "1021",
+  "DIS_ID": "DIS01021",
+  "disease_name": "Atopy, susceptibility to",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1022",
+  "DIS_ID": "DIS01022",
+  "disease_name": "albinism digenic",
+  "ICD9": "270.2",
+  "ICD10": "E70.3"
+ },
+ {
+  "disease_ID": "1023",
+  "DIS_ID": "DIS01023",
+  "disease_name": "Albinism, oculocutaneous, type IA",
+  "ICD9": "270.2",
+  "ICD10": "E70.3"
+ },
+ {
+  "disease_ID": "1024",
+  "DIS_ID": "DIS01024",
+  "disease_name": "Albinism, oculocutaneous, type IB",
+  "ICD9": "270.2",
+  "ICD10": "E70.3"
+ },
+ {
+  "disease_ID": "1025",
+  "DIS_ID": "DIS01025",
+  "disease_name": "Melanoma, cutaneous malignant",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1026",
+  "DIS_ID": "DIS01026",
+  "disease_name": "Skin/hair/eye pigmentation 3, blue/green eyes",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1027",
+  "DIS_ID": "DIS01027",
+  "disease_name": "Skin/hair/eye pigmentation 3, light/dark/freckling skin",
+  "ICD9": "",
+  "ICD10": ""
+ },
+ {
+  "disease_ID": "1028",
+  "DIS_ID": "DIS01028",
+  "disease_name": "Waardenburg syndrome",
+  "ICD9": "270.2",
+  "ICD10": "E70.3"
+ },
+ {
+  "disease_ID": "1029",
+  "DIS_ID": "DIS01029",
+  "disease_name": "Oculocutaneous albinism (OCA)",
+  "ICD9": "270.2",
+  "ICD10": "E70.3"
+ },
+ {
+  "disease_ID": "1030",
+  "DIS_ID": "DIS01030",
+  "disease_name": "Microvascular complications of diabetes 1",
+  "ICD9": "",
+  "ICD10": ""
+ }
+]

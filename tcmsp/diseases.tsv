@@ -1,0 +1,868 @@
+disease_ID	DIS_ID	disease_name	ICD9	ICD10
+1	DIS00001	Abdominal aortic aneurysm	442	172
+2	DIS00002	Abortion, Spontaneous		
+3	DIS00003	Achondroplasia	756.4	Q77.4
+4	DIS00004	Acid-related diseases	531-534	K25-K27
+5	DIS00005	Acne	706.1    	L70.0
+6	DIS00006	Acromegaly and pituitary gigantism	253	E22.0,E34.4
+7	DIS00007	Acute allograft rejection	996.8	T86
+8	DIS00008	Acute coronary syndromes	411.1	I20.0
+9	DIS00009	Acute graft-versus-host disease	279.5	T86.0
+10	DIS00010	Acute lymphoblastic leukaemia	208.9	C91-C95
+11	DIS00011	Acute lymphoblastic leukaemia (therapy-refractory)	208.9	C91-C95
+12	DIS00012	Acute lymphoblastic leukemia (ALL)	204.0	C91.0
+13	DIS00013	Acute migraine	346.0	G43
+14	DIS00014	Acute myeloid leukemia	205.0	C92.0
+15	DIS00015	Acute myeloid leukemia (AML)	205.0	C92.0
+16	DIS00016	Acute nasopharyngitis [common cold]	462,472.1	J02,J31.2
+17	DIS00017	Acute non-lymphocytic leukaemia	208.9	C91-C95
+18	DIS00018	Acute otitis media	381.0, 381.1, 381.2, 381.3, 381.4	H65, H66, H67
+19	DIS00019	Acute promyelocytic leukemia	205.0	C92.4
+20	DIS00020	Acute respiratory distress syndrome	518.5, 518.82	J80
+21	DIS00021	Acute T-lymphoid leukemia	208.9	C91-C95
+22	DIS00022	Acute ureteric colic	788.0	N23
+23	DIS00023	Acutely decompensated Congestive Heart Failure	428.0	I50
+24	DIS00024	Adenomatous polyposis	153,154	C18-C21
+25	DIS00025	Adrenocortical tumour	140-199,210-229	C00-C75, C7A, C7B, D10-D36, D3A
+26	DIS00026	Adrenocorticotrophic hormone-secreting pituitary tumors	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+27	DIS00027	Adrenocorticotrophic hormone-secreting tumors	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+28	DIS00028	Adult respiratory distress syndrome	518.5, 518.82	J80
+29	DIS00029	Advanced cancers, age-related macular degeneration	140-229, 362.50	C00-C96, H35.3
+30	DIS00030	Advanced lung cancer	140-229, 162	C00-C96, C33-C34
+31	DIS00031	Advanced or metastatic non-small cell lung cancer	162	C33-C34
+32	DIS00032	Advanced solid tumors	140-199	C00-C75, C7A, C7B
+33	DIS00033	Advanced, Relapsed/Refractory Multiple Myeloma	203.0	C90.0
+34	DIS00034	African trypanosomiasis	086.5	B56
+35	DIS00035	Age-related macular degeneration	362.50	H35.3
+36	DIS00036	Aggregation and activation of platelets		
+37	DIS00037	AIDS related dementia	042, 290-294	B20, F01-F07
+38	DIS00038	AIDS-related Kaposi's Sarcoma	176	C46
+39	DIS00039	Airway hyperreactivity		
+40	DIS00040	Alcohol dependence	303	F10.2
+41	DIS00041	Alcoholism	086.5	B56
+42	DIS00042	Allergen-triggered inflammatory tissue injury		
+43	DIS00043	Allergic airway inflammation		J00-J99, T78.4
+44	DIS00044	Allergic diseases	995.3	T78.4
+45	DIS00045	Allergic inflammation	995.3	T78.4
+46	DIS00046	Allergic Reaction	995.3	T78.4
+47	DIS00047	Allergic rhinitis, unspecified	472.0, 477, 995.3	J00, J30, J31.0, T78.4
+48	DIS00048	Allergy, unspecified	995.3	T78.4
+49	DIS00049	Alopecia, unspecified	704.09	L65.9
+50	DIS00050	Alpha 1 Antitrypsin Deficiency	273.4, 691.8, 692.9  	E88.0, L20, L20-L30
+51	DIS00051	Alzheimer's Disease	331.0	G30
+52	DIS00052	Amebiasis	006	A06
+53	DIS00053	Amyloidosis	277.3	E85
+54	DIS00054	Amyotrophic lateral sclerosis	335.20	G12.2
+55	DIS00055	Analgesics	338	R52
+56	DIS00056	Anaplastic Large Cell Lymphomas	202.8	C81-C96
+57	DIS00057	Androgen-dependent diseases		
+58	DIS00058	Anemia	280-285	D50-D64
+59	DIS00059	Anemia, unspecified	280-285	D50-D64
+60	DIS00060	Anesthesia	338	R52
+61	DIS00061	Anesthetic	338	R52
+62	DIS00062	Angina	413	I20
+63	DIS00063	Angina pectoris	413	I20
+64	DIS00064	Angioedema	277.6	D84.1
+65	DIS00065	Angiogenesis		
+66	DIS00066	Angiogenesis in metastatic and atherosclerotic processes		
+67	DIS00067	Anorexia nervosa	307.1	F50.0-F50.1
+68	DIS00068	Anthrax infection	001-139, 022	A00-B99, A22
+69	DIS00069	Anticoagulant	995.0	T78.2
+70	DIS00070	Antigen-induced decrease in coronary flow and cardiac anaphylaxis	995.0	T78.2
+71	DIS00071	Antiphospholipid syndrome	289.81	D68.8
+72	DIS00072	Anxiety disorder, unspecified	300	F40-F42
+73	DIS00073	Anxiety Disorders	300	F40-F42
+74	DIS00074	Arterial embolism and thrombosis	437.6, 444.9, 453, 671.5, 671.9	I74, I80-I82, I82, O88, T79.0-T79.1
+75	DIS00075	Arthritis	710-719	M00-M25
+76	DIS00076	Arthritis, Rheumatoid	696.0, 710-719, 714	L40.5, M00-M25, M05-M06, M07
+77	DIS00077	Asthma	493	J45
+78	DIS00078	Asthmatic bronchial mucosal inflammation		
+79	DIS00079	Atherosclerosis	414.0, 440	I70
+80	DIS00080	Atherosclerotic cardiovascular disease	390-459	I00-I99
+81	DIS00081	Atopic asthma	493	J45
+82	DIS00082	Atopic Dermatitis	691.8	L20
+83	DIS00083	Atrial fibrillation and flutter	427.31, 487, 488	I48, J10, J11
+84	DIS00084	Attention-deficit hyperactivity disorder	314.0	F90
+85	DIS00085	Attenuated coronary flow reserve and myocardial dysfunction	410	I21, I22
+86	DIS00086	Autoimmune and sudden sensorineural hearing loss	389	H90-H91
+87	DIS00087	Autoimmune cardiomyopathy		
+88	DIS00088	Autoimmune Diseases	279.4	D84.9, M35.9
+89	DIS00089	B cell acute lymphoblastic leukemia (B-ALL)	204.0, 208.9	C91-C95, C91.0
+90	DIS00090	B cell immunodeficiency	279.3	D84.9
+91	DIS00091	B12 deficiency	266.2	E53.8
+92	DIS00092	Bacillus subtilis infections	001-139	A00-B99
+93	DIS00093	Bacterial Infections	001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104	A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79
+94	DIS00094	Basal cell carcinoma	173	C44
+95	DIS00095	B-cell lymphoma	202.8	C85.1
+96	DIS00096	B-cell malignancies	202.8	C85.1
+97	DIS00097	Behcet's disease	136.1	M35.2
+98	DIS00098	Benign prostate hyperplasia	600	N40
+99	DIS00099	Benign prostatic hyperplasia	600	N40
+100	DIS00100	Bipolar Affective Disorder	296.0, 296.1, 296.4, 296.5, 296.6, 296.7, 296.8	F31
+101	DIS00101	Bipolar Disorder	296.0, 296.1, 296.4, 296.5, 296.6, 296.7, 296.8	F31
+102	DIS00102	Biventricular heart failure	428	I50
+103	DIS00103	Bladder cancer	188	C67
+104	DIS00104	Blepharospasm	333.81	G24.5
+105	DIS00105	B-lineage malignancies	140-239	C00-C96
+106	DIS00106	Blood, Blood Forming Organ Disorders, Unspecified	280-289	D50-D89
+107	DIS00107	Bone Diseases, Metabolic		
+108	DIS00108	Bone disorders	710-739	M00-M99
+109	DIS00109	Bone marrow transplant	279.5, 996	D89.8, T86
+110	DIS00110	Bone Metastases	198.5	C79.51
+111	DIS00111	Brain Cancer	191	C71
+112	DIS00112	Brain inflammation		
+113	DIS00113	Brain injury		
+114	DIS00114	Brain ischemia	435, 437	G45.9, I67.8
+115	DIS00115	Brain ischemic insult	435, 437	G45.9, I67.8
+116	DIS00116	Brain tumors	191, 225.0	C71, D33
+117	DIS00117	Breast cancer	174, 175	C50
+118	DIS00118	Breast cancer (hormone-sensitive)	140-229, 174, 175	C00-C96, C50
+119	DIS00119	Breast Cancer, Cancers		
+120	DIS00120	Breast cancer, prostate cancer	140-229, 174, 175, 185	C00-C96, C50, C61
+121	DIS00121	Breast Neoplasms	140-229, 140-239, 174, 175, 610-611	C00-C96, C00-C96, C00-D48, C50, N60-N64
+122	DIS00122	Bronchial asthma	493	J45
+123	DIS00123	Bronchiolar carcinoma	162	C34
+124	DIS00124	Bronchoconstriction (cold air-induced)	493	J45
+125	DIS00125	Bronchospasm (histamine induced)	728.85	R25.2
+126	DIS00126	Burns and Burn Infections	001-139	A00-B99
+127	DIS00127	Cachexia	799.4	R64
+128	DIS00128	Cancer		
+129	DIS00129	Cancer (multidrug resistant)	140-229	C00-C96
+130	DIS00130	Cancer, unspecific	140-229	C00-C96
+131	DIS00131	Cancer, unspecified	140-229	C00-C96
+132	DIS00132	Cancer-associated morbidity	140-229	C00-C96
+133	DIS00133	Cancers	140-229	C00-C96
+134	DIS00134	Carcinoma in situ, unspecified	230-234	D00-D09
+135	DIS00135	Carcinoma, Non-Small-Cell Lung	162	C33, C34
+136	DIS00136	Cardiac allograft vasculopathy	996.8	T86
+137	DIS00137	Cardiac arrhythmias	427	I47-I49
+138	DIS00138	Cardiac diseases	390-459	I00-I99
+139	DIS00139	Cardiac dysrhythmias	427	I47-I49
+140	DIS00140	Cardiac hypertrophy	429.3	I51.7
+141	DIS00141	Cardiac Surgery		
+142	DIS00142	Cardiomyopathies	413, 428	I20, I50
+143	DIS00143	Cardiovascular disease	390-459	I00-I99
+144	DIS00144	Cardiovascular disease, unspecified	390-459	I00-I99
+145	DIS00145	Cardiovascular Disorders	390-459	I00-I99
+146	DIS00146	Cardiovascular Disorders (CVD)	390-459	I00-I99
+147	DIS00147	Carpal tunnel syndrome	354	G56.0
+148	DIS00148	Cell Carcinoma	157.4	C25.4
+149	DIS00149	Central and peripheral nervous system diseases	320-389	G00-G99
+150	DIS00150	Central nervous system diseases	294.1, 307.23, 314.00, 314.01, 320-322, 323, 331.0, 332, 333.4, 340, 344.1, 344.81, 348.0	A83-A86, B94.1, F02.2, F02.3, F90, F95.2, G00-G37, G83.5, G93.0
+151	DIS00151	Central nervous system injury		
+152	DIS00152	Cerebral circulatory disorders		
+153	DIS00153	Cerebral edema	348.5	G93.6
+154	DIS00154	Cerebral Infarction		
+155	DIS00155	Cerebral ischemia	459.89	I99.8
+156	DIS00156	Cerebral oxidative damage		
+157	DIS00157	Cerebral vasospasm	443.9	I73.9
+158	DIS00158	Cervical cancer	180	C53
+159	DIS00159	Chagas' disease	86	B57
+160	DIS00160	Chemotherapy-induced nausea and vomiting	787, 787.0	R11
+161	DIS00161	Chemotherapy-induced thrombocytopenia	287.3, 287.4, 287.5	D69.6, P61.0
+162	DIS00162	Childhood seizure disorders	345	G40
+163	DIS00163	Cholestasis	576.2	K83.1
+164	DIS00164	Chondrosarcoma	170.9	C41.9
+165	DIS00165	Chronic airway inflammation	460-519	J00-J99
+166	DIS00166	Chronic angina pectoris	413	I20
+167	DIS00167	Chronic arthritis	710-719	M00-M25
+168	DIS00168	Chronic bronchitis	491	J42
+169	DIS00169	Chronic experimental allergic encephalomyelitis	204.0, 995.3	C91.0, T78.4
+170	DIS00170	Chronic graft-versus-host disease	279.5	T86.0
+171	DIS00171	Chronic heart failure	428	I50
+172	DIS00172	Chronic hepatitis C	070.4, 070.5, 070.70	B17.1, B18.2
+173	DIS00173	Chronic ileitis	555-558	K50-K52
+174	DIS00174	Chronic inflammatory diseases		
+175	DIS00175	Chronic lung diseases	490-496, 770.7	J40-J44, J45, J47, P27.1
+176	DIS00176	Chronic lymphocytic leukemia	204.1	C91.1
+177	DIS00177	Chronic lymphocytic leukemia (CLL)	204.1, 208.9	C91-C95, C91.1
+178	DIS00178	Chronic Myelogenous Leukemia (CML)	205.1, 208.9	C91-C95, C92.1
+179	DIS00179	Chronic myeloid leukemia	205.1	C92.1
+180	DIS00180	Chronic myeloproliferative diseases	205.1, 238.4, 289.89, 289.9	D47.1
+181	DIS00181	Chronic obstructive pulmonary disease	490-492, 493, 494-496	J40-J44, J45, J47
+182	DIS00182	Chronic Obstructive Pulmonary Disease (COPD)	460-519, 490-492, 493, 494-496	J00-J99, J40-J44, J45, J47
+183	DIS00183	Chronic obstructive pulmonary disease, unspecified	460-519, 490-492, 494-496	J00-J99, J40-J44, J47
+184	DIS00184	Chronic pain	338.2,780	R52.1-R52.2, G89
+185	DIS00185	Chronic pathological pain	338780	R52, G89
+186	DIS00186	Chronic Primary Insomnia	307.41, 307.42, 327.0, 780.51, 780.52	F51.0, G47.0
+187	DIS00187	Chronic Renal Failure	585.9585.1-585.5403	N18
+188	DIS00188	Chronic rhinitis	472.0, 477	J00, J30, J31.0
+189	DIS00189	Chronic stable angina	413	I20
+190	DIS00190	Chronic urticaria	708	L50
+191	DIS00191	Clotting Disorders	286	D65-D69
+192	DIS00192	Coagulative disorders	286	D65-D69
+193	DIS00193	Cocaine dependence	304.2	F14.2
+194	DIS00194	Cocaine overdose	304.2	F14.2
+195	DIS00195	Coeliac disease	579	K90.0
+196	DIS00196	Cognitive deficits	290-294, 294.0, 780.09, 780.9, 780.93	F01-F07, F04, R41.3
+197	DIS00197	Cognitive deficits (age- and dementia-associated)	290-294	F01-F07
+198	DIS00198	Colitis		
+199	DIS00199	Colon cancer	153, 154	C18-C21
+200	DIS00200	Colorectal cancer		
+201	DIS00201	Colorectal Neoplasms		
+202	DIS00202	Conformational diseases (polymer formation associated liver disease)	570-574	K70-K77
+203	DIS00203	Congestive Heart Failure	428	I50
+204	DIS00204	Convulsions	780.3	R56.0
+205	DIS00205	Coronary Artery Disease	410-414, 429.2	I20-I25
+206	DIS00206	Coronary atherosclerosis	414.0, 440	I70
+207	DIS00207	Coronary heart disease	414	I25.1
+208	DIS00208	Coronary syndromes	411.1	I20.0
+209	DIS00209	Coronaviruses infections	001-139	A00-B99
+210	DIS00210	Cough	786.2	R05
+211	DIS00211	Crescentic glomerulonephritis	580-582	N00, N01, N03, N18
+212	DIS00212	Crohns's Disease		
+213	DIS00213	Crohns's Disease, unspecified		
+214	DIS00214	Cushing's disease	255	E24.0
+215	DIS00215	Cushing's syndrome	255	E24
+216	DIS00216	Cushing's syndrome (ACTH independent)	255	E24
+217	DIS00217	Cutaneous leishmaniasis	007.1, 085.1-085.4	A07.1, B55.1
+218	DIS00218	Cutaneous T-Cell Lymphoma	202.1, 202.2	C84.0, C84.1
+219	DIS00219	Cystic Fibrosis	277	E84
+220	DIS00220	Cystitis		
+221	DIS00221	Cytokine-mediated diseases		
+222	DIS00222	Cytomegalovirus retinitis	78.5	B25.8, H30.9
+223	DIS00223	Death		
+224	DIS00224	Delirium	293	F05
+225	DIS00225	Delusional disorder	297.1	F22.0
+226	DIS00226	Dementia	290-294	F01-F07
+227	DIS00227	Dengue virus infection	001-139, 042-075, 061	A00-B99, A80-A99, A90, B00-B34
+228	DIS00228	Depression	311	F32
+229	DIS00229	Depressive Disorder	296.2, 296.3, 332	F02.3, F32, F33, G20
+230	DIS00230	Depressive Disorder, Major	296.2, 296.3, 332	F02.3, F32, F33, G20
+231	DIS00231	Dermatological disorders		
+232	DIS00232	Detrusor hyperreflexia	596.51	N32.81
+233	DIS00233	Diabetes insipidus	250, 253.5, 307.6, 588.1, 788.30, 788.42	E08-E13, E23.2, F98.0, N25.1, R32, R35
+234	DIS00234	Diabetes mellitus	250	E08-E13
+235	DIS00235	Diabetes Mellitus Type 1 and 2	250	E08-E13
+236	DIS00236	Diabetes Mellitus Type 2	250	E11
+237	DIS00237	Diabetes Mellitus, Type 2	250	E08-E13
+238	DIS00238	Diabetic cardiovascular dysfunction	250	E08-E13
+239	DIS00239	Diabetic complications	250	E08-E13
+240	DIS00240	Diabetic disorders	250	E08-E13
+241	DIS00241	Diabetic endothelial dysfunction	250	E08-E13
+242	DIS00242	Diabetic nephropathy	250.4	E10.2, E11.2, E13.2
+243	DIS00243	Diabetic neuropathy	250.6	E10.4, E11.4, E13.4
+244	DIS00244	Diabetic retinopathy	250.5	H36, E10.3, E11.3, E13.3
+245	DIS00245	Diagnosis of pancreatic exocrine dysfunction and gastrinoma	157.4, 577.8	C25.4, K86.8
+246	DIS00246	Diarrhea		
+247	DIS00247	Diarrhea (secretory)	787.91	A09, K59.1
+248	DIS00248	Diarrhoea-predominant irritable bowel syndrome	564.1	K58
+249	DIS00249	Dietary shortage	260-269	E40-E46
+250	DIS00250	Dilated cardiomyopathy	425.4	I42.0
+251	DIS00251	Disabling peak-dose dyskinesias	333.8	G24.9
+252	DIS00252	Disorders associated with NMDAR hypofunction		
+253	DIS00253	Disorders of bone mineralization		
+254	DIS00254	Disorders of cystine excretion		
+255	DIS00255	Disorders of initiating and maintaining sleep [insomnias]	710	M32
+256	DIS00256	Disseminated intravascular coagulation	286.6	D65
+257	DIS00257	Documented iron deficiency	280.9	E61.1
+258	DIS00258	Drug dependence	303-304	F10.2-F19.2
+259	DIS00259	Drug Toxicity		
+260	DIS00260	Drug-induced dyskinesias	333.8	G24.9
+261	DIS00261	Dry eye	370.33	H16.229
+262	DIS00262	Dyskinesia		
+263	DIS00263	Dyslipidemia	272	E78
+264	DIS00264	Dysmenorrhea, unspecified	625.3	N94.4-N94.6
+265	DIS00265	Dyspnea	786.09	R06.0
+266	DIS00266	Dysregulation of apoptosis		
+267	DIS00267	Eicosanoid-mediated disorders		
+268	DIS00268	Emotional diseases	312-314	F90-F98
+269	DIS00269	Emphysema	492	J43
+270	DIS00270	Endocrine independent cancer	140-229	C00-C96
+271	DIS00271	Endometrial carcinoma	182	C54.1
+272	DIS00272	Endometrial Neoplasms	140-239	C00-C96, C00-D48
+273	DIS00273	Endometriosis	617	N80
+274	DIS00274	Endotoxemia		
+275	DIS00275	Endotoxin-induced myocardial neutrophil accumulation and contractile dysfunction		
+276	DIS00276	Endotoxin-mediated diseases		
+277	DIS00277	Ependymoma	191, 225	C71, D33
+278	DIS00278	Epidermal hyperplasia		
+279	DIS00279	Epilepsy	345	G40
+280	DIS00280	Epileptic seizures	345.9, 780.3	G40, P90, R56
+281	DIS00281	ER alpha-positive prostate tumors	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+282	DIS00282	ER beta-positive prostate tumors	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+283	DIS00283	Erectile dysfunction	302.72, 607.84	F52.2, N48.4
+284	DIS00284	Esophageal Neoplasms		
+285	DIS00285	Esophageal squamous cell cancer	140-229	C00-C96
+286	DIS00286	Essential (primary) hypertension	401	I10, I11, I12, I13, I15
+287	DIS00287	Essential hypertension	325, 390-459, 401, 430-459	G45-G46, I00-I99, I10, I11, I12, I13, I15, I60-I95
+288	DIS00288	Estrogen disorders		
+289	DIS00289	Ewing's sarcoma	140-229, 162, 170, 174, 175	C00-C96, C33, C34, C41, C50
+290	DIS00290	Exanthema		
+291	DIS00291	Excessive collagen deposition		
+292	DIS00292	Excessive postoperative bleeding	459	R58
+293	DIS00293	Eye inflammation	360-379	H00-H59
+294	DIS00294	Fabry Disease	272.7	E75.2
+295	DIS00295	Fatigue	780.71	R53.82
+296	DIS00296	Febrile neutropenia	288	D70
+297	DIS00297	Fever	477	J30
+298	DIS00298	Fibrosing alveolitis	516.3	J84.1
+299	DIS00299	Fibrosis	277	E84
+300	DIS00300	Focal ischemia	459.89	I99.8
+301	DIS00301	Folic acid deficiency	266.2	E53.8
+302	DIS00302	Fractures, Bone		
+303	DIS00303	Frontal lobe epilepsy	345	G40
+304	DIS00304	Fungal diseases	110-118	B35-B49
+305	DIS00305	fungal infections	110-118	B35-B49
+306	DIS00306	Gain weight in patients with morbid obesity	278	E66
+307	DIS00307	Gastric acid hypersecretion		
+308	DIS00308	Gastric Cancer	140-229, 151, 188	C00-C96, C16, C67
+309	DIS00309	Gastric disease	536, 750	K30-K31, Q40-Q41
+310	DIS00310	Gastric emptying disorders		
+311	DIS00311	Gastric ulcer	531	K25
+312	DIS00312	Gastrin sensitive tumours	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+313	DIS00313	Gastroesophageal reflux disease	530	K21
+314	DIS00314	Gastroesophageal Reflux Disease (GERD)	530	K21
+315	DIS00315	Gastrointestinal adenocarcinomas	140-199	C00-C75, C7A, C7B
+316	DIS00316	Gastrointestinal Cancers	150-159	C15-C26
+317	DIS00317	Gastrointestinal Diseases and Disorders, miscellaneous		
+318	DIS00318	Gastrointestinal motility disorders	536.8	K30
+319	DIS00319	Gastrointestinal Neoplasms		
+320	DIS00320	Gastrointestinal stromal tumors	150-159	C15-C26
+321	DIS00321	Gastrointestinal Stromal Tumors (GIST)	140-199, 150-159, 210-229	C00-C75, C15-C26, C7A, C7B, D10-D36, D3A
+322	DIS00322	Gastro-intestinal ulcers	531	K25
+323	DIS00323	GCV-resistant HCMV		
+324	DIS00324	Genital warts	78.11	A63.0
+325	DIS00325	Genitourinary tumors	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+326	DIS00326	Geographic atrophy associated with age-related macular degeneration	362.5	H35.3
+327	DIS00327	Gestational hypertension	401	I10, I11, I12, I13, I15
+328	DIS00328	Giardiasis infections	001-139, 007.1	A00-B99, A07.1
+329	DIS00329	Gilles de la Tourette's disorder		
+330	DIS00330	Glaucoma	365	H40-H42
+331	DIS00331	Glial proliferation		
+332	DIS00332	Glioblastoma multiforme	191	C71
+333	DIS00333	Glioblastoma Multiforme (GBM)	191	C71
+334	DIS00334	Gliomas	191	C71
+335	DIS00335	Glomerulonephritis	580-582	N00, N01, N03, N18
+336	DIS00336	Gout	274	M10
+337	DIS00337	Graft-versus-host disease, acute	279.5	T86.0
+338	DIS00338	Graft-versus-host disease, chronic	279.5	T86.0
+339	DIS00339	Gram-negative bacterial infection	001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104	A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79
+340	DIS00340	Graves' disease		
+341	DIS00341	Growth Hormone Deficiencies/Abnormalities		
+342	DIS00342	Guillain-Barre syndrome		
+343	DIS00343	Haemorrhagic conditions		
+344	DIS00344	Hairy cell leukemia	202.4	C91.4
+345	DIS00345	HCV infection	070.4, 070.5, 070.70	B17.1, B18.2
+346	DIS00346	Head and Neck Cancer	140-149	C07-C14, C32-C33
+347	DIS00347	Head and Neck Neoplasms	199	C44
+348	DIS00348	Head and neck squamous cell carcinomas	199	C44
+349	DIS00349	Head and neck tumors	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+350	DIS00350	Hearing Loss	389	H90-H91
+351	DIS00351	Heart Disease	390-429	I00-I52
+352	DIS00352	Heart disease, unspecified	390-429	I00-I52
+353	DIS00353	Heart Failure	428	I50
+354	DIS00354	Heart transplant	996	T86
+355	DIS00355	Helicobacter pylori infection	41.86	B96.81
+356	DIS00356	Helminth infection	001-139	A00-B99
+357	DIS00357	Hematological Malignancies	200-209	C81-C96
+358	DIS00358	Hemorrhage		
+359	DIS00359	Heparin-induced thrombocytopenia type II	287.3, 287.4, 287.5	D69.6, P61.0
+360	DIS00360	Hepatic fibrosis	709.2	L90.5
+361	DIS00361	Hepatitis C	070.4, 070.5, 070.70	B17.1, B18.2
+362	DIS00362	Hepatitis, Viral, C	573.3	K75.9
+363	DIS00363	Hepatitis, virus not identified	573.3	K75.9
+364	DIS00364	Hepatocellular carcinoma	155	C22.0
+365	DIS00365	Hepatocellular Carcinoma (HCC)	155	C22.0
+366	DIS00366	Hepatorenal syndrome		
+367	DIS00367	HER2-positive Metastatic Breast Cancer	174, 175	C50
+368	DIS00368	Hereditary Angioedema	277.6	D84.1
+369	DIS00369	Hereditary Angioedema (HAE)	277.6	D84.1
+370	DIS00370	Hereditary Polyposis Syndromes		
+371	DIS00371	Heroin Dependence		
+372	DIS00372	Herpes virus infection	001-139, 042-075	A00-B99, A80-A99, B00-B34
+373	DIS00373	Hirsutism	704.1	L68.0
+374	DIS00374	HIV	42	B20
+375	DIS00375	HIV Infection	42	B20
+376	DIS00376	Hodgkins disease, unspecified		
+377	DIS00377	Homocysteine-related vascular disease	325, 430-459	G45-G46, I60-I95
+378	DIS00378	Homocystinuria		
+379	DIS00379	Hormone Deficiencies		
+380	DIS00380	Hormone-refractory Prostate cancer	140-229, 185, 203.0, 208.9	C00-C96, C61, C90.0, C91-C95
+381	DIS00381	Hot Flashes		
+382	DIS00382	Human cytomegalovirus infections	001-139, 078.5	A00-B99, B25
+383	DIS00383	Human immunodeficiency virus [HIV] disease	279.3	D84.9
+384	DIS00384	Huntington's disease	294.1, 333.4	F02.2, G10
+385	DIS00385	Hydronephrosis	591	N13.0-N13.3
+386	DIS00386	Hyperammonemia	270.6	E72.2
+387	DIS00387	Hypercalcemia of malignancy	275.42	E83.5
+388	DIS00388	Hypercholesterolaemia		
+389	DIS00389	Hypercholesterolemia	272	E78.0
+390	DIS00390	Hypereosinophilic syndrome	288.3	D72.1
+391	DIS00391	Hyperglycemia	790.29	R73.9
+392	DIS00392	Hyperimmunoglobulinemia D		
+393	DIS00393	Hyperinflammatory provoked organ injury		
+394	DIS00394	Hyperinsulinemia		
+395	DIS00395	Hyperlipidemia	272.0-272.4	E78
+396	DIS00396	Hyperparathyroidism, unspecified	252	E21
+397	DIS00397	Hypertension	325, 390-459, 401, 430-459	G45-G46, I00-I99, I10, I11, I12, I13, I15, I60-I95
+398	DIS00398	Hypertension, Angina	401, 413	I10, I11, I12, I13, I15, I20
+399	DIS00399	Hypertensive vascular disease	325, 430-459	G45-G46, I60-I95
+400	DIS00400	Hypertonicity of bladder		
+401	DIS00401	Hypertriglyceridemia	272.1	E78.1, E78.2, E78.3
+402	DIS00402	Hypertrophic vascular disease	325, 430-459	G45-G46, I60-I95
+403	DIS00403	Hypoglycemia	250.8, 251.0, 251.1, 251.2, 270.3, 775.6, 962.3	E16.0-E16.2
+404	DIS00404	Hypogonadotropic hypogonadism	257.2	E23.0, E28.3, E29.1
+405	DIS00405	Hypoinsulinemia	251.3	E89.1
+406	DIS00406	Hyponatremia	276.1	E87.1
+407	DIS00407	Hypotension	458.0, 780.7	I95.1, R53
+408	DIS00408	Hypothalamic-pituitary ACTH function	253.7	E23.0, E89.3
+409	DIS00409	Hypothermia	991.6	T68
+410	DIS00410	Hypoxic-ischemic encephalopathy	768.7	P91.60
+411	DIS00411	Idiopathic pulmonary fibrosis	516.3	J84.1
+412	DIS00412	Immune disease	279.4	D84.9, M35.9
+413	DIS00413	Immunodeficiency	279.3	D84.9
+414	DIS00414	Immunosuppression		
+415	DIS00415	Infections	001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104	A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79
+416	DIS00416	Inflammation	360-379	H00-H59
+417	DIS00417	Inflammatory Bowel Disease	555, 556	K50, K51
+418	DIS00418	Inflammatory diseases	360-379	H00-H59
+419	DIS00419	Inflammatory diseases associated with hypoxia	799.02	R09.02
+420	DIS00420	Inflammatory Disorders, Unspecified		
+421	DIS00421	Inflammatory lung disease	490-492,494-496	J40-J44, J47
+422	DIS00422	Inflammatory neurological disease		
+423	DIS00423	Inflammatory pain	338780	R52, G89
+424	DIS00424	Inflammatory response in alcoholic liver disease	570-574	K70-K77
+425	DIS00425	Inflammatory skin disorder		
+426	DIS00426	Influenza A virus infection	001-139, 042-075, 487, 488	A00-B99, A80-A99, B00-B34, J10, J11
+427	DIS00427	Influenza, virus not identified	487, 488	J10, J11
+428	DIS00428	Injury to spine and spinal cord	767.4	G95.9, T09.3
+429	DIS00429	Insomnia	300, 307.4	F40-F42, F51.0, G47.0
+430	DIS00430	Insulin resistance		
+431	DIS00431	Insulin resistance (obesity-related)		
+432	DIS00432	Insulin-dependent diabetes mellitus	250	E08-E13
+433	DIS00433	Intestinal ischemia-reperfusion associated with lung injury and the acute respiratory distress syndrome		
+434	DIS00434	Intimal hyperplasia		
+435	DIS00435	Intrahepatic cholestasis	576.2	K83.1
+436	DIS00436	Invasive candidiasis	112	B37
+437	DIS00437	Iron-deficiency anemia	280	D50
+438	DIS00438	Irritable bowel syndrome	564.1	K58
+439	DIS00439	Irritable Bowel Syndrome (IBS)	250, 250.00, 250.02, 278, 564.1	E08-E13, E11, E66, K58
+440	DIS00440	Irritation	360-379	H00-H59
+441	DIS00441	Ischemia	459.89	I99.8
+442	DIS00442	Ischemia reperfusion injuries	459.89	I99.8
+443	DIS00443	Ischemic heart disease	410-414	I20-I25
+444	DIS00444	Ischemic injury of the liver		
+445	DIS00445	Ischemic Stroke	434.91	I61-I63
+446	DIS00446	Kaposi's Sarcoma	176	C46
+447	DIS00447	Kidney Cancer	189	C64
+448	DIS00448	Kidney Disease	280	D50, N00-N29
+449	DIS00449	Kidney Transplantation	996	T86
+450	DIS00450	Kinetoplastida parasite infection	001-139	A00-B99
+451	DIS00451	Korsakov's alcoholic psychosis	290-299	F20-F29
+452	DIS00452	Lasting tachycardia	427, 785.0	I47-I49, R00.0
+453	DIS00453	Late-stage Solid tumors	140-199, 200, 202, 202.8, 210-229	C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A
+454	DIS00454	Leishmania Infections	001-139, 296.0, 296.4, 296.6	A00-B99, F30
+455	DIS00455	Leprosy, unspecified	030.9	A30.9
+456	DIS00456	Lesch-Nyhan syndrome	277.2	E79.2
+457	DIS00457	Leukemia, Lymphoid	208.9	C91-C95
+458	DIS00458	Leukemia, Myeloid	208.9	C91-C95
+459	DIS00459	Leukemia, Myeloid, Acute	205.0	E92.0
+460	DIS00460	Leukemia, Unspecified	208.9	C91-C95
+461	DIS00461	Lipid metabolic disorders	270-279	E70-E89
+462	DIS00462	Lipodystrophy	272.6	E88.1
+463	DIS00463	Liver Cancer	140-229, 155	C00-C96, C22.0
+464	DIS00464	Liver cirrhosis	571	K70.3, K71.7, K74
+465	DIS00465	Liver Disease	571.8	K76.0
+466	DIS00466	Liver fibrogenesis		
+467	DIS00467	Local anesthesia	338	R52
+468	DIS00468	Low high density lipoprotein syndromes		
+469	DIS00469	LPS-induced left ventricular dysfunction	428	I50
+470	DIS00470	Lung adenocarcinomas	140-199	C00-C75, C7A, C7B
+471	DIS00471	Lung Cancer	140-229, 162	C00-C96, C33-C34
+472	DIS00472	Lung injury		
+473	DIS00473	Lung Neoplasms	140-229, 162	C00-C96, C33-C34
+474	DIS00474	Lymphangiomatosis		
+475	DIS00475	Lymphoblast tumor	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+476	DIS00476	Lymphoma	202.1, 202.2	C84.0, C84.1
+477	DIS00477	Lymphoma, B-Cell	202.8	C81-C96
+478	DIS00478	Lymphoma, Follicular	200, 202, 202.8	C81-C96, C82-C85
+479	DIS00479	Lymphoma, Large B-Cell, Diffuse	202.8	C81-C96
+480	DIS00480	Lymphoma, Large-Cell, Diffuse		
+481	DIS00481	Lymphoma, Non-Hodgkin	183, 200, 200.0, 200.4, 201, 202, 202.8	C56, C81, C81-C96, C82-C85, C83.3, C85.1, C85.7
+482	DIS00482	Lymphoma, Non-Hodgkin's	183, 200, 200.0, 200.4, 201, 202, 202.8	C56, C81, C81-C96, C82-C85, C83.3, C85.1, C85.7
+483	DIS00483	Lymphoma, T-Cell		
+484	DIS00484	Lymphoma, Unspecified	200, 202, 202.8	C81-C96, C82-C85
+485	DIS00485	Macular Degeneration	362.5	H35.3
+486	DIS00486	Macular edema	362.07	E08.3, E09.3, E10.3, E11.3, E13.3
+487	DIS00487	Magnesium deficiency dermatitis	692.9	L20-L30
+488	DIS00488	Major Depressive Disorder	296.2, 296.3, 332	F02.3, F32, F33, G20
+489	DIS00489	Malaria	84	B50-B54
+490	DIS00490	Male infertility	628	N97.0
+491	DIS00491	Malignancies	200-209	C81-C96
+492	DIS00492	Malignancy-associated hypercalcemia	275.42	E83.5
+493	DIS00493	Malignant Gliomas	191	C71
+494	DIS00494	Malignant hyperthermia	995.86	995.86
+495	DIS00495	Malignant melanoma	172, 202.4, 208.9	C43, C91-C95, C91.4
+496	DIS00496	Malignant mesothelioma	163	C45
+497	DIS00497	Malignant pain	338780	R52, G89
+498	DIS00498	Malignant phyllodes tumours	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+499	DIS00499	Manic disorder	296.0,296.4,296.6	F30
+500	DIS00500	McCune-Albright syndrome	756.54	Q78.1
+501	DIS00501	Measure kidney function		
+502	DIS00502	Medullary thyroid cancer	193	C73
+503	DIS00503	Medullary thyroid carcinoma	193	C73
+504	DIS00504	Medulloblastoma	191	C71
+505	DIS00505	Melanoma	172	C43
+506	DIS00506	Melanoma metastasis	172	C43
+507	DIS00507	Melanoma; Prostate cancer	140-229, 172, 185	C00-C96, C43, C61
+508	DIS00508	Meningioma	225.2	C70, D32
+509	DIS00509	Mesothelioma	163	C45
+510	DIS00510	Metabolic Disease	270-279	E70-E89
+511	DIS00511	Metabolic disorder, unspecified	270-279	E70-E89
+512	DIS00512	Metabolic syndrome X	277.7	E88.81
+513	DIS00513	Metastatic hormone refractory Prostate cancer	185	C61
+514	DIS00514	Metastatic osteosarcoma in the lung	170	C40-C41
+515	DIS00515	Methanol Poisoning	980.1, 982	T51.1, T52.3
+516	DIS00516	Microbial infections	001-139	A00-B99
+517	DIS00517	Migraine	346	G43
+518	DIS00518	Migraine and Cluster Headaches	339.00, 339.01, 339.02, 346	G43, G44.0
+519	DIS00519	Mitochondrial Diseases	277.87	E88.49
+520	DIS00520	MLL-rearranged acute lymphoblastic leukemias	204.0, 208.9	C91-C95, C91.0
+521	DIS00521	Moderate to Severe Plaque Psoriasis	696	L40
+522	DIS00522	Mood [affective] disorders	296	F30-F39
+523	DIS00523	Motion sickness	994.6	T75.3
+524	DIS00524	Motor disorder		
+525	DIS00525	Motor neurone disease	335.2	G12.2
+526	DIS00526	Mucociliary dysfunction		
+527	DIS00527	Multiple Myeloma	203	C90.0
+528	DIS00528	Multiple organ failure	995.92	
+529	DIS00529	Multiple Sclerosis	340	G35
+530	DIS00530	Myelodysplastic Syndrome	238.7	D46
+531	DIS00531	Myeloma disease	203	C90.0
+532	DIS00532	Myeloneuropathy		
+533	DIS00533	Myocardial Infarction	410	I21-I22
+534	DIS00534	Myocardial infarction (MI)	410	I21, I22
+535	DIS00535	Myocardial ischemia	459.89	I99.8
+536	DIS00536	Myocardial ischemia and reperfusion injury	459.89	I99.8
+537	DIS00537	Nasopharyngeal Cancer (NPC)	140-229	C00-C96
+538	DIS00538	Nausea and vomiting	698, 787, 787.0, 995.3	L29, R11, T78.4
+539	DIS00539	Neonatal Hyperbilirubinemia, jaundice	773, 774, 782.4	P58, P59, R17
+540	DIS00540	Neonatal jaundice	782.4	R17
+541	DIS00541	Neoplasm Metastasis	140-199, 140-239, 210-229	C00-C75, C00-C96, C7A, C7B, D10-D36, D3A
+542	DIS00542	Neoplasms	140-239	C00-C96, C00-D48
+543	DIS00543	Neoplasms (CNS)	140-239	C00-D48
+544	DIS00544	Neoplastic diseases	140-239.99	C00-D48
+545	DIS00545	Nephrogenic diabetes insipidus	250, 253.5, 588.1	E08-E13, E23.2, N25.1
+546	DIS00546	Nephrosis	591	N13.0-N13.3
+547	DIS00547	Net blotch		
+548	DIS00548	Neural Tube Defects	740,741,742	Q00,Q01,Q05
+549	DIS00549	Neuroblastoma	194	C74.9
+550	DIS00550	Neurodegenerative diseases	330-337	G30-G32
+551	DIS00551	Neuroendocrine tumors	209	C7A, C7B, D3A
+552	DIS00552	Neurogenic bladder	188	C67
+553	DIS00553	Neurogenic inflammation		
+554	DIS00554	Neuroimmunological diseases		
+555	DIS00555	Neuroleptic malignant syndrome	333.92	G21.0
+556	DIS00556	Neurologic and psychiatric diseases		
+557	DIS00557	Neurologic Disorders	320-359	G00-G99
+558	DIS00558	Neurological diseases		
+559	DIS00559	Neurological symptom		
+560	DIS00560	Neuronal injury		
+561	DIS00561	Neuropathic pain	338780	R52, G89
+562	DIS00562	Neuropsychiatric disorders	290-319	F01-F99
+563	DIS00563	Neurotoxicity Syndromes		
+564	DIS00564	Neutropenia	288	D70
+565	DIS00565	Non-Hodgkin's Lymphoma	140-199, 200, 202, 202.8, 210-229	C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A
+566	DIS00566	Non-Hodgkin's lymphoma, unspecified type	200, 202, 202.8	C81-C96, C82-C85
+567	DIS00567	Noninsulin-dependent diabetes mellitus	250	E08-E13
+568	DIS00568	Non-myeloid cancer	140-199	C00-C75, C7A, C7B
+569	DIS00569	Non-small Cell Lung Cancer	140-229, 162, 204.0	C00-C96, C33, C33-C34, C34, C91.0
+570	DIS00570	Non-small Cell Lung Cancer (NSCLC)	162	C33, C34
+571	DIS00571	Not Available		
+572	DIS00572	Obesity	278	E66
+573	DIS00573	Obsessive-compulsive disorder	300.3	F42
+574	DIS00574	Obstructive airway disease	490-492, 494-496	J40-J44, J47
+575	DIS00575	Occlusive peripheral vascular disease	325, 430-459, 443.9	G45-G46, I60-I95, I73.9
+576	DIS00576	Ocular hypertension	365, 365.04	H40-H42, H40.0
+577	DIS00577	Oesophageal cancer	140-229	C00-C96
+578	DIS00578	Opioid dependence	304	F11.2
+579	DIS00579	Opioid-induced bowel dysfunction		
+580	DIS00580	Opioid-Related Disorders	250, 250.6, 292, 304.0, 305.50, 356.0, 356.8	E08-E13, E10.4, E11.4, E13.4, F11, G64, G90.0
+581	DIS00581	Oral cancer	140-146	C00-C08
+582	DIS00582	Oral Facial Pain	338780	R52, G89
+583	DIS00583	Organ rejection	279.5, 996	D89.8, T86
+584	DIS00584	Oropharyngeal candidiasis	112	B37
+585	DIS00585	Oropharyngeal squamous cell carcinoma	199	C44
+586	DIS00586	Osteoarthritis	715	M15-M19, M47
+587	DIS00587	Osteoarthritis pain	338, 715,780	M15-M19, M47, R52, G89
+588	DIS00588	Osteolysis		M89.5
+589	DIS00589	Osteolytic metastatic cancer	140-229	C00-C96
+590	DIS00590	Osteonecrosis	733.0, 733.4	M80-M81, M87
+591	DIS00591	Osteopenic disorders	733.90	M85.8
+592	DIS00592	Osteoporosis	733	M80-M81
+593	DIS00593	Osteoporosis and other bone-related diseases	733	M80-M81
+594	DIS00594	Osteoporosis, Postmenopausal	733	M80-M82
+595	DIS00595	Osteoporosis, unspecified	733	M80-M81
+596	DIS00596	Osteosarcoma	170	C40-C41
+597	DIS00597	Ovarian cancer	183	C56
+598	DIS00598	Ovarian Neoplasms	183, 220	C56
+599	DIS00599	Overactive bladder disorder	188, 596.51	C67, N32.81
+600	DIS00600	Over-expression of TF		
+601	DIS00601	Oxidative and free radical damage		
+602	DIS00602	Oxidative tissue injuries		
+603	DIS00603	Oxygen-induced retinopathy	362.0-362.2	H35-H35.2
+604	DIS00604	P. aeruginosa infections	001-139	A00-B99
+605	DIS00605	P. carinii pneumonia	480-486, 770.0	J12, J13, J14, J15, J16, J17, J18, P23
+606	DIS00606	Paget's disease	731.0, 733.0	M80-M81, M88
+607	DIS00607	Pain	789.0,338,780	R10, G89, R52
+608	DIS00608	Pain (anesthesia, neuropathic)	338, 356.0, 356.8,780	G64, G90.0, R52, G89
+609	DIS00609	Pain, Acute or Chronic	338780	R52, G89
+610	DIS00610	Pain, unspecific	338780	R52, G89
+611	DIS00611	Pain, unspecified	338780	R52, G89
+612	DIS00612	Pancreatic Cancer	140-229, 157, 172, 185	C00-C96, C25, C43, C61
+613	DIS00613	Pancreatic cancer, Prostate cancer	140-229, 157, 185	C00-C96, C25, C61
+614	DIS00614	Pancreatic disease	577, 751.7	K85-K86, Q45.0-Q45.3
+615	DIS00615	Pancreatic Neoplasms	157.0-157.9	C25
+616	DIS00616	Pancreatic, prostate and a number of other cancers	140-229	C00-C96
+617	DIS00617	Pancreatitis	577.0-577.1	K85, K86.0K86.1
+618	DIS00618	Parasitic diseases		
+619	DIS00619	Parkinson Disease	332	G20, F02.3
+620	DIS00620	Parkinsonian symptoms		
+621	DIS00621	Parkinson's disease	332	F02.3, G20
+622	DIS00622	Pathological angiogenesis		
+623	DIS00623	P-chloroamphetamine-induced hyperglycemia	790.29	R73.9
+624	DIS00624	Pediatric		
+625	DIS00625	Peptic ulcer	531-534	K25-K27
+626	DIS00626	Periodic fever syndrome	780.6	R50
+627	DIS00627	Periodontitis	523.4, 523.5	K05.3, K05.4
+628	DIS00628	Peripheral and cutaneous T-cell lymphomas	202.1, 202.2, 202.8	C81-C96, C84.0, C84.1
+629	DIS00629	Peripheral Nervous System Diseases	320-389	G00-G99
+630	DIS00630	Peripheral neuroectodermal tumor	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+631	DIS00631	Peripheral precocious puberty	259.1	E22.8, E30.1
+632	DIS00632	Peripheral Vascular Disease	325, 430-459, 443.9	G45-G46, I60-I95, I73.9
+633	DIS00633	Peutz-Jeghers syndrome	759.6	Q85.8
+634	DIS00634	Peyronie's disease	607.85	N48.6
+635	DIS00635	Pheochromocytoma	194.0, 227.0, 255.6	C74.1, D35.0
+636	DIS00636	Philadelphia-positive leukemia	208.9	C91-C95
+637	DIS00637	Photoaging		
+638	DIS00638	Photodynamic therapy	706.1	L70.0
+639	DIS00639	Photodynamic tumor	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+640	DIS00640	Phyllodes tumours	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+641	DIS00641	Platelet adhesion		
+642	DIS00642	Pneumocystis infections	001-139	A00-B99
+643	DIS00643	Polyarthritis, unspecified		
+644	DIS00644	Porphyrin-derived photocytotoxicity		
+645	DIS00645	Postherpetic neuralgia	053.19, 250, 250.6, 356.0, 356.8	B02.2, E08-E13, E10.4, E11.4, E13.4, G44.847, G53.0, G64, G90.0
+646	DIS00646	Post-menopausal osteoporosis	627.2, 733.0	M80-M81, N95.0
+647	DIS00647	Postmenopausal symptoms	627.2	N95.0
+648	DIS00648	Postmenopausal Women with Osteoporosis	733	M80-M81
+649	DIS00649	Postoperative nausea and vomiting	787, 787.0	R11
+650	DIS00650	Postoperative residual curarisation		
+651	DIS00651	Precursor Cell Lymphoblastic Leukemia-Lymphoma		
+652	DIS00652	Predominantly eosinophil mediated disease states		
+653	DIS00653	Primary biliary cirrhosis	571.6	K74.3
+654	DIS00654	Primary pulmonary hypertension	401, 416.0	I10, I11, I12, I13, I15, I27.0, I27.2
+655	DIS00655	Prion diseases		
+656	DIS00656	Prokaryotic and eukaryotic anaerobic pathogens infections	001-139	A00-B99
+657	DIS00657	Proliferative diseases		
+658	DIS00658	Proliferative vitreoretinopathy		
+659	DIS00659	Prostate cancer	185	C61
+660	DIS00660	Prostate cancer (early stage hormone sensitive)	140-229, 185	C00-C96, C61
+661	DIS00661	Prostate cancer (hormone refractory)	140-229, 185	C00-C96, C61
+662	DIS00662	Prostate cancer (metastatic)	140-229, 185	C00-C96, C61
+663	DIS00663	Prostate carcinoma	185	C61
+664	DIS00664	Prostate Disorders	600	N40
+665	DIS00665	Prostatic Neoplasms		
+666	DIS00666	Protection against chemical weapons like Sarin, Soman and VX gas		
+667	DIS00667	Pruritus in chronic liver disease	570-574, 698	K70-K77, L29
+668	DIS00668	Psoriasis	696	L40
+669	DIS00669	Psoriasis and Psoriatic Disorders	696	L40
+670	DIS00670	Psychiatric illness		
+671	DIS00671	Psychosis	278, 290-299	E66, F20-F29
+672	DIS00672	Pulmonary Disease, Chronic Obstructive		
+673	DIS00673	Pulmonary edema (thrombin-induced)	782.3	R60.9
+674	DIS00674	Pulmonary fibrosis	516.3	J84.1
+675	DIS00675	Pulmonary hypertension	416	I27.0, I27.2
+676	DIS00676	Pyresis		
+677	DIS00677	Radiation enteropathy		
+678	DIS00678	Ras-dependent tumourigenesis	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+679	DIS00679	Raynaud's syndrome	443	I73.0
+680	DIS00680	Rectal Neoplasms		
+681	DIS00681	Recurrent Malignant Glioma	191	C71
+682	DIS00682	Refractory Cutaneous T-cell Lymphoma (CTCL)	202.1, 202.2, 202.8	C81-C96, C84.0, C84.1
+683	DIS00683	Refractory Hematological Malignancies	140-239, 200-209	C00-C96, C81-C96
+684	DIS00684	Refractory partial epilepsy	345	G40
+685	DIS00685	Refractory Renal Cell Carcinoma	189	C64
+686	DIS00686	Refractory, Rare Sarcoma's		
+687	DIS00687	Relapsing-remitting multiple sclerosis	340	G35
+688	DIS00688	Renal cancer	189	C64
+689	DIS00689	Renal Cell Carcinoma	189	C64
+690	DIS00690	Renal colic	788	N23
+691	DIS00691	Renal diseases	580-599	N00-N39
+692	DIS00692	Renal failure	584, 585	N17, N18, N19
+693	DIS00693	Renal fibrosis	709.2	L90.5
+694	DIS00694	Renal ischemia-reperfusion injury	459.89	I99.8
+695	DIS00695	Renal transplant rejection	279.5, 996	D89.8, T86
+696	DIS00696	Reperfusion Injury associated with Heart Attacks, or Acute Myocardial Infarction (AMI)		
+697	DIS00697	Reproductive disorder	600-629	N40-N99
+698	DIS00698	Respiratory diseases		
+699	DIS00699	Respiratory distress syndrome	518.5, 518.82	J80
+700	DIS00700	Restenosis	250, 250.00, 250.02, 250.4, 338, 437.6, 443.9, 453, 580-599, 671.5, 671.9,780	E08-E13, E10.2, E11, E11.2, E13.2, I73.9, I80-I82, N00-N29, R52, G89
+701	DIS00701	Rheumatic diseases		
+702	DIS00702	Rheumatoid arthritis	714	M05, M06
+703	DIS00703	Rheumatoid arthritis, unspecified	710-719, 714	M00-M25, M05-M06
+704	DIS00704	Rheumatoid-arthritis		
+705	DIS00705	Riboflavin deficiency		
+706	DIS00706	Risk of administering penicillin		
+707	DIS00707	Salivary glands cancer	140-229	C00-C96
+708	DIS00708	Sarcoma	176	C46
+709	DIS00709	Scar Tissue		
+710	DIS00710	Schistosomiasis [bilharziasis]	120	B65
+711	DIS00711	Schizophrenia	295	F20
+712	DIS00712	Schizophrenia and Schizoaffective Disorders	295, 295.70	F20, F25
+713	DIS00713	Seasonal allergic rhinitis	472.0, 477	J00, J30, J31.0
+714	DIS00714	Sedation	338	R52
+715	DIS00715	Seizure	345.4	G40.2
+716	DIS00716	Seizures	345.4	G40.2
+717	DIS00717	Seizures in epilepsy	345, 345.9, 780.3	G40, G40, P90, R56
+718	DIS00718	Seizures of Lennox-Gastaut syndrome	345.9, 780.3	G40, P90, R56
+719	DIS00719	Selenium deficiency	269.3	E59
+720	DIS00720	Sepsis	995.0, 995.91	A40, A41, T78.2
+721	DIS00721	Septic shock	785, 785.52	R57.8, R65.21
+722	DIS00722	Severe acute respiratory syndrome		
+723	DIS00723	Severe Acute Respiratory Syndrome(SARS)		
+724	DIS00724	Severe Coronary Heart Disease	414	I25.1
+725	DIS00725	Sexual arousal disorders	302.72	F52.22
+726	DIS00726	Shy-Drager syndrome		
+727	DIS00727	Sickle cell anemia	280-285	D50-D64
+728	DIS00728	Sinoatrial node dysfunction		
+729	DIS00729	Sitosterolemia		
+730	DIS00730	Sjogren-Larsson syndrome	757.1	Q87.1
+731	DIS00731	Sjogren's syndrome	710.2	M35.0
+732	DIS00732	Skeletal disorders		
+733	DIS00733	Skeletal muscle associated spasticity		
+734	DIS00734	Skeletal muscle wasting		
+735	DIS00735	Skeletal muscle weakness	728.87	M62.8
+736	DIS00736	Skin cancer	172, 173	C43, C44
+737	DIS00737	Skin diseases		
+738	DIS00738	Skin Infections/Disorders	680-709	L00-L99
+739	DIS00739	Sleeping Sickness		
+740	DIS00740	Small cell lung cancer	140-229, 162, 162.9, 204.0	C00-C96, C33-C34, C34.90, C91.0
+741	DIS00741	Smooth muscle hyperplasia		
+742	DIS00742	Social phobias	300.23	F40.1
+743	DIS00743	Solid Tumor	140-199, 200, 202, 202.8, 210-229	C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A
+744	DIS00744	Solid tumors	140-199, 200, 202, 202.8, 210-229	C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A
+745	DIS00745	Specific cognitive deficits associated with aging and neurological diseases		
+746	DIS00746	Sphingolipid storage disorders		
+747	DIS00747	Spinal and bulbar muscular atrophy	728.2	M62.5
+748	DIS00748	Spinal Muscular Atrophy	335.0-335.1	G12.0-G12.1
+749	DIS00749	Squamous cell carcinoma	199	C44
+750	DIS00750	Stiff-man syndrome	333.91	G25.82
+751	DIS00751	Stomatitis		
+752	DIS00752	Streptococcus pneumoniae infections	001-139, 480-486, 770.0	A00-B99, J12, J13, J14, J15, J16, J17, J18, P23
+753	DIS00753	Stress-related disorders	296	F30-F39
+754	DIS00754	Stroke	434.91	I61-I63
+755	DIS00755	Stromal ovarian tumors	140-199, 183, 210-229	C00-C75, C56, C7A, C7B, D10-D36, D3A
+756	DIS00756	Substance-Related Disorders		
+757	DIS00757	Sustained ventricular tachycardia	427, 427.1, 785.0	I47-I49, I47.2, R00.0
+758	DIS00758	Syndrome of inappropriate secretion of antidiuretic hormone		
+759	DIS00759	Systemic arterial vasodilation		
+760	DIS00760	Systemic Lupus Erythematosus	710	
+761	DIS00761	Systemic Lupus Erythematosus (SLE)	695, 710.0	L51-L54, M32
+762	DIS00762	Systemic-onset juvenile idiopathic arthritis	710-719	M00-M25
+763	DIS00763	T cell leukemias	208.9	C91-C95
+764	DIS00764	T(4;14) myeloma	203	C90.0
+765	DIS00765	Tardive dyskinesia	333.85	G24.0
+766	DIS00766	T-cell proliferation		
+767	DIS00767	Testicular cancer	140-229	C00-C96
+768	DIS00768	Thrombocytopenia	287.3, 287.4, 287.5	D69.6, P61.0
+769	DIS00769	Thromboembolic disease	437.6, 453, 671.5, 671.9	I80-I82
+770	DIS00770	Thromboembolic disorders	437.6, 453, 671.5, 671.9	I80-I82
+771	DIS00771	Thromboembolism	453	I80-I82
+772	DIS00772	Thrombosis	414.8	I24.0
+773	DIS00773	Thrombotic disease		
+774	DIS00774	Thyroid follicular carcinoma		
+775	DIS00775	Thyroid hormone resistance syndrome		
+776	DIS00776	Thyrotoxicosis [hyperthyroidism]	242.9	E05
+777	DIS00777	Tissue injury		
+778	DIS00778	Tobacco Dependence	305.1	F17
+779	DIS00779	Tobacco Use Disorder		
+780	DIS00780	Torsades de Pointes		
+781	DIS00781	Toxoplasma infections	001-139	A00-B99
+782	DIS00782	Toxoplasmosis	130	B58
+783	DIS00783	Transmissible spongiform encephalopathies		
+784	DIS00784	Transplant failure or rejection		
+785	DIS00785	Traumatic brain injuries	800, 801, 803, 804, 850-854	S06
+786	DIS00786	Traumatic brain injury	800, 801, 803, 804, 850-854	S06
+787	DIS00787	Traumatic head injury	800-879	S00.0S09
+788	DIS00788	Treatment-refractory psychoses	290-299	F20-F29
+789	DIS00789	Tremor, unspecified	781	R25.1
+790	DIS00790	Trichomoniasis	131	A59
+791	DIS00791	Trypanolytic infections	001-139	A00-B99
+792	DIS00792	Trypanosomatid infections	001-139	A00-B99
+793	DIS00793	Trypanosomiasis	86.5	B56
+794	DIS00794	Tuberculosis	001-009, 010-018, 020-027, 030-041, 080-088, 090-099, 100-104	A00-A09, A15-A19, A20-A28, A30-A49, A65-A69, A70-A74, A75-A79
+795	DIS00795	Tumor angiogenesis	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+796	DIS00796	Tumor angiogenesis and metastasis	140-199, 210-229	C00-C75, C7A, C7B, D10-D36, D3A
+797	DIS00797	Tumors	140-199, 200, 202, 202.8, 210-229	C00-C75, C7A, C7B, C81-C96, C82-C85, D10-D36, D3A
+798	DIS00798	Type IV and V hyperlipidemia	272.0-272.4	E78
+799	DIS00799	Tyrosinase-positive Melanomas	172	C43
+800	DIS00800	Ulcerative colitis	555, 556, 556.9, 696, 696.0, 710-719, 714, 720.0	K50, K50-K52, K51, L40, L40.5, M00-M25, M05-M06, M07, M08.1, M45
+801	DIS00801	Ulcers	528.2	K12.0
+802	DIS00802	Urge incontinence	787.6, 788.3	N39.3-N39.4, R15, R32
+803	DIS00803	Urinary Bladder Neoplasms		
+804	DIS00804	Urinary incontinence	788.3	N39.3, N39.4, R32
+805	DIS00805	Urinary tract infection	001-139, 595, 599.0	A00-B99, N30, N39.0
+806	DIS00806	Urinary tract infections	001-139, 595, 599.0	A00-B99, N30, N39.0
+807	DIS00807	Urologic Neoplasms		
+808	DIS00808	Urological cancers	140-229	C00-C96
+809	DIS00809	Varicose and spider veins of the leg	454-456, 671	I83, I85, I86
+810	DIS00810	Vascular disease	390-459	I00-I99
+811	DIS00811	Vascular Diseases	390-459, 411.1, 414.0, 440	I00-I99, I20.0, I25.1, I70
+812	DIS00812	Vascular headache	339, 784.0	G43-G44, R51
+813	DIS00813	Vascular injury response		
+814	DIS00814	Vascular lesion regression		
+815	DIS00815	Vasoconstriction	443	I73
+816	DIS00816	Vasospasm	443.9	I73.9
+817	DIS00817	Vasospastic angina	413	I20
+818	DIS00818	Venous Thromboembolism	453	I80-I82
+819	DIS00819	Ventricular dysfunction		
+820	DIS00820	Ventricular hypertrophy		
+821	DIS00821	Vertigo of central and peripheral origin	438.85, 780.4	H81, R42
+822	DIS00822	Viral infection	042-075	A80-A99, B00-B34
+823	DIS00823	Viral infection, unspecified	001-139, 042-075	A00-B99, A80-A99, B00-B34
+824	DIS00824	viral infections	042-075	A80-A99, B00-B34
+825	DIS00825	Visceral leishmaniasis	085.0, 110-118	B35-B49, B55.0
+826	DIS00826	Visceral pain	338780	R52, G89
+827	DIS00827	Vitamin A deficiency		
+828	DIS00828	Vitamin B12 deficiency	266.2	E53.8
+829	DIS00829	Vitamin B6 deficiency	266.1	E53.1
+830	DIS00830	Vitamin D deficiency	268	E55
+831	DIS00831	Vomiting	698, 787, 787.0, 995.3	L29, R11, T78.4
+832	DIS00832	Von Willebrand's disease	286.4	D68.0
+833	DIS00833	Waldenstrom's macroglobulinemia	273.3	C88.0
+834	DIS00834	Water-retaining diseases		
+835	DIS00835	West's syndrome	345.6	G40.4
+836	DIS00836	X-linked congenital adrenal hypoplasia		
+837	DIS00837	Zollinger-Ellison syndrome	251.5	E16.4
+1001	DIS01001	Blood group, Yt system		
+1002	DIS01002	Androgen insensitivity	259.5	?E34.51
+1003	DIS01003	Hypospadias 1, X-linked	752.6	Q54
+1004	DIS01004	Spinal and bulbar muscular atrophy of Kennedy	335.1	G12.1
+1005	DIS01005	XY disorders of sex development (Disorders in androgen synthesis or action)		E25.0 E34.5 Q56.1 Q87.1
+1006	DIS01006	XY disorders of sex development (Other)		E25.0 E34.5 Q56.1 Q87.2
+1007	DIS01007	Lyme disease?	88.81	A69.2
+1008	DIS01008	Tropical calcific pancreatitis		
+1009	DIS01009	Hereditary pancreatitis		
+1010	DIS01010	Oropharyngeal candidiasis?		
+1011	DIS01011	syndrome 5A		
+1012	DIS01012	XX disorders of sex development (Disorders related to androgen excess)		
+1013	DIS01013	Other phagocyte defects		
+1014	DIS01014	Anemia due to disorders of glutathione metabolism		
+1015	DIS01015	Hypertension, early-onset, autosomal dominant, with exacerbation in pregnancy		
+1016	DIS01016	Pseudohypoaldosteronism type I, autosomal dominant		
+1017	DIS01017	Hyperkalemic distal renal tubular acidosis (RTA type 4)		
+1018	DIS01018	Injury to nervous tissue or neurons?		
+1019	DIS01019	Dysprothrombinemia	286.3	D68.2
+1020	DIS01020	Hypoprothrombinemia	286.3	D68.2
+1021	DIS01021	Atopy, susceptibility to		
+1022	DIS01022	albinism digenic	270.2	E70.3
+1023	DIS01023	Albinism, oculocutaneous, type IA	270.2	E70.3
+1024	DIS01024	Albinism, oculocutaneous, type IB	270.2	E70.3
+1025	DIS01025	Melanoma, cutaneous malignant		
+1026	DIS01026	Skin/hair/eye pigmentation 3, blue/green eyes		
+1027	DIS01027	Skin/hair/eye pigmentation 3, light/dark/freckling skin		
+1028	DIS01028	Waardenburg syndrome	270.2	E70.3
+1029	DIS01029	Oculocutaneous albinism (OCA)	270.2	E70.3
+1030	DIS01030	Microvascular complications of diabetes 1		

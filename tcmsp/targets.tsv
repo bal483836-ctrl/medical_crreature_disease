@@ -1,0 +1,3340 @@
+target_ID	TAR_ID	drugbank_ID	target_name	kegg
+1	TAR00001	1	Penicillin binding protein 3	
+2	TAR00002	3	Histidine decarboxylase	
+3	TAR00003	7	Nitric oxide synthase, inducible	
+4	TAR00004	16	Adenosine A1 receptor	
+5	TAR00005	19	Coagulation Factor VIIIa	
+6	TAR00006	20	Prostaglandin G/H synthase 1	
+7	TAR00007	23	Dopamine D1 receptor	
+8	TAR00008	26	Vascular endothelial growth factor receptor 3	
+9	TAR00009	32	Vascular endothelial growth factor receptor 1	
+10	TAR00010	33	Cystine/glutamate transporter	
+11	TAR00011	36	Insulin receptor	
+12	TAR00012	40	mRNA of RAF proto-oncogene serine/threonine-protein kinase	
+13	TAR00013	46	Coagulation Factor Va	
+14	TAR00014	48	Pyridoxal kinase	
+15	TAR00015	49	Endothelin B receptor	
+16	TAR00016	51	Muscarinic acetylcholine receptor M3	
+17	TAR00017	54	Thrombin	
+18	TAR00018	55	High affinity immunoglobulin epsilon receptor	
+20	TAR00020	57	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	
+21	TAR00021	62	Glycine receptor	
+23	TAR00023	65	92 kDa type IV collagenase	
+24	TAR00024	68	Cannabinoid receptor 1	
+25	TAR00025	70	Type-1 angiotensin II receptor	
+26	TAR00026	73	Prostaglandin E2 receptor, EP1 subtype	
+27	TAR00027	75	B-lymphocyte antigen CD20	
+28	TAR00028	76	Nitric-oxide synthase, brain	
+29	TAR00029	78	Acetyl-CoA acetyltransferase, mitochondrial	
+30	TAR00030	80	Peroxisome proliferator activated receptor alpha	
+31	TAR00031	84	Orphan nuclear receptor DAX-1	
+32	TAR00032	85	Growth hormone receptor	
+33	TAR00033	87	Hypoxanthine-guanine phosphoribosyltransferase	
+34	TAR00034	93	CAMPATH-1 antigen	
+35	TAR00035	94	5-hydroxytryptamine 4 receptor	
+36	TAR00036	97	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 1	
+37	TAR00037	101	Potassium voltage-gated channel subfamily H member 2	
+38	TAR00038	103	Muscarinic acetylcholine receptor M1	
+39	TAR00039	106	Cannabinoid receptor 2	
+40	TAR00040	113	S-adenosylmethionine decarboxylase proenzyme	
+41	TAR00041	121	N-acylglucosamine 2-epimerase	
+42	TAR00042	122	P2Y purinoceptor 12	
+43	TAR00043	124	Histamine H2 receptor	
+44	TAR00044	131	Synaptic vesicle amine transporter	
+45	TAR00045	132	ATP-binding cassette, sub-family A, member 1	
+46	TAR00046	136	Estrogen receptor	
+47	TAR00047	145	Corticosteroid 11-beta-dehydrogenase, isozyme 2	
+48	TAR00048	146	Androgen receptor	
+49	TAR00049	147	Aldehyde dehydrogenase, mitochondrial	
+50	TAR00050	148	Lutropin-choriogonadotropic hormone receptor	
+51	TAR00051	157	K-Cl cotransporter 3	
+52	TAR00052	158	Sodium channel protein type 1 subunit alpha	
+53	TAR00053	159	Penicillin binding protein 2	
+54	TAR00054	161	Tubulin beta	
+55	TAR00055	162	Retinoic acid receptor gamma	
+56	TAR00056	163	D(1B) dopamine receptor	
+57	TAR00057	164	Histamine H4 receptor	
+58	TAR00058	165	FL cytokine receptor	
+59	TAR00059	170	Succinate semialdehyde dehydrogenase, mitochondrial	
+60	TAR00060	173	Toll-like receptor 7	
+61	TAR00061	174	Sigma(1)-type opioid receptor	
+62	TAR00062	185	Vasopressin V1a receptor	
+63	TAR00063	193	Beta-1 adrenergic receptor	
+64	TAR00064	198	Sodium channel protein type 10 subunit alpha	
+65	TAR00065	204	CGMP-specific 3',5'-cyclic phosphodiesterase	
+66	TAR00066	211	Scavenger receptor class B member 1	
+67	TAR00067	213	Amiloride-sensitive sodium channel alpha-subunit	
+68	TAR00068	215	Voltage-gated sodium channel subunit alpha Nav1.9	
+69	TAR00069	217	Estradiol 17 beta-dehydrogenase 1	
+70	TAR00070	220	Sodium channel protein type 5 subunit alpha	
+71	TAR00071	226	Gonadotropin-releasing hormone receptor	
+72	TAR00072	228	Beta platelet-derived growth factor receptor	
+73	TAR00073	229	Retinoic acid receptor beta	
+74	TAR00074	230	Sulfonylurea receptor 1	
+75	TAR00075	231	Glycerol-3-phosphate dehydrogenase [NAD+], cytoplasmic	
+76	TAR00076	234	Plasminogen	
+77	TAR00077	235	High-affinity cationic amino acid transporter-1	
+78	TAR00078	238	Peroxisome proliferator activated receptor gamma	
+79	TAR00079	239	Coagulation factor Xa	
+80	TAR00080	243	NRH dehydrogenase [quinone] 2	
+81	TAR00081	244	Angiotensin-converting enzyme	
+82	TAR00082	259	Microsomal triglyceride transfer protein, large subunit	
+83	TAR00083	266	Lipoprotein lipase	
+84	TAR00084	267	Plasminogen activator inhibitor-1	
+85	TAR00085	268	Adenosine A2b receptor	
+86	TAR00086	273	Apoptosis regulator Bcl-2	
+87	TAR00087	274	Muscarinic acetylcholine receptor M5	
+88	TAR00088	275	Arachidonate 5-lipoxygenase	
+89	TAR00089	276	Sodium- and chloride-dependent GABA transporter 1	
+90	TAR00090	277	Purine nucleoside phosphorylase	
+91	TAR00091	279	Tyrosine oxidase	
+92	TAR00092	280	4-aminobutyrate aminotransferase, mitochondrial	
+93	TAR00093	284	Plastid RNA polymerase beta-subunit	
+94	TAR00094	290	Prostaglandin G/H synthase 2	
+95	TAR00095	291	Nitric-oxide synthase, endothelial	
+96	TAR00096	294	Neprilysin	
+97	TAR00097	295	Carbonic anhydrase I	
+98	TAR00098	297	Adenylate cyclase type 1	
+99	TAR00099	298	Renin, renal	
+100	TAR00100	299	Folate receptor beta	
+101	TAR00101	302	T-cell surface glycoprotein CD3 epsilon chain	
+102	TAR00102	306	Pyridoxal phosphate phosphatase	
+103	TAR00103	309	Antithrombin-III	
+104	TAR00104	310	Na-K-2Cl cotransporter	
+105	TAR00105	318	Alpha-2A adrenergic receptor	
+106	TAR00106	320	5-hydroxytryptamine 1A receptor	
+107	TAR00107	321	Serine hydroxymethyltransferase, mitochondrial	
+108	TAR00108	322	Vasopressin V2 receptor	
+109	TAR00109	325	Prostaglandin D2 receptor	
+110	TAR00110	328	Sorbitol dehydrogenase	
+111	TAR00111	338	DNA polymerase (HSV)	
+112	TAR00112	339	Arachidonate 15-lipoxygenase	
+113	TAR00113	341	5-hydroxytryptamine receptor 3A	
+114	TAR00114	346	Thyroid hormone receptor beta-1	
+115	TAR00115	352	Secretin receptor	
+116	TAR00116	355	GMP synthase [glutamine-hydrolyzing]	
+117	TAR00117	357	Carbonic anhydrase II	
+118	TAR00118	358	Cystathionine beta-synthase	
+120	TAR00120	362	Melatonin receptor type 1B	
+121	TAR00121	364	Corticosteroid 11-beta-dehydrogenase, isozyme 1	
+123	TAR00123	369	Coagulation factor VII	
+124	TAR00124	370	Urease	
+125	TAR00125	377	Beta-adrenergic receptor kinase 1	
+126	TAR00126	378	Alpha-2C adrenergic receptor	
+127	TAR00127	379	HCMV DNA polymerase	
+128	TAR00128	380	17 alpha-hydroxylase-C17, 20-lyase	
+129	TAR00129	381	Prolactin receptor	
+130	TAR00130	382	Glutamate receptor, ionotropic kainate 1	
+131	TAR00131	385	Potassium-transporting ATPase alpha chain 1	
+132	TAR00132	387	Diamine oxidase	
+133	TAR00133	389	Acid-sensing ion channel ASIC1a/ASIC1b	
+134	TAR00134	390	Adenosine A3 receptor	
+135	TAR00135	392	Voltage-dependent P/Q-type calcium channel alpha-1A subunit	
+136	TAR00136	400	Coagulation factor IX	
+137	TAR00137	401	Glutamate [NMDA] receptor subunit zeta-1	
+138	TAR00138	406	Prostaglandin E2 receptor, EP2 subtype	
+139	TAR00139	407	Vascular endothelial growth factor receptor 2	
+140	TAR00140	422	Vitamin K-dependent protein C	
+141	TAR00141	423	Gamma-aminobutyric-acid receptor alpha-2 subunit	
+142	TAR00142	427	Substance-P receptor	
+143	TAR00143	428	Interferon-alpha/beta receptor	
+144	TAR00144	430	Follicle stimulating hormone receptor	
+145	TAR00145	432	D(4) dopamine receptor	
+146	TAR00146	433	Synaptosomal-associated protein 25	
+147	TAR00147	434	Alpha-N-acetylglucosaminidase	
+148	TAR00148	435	Kynureninase	
+149	TAR00149	436	5-hydroxytryptamine 2B receptor	
+150	TAR00150	437	Leukocyte elastase	
+151	TAR00151	447	Cholecystokinin type A receptor	
+152	TAR00152	448	Vitamin K-dependent gamma-carboxylase	
+153	TAR00153	449	Ornithine decarboxylase	
+154	TAR00154	450	Muscarinic acetylcholine receptor M4	
+155	TAR00155	451	Carnitine O-palmitoyltransferase I	
+156	TAR00156	454	Estradiol 17 beta-dehydrogenase 4	
+157	TAR00157	458	Neuronal acetylcholine receptor subunit alpha-10	
+158	TAR00158	459	Retinoic acid receptor RXR-alpha	
+159	TAR00159	462	Calcium-activated potassium channel	
+160	TAR00160	463	Interleukin-11 receptor alpha chain	
+161	TAR00161	464	Glutamate [NMDA] receptor subunit epsilon 2	
+162	TAR00162	466	Solute carrier family 12 member 3	
+163	TAR00163	467	Delta-type opioid receptor	
+164	TAR00164	472	Ornithine aminotransferase, mitochondrial	
+165	TAR00165	474	Acetylcholinesterase	
+166	TAR00166	476	RAC-alpha serine/threonine kinase	
+167	TAR00167	478	Voltage-dependent L-type calcium channel subunit alpha-1C	
+168	TAR00168	479	Calcitonin receptor	
+169	TAR00169	482	Glycine receptor alpha-1 chain	
+170	TAR00170	483	mRNA of A-Raf	
+172	TAR00172	485	CGMP-inhibited 3',5'-cyclic phosphodiesterase A	
+173	TAR00173	492	Histamine H1 receptor	
+174	TAR00174	494	Interleukin-1 beta convertase	
+175	TAR00175	502	5-hydroxytryptamine 2A receptor	
+176	TAR00176	503	Somatostatin receptor type 1	
+177	TAR00177	504	Mast/stem cell growth factor receptor	
+178	TAR00178	508	Ectonucleotide pyrophosphatase/phosphodiesterase 1	
+179	TAR00179	510	Activin receptor-like kinase-1	
+180	TAR00180	511	5-hydroxytryptamine 1F receptor	
+181	TAR00181	523	Gamma-aminobutyric-acid receptor alpha-5 subunit	
+182	TAR00182	527	Prostacyclin receptor	
+183	TAR00183	528	5-hydroxytryptamine 1E receptor	
+184	TAR00184	529	Ceramide glucosyltransferase	
+185	TAR00185	535	Voltage-dependent T-type calcium channel alpha-1G subunit	
+186	TAR00186	540	Sodium-dependent noradrenaline transporter	
+187	TAR00187	541	CAMP-specific 3',5'-cyclic phosphodiesterase 4B	
+188	TAR00188	545	Thyrotropin receptor	
+189	TAR00189	546	Isoleucyl-tRNA synthetase, cytoplasmic (human)	
+190	TAR00190	554	Low-density lipoprotein receptor	
+191	TAR00191	556	Alpha-1A adrenergic receptor	
+192	TAR00192	558	Solute carrier family 12 member 1	
+194	TAR00194	563	Thyroid peroxidase	
+195	TAR00195	565	Extracellular calcium-sensing receptor	
+196	TAR00196	567	Receptor protein-tyrosine kinase erbB-2	
+197	TAR00197	571	Melatonin receptor type 1A	
+198	TAR00198	572	Lymphocyte function-associated antigen 1	
+199	TAR00199	578	Endothelin-1 receptor	
+200	TAR00200	580	Gamma-aminobutyric-acid receptor alpha-3 subunit	
+201	TAR00201	584	Glucagon receptor	
+202	TAR00202	586	Aspartate aminotransferase, cytoplasmic	
+203	TAR00203	590	5-hydroxytryptamine 2C receptor	
+204	TAR00204	592	Carbonic anhydrase IV	
+205	TAR00205	596	3-oxo-5-alpha-steroid 4-dehydrogenase 1	
+208	TAR00208	613	Atrial natriuretic peptide receptor A	
+209	TAR00209	614	Progesterone receptor	
+210	TAR00210	617	Muscarinic acetylcholine receptor M2	
+212	TAR00212	622	Interleukin 1 receptor	
+213	TAR00213	625	Glutamate carboxypeptidase II	
+214	TAR00214	629	Alpha-2B adrenergic receptor	
+216	TAR00216	632	Alpha-1B adrenergic receptor	
+217	TAR00217	634	Squalene monooxygenase	
+218	TAR00218	638	D(3) dopamine receptor	
+219	TAR00219	642	3-oxo-5-alpha-steroid 4-dehydrogenase 2	
+221	TAR00221	647	Integrin alpha-4	
+222	TAR00222	650	Aldo-keto reductase family 1 member C3	
+223	TAR00223	660	T-cell surface glycoprotein CD1a	
+224	TAR00224	661	Adenine nucleotide translocator 1	
+225	TAR00225	668	Glutamate--cysteine ligase regulatory subunit	
+226	TAR00226	672	Prostaglandin F2-alpha receptor	
+228	TAR00228	676	Tyrosine 3-monooxygenase	
+229	TAR00229	687	mRNA of Protein-tyrosine phosphatase, non-receptor type 1	
+230	TAR00230	689	Growth hormone-releasing hormone receptor	
+231	TAR00231	690	Acetyl-CoA carboxylase 1	
+232	TAR00232	692	Granulocyte-macrophage colony-stimulating factor receptor alpha chain	
+233	TAR00233	693	Hemoglobin	
+234	TAR00234	696	Kappa-type opioid receptor	
+235	TAR00235	698	B-Raf proto-oncogene serine/threonine-protein kinase	
+236	TAR00236	699	Nicotinic acid receptor	
+237	TAR00237	705	Glutamate receptor 1	
+238	TAR00238	707	72 kDa type IV collagenase	
+239	TAR00239	713	Sodium-dependent dopamine transporter	
+240	TAR00240	714	Glutathione reductase, mitochondrial	
+241	TAR00241	716	5-hydroxytryptamine 7 receptor	
+242	TAR00242	717	Interleukin-2 receptor subunit beta	
+243	TAR00243	718	Folate receptor	
+244	TAR00244	720	Erythropoietin Receptor	
+245	TAR00245	722	Troponin I, cardiac muscle	
+246	TAR00246	723	Cytosolic phospholipase A2	
+247	TAR00247	724	Interleukin-2 receptor alpha chain	
+248	TAR00248	725	5-hydroxytryptamine 1D receptor	
+249	TAR00249	730	Retinoic acid receptor alpha	
+250	TAR00250	731	HIV-1 protease	
+251	TAR00251	734	D1 dopamine receptor-interacting protein calcyon	
+252	TAR00252	737	Mineralocorticoid receptor	
+253	TAR00253	738	Monocarboxylate transporter 1	
+254	TAR00254	741	Potassium voltage-gated channel subfamily KQT member 1	
+255	TAR00255	744	Myeloid cell surface antigen CD33	
+256	TAR00256	754	Triacylglycerol lipase, pancreatic	
+257	TAR00257	758	Thyroid hormone receptor alpha	
+258	TAR00258	760	Heparin-binding growth factor 1	
+259	TAR00259	762	Voltage-dependent calcium channel subunit alpha-2/delta-1	
+260	TAR00260	765	Indoleamine 2,3-dioxygenase	
+261	TAR00261	766	Beta-2 adrenergic receptor	
+262	TAR00262	773	Folylpolyglutamate synthase, mitochondrial	
+263	TAR00263	775	Acetyl-CoA carboxylase 2	
+264	TAR00264	776	Bile salt export pump	
+265	TAR00265	777	Tumor necrosis factor	
+266	TAR00266	778	Cysteinyl leukotriene receptor 1	
+267	TAR00267	780	Retinoic acid receptor RXR-gamma	
+268	TAR00268	781	ATP-sensitive inward rectifier potassium channel 11	
+269	TAR00269	784	Fc gamma receptor I	
+270	TAR00270	785	Interferon-gamma receptor	
+271	TAR00271	787	Vitamin K epoxide reductase complex subunit 1	
+272	TAR00272	789	Alpha-1D adrenergic receptor	
+273	TAR00273	791	Urokinase plasminogen activator surface receptor	
+274	TAR00274	793	T-cell surface antigen CD2	
+275	TAR00275	795	Branched chain amino acid-dependent aminotransferase	
+276	TAR00276	796	Inosine-5'-monophosphate dehydrogenase 2	
+277	TAR00277	805	Cytochrome P450 11B1, mitochondrial	
+278	TAR00278	806	Sodium/potassium-transporting ATPase alpha-1 chain	
+279	TAR00279	807	D-alanine-D-alanine ligase A	
+280	TAR00280	809	5-methyltetrahydrofolate--homocysteine methyltransferase	
+282	TAR00282	811	Peripheral-type benzodiazepine receptor	
+283	TAR00283	812	Dihydrolipoamide dehydrogenase, mitochondrial	
+284	TAR00284	813	Neuronal acetylcholine receptor subunit alpha-2	
+285	TAR00285	814	Ryanodine receptor	
+286	TAR00286	816	Biliverdin reductase A	
+287	TAR00287	817	DNA topoisomerase II	
+288	TAR00288	822	Aldose reductase	
+289	TAR00289	823	Fibroblast growth factor receptor 2	
+290	TAR00290	824	Sodium-dependent serotonin transporter	
+291	TAR00291	827	Sodium/hydrogen exchanger 1	
+292	TAR00292	831	D(2) dopamine receptor	
+293	TAR00293	834	Arginase II, mitochondrial	
+294	TAR00294	835	Thromboxane A2 receptor	
+295	TAR00295	837	Glutamate [NMDA] receptor subunit epsilon 1	
+296	TAR00296	838	Inosine-5'-monophosphate dehydrogenase 1	
+297	TAR00297	842	Chloride channel protein 2	
+298	TAR00298	844	Epidermal growth factor receptor	
+299	TAR00299	847	Mu-type opioid receptor	
+300	TAR00300	850	Vasopressin V1b receptor	
+301	TAR00301	852	Heparin cofactor II	
+302	TAR00302	853	Farnesyl pyrophosphate synthetase	
+303	TAR00303	854	Methylmalonyl-CoA mutase	
+304	TAR00304	856	Vitamin D receptor	
+305	TAR00305	861	Choline kinase	
+306	TAR00306	862	Multidrug resistance-associated protein 1	
+307	TAR00307	869	Estrogen receptor beta	
+308	TAR00308	871	Glucocorticoid receptor	
+309	TAR00309	872	Gamma-aminobutyric acid receptor subunit alpha-1	
+310	TAR00310	885	5-hydroxytryptamine 1B receptor	
+312	TAR00312	890	Niemann-Pick C1-like protein 1	
+313	TAR00313	906	Glutathione peroxidase	
+314	TAR00314	916	Metabotropic glutamate receptor 1	
+315	TAR00315	925	Metabotropic glutamate receptor 4	
+316	TAR00316	926	Metabotropic glutamate receptor 7	
+317	TAR00317	927	Metabotropic glutamate receptor 8	
+318	TAR00318	929	Maltase-glucoamylase, intestinal	
+319	TAR00319	933	Proto-oncogene tyrosine-protein kinase SRC	
+320	TAR00320	934	Proto-oncogene tyrosine-protein kinase Fyn	
+321	TAR00321	935	Proto-oncogene tyrosine-protein kinase Yes	
+322	TAR00322	936	Ephrin type-A receptor 2	
+323	TAR00323	937	Proto-oncogene tyrosine-protein kinase LCK	
+324	TAR00324	940	Oxytocin receptor	
+325	TAR00325	942	T-lymphocyte activation antigen CD86	
+326	TAR00326	944	T-lymphocyte activation antigen CD80	
+327	TAR00327	945	Adrenocorticotropic hormone receptor	
+328	TAR00328	947	Neuronal acetylcholine receptor protein, alpha-4 chain	
+329	TAR00329	948	Neuronal acetylcholine receptor protein, beta-2 chain	
+330	TAR00330	950	Alpha platelet-derived growth factor receptor	
+331	TAR00331	951	Macrophage colony-stimulating factor receptor	
+332	TAR00332	952	Dipeptidyl peptidase IV	
+333	TAR00333	955	Complement C5	
+334	TAR00334	957	Glucagon-like peptide 1 receptor	
+335	TAR00335	958	Insulin-like growth factor I receptor	
+336	TAR00336	964	Voltage-dependent T-type calcium channel subunit alpha-1H	
+337	TAR00337	990	Dual specificity mitogen-activated protein kinase kinase 1	
+338	TAR00338	997	Protein kinase C, beta type	
+339	TAR00339	1008	CTP synthase	
+340	TAR00340	1010	Fungal Cytochrome P450 51	
+341	TAR00341	1016	Lysosomal alpha-glucosidase	
+342	TAR00342	1017	mRNA of C-reactive protein	
+343	TAR00343	1043	Glycinamide ribonucleotide formyltransferase	
+344	TAR00344	1052	Cytotoxic T-lymphocyte protein 4	
+345	TAR00345	1058	Cell division protein kinase 5	
+346	TAR00346	1074	Urokinase-type plasminogen activator	
+347	TAR00347	1086	Potassium voltage-gated channel subfamily KQT member 2	
+348	TAR00348	1129	C-C chemokine receptor type 5	
+349	TAR00349	1144	Hepatocyte growth factor receptor	
+350	TAR00350	1152	Glycogen phosphorylase, muscle form	
+351	TAR00351	1159	Interleukin-6	
+352	TAR00352	1162	C-X-C chemokine receptor type 4	
+353	TAR00353	1167	Interstitial collagenase	
+354	TAR00354	1176	Mitogen-activated protein kinase 1	
+355	TAR00355	1178	Adenosine A2a receptor	
+356	TAR00356	1193	Proteinase activated receptor 1	
+357	TAR00357	1198	Serum paraoxonase/arylesterase 1	
+358	TAR00358	1209	Small inducible cytokine B10	
+359	TAR00359	1224	Intrinsic factor-B12 receptor	
+360	TAR00360	1227	Cytochrome B	
+361	TAR00361	1233	Cathepsin B	
+362	TAR00362	1236	Sodium- and chloride-dependent glycine transporter 1	
+363	TAR00363	1243	Cathepsin D	
+364	TAR00364	1244	Low-density lipoprotein receptor-related protein 2	
+365	TAR00365	1253	Interferon gamma	
+366	TAR00366	1256	5-hydroxytryptamine 6 receptor	
+367	TAR00367	1262	Corticotropin-lipotropin	
+368	TAR00368	1269	Tumor necrosis factor receptor superfamily member 1B	
+369	TAR00369	1274	Soluble epoxide hydrolase	
+370	TAR00370	1277	Alpha-1-antitrypsin	
+371	TAR00371	1284	Pregnane X receptor	
+372	TAR00372	1286	mRNA of Eukaryotic translation initiation factor 4E	
+373	TAR00373	1291	CAMP response element binding protein	
+374	TAR00374	1295	Fatty acid synthase	
+375	TAR00375	1302	Dihydropyrimidine dehydrogenase [NADP+]	
+376	TAR00376	1313	Lactoylglutathione lyase	
+377	TAR00377	1330	Collagenase 3	
+378	TAR00378	1341	Histamine H3 receptor	
+379	TAR00379	1350	Insulin-like growth factor binding protein 3	
+380	TAR00380	1353	DNA topoisomerase I	
+381	TAR00381	1362	Metabotropic glutamate receptor 2	
+382	TAR00382	1372	Insulin receptor substrate-1	
+383	TAR00383	1373	Glucosylceramidase	
+384	TAR00384	1387	Inositol-1(or 4)-monophosphatase	
+385	TAR00385	1389	Transforming growth factor beta 1	
+386	TAR00386	1392	Beta-catenin	
+387	TAR00387	1406	Beta-secretase	
+388	TAR00388	1422	Aurora kinase A	
+389	TAR00389	1435	Synaptic vesicle glycoprotein 2A	
+390	TAR00390	1439	Lactotransferrin	
+391	TAR00391	1448	FMLP receptor	
+392	TAR00392	1465	Atrial natriuretic peptide receptor B	
+393	TAR00393	1467	Tumor necrosis factor ligand superfamily member 13B	
+394	TAR00394	1483	Membrane copper amine oxidase	
+395	TAR00395	1485	Ubiquitin-protein ligase E3 Mdm2	
+396	TAR00396	1502	Peroxisome proliferator activated receptor delta	
+397	TAR00397	1514	Cathepsin G	
+398	TAR00398	1517	Beta-3 adrenergic receptor	
+399	TAR00399	1524	Peptidyl-prolyl cis-trans isomerase A	
+400	TAR00400	1525	Heparin-binding growth factor 2	
+401	TAR00401	1531	Rho-associated protein kinase 1	
+402	TAR00402	1540	Mitogen-activated protein kinase 14	
+403	TAR00403	1547	mRNA of Factor XI	
+404	TAR00404	1558	Transient receptor potential cation channel subfamily V member 1	
+405	TAR00405	1561	Troponin C	
+406	TAR00406	1566	Corticoliberin	
+407	TAR00407	1569	G1/S-specific cyclin D1	
+408	TAR00408	1588	Multidrug resistance protein 1	
+409	TAR00409	1591	Ferrochelatase	
+410	TAR00410	1596	Protein-glutamine gamma-glutamyltransferase	
+411	TAR00411	1603	Interleukin 3 receptor	
+412	TAR00412	1615	Chymase	
+413	TAR00413	1618	High affinity nerve growth factor receptor	
+414	TAR00414	1629	Transcription factor AP-1	
+415	TAR00415	1630	Integrin beta-2	
+416	TAR00416	1635	Von Willebrand factor	
+417	TAR00417	1649	C-C motif chemokine 2	
+418	TAR00418	1654	Interleukin-1 beta	
+419	TAR00419	1673	GTP cyclohydrolase I	
+420	TAR00420	1675	Hexokinase D	
+421	TAR00421	1714	Mitogen-activated protein kinase 3	
+422	TAR00422	1721	Glycogen synthase kinase-3 beta	
+423	TAR00423	1729	Organic anion transporter 1	
+424	TAR00424	1735	Multidrug resistance-associated protein 2	
+425	TAR00425	1736	Somatostatin	
+426	TAR00426	1737	Protein-tyrosine phosphatase, non-receptor type 11	
+427	TAR00427	1756	E-selectin	
+428	TAR00428	1757	Myeloperoxidase	
+429	TAR00429	1758	mRNA of H-ras	
+430	TAR00430	1760	Aminopeptidase N	
+431	TAR00431	1771	Cell division control protein 2 homolog	
+432	TAR00432	1783	mRNA of Intercellular adhesion molecule-1	
+433	TAR00433	1789	Lymphotoxin alpha	
+434	TAR00434	1792	Tissue-type plasminogen activator	
+435	TAR00435	1799	Glucose-6-phosphate dehydrogenase	
+436	TAR00436	1827	Gap junction alpha-1 protein	
+437	TAR00437	1830	5'-Nucleotidase	
+438	TAR00438	1836	Mitogen-activated protein kinase 10	
+439	TAR00439	1867	Major prion protein	
+440	TAR00440	1908	Vascular cell adhesion protein 1	
+441	TAR00441	1926	Stromelysin-1	
+442	TAR00442	1928	Leukotriene C4 synthase	
+443	TAR00443	1932	Apolipoprotein E	
+444	TAR00444	1939	Heat shock protein HSP 90	
+445	TAR00445	1943	Hepatocyte growth factor	
+446	TAR00446	1944	Transient receptor potential cation channel subfamily A member 1	
+447	TAR00447	1949	Carboxypeptidase H	
+448	TAR00448	1953	Proto-oncogene protein c-fos	
+449	TAR00449	1958	5'-methylthioadenosine phosphorylase	
+450	TAR00450	1970	Protein kinase C, alpha type	
+451	TAR00451	1971	CAMP-specific 3',5'-cyclic phosphodiesterase 4A	
+452	TAR00452	1995	Voltage-gated sodium channel subunit alpha Nav1.7	
+453	TAR00453	1999	Methylated-DNA--protein-cysteine methyltransferase	
+454	TAR00454	2016	Dehydropeptidase I	
+455	TAR00455	2018	Deoxyhypusine synthase	
+456	TAR00456	2020	Stromal cell-derived factor 1	
+457	TAR00457	2021	Thrombomodulin	
+458	TAR00458	2038	Inhibitor of nuclear factor kappa B kinase beta subunit	
+459	TAR00459	2039	Integrin beta-3	
+460	TAR00460	2042	mRNA of Inhibitor of apoptosis protein	
+461	TAR00461	2049	Gastrin/cholecystokinin type B receptor	
+462	TAR00462	2058	P-selectin	
+463	TAR00463	2077	Apopain	
+464	TAR00464	2090	Toll-like receptor 2	
+465	TAR00465	2112	Toll-like receptor 9	
+466	TAR00466	2139	Tissue factor	
+467	TAR00467	2149	Angiogenin	
+468	TAR00468	2154	Neutrophil collagenase	
+469	TAR00469	2155	Insulin-degrading Enzyme	
+470	TAR00470	2157	NAD(P)H dehydrogenase [quinone] 1	
+471	TAR00471	2162	Transient receptor potential cation channel subfamily M member 8	
+472	TAR00472	2170	mRNA of RhoA	
+473	TAR00473	2178	Metabotropic glutamate receptor 5	
+474	TAR00474	2180	3-phosphoinositide dependent protein kinase-1	
+475	TAR00475	2202	Steryl-sulfatase	
+476	TAR00476	2203	Macrophage metalloelastase	
+477	TAR00477	2207	Rhodopsin	
+478	TAR00478	2216	mRNA of FGFR4	
+479	TAR00479	2222	Equilibrative nucleoside transporter 1	
+480	TAR00480	2226	Calgranulin D	
+481	TAR00481	2232	Interleukin-5	
+482	TAR00482	2240	Cell division protein kinase 2	
+483	TAR00483	2244	Serum amyloid P-component	
+484	TAR00484	2247	Scavenger decapping enzyme DcpS	
+485	TAR00485	2251	Thymidine monophosphate kinase	
+486	TAR00486	2314	Triosephosphate isomerase (bacterial)	
+487	TAR00487	2353	Apolipoprotein(a)	
+488	TAR00488	2355	Tyrosine-protein kinase BTK	
+489	TAR00489	2358	Type IV phosphodiesterase	
+490	TAR00490	2368	Cruzipain	
+491	TAR00491	2404	Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit, gamma isoform	
+492	TAR00492	2408	Tyrosine-protein kinase SYK	
+493	TAR00493	2421	Signal peptidase I	
+494	TAR00494	2433	Human cytomegalovirus protease	
+495	TAR00495	2434	NH(3)-dependent NAD(+) synthetase	
+496	TAR00496	2442	Nicotinate-nucleotide pyrophosphorylase [carboxylating]	
+497	TAR00497	2450	Tyrosine-protein kinase itk/tsk	
+498	TAR00498	2467	Galectin-3	
+499	TAR00499	2478	Beta-lactamase	
+500	TAR00500	2489	Lethal factor	
+501	TAR00501	2503	Phosphomannomutase/phosphoglucomutase	
+502	TAR00502	2530	Protein kinase C, theta type	
+503	TAR00503	2597	Glucosamine-6-phosphate synthase	
+504	TAR00504	2644	2-amino-4-hydroxy-6- hydroxymethyldihydropteridine pyrophosphokinase	
+505	TAR00505	2646	Dihydroorotase	
+506	TAR00506	2651	Glycosyltransferase MurG	
+507	TAR00507	2672	Lanosterol synthase	
+508	TAR00508	2731	Glycylpeptide N-tetradecanoyltransferase	
+509	TAR00509	2735	Cathepsin F	
+510	TAR00510	2755	Hypoxanthine-guanine-xanthine phosphoribosyltransferase	
+511	TAR00511	2762	UDP-glucose 4-epimerase	
+512	TAR00512	2782	Complement C1s component	
+513	TAR00513	2795	Methionine aminopeptidase 2	
+514	TAR00514	2889	Kallikrein 6	
+515	TAR00515	2907	Oxysterols receptor LXR-beta	
+516	TAR00516	2981	Phospholipase A2, membrane associated	
+517	TAR00517	2993	Cathepsin S	
+518	TAR00518	3007	Carbonic anhydrase XII	
+519	TAR00519	3011	Suppressor of tumorigenicity 14	
+520	TAR00520	3056	Orotidine 5'-monophosphate decarboxylase	
+521	TAR00521	3060	Leukotriene A-4 hydrolase	
+522	TAR00522	3070	Adenosylhomocysteinase	
+523	TAR00523	3075	Bis(5'-adenosyl)-triphosphatase	
+524	TAR00524	3086	Plasmepsin 2	
+525	TAR00525	3105	M-phase inducer phosphatase 2	
+526	TAR00526	3115	Ras-related protein Rab-9A	
+528	TAR00528	3126	Poly [ADP-ribose] polymerase-1	
+530	TAR00530	3233	Bile acid receptor	
+531	TAR00531	3321	Cyclin-dependent protein kinase PfPK5	
+532	TAR00532	3346	Complement factor D	
+533	TAR00533	3361	Maspin	
+534	TAR00534	3379	Kinesin-like protein KIF11	
+535	TAR00535	3384	Macrophage migration inhibitory factor	
+536	TAR00536	3448	Thromboxane-A synthase	
+537	TAR00537	3482	Cell division protein kinase 7	
+538	TAR00538	3610	Thioredoxin reductase, cytoplasmic	
+539	TAR00539	3678	Enoyl-ACP reductase	
+540	TAR00540	3803	Voltage-gated sodium channel subunit alpha Nav1.3	
+541	TAR00541	3804	Sodium channel protein type 4 subunit alpha	
+542	TAR00542	3806	CGMP-dependent 3',5'-cyclic phosphodiesterase	
+543	TAR00543	3810	Catechol-O-methyl-transferase	
+544	TAR00544	3811	Cytochrome P450 19	
+545	TAR00545	3819	Low affinity immunoglobulin gamma Fc region receptor II-A	
+546	TAR00546	3831	Low-density lipoprotein receptor-related protein 1	
+547	TAR00547	3847	Neuroendocrine convertase 2	
+548	TAR00548	3848	Neuroendocrine convertase 1	
+549	TAR00549	3851	Serine protease hepsin	
+550	TAR00550	3852	Neuropilin-1	
+551	TAR00551	3854	Basic fibroblast growth factor receptor 1	
+552	TAR00552	3856	Fibroblast growth factor receptor 3	
+553	TAR00553	3858	Cathepsin L	
+554	TAR00554	3859	Vesicle-associated membrane protein	
+555	TAR00555	3872	Somatostatin receptor type 5	
+556	TAR00556	3873	Prolyl endopeptidase	
+557	TAR00557	3876	Aromatic-L-amino-acid decarboxylase	
+558	TAR00558	3917	mRNA of Methylenetetrahydrofolate reductase	
+559	TAR00559	3923	Cholinesterase	
+560	TAR00560	3924	Phospholipase D1	
+561	TAR00561	3925	Choline transporter-like protein 4	
+563	TAR00563	3936	Thymidine phosphorylase	
+564	TAR00564	3937	Fatty-acid amide hydrolase	
+565	TAR00565	3939	Amine oxidase [flavin-containing] B	
+566	TAR00566	3941	Amine oxidase [flavin-containing] A	
+567	TAR00567	3942	CDP-diacylglycerol--inositol 3-phosphatidyltransferase	
+568	TAR00568	3947	Xanthine dehydrogenase/oxidase	
+569	TAR00569	3950	Cell division protein kinase 9	
+570	TAR00570	3954	Hypoxia-inducible factor-prolyl hydroxylase	
+571	TAR00571	3955	Cell division protein kinase 6	
+572	TAR00572	3957	Adenosine deaminase	
+573	TAR00573	3959	Cell division protein kinase 4	
+574	TAR00574	3961	ATP-sensitive K+ channel	
+575	TAR00575	3968	Cell division protein kinase 8	
+576	TAR00576	3970	Voltage-dependent N-type calcium channel	
+577	TAR00577	3971	CAD protein	
+578	TAR00578	4020	Glutamyl aminopeptidase	
+579	TAR00579	4052	Sphingomyelin phosphodiesterase 4	
+580	TAR00580	4084	Peptidyl-prolyl cis-trans isomerase B	
+581	TAR00581	4095	Neuronal acetylcholine receptor protein, alpha-7 chain	
+582	TAR00582	4096	Metabotropic glutamate receptor 3	
+583	TAR00583	4097	Neuronal acetylcholine receptor subunit alpha-9	
+584	TAR00584	4100	Gamma-aminobutyric acid receptor subunit beta-2	
+585	TAR00585	4107	Cycloinulo-oligosaccharide fructanotransferase	
+586	TAR00586	4115	Voltage-dependent L-type calcium channel alpha-1D subunit	
+587	TAR00587	4121	Histone deacetylase 1	
+588	TAR00588	4122	Histone deacetylase 2	
+589	TAR00589	4124	Histone deacetylase 6	
+590	TAR00590	4128	Protein farnesyltransferase beta subunit	
+591	TAR00591	4129	Farnesyltransferase	
+592	TAR00592	4130	Hypoxia-inducible factor 1 alpha	
+593	TAR00593	4131	Prostaglandin E2 receptor EP3 subtype	
+594	TAR00594	4137	Nociceptin receptor	
+595	TAR00595	4148	Serine/threonine-protein kinase mTOR	
+596	TAR00596	4149	Nuclear factor NF-kappa-B	
+597	TAR00597	4152	Superoxide dismutase [Cu-Zn]	
+598	TAR00598	4160	Voltage-dependent calcium channel subunit alpha-2/delta-2	
+599	TAR00599	4165	P2Y purinoceptor 2	
+600	TAR00600	4171	Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit, delta isoform	
+601	TAR00601	4173	Tyrosine-protein kinase JAK2	
+602	TAR00602	4175	Platelet-activating factor acetylhydrolase	
+603	TAR00603	4177	Proto-oncogene tyrosine-protein kinase receptor ret	
+604	TAR00604	4178	DNA repair protein RAD51 homolog 1	
+605	TAR00605	4180	DNA-(apurinic or apyrimidinic site) lyase	
+606	TAR00606	4183	HLA class II histocompatibility antigen, DRB1-1	
+607	TAR00607	4184	Protein kinase C, delta type	
+608	TAR00608	4186	Neuropeptide Y receptor type 2	
+609	TAR00609	4189	Alpha-galactosidase A	
+610	TAR00610	4192	DNA topoisomerase II, beta isozyme	
+611	TAR00611	4198	Fructose-1,6-bisphosphatase	
+612	TAR00612	4203	Histamine N-methyltransferase	
+613	TAR00613	4205	Carbonic anhydrase IX	
+614	TAR00614	4210	Toll-like receptor 4	
+615	TAR00615	4218	Ribonucleoside-diphosphate reductase subunit M2	
+616	TAR00616	4222	Ephrin type-B receptor 4	
+617	TAR00617	4246	Voltage-dependent anion-selective channel protein 2	
+618	TAR00618	4247	Voltage-dependent anion-selective channel protein 3	
+619	TAR00619	4341	Beta crystallin B1	
+620	TAR00620	4487	Haemophilus influenzae NadR protein	
+621	TAR00621	4512	Cytochrome P450 3A4	
+622	TAR00622	4513	Pancreatic alpha-amylase	
+623	TAR00623	4534	mRNA of cytohesin-2	
+625	TAR00625	4574	Probable naphthoate synthase menB	
+627	TAR00627	4604	Liver carboxylesterase	
+628	TAR00628	4751	MAP kinase p38	
+629	TAR00629	4845	ADAM 33	
+630	TAR00630	4850	Beta-2-glycoprotein 1	
+631	TAR00631	4852	Reticulon 4 receptor	
+632	TAR00632	4856	Membrane-associated lectin type-C	
+633	TAR00633	4861	Interleukin-6 receptor	
+634	TAR00634	4878	Glycoprotein hormones alpha chain	
+635	TAR00635	4890	Hemagglutinin	
+636	TAR00636	4969	Flavohemoglobin	
+637	TAR00637	5091	UDP-N-acetylenolpyruvylglucosamine reductase	
+638	TAR00638	5491	Methionine gamma-lyase	
+639	TAR00639	5492	Cystathionine gamma-synthase	
+640	TAR00640	5691	DTDP-4-dehydrorhamnose 3,5-epimerase rmlC	
+641	TAR00641	5717	Wee1-like protein kinase	
+642	TAR00642	5718	Cytochrome P450 2A6	
+643	TAR00643	5736	Arginine deiminase	
+644	TAR00644	5744	Undecaprenyl pyrophosphate synthetase	
+645	TAR00645	5787	Angiopoietin 1 receptor	
+646	TAR00646	5788	Cellular tumor antigen p53	
+647	TAR00647	5790	Serine/threonine-protein kinase Chk1	
+648	TAR00648	5800	Amyloid beta A4 protein	
+649	TAR00649	5816	Vascular endothelial-cadherin	
+650	TAR00650	5817	Serine/threonine protein kinase 12	
+651	TAR00651	5838	Transient receptor potential cation channel subfamily V member 3	
+652	TAR00652	5839	Cathepsin K	
+653	TAR00653	5849	CAMP-dependent protein kinase type I-alpha regulatory chain	
+654	TAR00654	5852	Type-2 angiotensin II receptor	
+655	TAR00655	5867	Hepatitis C Virus Serine Protease NS3/4A	
+656	TAR00656	5898	Complement C3	
+657	TAR00657	5925	Neuropeptide Y	
+658	TAR00658	5955	T-cell surface glycoprotein CD4	
+659	TAR00659	5963	Tyrosine-protein kinase JAK3	
+660	TAR00660	5986	Parathyroid hormone/parathyroid hormone-related peptide receptor	
+661	TAR00661	5990	Antiapoptotic protein BCL-XL	
+662	TAR00662	5993	B2 bradykinin receptor	
+663	TAR00663	5997	Tumor necrosis factor ligand superfamily member 11	
+664	TAR00664	5998	Toll-like receptor 8	
+665	TAR00665	6002	Prostaglandin E2 receptor, EP4 subtype	
+666	TAR00666	6003	Histone deacetylase 4	
+667	TAR00667	6008	Somatostatin receptor type 2	
+668	TAR00668	6017	Cytochrome P450 11A1, mitochondrial	
+669	TAR00669	6021	Adenosine kinase	
+670	TAR00670	6030	Cytochrome P450 2B6	
+671	TAR00671	6033	High affinity interleukin-8 receptor A	
+672	TAR00672	6036	Eosinophil peroxidase	
+673	TAR00673	6040	6-phosphogluconate dehydrogenase, decarboxylating	
+674	TAR00674	6043	Putative G-protein coupled receptor 44	
+675	TAR00675	6045	Voltage-dependent calcium channel subunit alpha-2/delta-3	
+676	TAR00676	6047	Calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1	
+677	TAR00677	6055	Receptor-type protein-tyrosine phosphatase S	
+678	TAR00678	6057	Vacuolar ATP synthase catalytic subunit A	
+679	TAR00679	6065	Integrin beta-1	
+680	TAR00680	6066	Integrin alpha-V	
+681	TAR00681	6073	Potassium channel subfamily K member 9	
+682	TAR00682	6078	Neuronal acetylcholine receptor protein, beta-4 chain	
+683	TAR00683	6080	Neuronal acetylcholine receptor subunit alpha-5	
+684	TAR00684	6086	Gamma-aminobutyric acid receptor subunit gamma-2	
+685	TAR00685	6099	Potassium voltage-gated channel subfamily D member 3	
+686	TAR00686	6116	Gastric triacylglycerol lipase	
+687	TAR00687	6131	Carbonic anhydrase XIV	
+688	TAR00688	6189	Matrilysin	
+689	TAR00689	6190	Stromelysin-3	
+690	TAR00690	6191	Matrix metalloproteinase-14	
+691	TAR00691	6221	Steroid hormone receptor ERR1	
+692	TAR00692	6226	Topoisomerase IV subunit A	
+693	TAR00693	6230	ADAMTS-5	
+694	TAR00694	6233	Adenylate cyclase, type II	
+695	TAR00695	6240	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 1	
+696	TAR00696	6246	Serine/threonine-protein kinase PLK1	
+697	TAR00697	6256	ADAM 17	
+698	TAR00698	6260	Elastase 1	
+699	TAR00699	6263	mRNA of PKA Catalytic Subunit C-alpha	
+700	TAR00700	6274	Mitogen-activated protein kinase 9	
+701	TAR00701	6277	73-kDa molecular chaperone HSP73	
+702	TAR00702	6283	Oxysterols receptor LXR-alpha	
+703	TAR00703	6284	TGF-beta receptor type I	
+704	TAR00704	6292	Mitogen-activated protein kinase 8	
+705	TAR00705	6293	Dual specificity protein kinase TTK	
+706	TAR00706	6295	Endothelin-converting enzyme 1	
+707	TAR00707	6350	Orphan nuclear receptor NR1I3	
+708	TAR00708	6500	Phospholipase A2	
+709	TAR00709	6521	Rhinovirus coat protein	
+710	TAR00710	6522	Hepatocyte nuclear factor 4-alpha	
+711	TAR00711	6527	Lymphocyte antigen 96	
+712	TAR00712	6608	Serine/threonine-protein kinase Sgk1	
+714	TAR00714	6655	Kallikrein 7	
+715	TAR00715	6731	Carcinoembryonic antigen-related cell adhesion molecule 5	
+716	TAR00716	6742	Recoverin	
+717	TAR00717	6790	Elongation factor 2	
+719	TAR00719	6847	Lactase-phlorizin hydrolase	
+720	TAR00720	6853	Interleukin-1 receptor-associated kinase-4	
+722	TAR00722	6879	Biphenyl hydrolase-related protein	
+723	TAR00723	6895	Mitogen-activated protein kinase kinase kinase 9	
+724	TAR00724	4200	Cytochrome P450 1A2	
+725	TAR00725	6188	Stromelysin-2	
+726	TAR00726	444	Alcohol dehydrogenase 1B	
+727	TAR00727	517	Alcohol dehydrogenase 1C	
+728	TAR00728	611	Retinal dehydrogenase 1	
+729	TAR00729	251	Alcohol dehydrogenase 1A	
+730	TAR00730	315	Arginase-1	
+731	TAR00731	28	Collagen alpha-1(I) chain	
+732	TAR00732	3818	Low affinity immunoglobulin gamma Fc region receptor III-A	
+733	TAR00733	904	Glutathione S-transferase P	
+734	TAR00734	1278	Pro-epidermal growth factor	
+735	TAR00735	2230	Catalase	
+736	TAR00736	1820	Beta-nerve growth factor	
+737	TAR00737	679	C-1-tetrahydrofolate synthase, cytoplasmic	
+738	TAR00738	134	Tryptophan 5-hydroxylase 1	
+739	TAR00739	5251	Carbonyl reductase [NADPH] 1	
+740	TAR00740	183	Vascular endothelial growth factor A	
+741	TAR00741	681	Glycine dehydrogenase [decarboxylating], mitochondrial	
+742	TAR00742	4924	Cytochrome P450 2C8	
+743	TAR00743	237	Histo-blood group ABO system transferase	
+744	TAR00744	4120	NADPH--cytochrome P450 reductase	
+745	TAR00745	728	Interferon-alpha/beta receptor alpha chain	
+746	TAR00746	2325	Sulfotransferase family cytosolic 2B member 1	
+747	TAR00747	569	Retinal dehydrogenase 2	
+748	TAR00748	2287	Bifunctional purine biosynthesis protein PURH [Includes: Phosphoribosylaminoimidazolecarboxamide formyltransferase	
+749	TAR00749	360	Ribonucleoside-diphosphate reductase large subunit	
+750	TAR00750	4141	Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha isoform	
+751	TAR00751	2105	ATP-binding cassette sub-family G member 1	
+752	TAR00752	4211	Cytidine deaminase	
+753	TAR00753	908	Glutathione S-transferase theta-1	
+754	TAR00754	6079	Neuronal acetylcholine receptor subunit alpha-3	
+755	TAR00755	52	Pyruvate kinase isozymes R/L	
+756	TAR00756	424	Dihydroorotate dehydrogenase, mitochondrial	
+757	TAR00757	1192	Sulfotransferase 1A1	
+758	TAR00758	1581	G protein-activated inward rectifier potassium channel 2	
+759	TAR00759	1585	Basement membrane-specific heparan sulfate proteoglycan core protein	
+760	TAR00760	749	Amiloride-sensitive cation channel 1, neuronal	
+761	TAR00761	130	Prostacyclin synthase	
+762	TAR00762	919	Glutamate receptor, ionotropic kainate 4	
+763	TAR00763	3849	Insulin-like growth factor-binding protein 7	
+764	TAR00764	6545	Calcium/calmodulin-dependent protein kinase type IV	
+765	TAR00765	1024	Solute carrier family 22 member 11	
+766	TAR00766	4031	Glutathione S-transferase A1	
+767	TAR00767	899	Glutathione S-transferase Mu 3	
+768	TAR00768	6100	BDNF/NT-3 growth factors receptor	
+769	TAR00769	6232	Guanine nucleotide-binding protein G(s) subunit alpha isoforms short	
+770	TAR00770	544	Potassium voltage-gated channel subfamily E member 1	
+771	TAR00771	579	Alcohol dehydrogenase class 4 mu/sigma chain	
+772	TAR00772	4062	Sodium- and chloride-dependent glycine transporter 2	
+773	TAR00773	840	Methionine synthase reductase, mitochondrial	
+774	TAR00774	27	Amiloride-sensitive sodium channel subunit beta	
+775	TAR00775	552	Amiloride-sensitive sodium channel subunit gamma	
+776	TAR00776	909	Maleylacetoacetate isomerase	
+777	TAR00777	1184	Interferon beta	
+778	TAR00778	388	AMP deaminase 1	
+780	TAR00780	2888	DNA-repair protein XRCC4	
+781	TAR00781	1275	Estrogen sulfotransferase	
+782	TAR00782	289	Cytosolic purine 5'-nucleotidase	
+783	TAR00783	792	Aldehyde dehydrogenase, dimeric NADP-preferring	
+784	TAR00784	3862	High affinity immunoglobulin epsilon receptor subunit beta	
+785	TAR00785	3209	Ornithine decarboxylase, inducible	
+786	TAR00786	5212	Carboxylesterase 2	
+787	TAR00787	1984	Tumor necrosis factor receptor superfamily member 1A	
+788	TAR00788	3562	1-phosphatidylinositol phosphodiesterase	
+789	TAR00789	88	Retinoic acid receptor RXR-beta	
+792	TAR00792	2371	Pantothenate kinase	
+793	TAR00793	3027	Streptavidin	
+795	TAR00795	2026	Inositol monophosphatase	
+796	TAR00796	2236	Casein kinase II subunit alpha	
+799	TAR00799	4467	Alpha-glucosidase, putative	
+800	TAR00800	3697	Bifunctional protein glmU [Includes: UDP-N-acetylglucosamine pyrophosphorylase	
+801	TAR00801	2734	Lipase 3	
+802	TAR00802	5698	Riboflavin synthase alpha chain	
+803	TAR00803	2769	P-hydroxybenzoate hydroxylase	
+804	TAR00804	3396	Elongation factor Tu	
+806	TAR00806	6433	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 4	
+807	TAR00807	3170	Elongation factor Tu-B	
+808	TAR00808	3891	Putative L-Dopa decarboxylase	
+809	TAR00809	3893	DDC protein	
+810	TAR00810	6899	Orf1a polyprotein	
+811	TAR00811	6517	Replicase polyprotein 1a	
+812	TAR00812	2689	Phosphoribosylglycinamide formyltransferase	
+815	TAR00815	2751	Holliday junction ATP-dependent DNA helicase ruvB	
+942	TAR00942	5377	Placenta growth factor	
+1018	TAR01018	6827	Probable chorismate mutase	
+1019	TAR01019	6287	Arylsulfate sulfotransferase	
+1020	TAR01020	4221	Vascular endothelial growth factor	
+1021	TAR01021	6811	Restriction endonuclease R.BpuJI	
+1022	TAR01022	6591	ATP synthase C chain	
+1023	TAR01023	6482	Membrane protein involved in aromatic hydrocarbon degradation	
+1026	TAR01026	6368	Dehydrosqualene synthase	
+1027	TAR01027	6094	BCR/ABL fusion protein isoform X9	
+1028	TAR01028	6855	Enoyl-(Acyl-carrier-protein) reductase	
+1030	TAR01030	6529	Sulfide-quinone reductase, putative	
+1031	TAR01031	6467	Acyl-CoA carboxylase	
+1032	TAR01032	6067	Penicillin binding protein 2a	
+1033	TAR01033	2526	NADPH-ferredoxin reductase fprA	
+1034	TAR01034	5757	2-oxo-1,2-dihydroquinoline 8-monooxygenase, oxygenase component	
+1035	TAR01035	4514	Citrate lyase beta subunit-like protein	
+1037	TAR01037	2396	Formyl-coenzyme A transferase	
+1038	TAR01038	6730	HYPOTHETICAL EXPORTED PROTEIN	
+1040	TAR01040	3490	Sigma factor sigB regulation protein rsbQ	
+1041	TAR01041	3261	Signal recognition particle protein	
+1042	TAR01042	5181	Hypothetical protein yhdA	
+1043	TAR01043	4447	Hypothetical protein yhfP	
+1044	TAR01044	4926	Heme-based aerotactic transducer hemAT	
+1045	TAR01045	4670	Cellulase B	
+1046	TAR01046	4775	PROBABLE LIGNIN PEROXIDASE LIPJ	
+1047	TAR01047	6870	Chorismate mutase-related protein	
+1048	TAR01048	4476	Mannitol dehydrogenase	
+1050	TAR01050	4587	Carbapenem-hydrolyzing beta-lactamase blaB-1	
+1052	TAR01052	3982	Phosphoribosylformylglycinamidine synthase	
+1053	TAR01053	5255	Deoxyuridine triphosphatase	
+1054	TAR01054	3228	Enoyl-[acyl-carrier-protein] reductase [NADH]	
+1056	TAR01056	4549	Endonuclease III	
+1057	TAR01057	5270	ATP-dependent Clp protease ATP-binding subunit clpX	
+1058	TAR01058	4292	Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase	
+1059	TAR01059	6382	(3R)-hydroxymyristoyl-[acyl-carrier-protein] dehydratase	
+1060	TAR01060	5363	Phosphonoacetaldehyde hydrolase	
+1061	TAR01061	3617	Non-heme chloroperoxidase	
+1063	TAR01063	2992	Peptide deformylase 2	
+1064	TAR01064	3570	Cytochrome P450 152A1	
+1065	TAR01065	4542	Glutaminase 1	
+1066	TAR01066	4998	Hemoglobin-like protein yjbI	
+1067	TAR01067	2893	Glycine oxidase	
+1068	TAR01068	4564	YvbK protein	
+1069	TAR01069	4655	Adenylate cyclase	
+1070	TAR01070	3614	Proline iminopeptidase	
+1071	TAR01071	3602	Anti-sigma F factor antagonist	
+1073	TAR01073	5751	Proteasome	
+1074	TAR01074	6694	Proteasome subunit beta	
+1075	TAR01075	6485	Esterase estA	
+1076	TAR01076	4343	Alpha-glucosidase	
+1077	TAR01077	5581	Beta-fructosidase	
+1079	TAR01079	3072	N-acetylglucosamine-6-phosphate deacetylase	
+1080	TAR01080	2617	Nitric oxide synthase oxygenase	
+1082	TAR01082	4529	Oxalate decarboxylase oxdC	
+1084	TAR01084	3626	Probable polysaccharide deacetylase pdaA	
+1085	TAR01085	5176	YtnJ	
+1086	TAR01086	3192	Glucosamine-6-phosphate deaminase 1	
+1088	TAR01088	4168	RNA-dependent RNA-polymerase	
+1089	TAR01089	1541	Metalloproteinase	
+1090	TAR01090	5722	Aklanonic acid methyl ester cyclase	
+1091	TAR01091	6619	PCZA361.1	
+1092	TAR01092	4275	PCZA361.16	
+1093	TAR01093	4507	Alanine dehydrogenase	
+1095	TAR01095	5097	PROBABLE DIHYDROLIPOAMIDE DEHYDROGENASE LPDA	
+1096	TAR01096	6596	Short-chain Z-isoprenyl diphosphate synthetase	
+1098	TAR01098	489	Monocarboxylate transporter 2	
+1099	TAR01099	5695	3-methylaspartate ammonia-lyase	
+1100	TAR01100	2310	2-dehydro-3-deoxyphosphooctonate aldolase	
+1102	TAR01102	5276	Chromosomal replication initiator protein dnaA	
+1103	TAR01103	5239	Exopolyphosphatase	
+1104	TAR01104	4762	Acetoin utilization protein	
+1105	TAR01105	5259	Transcriptional regulator	
+1106	TAR01106	6564	Prephenate dehydrogenase	
+1107	TAR01107	2435	UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase	
+1108	TAR01108	6432	Transporter	
+1109	TAR01109	6528	Sulfide-quinone reductase	
+1110	TAR01110	3603	Chlorocatechol 1,2-dioxygenase	
+1111	TAR01111	4808	Endoxylanase	
+1112	TAR01112	4279	4-chlorobenzoyl CoA dehalogenase	
+1113	TAR01113	4771	Dissimilatory copper-containing nitrite reductase	
+1114	TAR01114	3067	Aquaporin Z	
+1115	TAR01115	4981	Iron-starvation protein PigA	
+1116	TAR01116	5484	Maltogenic amylase	
+1117	TAR01117	5131	PhzG	
+1118	TAR01118	4622	Amylase	
+1119	TAR01119	5422	B-N-acetylhexosaminidase	
+1120	TAR01120	2252	Endoglucanase 5A	
+1121	TAR01121	2551	Cobalt-precorrin-4 C(11)-methyltransferase	
+1122	TAR01122	5675	Chaperone protein torD	
+1126	TAR01126	4905	Cytochrome c2	
+1130	TAR01130	4934	Cytochrome c-551	
+1132	TAR01132	4943	Cytochrome c6	
+1134	TAR01134	4923	Cytochrome c3	
+1136	TAR01136	5221	Cytochrome c3, 13 kDa	
+1139	TAR01139	4385	Cytochrome c'	
+1142	TAR01142	4975	Cytochrome c-556	
+1143	TAR01143	2298	Cytochrome P450-cam	
+1144	TAR01144	6587	Rubredoxin	
+1145	TAR01145	2443	Azurin	
+1146	TAR01146	3293	Flavodoxin	
+1152	TAR01152	371	Cytochrome c oxidase subunit 1	
+1153	TAR01153	5793	Cytochrome c oxidase subunit 2	
+1154	TAR01154	6490	Cytochrome c oxidase subunit 3	
+1155	TAR01155	6537	Protocatechuate 3,4-dioxygenase alpha chain	
+1156	TAR01156	6538	Protocatechuate 3,4-dioxygenase beta chain	
+1157	TAR01157	2874	Nitrogenase iron protein 1	
+1159	TAR01159	3091	Maltodextrin phosphorylase	
+1160	TAR01160	2515	Amidophosphoribosyltransferase	
+1161	TAR01161	2249	Aspartate aminotransferase	
+1162	TAR01162	3309	6-phosphofructokinase	
+1163	TAR01163	3462	Tyrosine-protein kinase transforming protein Abl	
+1165	TAR01165	553	DNA polymerase I	
+1166	TAR01166	2507	Diphtheria toxin	
+1167	TAR01167	3453	Alkaline phosphatase	
+1168	TAR01168	3605	Thermonuclease	
+1169	TAR01169	6675	Colicin-E3	
+1170	TAR01170	2531	Alpha-amylase	
+1172	TAR01172	2300	Lysozyme	
+1173	TAR01173	2592	Beta-galactosidase	
+1174	TAR01174	2947	Trypsin	
+1175	TAR01175	3590	Alpha-lytic protease	
+1176	TAR01176	2548	Subtilisin Carlsberg	
+1177	TAR01177	6244	Subtilisin DY	
+1178	TAR01178	2517	Subtilisin BPN'	
+1179	TAR01179	6285	Thermolysin	
+1180	TAR01180	2465	L-asparaginase 2	
+1182	TAR01182	3356	Diaminopimelate decarboxylase	
+1183	TAR01183	3339	Phosphoenolpyruvate carboxylase	
+1184	TAR01184	2839	Tryptophan biosynthesis protein trpCF [Includes: Indole-3-glycerol phosphate synthase	
+1189	TAR01189	2452	Tryptophanyl-tRNA synthetase	
+1190	TAR01190	2800	Methionyl-tRNA synthetase	
+1191	TAR01191	3547	Enterotoxin type B	
+1192	TAR01192	2723	Cholera enterotoxin subunit B	
+1193	TAR01193	6670	Ig kappa chain V-I region Bi	
+1194	TAR01194	5012	Ig lambda chain V-II region MGC	
+1195	TAR01195	6772	Ig heavy chain V-I region ND	
+1196	TAR01196	6671	Ig heavy chain V-III region VH26	
+1197	TAR01197	6338	Ig kappa chain C region	
+1198	TAR01198	6280	T-cell receptor alpha chain C region	
+1199	TAR01199	6281	T-cell receptor beta chain C region	
+1200	TAR01200	4889	Ig epsilon chain C region	
+1201	TAR01201	4785	Ig gamma-1 chain C region	
+1202	TAR01202	6307	Ig gamma-2 chain C region	
+1203	TAR01203	5948	HLA class I histocompatibility antigen, A-2 alpha chain	
+1204	TAR01204	543	Penicillin-binding protein 1B	
+1205	TAR01205	3530	Lactose permease	
+1206	TAR01206	3057	L-arabinose-binding periplasmic protein	
+1207	TAR01207	3538	D-ribose-binding periplasmic protein	
+1208	TAR01208	6524	Protein tonB	
+1209	TAR01209	3520	Outer membrane protein tolC	
+1210	TAR01210	2863	Outer membrane protein F	
+1211	TAR01211	2618	Methyl-accepting chemotaxis protein II	
+1212	TAR01212	5498	Maltoporin	
+1213	TAR01213	3119	Fimbrial protein	
+1214	TAR01214	4276	DNA polymerase III subunit epsilon	
+1215	TAR01215	4389	Lactose operon repressor	
+1216	TAR01216	5284	Large T antigen	
+1217	TAR01217	5264	DNA replication protein	
+1218	TAR01218	2559	Thymidine kinase	
+1220	TAR01220	653	Envelope glycoprotein GP340/GP220	
+1221	TAR01221	3569	Capsid protein P40	
+1222	TAR01222	2864	Penton protein	
+1223	TAR01223	5580	Hexon protein	
+1228	TAR01228	3352	Structural polyprotein	
+1235	TAR01235	5214	Phosphoprotein	
+1237	TAR01237	3299	DNA primase/helicase	
+1239	TAR01239	5226	Protein ninB	
+1240	TAR01240	721	NADH-ubiquinone oxidoreductase chain 2	
+1241	TAR01241	219	NADH-ubiquinone oxidoreductase chain 3	
+1242	TAR01242	300	NADH-ubiquinone oxidoreductase chain 4L	
+1243	TAR01243	608	NADH-ubiquinone oxidoreductase chain 4	
+1244	TAR01244	637	NADH-ubiquinone oxidoreductase chain 5	
+1245	TAR01245	384	NADH-ubiquinone oxidoreductase chain 6	
+1246	TAR01246	5649	Potassium-transporting ATPase B chain	
+1247	TAR01247	6585	HLA class I histocompatibility antigen, B-27 alpha chain	
+1248	TAR01248	3071	Regulatory protein E2	
+1250	TAR01250	3291	Cytochrome c-552	
+1251	TAR01251	2603	Beta-lactamase II	
+1252	TAR01252	6773	Ig lambda chain V region 4A	
+1253	TAR01253	4947	Bacterial hemoglobin	
+1254	TAR01254	3558	Pseudoazurin	
+1255	TAR01255	6875	Type-2 restriction enzyme EcoRV	
+1256	TAR01256	3415	Ornithine carbamoyltransferase chain I	
+1257	TAR01257	4315	DNA adenine methylase	
+1259	TAR01259	3596	Deoxynucleotide monophosphate kinase	
+1260	TAR01260	3524	DNA beta-glucosyltransferase	
+1266	TAR01266	2570	Tetanus toxin	
+1267	TAR01267	2900	Meso-diaminopimelate D-dehydrogenase	
+1268	TAR01268	658	Para-aminobenzoate synthase component 1	
+1269	TAR01269	3486	Fumarate hydratase class II	
+1270	TAR01270	3012	DNA-3-methyladenine glycosylase 1	
+1271	TAR01271	4323	Modification methylase HhaI	
+1272	TAR01272	3833	Plasma serine protease inhibitor	
+1277	TAR01277	4748	Levansucrase	
+1278	TAR01278	6476	Porin P	
+1279	TAR01279	2497	Guanyl-specific ribonuclease Sa	
+1280	TAR01280	4787	Envelope glycoprotein gp160	
+1282	TAR01282	6352	Reaction center protein H chain	
+1283	TAR01283	6353	Reaction center protein L chain	
+1284	TAR01284	6354	Reaction center protein M chain	
+1285	TAR01285	2679	Vitamin B12 transporter btuB	
+1286	TAR01286	126	D-lactate dehydrogenase	
+1287	TAR01287	6322	Periplasmic oligopeptide-binding protein	
+1289	TAR01289	6339	Ig kappa chain V-II region RPMI 6410	
+1292	TAR01292	2791	L-asparaginase	
+1293	TAR01293	3552	DNA topoisomerase 1	
+1294	TAR01294	4484	2,5-diketo-D-gluconic acid reductase A	
+1295	TAR01295	3259	Autolysin	
+1296	TAR01296	5600	Pyruvate decarboxylase	
+1297	TAR01297	5728	Bifunctional protein birA  synthetase	
+1298	TAR01298	4839	DNA polymerase III subunit tau	
+1299	TAR01299	327	Glutathione reductase	
+1300	TAR01300	6679	Colicin-Ia	
+1301	TAR01301	2676	Neuraminidase	
+1302	TAR01302	4346	Polynucleotide kinase	
+1303	TAR01303	129	Evolved beta-galactosidase subunit alpha	
+1304	TAR01304	6308	Penicillin G acylase	
+1306	TAR01306	2427	Ferrichrome-iron receptor	
+1307	TAR01307	3200	Porphobilinogen deaminase	
+1308	TAR01308	2546	Histidinol-phosphate aminotransferase	
+1309	TAR01309	3191	Histidinol dehydrogenase	
+1310	TAR01310	3018	HTH-type transcriptional regulator malT	
+1311	TAR01311	845	Pyruvate dehydrogenase [cytochrome]	
+1312	TAR01312	6347	Succinate dehydrogenase iron-sulfur subunit	
+1313	TAR01313	5123	Protein ushA	
+1314	TAR01314	6635	Regulatory protein sdiA	
+1315	TAR01315	2633	Anaerobic ribonucleoside-triphosphate reductase	
+1316	TAR01316	2596	Acetyl-CoA acetyltransferase	
+1317	TAR01317	6480	Outer membrane usher protein papC	
+1318	TAR01318	6351	Photosynthetic reaction center cytochrome c subunit	
+1319	TAR01319	2999	Chitinase A	
+1320	TAR01320	1563	Platelet glycoprotein Ib alpha chain	
+1321	TAR01321	2283	Steroid Delta-isomerase	
+1322	TAR01322	2560	Galactoside O-acetyltransferase	
+1324	TAR01324	2557	Cap-specific mRNA	
+1326	TAR01326	2638	Formate dehydrogenase H	
+1327	TAR01327	5112	Benzoate 1,2-dioxygenase electron transfer component	
+1328	TAR01328	2658	Catechol 1,2-dioxygenase	
+1329	TAR01329	4331	Chemotaxis protein methyltransferase	
+1330	TAR01330	2520	Ferrichrome-binding periplasmic protein	
+1331	TAR01331	3466	Beta-lactam-inducible penicillin-binding protein	
+1332	TAR01332	2448	Exoglucanase/xylanase [Includes: Exoglucanase	
+1335	TAR01335	137	FolC bifunctional protein [Includes: Folylpolyglutamate synthase	
+1338	TAR01338	2760	Mutator mutT protein	
+1339	TAR01339	6184	D-alanyl-D-alanine carboxypeptidase dacC	
+1341	TAR01341	3435	Arsenical pump-driving ATPase	
+1342	TAR01342	2418	Arsenate reductase	
+1343	TAR01343	5435	Deoxycytidylate 5-hydroxymethyltransferase	
+1344	TAR01344	2794	Orotate phosphoribosyltransferase	
+1345	TAR01345	2514	Phosphocarrier protein HPr	
+1346	TAR01346	5305	Phosphoribosylaminoimidazole carboxylase ATPase subunit	
+1347	TAR01347	4477	Dihydrolipoyl dehydrogenase	
+1348	TAR01348	6743	Non-fluorescent flavoprotein	
+1350	TAR01350	2590	Galactose-1-phosphate uridylyltransferase	
+1351	TAR01351	6317	Respiratory nitrate reductase 1 alpha chain	
+1353	TAR01353	3178	Formate acetyltransferase 1	
+1354	TAR01354	6404	Rhomboid protease glpG	
+1355	TAR01355	3254	Bifunctional protein putA [Includes: Proline dehydrogenase	
+1358	TAR01358	5102	4-cresol dehydrogenase [hydroxylating] flavoprotein subunit	
+1360	TAR01360	3416	Protein arsC	
+1362	TAR01362	3577	Gamma-hemolysin component B	
+1364	TAR01364	2416	Methionine aminopeptidase	
+1366	TAR01366	4150	DNA gyrase subunit B	
+1368	TAR01368	2331	HTH-type transcriptional regulator qacR	
+1369	TAR01369	2944	N-acylneuraminate cytidylyltransferase	
+1370	TAR01370	6457	1,2-dihydroxynaphthalene dioxygenase	
+1372	TAR01372	6323	Naphthalene 1,2-dioxygenase subunit alpha	
+1374	TAR01374	6324	Naphthalene 1,2-dioxygenase subunit beta	
+1375	TAR01375	2378	Carboxymethylenebutenolidase	
+1378	TAR01378	3237	Beta-lactamase OXA-2	
+1380	TAR01380	3033	Lipoprotein mxiM	
+1381	TAR01381	6569	Tryptophan synthase beta chain	
+1383	TAR01383	3507	Chorismate synthase	
+1385	TAR01385	2472	Voltage-gated potassium channel	
+1388	TAR01388	5291	Glycogen synthase 1	
+1389	TAR01389	6121	Penicillin-binding protein 2B	
+1391	TAR01391	3351	Neocarzinostatin	
+1392	TAR01392	3390	Aminoglycoside 3'-phosphotransferase	
+1393	TAR01393	2796	Parathion hydrolase	
+1395	TAR01395	5752	Photosystem Q(B) protein	
+1397	TAR01397	3076	Antigen 85-C	
+1398	TAR01398	5288	Shikimate kinase	
+1401	TAR01401	3411	Cytochrome P450 121	
+1404	TAR01404	2410	Deoxyuridine 5'-triphosphate nucleotidohydrolase	
+1405	TAR01405	37	Probable arabinosyltransferase A	
+1406	TAR01406	3138	3-oxoacyl-[acyl-carrier-protein] synthase 3	
+1407	TAR01407	3601	Dihydropteroate synthase 1	
+1408	TAR01408	4375	Glutamine synthetase 1	
+1409	TAR01409	4386	Hemoglobin-like protein HbN	
+1410	TAR01410	4994	Hemoglobin-like protein HbO	
+1411	TAR01411	3205	Isocitrate lyase	
+1414	TAR01414	4388	Aminoglycoside 2'-N-acetyltransferase	
+1415	TAR01415	2242	Cyclopropane-fatty-acyl-phospholipid synthase 2	
+1416	TAR01416	2532	Pantoate--beta-alanine ligase	
+1417	TAR01417	2878	Probable serine/threonine-protein kinase pknB	
+1418	TAR01418	4456	Inorganic polyphosphate/ATP-NAD kinase	
+1419	TAR01419	5308	Preprotein translocase secA 1 subunit	
+1420	TAR01420	3078	Regulator of ribonuclease activity A	
+1421	TAR01421	208	DNA-directed RNA polymerase beta' chain	
+1422	TAR01422	6637	Acyl carrier protein	
+1423	TAR01423	2892	Acetylglutamate kinase	
+1424	TAR01424	2525	3-phosphoshikimate 1-carboxyvinyltransferase	
+1425	TAR01425	4443	Quinate/shikimate dehydrogenase	
+1427	TAR01427	2922	Glycerol kinase	
+1428	TAR01428	6505	ATP-dependent Clp protease proteolytic subunit	
+1430	TAR01430	2909	Cytidylate kinase	
+1431	TAR01431	3199	Phosphopantetheine adenylyltransferase	
+1432	TAR01432	2270	Dephospho-CoA kinase	
+1433	TAR01433	2688	Peptide deformylase	
+1434	TAR01434	3271	Deoxyribose-phosphate aldolase	
+1435	TAR01435	3000	N-acetylneuraminate lyase	
+1436	TAR01436	6887	Disulfide bond formation protein B	
+1438	TAR01438	3325	3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase	
+1441	TAR01441	3204	Thiosulfate sulfurtransferase glpE	
+1442	TAR01442	4662	Glucokinase	
+1443	TAR01443	3175	Glutamate--cysteine ligase	
+1444	TAR01444	5439	33 kDa chaperonin	
+1445	TAR01445	5315	Chaperone protein htpG	
+1448	TAR01448	3467	Methylglyoxal synthase	
+1449	TAR01449	2939	Peptide methionine sulfoxide reductase msrA	
+1451	TAR01451	2306	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	
+1453	TAR01453	2949	Glucosamine-6-phosphate deaminase	
+1454	TAR01454	3516	Aspartate carbamoyltransferase catalytic chain	
+1455	TAR01455	2750	Aspartate 1-decarboxylase	
+1456	TAR01456	2803	Pyridoxine 5'-phosphate synthase	
+1457	TAR01457	2757	Inorganic pyrophosphatase	
+1458	TAR01458	2632	Adenylosuccinate synthetase	
+1459	TAR01459	2775	Dihydroorotate dehydrogenase	
+1461	TAR01461	818	50S ribosomal protein L10	
+1462	TAR01462	176	30S ribosomal protein S10	
+1463	TAR01463	308	30S ribosomal protein S12	
+1464	TAR01464	6208	30S ribosomal protein S13	
+1465	TAR01465	6209	30S ribosomal protein S19	
+1466	TAR01466	22	30S ribosomal protein S4	
+1467	TAR01467	140	30S ribosomal protein S9	
+1469	TAR01469	512	DNA-directed RNA polymerase alpha chain	
+1470	TAR01470	6531	Ribosome-recycling factor	
+1471	TAR01471	3149	Ribosome recycling factor	
+1472	TAR01472	2727	S-adenosylmethionine synthetase	
+1474	TAR01474	2463	Transaldolase B	
+1477	TAR01477	5443	UPF0189 protein ymdB	
+1478	TAR01478	2877	Threonyl-tRNA synthetase	
+1479	TAR01479	6831	Leucyl/phenylalanyl-tRNA--protein transferase	
+1480	TAR01480	6463	Fumarate reductase subunit C	
+1481	TAR01481	6464	Fumarate reductase subunit D	
+1482	TAR01482	6206	DNA-directed RNA polymerase subunit beta'	
+1484	TAR01484	2528	Fatty acid metabolism regulator protein	
+1485	TAR01485	2908	Protein yceI	
+1486	TAR01486	3715	Outer membrane protein A precursor	
+1487	TAR01487	6474	Outer membrane protein W	
+1488	TAR01488	3720	Outer membrane protein X precursor	
+1489	TAR01489	3713	Phospholipase A1 precursor	
+1490	TAR01490	3755	Nucleoside-specific channel-forming protein tsx precursor	
+1491	TAR01491	889	3-oxoacyl-[acyl-carrier-protein] synthase 1	
+1492	TAR01492	3792	KHG/KDPG aldolase [Includes: 4-hydroxy-2-oxoglutarate aldolase	
+1493	TAR01493	6273	DNA polymerase III subunit beta	
+1494	TAR01494	3736	Glyceraldehyde-3-phosphate dehydrogenase A	
+1495	TAR01495	3759	Glutathione S-transferase	
+1496	TAR01496	3711	Arabinose operon regulatory protein	
+1497	TAR01497	3669	Ribokinase	
+1498	TAR01498	6869	P-protein	
+1499	TAR01499	3799	Hypoxanthine phosphoribosyltransferase	
+1501	TAR01501	3767	Thioredoxin reductase	
+1502	TAR01502	3725	Lactaldehyde reductase	
+1504	TAR01504	3701	Beta-lactamase SHV-2 precursor	
+1506	TAR01506	888	3-oxoacyl-[acyl-carrier-protein] synthase 2	
+1507	TAR01507	3693	Fructose-bisphosphate aldolase class 2	
+1508	TAR01508	3727	Tagatose-1,6-bisphosphate aldolase agaY	
+1509	TAR01509	3721	2-amino-3-ketobutyrate coenzyme A ligase	
+1510	TAR01510	3688	Branched-chain-amino-acid aminotransferase	
+1511	TAR01511	3705	L-fuculose phosphate aldolase	
+1512	TAR01512	3676	Phospho-2-dehydro-3-deoxyheptonate aldolase, Phe-sensitive	
+1513	TAR01513	3702	ATP synthase B chain	
+1514	TAR01514	3670	Soluble cytochrome b562 precursor	
+1516	TAR01516	3729	Citrate synthase	
+1517	TAR01517	3777	ATP-dependent Clp protease ATP-binding subunit clpA	
+1518	TAR01518	3700	Cytochrome c-552 precursor	
+1519	TAR01519	3683	Purine nucleoside phosphorylase deoD-type	
+1520	TAR01520	3692	Coenzyme A biosynthesis bifunctional protein coaBC	
+1523	TAR01523	3793	Aspartate ammonia-lyase	
+1524	TAR01524	5725	Succinate dehydrogenase flavoprotein subunit	
+1525	TAR01525	6349	Succinate dehydrogenase hydrophobic membrane anchor subunit	
+1526	TAR01526	6462	Fumarate reductase iron-sulfur subunit	
+1528	TAR01528	3724	Protein methyltransferase hemK	
+1529	TAR01529	3685	Catabolite gene activator	
+1530	TAR01530	3718	Hydrogen peroxide-inducible genes activator	
+1531	TAR01531	3687	Beta-lactamase SHV-1 precursor	
+1532	TAR01532	6691	Beta-lactamase SHV-1	
+1534	TAR01534	4155	Peptidoglycan synthetase ftsI	
+1535	TAR01535	3686	Acyl-CoA thioesterase I precursor	
+1536	TAR01536	3699	AMP nucleosidase	
+1538	TAR01538	3690	Class B acid phosphatase precursor	
+1539	TAR01539	3695	Chemotaxis protein cheY	
+1540	TAR01540	3760	Penicillin-binding protein 5 precursor	
+1541	TAR01541	4252	Penicillin-binding protein 5	
+1542	TAR01542	3741	D-galactose-binding periplasmic protein precursor	
+1543	TAR01543	6886	Thiol:disulfide interchange protein dsbA	
+1544	TAR01544	3781	Thiol:disulfide interchange protein dsbC precursor	
+1545	TAR01545	3794	Osmolarity sensor protein envZ	
+1546	TAR01546	3772	3-oxoacyl-[acyl-carrier-protein] reductase	
+1547	TAR01547	6632	Formate dehydrogenase, nitrate-inducible, cytochrome b556(fdn) subunit	
+1548	TAR01548	3709	Glycerol uptake facilitator protein	
+1549	TAR01549	3708	Glucarate dehydratase	
+1550	TAR01550	3671	7-alpha-hydroxysteroid dehydrogenase	
+1551	TAR01551	3668	Maltose-binding periplasmic protein precursor	
+1553	TAR01553	3679	MTA/SAH nucleosidase	
+1555	TAR01555	3783	UPF0076 protein yjgF	
+1556	TAR01556	3780	Lipoprotein nlpI precursor	
+1557	TAR01557	3675	Pyruvate dehydrogenase E1 component	
+1558	TAR01558	3766	Pyridoxamine 5'-phosphate oxidase	
+1559	TAR01559	3704	Spermidine/putrescine-binding periplasmic protein precursor	
+1561	TAR01561	3717	Glycine betaine-binding periplasmic protein precursor	
+1563	TAR01563	6207	30S ribosomal protein S14	
+1564	TAR01564	3694	Phosphate-binding protein pstS precursor	
+1565	TAR01565	3691	Soluble lytic murein transglycosylase precursor	
+1566	TAR01566	3712	Single-stranded DNA-binding protein	
+1567	TAR01567	3710	Acyl-CoA thioesterase 2	
+1570	TAR01570	3672	UDP-glucose 6-dehydrogenase	
+1571	TAR01571	3719	Inosine-5'-monophosphate dehydrogenase	
+1572	TAR01572	3696	Streptopain precursor	
+1573	TAR01573	3677	Penicillin-insensitive murein endopeptidase precursor	
+1575	TAR01575	3808	Dihydropteroate synthase 2	
+1579	TAR01579	3735	NAD(P) transhydrogenase subunit alpha part 1	
+1580	TAR01580	3778	NAD(P) transhydrogenase subunit beta	
+1582	TAR01582	5770	Blasticidin-S deaminase	
+1583	TAR01583	3744	Endoglucanase SS precursor	
+1584	TAR01584	1072	Granzyme B	
+1587	TAR01587	2925	Long-chain fatty acid transport protein	
+1588	TAR01588	6581	Endo-1,4-beta-xylanase Z	
+1590	TAR01590	260	Cytochrome P450 51	
+1591	TAR01591	2453	Alanine racemase	
+1592	TAR01592	2377	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex	
+1593	TAR01593	2324	Botulinum neurotoxin type B	
+1594	TAR01594	312	Tubulin beta chain	
+1595	TAR01595	5293	Shikimate kinase 2	
+1596	TAR01596	5081	L-aspartate oxidase	
+1597	TAR01597	5575	Short tail fiber protein	
+1598	TAR01598	2351	Hut operon positive regulatory protein	
+1600	TAR01600	2647	RNA-directed RNA polymerase	
+1601	TAR01601	6318	Respiratory nitrate reductase 1 beta chain	
+1602	TAR01602	6319	Respiratory nitrate reductase 1 gamma chain	
+1603	TAR01603	4314	Modification methylase PvuII	
+1604	TAR01604	2630	Glucose-6-phosphate 1-dehydrogenase	
+1605	TAR01605	3404	Exotoxin A	
+1606	TAR01606	2726	Mandelate racemase	
+1608	TAR01608	2619	6-phospho-beta-galactosidase	
+1609	TAR01609	5266	Activator of	
+1611	TAR01611	3367	GDP-mannose 6-dehydrogenase	
+1612	TAR01612	2887	Chitinase B	
+1613	TAR01613	5281	Plasmid segregation protein parM	
+1614	TAR01614	5574	Invasin	
+1617	TAR01617	2385	Penicillin acylase	
+1618	TAR01618	24	Thymidylate synthase	
+1620	TAR01620	2237	Gag-Pol polyprotein	
+1622	TAR01622	2372	Bifunctional tail protein	
+1623	TAR01623	3140	Hemagglutinin-neuraminidase	
+1625	TAR01625	2257	Uridine phosphorylase	
+1627	TAR01627	2245	Xylose isomerase	
+1629	TAR01629	2758	Adenosylmethionine-8-amino-7-oxononanoate aminotransferase	
+1630	TAR01630	3164	Biotin synthase	
+1631	TAR01631	3265	8-amino-7-oxononanoate synthase	
+1632	TAR01632	2334	Dethiobiotin synthetase	
+1633	TAR01633	2957	Carboxylesterase bioH	
+1634	TAR01634	2935	Methionine synthase	
+1635	TAR01635	3395	Iron(III) dicitrate transport protein fecA	
+1637	TAR01637	5060	Intron-associated endonuclease 1	
+1638	TAR01638	2677	Glucose-6-phosphate isomerase B	
+1639	TAR01639	2728	Glucan 1,4-alpha-maltotetraohydrolase	
+1640	TAR01640	3270	Elongation factor G	
+1641	TAR01641	3336	C4-dicarboxylate transport transcriptional regulatory protein dctD	
+1642	TAR01642	3153	Quinoprotein glucose dehydrogenase-B	
+1643	TAR01643	3168	Beta-lactamase OXA-1	
+1644	TAR01644	3387	3-hydroxy-3-methylglutaryl-coenzyme A reductase	
+1648	TAR01648	4310	rRNA adenine N-6-methyltransferase	
+1649	TAR01649	4671	Endoglucanase C	
+1650	TAR01650	6840	Virulence sensor histidine kinase phoQ	
+1651	TAR01651	2967	CDP-paratose 2-epimerase	
+1652	TAR01652	3047	Ribose-phosphate pyrophosphokinase	
+1654	TAR01654	4448	L-2-hydroxyisocaproate dehydrogenase	
+1655	TAR01655	4332	Modification methylase TaqI	
+1656	TAR01656	2340	Beta-lactamase PSE-2	
+1659	TAR01659	2653	Modification methylase RsrI	
+1660	TAR01660	2781	Pseudolysin	
+1661	TAR01661	4907	Cytochrome c-L	
+1662	TAR01662	2845	Bifunctional P-450:NADPH-P450 reductase	
+1663	TAR01663	2317	UDP-N-acetylmuramoylalanine--D-glutamate ligase	
+1664	TAR01664	3446	NADP-dependent alcohol dehydrogenase	
+1665	TAR01665	2985	Xaa-Pro aminopeptidase	
+1666	TAR01666	2897	ATP-dependent DNA helicase recQ	
+1667	TAR01667	2466	Tyrosine-protein phosphatase yopH	
+1669	TAR01669	2461	D-alanyl-D-alanine carboxypeptidase	
+1671	TAR01671	6854	Protease 1	
+1673	TAR01673	2683	Mono-ADP-ribosyltransferase C3	
+1674	TAR01674	2717	Folylpolyglutamate synthase	
+1675	TAR01675	3114	Deoxycytidylate deaminase	
+1676	TAR01676	2555	Pol polyprotein	
+1677	TAR01677	5189	Trimethylamine dehydrogenase	
+1678	TAR01678	2286	Isocitrate dehydrogenase [NADP]	
+1679	TAR01679	2369	Photoactive yellow protein	
+1680	TAR01680	2424	L-lactate dehydrogenase	
+1682	TAR01682	6930	Endoglucanase H	
+1683	TAR01683	2284	Adenylate kinase	
+1684	TAR01684	311	RNA-directed RNA polymerase catalytic subunit	
+1685	TAR01685	4531	Putative ketoacyl reductase	
+1686	TAR01686	3132	Tryptophan synthase alpha chain	
+1687	TAR01687	5095	Putidaredoxin reductase	
+1688	TAR01688	2740	2,2-dialkylglycine decarboxylase	
+1689	TAR01689	685	Oxygen-insensitive NADPH nitroreductase	
+1690	TAR01690	6717	30S ribosomal protein S7	
+1692	TAR01692	6678	Colicin I receptor	
+1693	TAR01693	3130	Minor core protein lambda-3	
+1695	TAR01695	6551	Fumarate reductase cytochrome b subunit	
+1696	TAR01696	6011	Chymotrypsinogen B	
+1697	TAR01697	3401	D-2-hydroxyisocaproate dehydrogenase	
+1699	TAR01699	4426	Glyceraldehyde-3-phosphate dehydrogenase	
+1700	TAR01700	4692	A/G-specific adenine glycosylase	
+1701	TAR01701	3458	Sulfite reductase [NADPH] hemoprotein beta-component	
+1702	TAR01702	3010	Regulatory protein blaR1	
+1703	TAR01703	3334	Deacetoxycephalosporin C synthetase	
+1706	TAR01706	2714	Chorismate mutase	
+1707	TAR01707	2645	Endoglucanase	
+1708	TAR01708	5107	Alkyl hydroperoxide reductase subunit F	
+1709	TAR01709	2978	Maltogenic alpha-amylase	
+1710	TAR01710	2564	Glucan 1,4-alpha-maltohexaosidase	
+1711	TAR01711	2879	4-hydroxythreonine-4-phosphate dehydrogenase	
+1713	TAR01713	3023	DNA polymerase I, thermostable	
+1714	TAR01714	4500	L-lactate dehydrogenase 2	
+1715	TAR01715	6593	Immunoglobulin G-binding protein G	
+1716	TAR01716	3101	Glucose-1-phosphatase	
+1717	TAR01717	2744	D-alanine aminotransferase	
+1718	TAR01718	2831	3-alpha-(or 20-beta)-hydroxysteroid dehydrogenase	
+1719	TAR01719	5645	DNA topoisomerase 4 subunit B	
+1720	TAR01720	3089	Lipase 1	
+1721	TAR01721	6367	Uncharacterized protein PA1000	
+1723	TAR01723	2357	Benzoylformate decarboxylase	
+1724	TAR01724	5180	L(+)-mandelate dehydrogenase	
+1725	TAR01725	3273	Spo0B-associated GTP-binding protein	
+1726	TAR01726	3093	Catalase HPII	
+1727	TAR01727	3125	Protease synthase and sporulation negative regulatory protein PAI 1	
+1729	TAR01729	5587	Iron(III)-binding periplasmic protein	
+1730	TAR01730	694	Matrix protein 2	
+1731	TAR01731	4329	Uroporphyrinogen-III C-methyltransferase	
+1732	TAR01732	3305	Precorrin-8X methylmutase	
+1733	TAR01733	5073	Ferredoxin--NADP reductase	
+1734	TAR01734	3364	ATP synthase C chain, sodium ion specific	
+1736	TAR01736	1998	Protein-L-isoaspartate(D-aspartate) O-methyltransferase	
+1737	TAR01737	3289	Beta-glucosidase A	
+1739	TAR01739	2801	UDP-N-acetylmuramoylalanyl-D-glutamate--2,6-diaminopimelate ligase	
+1740	TAR01740	2746	4-aminobutyrate aminotransferase	
+1741	TAR01741	4794	Phosphoenolpyruvate carboxykinase [ATP]	
+1742	TAR01742	2280	Listeriolysin regulatory protein	
+1743	TAR01743	3454	Esterase	
+1744	TAR01744	4817	Sucrose porin	
+1745	TAR01745	4680	Amicyanin	
+1746	TAR01746	2799	Glyceraldehyde-3-phosphate dehydrogenase, glycosomal	
+1747	TAR01747	6864	Methylamine dehydrogenase light chain	
+1748	TAR01748	2268	Cholesterol oxidase	
+1750	TAR01750	5712	Methane monooxygenase component A alpha chain	
+1751	TAR01751	2381	Dihydrofolate reductase	
+1752	TAR01752	2756	Geranyltranstransferase	
+1753	TAR01753	3450	Pyruvate, phosphate dikinase	
+1754	TAR01754	3560	Gentamicin 3'-acetyltransferase	
+1755	TAR01755	2915	Sensor protein fixL	
+1756	TAR01756	5607	Indole-3-pyruvate decarboxylase	
+1757	TAR01757	5568	Endoglucanase C307	
+1758	TAR01758	2852	DNA mismatch repair protein mutL	
+1759	TAR01759	4054	Glycine cleavage system H protein, mitochondrial	
+1760	TAR01760	5046	Ecotin	
+1761	TAR01761	5644	Sensor protein phoQ	
+1762	TAR01762	6588	Methionyl-tRNA formyltransferase	
+1763	TAR01763	3009	Beta-glucanase	
+1764	TAR01764	5554	D-galactose-binding periplasmic protein	
+1765	TAR01765	342	P protein [Includes: DNA-directed DNA polymerase	
+1766	TAR01766	3189	High-molecular-weight cytochrome c	
+1767	TAR01767	2810	Dr hemagglutinin structural subunit	
+1768	TAR01768	6659	Biotin carboxylase	
+1769	TAR01769	819	Penicillin-binding protein 4	
+1770	TAR01770	2890	Nuclease P1	
+1773	TAR01773	3127	Nitrite reductase	
+1774	TAR01774	2842	Glutamate-1-semialdehyde 2,1-aminomutase	
+1776	TAR01776	2720	Copper-containing nitrite reductase	
+1777	TAR01777	2815	Thiaminase-2	
+1778	TAR01778	2844	Regulatory protein tenI	
+1779	TAR01779	6777	Transcriptional activator protein lasR	
+1780	TAR01780	5454	Internalin-A	
+1781	TAR01781	2968	Lipase	
+1782	TAR01782	3394	Cytosine deaminase	
+1783	TAR01783	6557	Lactaldehyde dehydrogenase	
+1784	TAR01784	2243	Beta-lactamase type II	
+1785	TAR01785	4318	Siroheme synthase	
+1786	TAR01786	3564	Orotidine 5'-phosphate decarboxylase	
+1788	TAR01788	5570	Endoglucanase E-4	
+1790	TAR01790	3177	dTDP-glucose 4,6-dehydratase	
+1791	TAR01791	3598	dTDP-4-dehydrorhamnose reductase	
+1792	TAR01792	3478	Glucose-1-phosphate thymidylyltransferase	
+1793	TAR01793	3028	dTDP-4-dehydrorhamnose 3,5-epimerase	
+1794	TAR01794	4677	Glucose-1-phosphate cytidylyltransferase	
+1795	TAR01795	3108	CDP-glucose 4,6-dehydratase	
+1798	TAR01798	2741	Chorismate--pyruvate lyase	
+1801	TAR01801	2297	Genome polyprotein	
+1803	TAR01803	752	Large structural protein	
+1804	TAR01804	6427	Light-harvesting protein B-800/850 alpha chain	
+1805	TAR01805	6428	Light-harvesting protein B-800/850 beta chain	
+1807	TAR01807	2417	Chloramphenicol acetyltransferase	
+1809	TAR01809	2634	Aliphatic amidase expression-regulating protein	
+1811	TAR01811	5610	Transketolase 1	
+1812	TAR01812	5164	Pyrroloquinoline-quinone synthase	
+1813	TAR01813	2991	Glycerol-3-phosphate cytidylyltransferase	
+1814	TAR01814	2589	Alkaline protease	
+1815	TAR01815	2786	Acetolactate synthase, catabolic	
+1816	TAR01816	2608	UDP-N-acetylglucosamine 2-epimerase	
+1821	TAR01821	2712	Deoxycytidine triphosphate deaminase	
+1822	TAR01822	5358	Aminodeoxychorismate lyase	
+1823	TAR01823	5277	Preprotein translocase subunit secA	
+1824	TAR01824	2823	Trypanothione reductase	
+1825	TAR01825	2561	Queuine tRNA-ribosyltransferase	
+1826	TAR01826	6765	3-ketoacyl-CoA thiolase	
+1827	TAR01827	6764	Fatty acid oxidation complex subunit alpha	
+1829	TAR01829	3180	Candidapepsin-2	
+1830	TAR01830	621	Periplasmic [Fe] hydrogenase 1	
+1831	TAR01831	4626	O-succinylbenzoate synthase	
+1832	TAR01832	6835	50S ribosomal protein L11	
+1834	TAR01834	2853	14 kDa fatty acid-binding protein	
+1835	TAR01835	6595	Lantibiotic nisin-Z	
+1836	TAR01836	2349	Subtilisin Savinase	
+1837	TAR01837	2454	Glucan 1,3-beta-glucosidase	
+1838	TAR01838	3452	47 kDa membrane antigen	
+1839	TAR01839	2942	Sialidase	
+1841	TAR01841	5750	Lantibiotic cinnamycin	
+1842	TAR01842	6863	Methylamine dehydrogenase heavy chain	
+1846	TAR01846	5170	Epidermin decarboxylase	
+1847	TAR01847	4869	Major capsid protein	
+1848	TAR01848	4545	Molybdopterin-converting factor subunit 2	
+1850	TAR01850	2293	Cyclomaltodextrin glucanotransferase	
+1851	TAR01851	3109	Phenylalanine-4-hydroxylase	
+1852	TAR01852	3099	Tyrosine phenol-lyase	
+1854	TAR01854	3184	3-methyl-2-oxobutanoate hydroxymethyltransferase	
+1856	TAR01856	2429	Putrescine-binding periplasmic protein	
+1857	TAR01857	4803	3-mercaptopyruvate sulfurtransferase	
+1858	TAR01858	3307	Acriflavine resistance protein B	
+1860	TAR01860	3500	Putative family 31 glucosidase yicI	
+1861	TAR01861	3024	Crotonobetainyl-CoA:carnitine CoA-transferase	
+1862	TAR01862	2439	Alpha,alpha-trehalose-phosphate synthase [UDP-forming]	
+1863	TAR01863	3258	Mannosyl-oligosaccharide alpha-1,2-mannosidase	
+1864	TAR01864	2958	Probable tautomerase ydcE	
+1865	TAR01865	3821	Low affinity immunoglobulin gamma Fc region receptor II-c	
+1866	TAR01866	3463	GDP-L-fucose synthetase	
+1867	TAR01867	3197	GDP-mannose mannosyl hydrolase	
+1868	TAR01868	3419	Rhamnulose-1-phosphate aldolase	
+1869	TAR01869	3422	L-rhamnose isomerase	
+1870	TAR01870	3085	Molybdopterin-guanine dinucleotide biosynthesis protein A	
+1873	TAR01873	5599	3-carboxy-cis,cis-muconate cycloisomerase	
+1874	TAR01874	6477	Porin D	
+1875	TAR01875	4455	Glycerol dehydrogenase	
+1877	TAR01877	2693	Heat-labile enterotoxin B chain	
+1879	TAR01879	4801	Diphtheria toxin repressor	
+1880	TAR01880	4502	Formate dehydrogenase	
+1881	TAR01881	2817	Phosphoribosylglycinamide formyltransferase 2	
+1882	TAR01882	2828	Squalene--hopene cyclase	
+1883	TAR01883	5493	Tyrosine aminotransferase	
+1885	TAR01885	6881	Nickel-binding periplasmic protein	
+1886	TAR01886	4695	UPF0124 protein yfiH	
+1887	TAR01887	3090	Chitosanase	
+1888	TAR01888	6663	Transcriptional activator protein traR	
+1890	TAR01890	6423	Light-harvesting protein B-800/820 alpha chain	
+1891	TAR01891	6424	Light-harvesting protein B-800/820 beta chain	
+1893	TAR01893	4875	Fusion glycoprotein F0	
+1896	TAR01896	2926	Bifunctional PGK/TIM [Includes: Phosphoglycerate kinase	
+1897	TAR01897	5469	Head decoration protein	
+1898	TAR01898	2425	Aspartyl-tRNA synthetase	
+1899	TAR01899	3402	HTH-type transcriptional regulator treR	
+1900	TAR01900	3553	Aconitate hydratase 2	
+1901	TAR01901	4871	Endo-beta-N-acetylglucosaminidase F3	
+1902	TAR01902	3365	Beta-amylase	
+1903	TAR01903	3541	High affinity ribose transport protein rbsD	
+1904	TAR01904	3578	Protein crcA	
+1905	TAR01905	4440	NADH peroxidase	
+1906	TAR01906	2470	Pyruvate oxidase	
+1907	TAR01907	5643	General secretion pathway protein E	
+1908	TAR01908	2248	Malate synthase G	
+1909	TAR01909	3015	Pur operon repressor	
+1910	TAR01910	2529	Alpha-ketoglutarate-dependent taurine dioxygenase	
+1911	TAR01911	2336	2,3-diketo-L-gulonate reductase	
+1912	TAR01912	2440	Endoglucanase F	
+1913	TAR01913	2802	Endoglucanase G	
+1914	TAR01914	3133	UDP-galactopyranose mutase	
+1915	TAR01915	3424	Proclavaminate amidinohydrolase	
+1916	TAR01916	6841	Lipase estA	
+1917	TAR01917	5075	Sulfite reductase [NADPH] flavoprotein alpha-component	
+1918	TAR01918	3335	Probable GTP-binding protein engB	
+1919	TAR01919	2936	Oxygen-insensitive NAD(P)H nitroreductase	
+1920	TAR01920	5559	Neopullulanase	
+1922	TAR01922	3432	Multidrug-efflux transporter 1 regulator	
+1924	TAR01924	4577	4'-phosphopantetheinyl transferase sfp	
+1925	TAR01925	3021	D-allose-binding periplasmic protein	
+1926	TAR01926	6592	Probable L-ascorbate-6-phosphate lactonase ulaG	
+1927	TAR01927	2303	3-keto-L-gulonate-6-phosphate decarboxylase ulaD	
+1928	TAR01928	3281	Isoaspartyl dipeptidase	
+1929	TAR01929	3421	Hydroxyethylthiazole kinase	
+1930	TAR01930	2428	Thiamine-phosphate pyrophosphorylase	
+1931	TAR01931	3523	Spore coat polysaccharide biosynthesis protein spsA	
+1932	TAR01932	6826	Bacilysin biosynthesis protein bacB	
+1933	TAR01933	3472	Phosphate acetyltransferase	
+1934	TAR01934	3102	Flavohemoprotein	
+1935	TAR01935	2961	Porin	
+1936	TAR01936	5694	Transcription antiterminator licT	
+1937	TAR01937	4524	Mannose-6-phosphate isomerase	
+1938	TAR01938	4472	Glucose 1-dehydrogenase	
+1939	TAR01939	6794	Uncharacterized lipoprotein ybbD	
+1940	TAR01940	2380	Monomeric sarcosine oxidase	
+1941	TAR01941	2271	2,3-dihydroxybenzoate-AMP ligase	
+1942	TAR01942	5247	Endo-1,4-beta-xylanase	
+1943	TAR01943	2966	PyrR bifunctional protein [Includes: Pyrimidine operon regulatory protein; Uracil phosphoribosyltransferase	
+1944	TAR01944	6511	Urease subunit alpha	
+1945	TAR01945	6512	Urease subunit beta	
+1946	TAR01946	6513	Urease subunit gamma	
+1947	TAR01947	2876	Membrane-bound lytic murein transglycosylase B	
+1948	TAR01948	4407	FMN-dependent NADH-azoreductase	
+1949	TAR01949	2352	Nitrogen regulation protein NR(I)	
+1951	TAR01951	3300	Xanthine phosphoribosyltransferase	
+1952	TAR01952	2765	3-deoxy-manno-octulosonate cytidylyltransferase	
+1954	TAR01954	3586	Thymidylate synthase A	
+1957	TAR01957	6676	Fe(3+)-pyochelin receptor	
+1958	TAR01958	3573	2,4-dienoyl-CoA reductase [NADPH]	
+1959	TAR01959	3526	Pseudomonalisin	
+1961	TAR01961	2457	Bacillolysin	
+1963	TAR01963	2631	V-type sodium ATP synthase subunit K	
+1965	TAR01965	4551	Lantibiotic mersacidin	
+1966	TAR01966	404	DNA gyrase subunit A	
+1967	TAR01967	477	DNA topoisomerase 4 subunit A	
+1968	TAR01968	5290	ATP-dependent hsl protease ATP-binding subunit hslU	
+1969	TAR01969	2710	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase	
+1970	TAR01970	6275	DNA ligase	
+1971	TAR01971	2636	Shikimate dehydrogenase	
+1972	TAR01972	4579	Serine acetyltransferase	
+1975	TAR01975	3488	Hypothetical protein HI0319	
+1976	TAR01976	3226	UPF0234 protein HI1034	
+1977	TAR01977	5423	UPF0010 protein HI1317	
+1979	TAR01979	115	Penicillin-binding protein 2	
+1980	TAR01980	5314	UPF0079 ATP-binding protein HI0065	
+1981	TAR01981	4942	Diheme cytochrome c napB	
+1984	TAR01984	3062	Aspartate-semialdehyde dehydrogenase	
+1986	TAR01986	4313	Probable tRNA/rRNA methyltransferase HI0766	
+1987	TAR01987	4567	Putative acyl-CoA thioester hydrolase HI0827	
+1988	TAR01988	2299	UDP-N-acetylmuramate--L-alanine ligase	
+1989	TAR01989	2344	Ribosomal small subunit pseudouridine synthase A	
+1990	TAR01990	5446	3-deoxy-D-manno-octulosonate 8-phosphate phosphatase	
+1991	TAR01991	2917	Beta-Ala-Xaa dipeptidase	
+1992	TAR01992	2397	Dihydroxyacetone kinase	
+1993	TAR01993	2837	Xanthosine phosphorylase	
+1994	TAR01994	2869	1-deoxy-D-xylulose 5-phosphate reductoisomerase	
+1995	TAR01995	4593	ADP compounds hydrolase nudE	
+1996	TAR01996	2261	Major NAD(P)H-flavin oxidoreductase	
+1997	TAR01997	4466	Glutathione-independent formaldehyde dehydrogenase	
+1999	TAR01999	4403	Protein iolS	
+2000	TAR02000	2784	Glucose-resistance amylase regulator	
+2001	TAR02001	5583	RNA 3'-terminal phosphate cyclase	
+2002	TAR02002	2621	Thermoresistant gluconokinase	
+2003	TAR02003	3330	Phenylethylamine oxidase	
+2004	TAR02004	2255	Copper amine oxidase	
+2005	TAR02005	4505	Cis-2,3-dihydrobiphenyl-2,3-diol dehydrogenase	
+2006	TAR02006	2392	Biphenyl-2,3-diol 1,2-dioxygenase	
+2007	TAR02007	6471	2-hydroxy-6-oxo-6-phenylhexa-2,4-dienoate hydrolase	
+2008	TAR02008	2865	Ribonuclease	
+2009	TAR02009	2387	Ferripyoverdine receptor	
+2010	TAR02010	6174	50S ribosomal protein L32	
+2011	TAR02011	5416	Coat protein VP1	
+2012	TAR02012	3480	Mannan endo-1,4-beta-mannosidase	
+2013	TAR02013	3497	Ribonuclease PH	
+2014	TAR02014	5178	Protein nrdI	
+2016	TAR02016	2285	Streptogramin A acetyltransferase	
+2018	TAR02018	5150	Endo-1,4-beta-xylanase Y	
+2019	TAR02019	2713	Arylsulfatase	
+2020	TAR02020	2281	Haloalkane dehalogenase	
+2023	TAR02023	2903	Methylmalonyl-CoA decarboxylase	
+2024	TAR02024	3527	Thiosulfate sulfurtransferase	
+2025	TAR02025	2914	Triosephosphate isomerase, glycosomal	
+2026	TAR02026	3238	Multidrug resistance protein mexA	
+2027	TAR02027	4117	Probable pyruvate-flavodoxin oxidoreductase	
+2029	TAR02029	3539	Sensor kinase citA	
+2030	TAR02030	2840	Beta-lactamase IMP-1	
+2031	TAR02031	5754	Metallo-beta-lactamase L1	
+2032	TAR02032	6638	Biotin biosynthesis cytochrome P450	
+2033	TAR02033	5126	Arginase	
+2034	TAR02034	3087	Nicotinate-nucleotide adenylyltransferase	
+2035	TAR02035	5448	Ribonuclease Z	
+2036	TAR02036	5553	Endoglucanase E1	
+2037	TAR02037	2393	Maltose-6'-phosphate glucosidase	
+2039	TAR02039	2540	Choloylglycine hydrolase	
+2040	TAR02040	6458	2'-hydroxybiphenyl-2-sulfinate desulfinase	
+2041	TAR02041	4836	Ferredoxin-dependent glutamate synthase 2	
+2042	TAR02042	6851	Afadin	
+2043	TAR02043	6664	Probable transcriptional activator protein traR	
+2044	TAR02044	6665	Probable transcriptional repressor traM	
+2045	TAR02045	5100	Gamma-aminobutyrate metabolism dehydratase/isomerase	
+2046	TAR02046	5332	MtdA bifunctional protein	
+2047	TAR02047	2652	Phosphomethylpyrimidine kinase	
+2048	TAR02048	4989	Cytochrome c551 peroxidase	
+2051	TAR02051	2376	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase	
+2053	TAR02053	6309	Protoporphyrinogen oxidase	
+2054	TAR02054	4280	4-hydroxybenzoyl-CoA thioesterase	
+2055	TAR02055	2509	Isoleucyl-tRNA synthetase	
+2056	TAR02056	2360	Dihydroneopterin aldolase	
+2057	TAR02057	2662	Glutamate racemase	
+2059	TAR02059	6553	Isopentenyl transferase	
+2060	TAR02060	3403	Penicillin-binding protein 2X	
+2061	TAR02061	2680	Argininosuccinate synthase	
+2063	TAR02063	2423	N-carbamoyl-D-amino acid hydrolase	
+2064	TAR02064	4705	Manganese catalase	
+2065	TAR02065	5669	50S ribosomal protein L27	
+2067	TAR02067	4238	50S ribosomal protein L4	
+2068	TAR02068	2263	ATP phosphoribosyltransferase	
+2070	TAR02070	3266	Histidyl-tRNA synthetase	
+2071	TAR02071	4237	50S ribosomal protein L22	
+2073	TAR02073	2704	Outer-membrane lipoprotein lolB	
+2074	TAR02074	5093	UDP-N-acetylenolpyruvoylglucosamine reductase	
+2075	TAR02075	3594	Deoxyribodipyrimidine photo-lyase	
+2076	TAR02076	3262	6,7-dimethyl-8-ribityllumazine synthase 2	
+2077	TAR02077	3481	Glucose-1-phosphate thymidylyltransferase 2	
+2079	TAR02079	5198	Flavodoxin-1	
+2083	TAR02083	2858	Beta-lactamase TEM	
+2085	TAR02085	2383	2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase	
+2086	TAR02086	6548	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	
+2090	TAR02090	6723	30S ribosomal protein S2	
+2091	TAR02091	6724	30S ribosomal protein S3	
+2093	TAR02093	2556	Tyrosine-protein kinase transforming protein Src	
+2095	TAR02095	6658	Probable L-lysine-epsilon aminotransferase	
+2097	TAR02097	2521	Cell division protein ftsZ	
+2098	TAR02098	6873	Uncharacterized protein Rv0948c/MT0975	
+2099	TAR02099	5672	Molybdenum cofactor biosynthesis protein A	
+2100	TAR02100	6355	Probable serine/threonine-protein kinase pknG	
+2102	TAR02102	2333	6,7-dimethyl-8-ribityllumazine synthase	
+2103	TAR02103	5241	Probable thiol peroxidase	
+2104	TAR02104	2375	ADP-L-glycero-D-manno-heptose-6-epimerase	
+2105	TAR02105	786	Envelope glycoprotein GP340	
+2106	TAR02106	2654	Complement control protein	
+2109	TAR02109	6348	Succinate dehydrogenase cytochrome b556 subunit	
+2111	TAR02111	3225	Shiga toxin B-chain	
+2113	TAR02113	3623	Divalent-cation tolerance protein cutA	
+2114	TAR02114	2447	Ammonia channel	
+2115	TAR02115	5179	Probable aromatic acid decarboxylase	
+2116	TAR02116	3287	N,N'-diacetylchitobiose-specific phosphotransferase enzyme IIB component	
+2117	TAR02117	6681	Probable N-acetylneuraminic acid outer membrane channel protein nanC	
+2119	TAR02119	5353	Glutamate decarboxylase alpha	
+2120	TAR02120	3245	L-fucose isomerase	
+2121	TAR02121	5489	Ribonucleoside-diphosphate reductase 1 subunit beta	
+2122	TAR02122	4813	Heme oxygenase	
+2123	TAR02123	4284	Pentaerythritol tetranitrate reductase	
+2124	TAR02124	2476	Beta-phosphoglucomutase	
+2125	TAR02125	4475	Hypothetical protein Rv0046c/MT0052	
+2126	TAR02126	3615	Dihydrodipicolinate reductase	
+2127	TAR02127	135	Probable arabinosyltransferase B	
+2128	TAR02128	649	Probable arabinosyltransferase C	
+2130	TAR02130	4909	CooA protein	
+2132	TAR02132	3391	Heme oxygenase 1	
+2133	TAR02133	4916	Cyanoglobin	
+2134	TAR02134	4982	Heme oxygenase 2	
+2135	TAR02135	4627	Lignostilbene-alpha,beta-dioxygenase	
+2136	TAR02136	2891	Circadian clock protein kaiB	
+2138	TAR02138	3470	Hypothetical protein MG245 homolog	
+2139	TAR02139	3020	Sugar phosphatase supH	
+2140	TAR02140	4527	Putative hydrolase ycdX	
+2141	TAR02141	6438	Outer membrane protein G	
+2142	TAR02142	4908	Heme-regulated cyclic AMP phosphodiesterase	
+2143	TAR02143	5322	Oxidoreductase ydhF	
+2144	TAR02144	3406	N-succinylarginine dihydrolase	
+2145	TAR02145	5440	UPF0067 protein yebR	
+2146	TAR02146	6223	Penicillin-binding protein 1C	
+2147	TAR02147	2670	Pyridoxamine kinase	
+2148	TAR02148	6503	Cell division protein zipA	
+2149	TAR02149	893	[Citrate [pro-3S]-lyase] ligase	
+2150	TAR02150	3257	Bifunctional polymyxin resistance protein arnA	
+2151	TAR02151	2912	Allantoate amidohydrolase	
+2152	TAR02152	2748	Cysteine desulfurase	
+2154	TAR02154	2319	Methylisocitrate lyase	
+2155	TAR02155	2881	Gamma-aminobutyraldehyde dehydrogenase	
+2156	TAR02156	5258	Pyrimidine-nucleoside phosphorylase	
+2157	TAR02157	4721	Beta-1,4-mannanase	
+2159	TAR02159	5083	Cryptochrome DASH	
+2160	TAR02160	2107	Microtubule-associated protein 1A	
+2162	TAR02162	2329	Malate dehydrogenase	
+2163	TAR02163	3022	4-alpha-glucanotransferase	
+2164	TAR02164	4522	Arginine N-succinyltransferase subunit alpha	
+2169	TAR02169	6705	30S ribosomal protein S11	
+2171	TAR02171	6713	30S ribosomal protein S20	
+2172	TAR02172	4681	Aminopeptidase	
+2173	TAR02173	5330	General stress protein 69	
+2174	TAR02174	3230	Non-ATP-dependent L-selective hydantoinase	
+2175	TAR02175	5220	Split-Soret cytochrome c	
+2176	TAR02176	4936	Cytochrome c2 iso-2	
+2177	TAR02177	3444	Cyanovirin-N	
+2178	TAR02178	4925	Cytochrome c-type protein SHP	
+2180	TAR02180	4954	Soluble cytochrome b558	
+2181	TAR02181	4948	Cytochrome c-553	
+2182	TAR02182	4915	Cytochrome c-550	
+2183	TAR02183	2709	Fumarate reductase flavoprotein subunit	
+2184	TAR02184	3574	Tyrosyl-tRNA synthetase	
+2185	TAR02185	4816	Orange carotenoid-binding protein	
+2186	TAR02186	4336	Glyceraldehyde 3-phosphate dehydrogenase	
+2188	TAR02188	4992	Cytochrome c peroxidase	
+2190	TAR02190	4249	Cytochrome b6	
+2191	TAR02191	4250	Cytochrome b6-f complex subunit 4	
+2193	TAR02193	4251	Cytochrome b6-f complex iron-sulfur subunit	
+2194	TAR02194	6409	Cytochrome b6-f complex subunit 6	
+2195	TAR02195	6410	Cytochrome b6-f complex subunit 7	
+2196	TAR02196	6408	Cytochrome b6-f complex subunit 5	
+2197	TAR02197	5431	Lipid binding protein	
+2198	TAR02198	5287	Signaling protein	
+2199	TAR02199	2460	ADP-ribose pyrophosphatase	
+2200	TAR02200	5355	1-pyrroline-5-carboxylate dehydrogenase	
+2201	TAR02201	4602	Osmotically inducible protein C	
+2204	TAR02204	4416	Chondroitinase	
+2205	TAR02205	6620	Phospholipase D	
+2206	TAR02206	6871	Aralkylamine dehydrogenase light chain	
+2207	TAR02207	6872	Aralkylamine dehydrogenase heavy chain	
+2208	TAR02208	712	Tubulin alpha chain	
+2210	TAR02210	5208	Hypothetical protein ysiA	
+2211	TAR02211	5569	Endo-1,4-beta glucanase EngF	
+2212	TAR02212	3375	Acidic cytochrome c3	
+2213	TAR02213	4562	Pyruvate-ferredoxin oxidoreductase	
+2214	TAR02214	6032	PROBABLE FATTY ACID SYNTHASE FAS (FATTY ACID SYNTHETASE)	
+2215	TAR02215	6466	Epoxide hydrolase	
+2216	TAR02216	2537	Aromatic-amino-acid aminotransferase	
+2217	TAR02217	4976	Apocytochrome f	
+2218	TAR02218	6532	Light-harvesting protein B-800/850 beta 1 chain	
+2221	TAR02221	4675	TRANSCRIPTIONAL REGULATORY REPRESSOR PROTEIN	
+2223	TAR02223	3179	2-isopropylmalate synthase	
+2224	TAR02224	4790	Glycosyltransferase GtfA	
+2225	TAR02225	3317	Holo-[acyl-carrier-protein] synthase	
+2226	TAR02226	4590	Endoribonuclease EndoA	
+2227	TAR02227	6846	Extradiol ring-cleavage dioxygenase	
+2228	TAR02228	6625	2-HYDROXY-6-OXO-6-PHENYLHEXA-2,4-DIENOATE HYDROLASE BPHD	
+2229	TAR02229	4597	Glycosyl transferase	
+2230	TAR02230	4674	2-hydroxy-6-oxo-7-methylocta-2,4-dienoate hydrolase	
+2231	TAR02231	3005	Threonine-phosphate decarboxylase	
+2233	TAR02233	6668	Cytochrome c oxidase subunit 1-beta	
+2234	TAR02234	2972	6-deoxyerythronolide B hydroxylase	
+2235	TAR02235	2518	1-aminocyclopropane-1-carboxylate deaminase	
+2236	TAR02236	6340	Cyclin homolog	
+2238	TAR02238	2569	4-oxalocrotonate tautomerase	
+2239	TAR02239	2544	Bacterial leucyl aminopeptidase	
+2241	TAR02241	3274	Hydroxylamine reductase	
+2242	TAR02242	2675	Pteridine reductase 1	
+2243	TAR02243	6852	Actinorhodin polyketide synthase acyl carrier protein	
+2244	TAR02244	2780	Septum formation protein Maf	
+2245	TAR02245	5673	C protein alpha-antigen	
+2246	TAR02246	6388	Cytochrome c1	
+2248	TAR02248	6387	Ubiquinol-cytochrome c reductase iron-sulfur subunit	
+2253	TAR02253	5302	TrwB	
+2254	TAR02254	4404	FcbC1 protein	
+2255	TAR02255	5805	Penicillin-binding protein 1A	
+2256	TAR02256	3629	Endo-N-acetylneuraminidase	
+2258	TAR02258	3224	Methylaspartate mutase S chain	
+2259	TAR02259	4699	Methylaspartate ammonia-lyase	
+2260	TAR02260	2400	Clavaminate synthase 1	
+2261	TAR02261	4553	Bifunctional adenosylcobalamin biosynthesis protein cobU	
+2262	TAR02262	2264	Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase	
+2263	TAR02263	3637	Antitumor antibiotic C-1027 apoprotein	
+2264	TAR02264	2327	Carboxylesterase	
+2265	TAR02265	5003	Acyl-CoA dehydrogenase, short-chain specific	
+2266	TAR02266	3117	Carminomycin 4-O-methyltransferase	
+2267	TAR02267	4535	Glutaconyl-CoA decarboxylase subunit alpha	
+2269	TAR02269	2826	Glucose--fructose oxidoreductase	
+2270	TAR02270	518	Peroxidase/catalase T	
+2272	TAR02272	3244	Ribonucleoside-diphosphate reductase 2 alpha subunit	
+2273	TAR02273	2606	Neopullulanase 2	
+2274	TAR02274	5364	DUTPase	
+2275	TAR02275	6629	Catechol 2,3-dioxygenase	
+2277	TAR02277	6562	Putative cytochrome P450 130	
+2278	TAR02278	171	Cysteine dioxygenase	
+2279	TAR02279	5714	3-hydroxyanthranilate 3,4-dioxygenase	
+2280	TAR02280	5624	GTPase	
+2281	TAR02281	5562	Hexokinase	
+2283	TAR02283	4335	Trans-sialidase	
+2284	TAR02284	4116	Dihydropteroate synthetase	
+2286	TAR02286	4269	Hypoxanthine-guanine phosphoribosyltransferase, putative	
+2287	TAR02287	6818	Hypothetical cytosolic protein	
+2288	TAR02288	5577	N5-carboxyaminoimidazole ribonucleotide mutase	
+2289	TAR02289	4782	5-methyltetrahydrofolate--homocysteine S-methyltransferase	
+2290	TAR02290	3877	Growth-inhibiting protein 18	
+2291	TAR02291	6236	Trimethoprim-sensitive dihydrofolate reductase	
+2293	TAR02293	2482	DNA polymerase	
+2298	TAR02298	6884	Glutaryl-CoA dehydrogenase	
+2300	TAR02300	6816	2,3-bisphosphoglycerate-dependent phosphoglycerate mutase	
+2301	TAR02301	4298	3,4-dihydroxyphenylacetate 2,3-dioxygenase	
+2302	TAR02302	4278	N-acylamino acid racemase	
+2304	TAR02304	4299	Homoprotocatechuate 2,3-dioxygenase	
+2305	TAR02305	3122	D-hydantoinase	
+2306	TAR02306	2399	Uricase	
+2307	TAR02307	2430	Chondroitinase B	
+2308	TAR02308	4450	Iota toxin component Ia	
+2309	TAR02309	2486	Bacteriochlorophyll a protein	
+2310	TAR02310	3405	Quinohaemoprotein ethanol dehydrogenase type-1	
+2311	TAR02311	2656	Aldehyde oxidoreductase	
+2312	TAR02312	5201	FMN-binding protein	
+2313	TAR02313	6689	TraN protein	
+2314	TAR02314	6687	TraO protein	
+2315	TAR02315	6688	TraF protein	
+2316	TAR02316	4511	Truncated transposase	
+2317	TAR02317	2586	Isopentenyl-diphosphate Delta-isomerase	
+2318	TAR02318	2812	Alcohol dehydrogenase yqhD	
+2319	TAR02319	2501	Protein ygbM	
+2320	TAR02320	3019	2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase	
+2321	TAR02321	3195	Beta-lactamase Toho-1	
+2322	TAR02322	5411	Slt-IIvB	
+2323	TAR02323	4576	Aac(6')-Ii protein	
+2324	TAR02324	5372	Proteinase inhibitor I4, serpin	
+2325	TAR02325	5111	Phenylacetone monooxygenase	
+2326	TAR02326	6781	O-succinylbenzoate-CoA synthase	
+2327	TAR02327	6475	Adhesin	
+2329	TAR02329	4509	Acetoin(diacetyl) reductase	
+2330	TAR02330	3187	Outer membrane protein C	
+2331	TAR02331	5299	D-alanine--D-alanine ligase	
+2332	TAR02332	133	Dihydropterate synthase	
+2333	TAR02333	3878	GAD1 protein	
+2334	TAR02334	6690	BenF-like porin	
+2337	TAR02337	6540	Prenyltransferase	
+2338	TAR02338	4087	Pyrroline 5-carboxylate reductase isoform	
+2339	TAR02339	5763	Polyhydroxybutyrate depolymerase, putative	
+2340	TAR02340	4993	Hydroxylamine oxidoreductase	
+2341	TAR02341	5109	Outer membrane protein p64k or PM-6	
+2342	TAR02342	5627	GDP-mannose 4,6-dehydratase	
+2343	TAR02343	5125	Nitrous-oxide reductase	
+2344	TAR02344	4296	Phosphonoacetate hydrolase	
+2345	TAR02345	2818	Phenazine biosynthesis protein phzF	
+2346	TAR02346	5193	Phenazine biosynthesis protein phzG	
+2347	TAR02347	6541	Peptostreptococcal albumin-binding protein	
+2348	TAR02348	6261	2-hydroxychromene-2-carboxylate isomerase	
+2349	TAR02349	5191	Morphinone reductase	
+2350	TAR02350	3221	Cytochrome c4	
+2351	TAR02351	4439	Ferredoxin reductase	
+2352	TAR02352	5428	Replication protein	
+2354	TAR02354	6518	AppA protein	
+2358	TAR02358	6113	MecA PBP2' (penicillin binding protein 2')	
+2360	TAR02360	6845	Putative transcriptional regulatory protein	
+2361	TAR02361	4283	ActVA 6 protein	
+2362	TAR02362	3879	Serine hydroxymethyltransferase 2	
+2363	TAR02363	3880	Serine hydroxymethyltransferase 1	
+2364	TAR02364	442	Envelope glycoprotein	
+2365	TAR02365	3680	Dihydroorotate dehydrogenase A	
+2366	TAR02366	3107	Putative GTP pyrophosphokinase	
+2368	TAR02368	3747	Cellulase B precursor	
+2369	TAR02369	4961	Hemophore HasA	
+2370	TAR02370	2916	Chitobiase	
+2371	TAR02371	4327	RdmB	
+2372	TAR02372	4378	RdmC	
+2373	TAR02373	2485	Hyaluronate lyase	
+2376	TAR02376	2743	Probable cysteine desulfurase	
+2377	TAR02377	6286	O-methyltransferase	
+2380	TAR02380	4333	Protein-L-isoaspartate O-methyltransferase	
+2381	TAR02381	2615	Chemotaxis protein cheA	
+2382	TAR02382	2820	N-(5'-phosphoribosyl)anthranilate isomerase	
+2383	TAR02383	4503	NADPH-flavin oxidoreductase	
+2384	TAR02384	5343	NADP-dependent fatty aldehyde dehydrogenase	
+2385	TAR02385	4895	Sulfide dehydrogenase	
+2386	TAR02386	3247	2-oxopropyl-CoM reductase, carboxylating	
+2387	TAR02387	4935	Cytochrome c-554	
+2388	TAR02388	6692	Cholera toxin beta subunit	
+2389	TAR02389	6732	Afimbrial adhesin AFA-III	
+2390	TAR02390	4384	Capsule biosynthesis protein	
+2391	TAR02391	4471	CDP-D-glucose-4,6-dehydratase	
+2392	TAR02392	2705	Dimethyl sulfoxide reductase	
+2394	TAR02394	6828	TetR family transcriptional repressor LfrR	
+2395	TAR02395	4497	Benzyl alcohol dehydrogenase	
+2396	TAR02396	2581	Chondroitinase AC	
+2397	TAR02397	4791	Cellulose 1,4-beta-cellobiosidase	
+2399	TAR02399	6897	Class C beta-lactamase	
+2400	TAR02400	2282	Protein recA	
+2401	TAR02401	2356	Delta-aminolevulinic acid dehydratase	
+2402	TAR02402	5245	Endo-beta-1,4-xylanase	
+2403	TAR02403	6628	Glutathione S-transferase (BphK)	
+2405	TAR02405	6616	L-phenylalanine dehydrogenase	
+2406	TAR02406	4628	NADP-dependent glyceraldehyde-3-phosphate dehydrogenase	
+2408	TAR02408	4810	Beta-glucosidase	
+2409	TAR02409	6660	Met proto-oncogene variant	
+2410	TAR02410	3881	Selenocysteine lyase variant	
+2411	TAR02411	6369	Thyroid hormone receptor, alpha isoform 1 variant	
+2412	TAR02412	3882	Brain glycogen phosphorylase variant	
+2413	TAR02413	3883	Ornithine aminotransferase variant	
+2414	TAR02414	6791	Hypothetical exotoxin A	
+2415	TAR02415	6812	Eight-heme nitrite reductase	
+2416	TAR02416	6259	(3R)-hydroxymyristoyl-acyl carrier protein dehydratase	
+2419	TAR02419	3887	Phosphorylase	
+2420	TAR02420	3193	Serine hydroxymethyltransferase	
+2421	TAR02421	3575	Uracil phosphoribosyltransferase	
+2422	TAR02422	4340	Hypothetical conserved protein	
+2423	TAR02423	6242	2,3-diketo-5-methylthiopentyl-1-phosphate enolase	
+2424	TAR02424	683	Potassium transporter	
+2425	TAR02425	6849	Putative ornithine carbamoyltransferase	
+2426	TAR02426	6809	ABC transporter, periplasmic substrate-binding protein	
+2427	TAR02427	5367	Peroxiredoxin	
+2428	TAR02428	5427	Hydroxyquinol 1,2-dioxygenase	
+2429	TAR02429	6685	Outer membrane protein II	
+2433	TAR02433	6710	30S ribosomal protein S17	
+2434	TAR02434	6707	30S ribosomal protein S14 type Z	
+2435	TAR02435	6718	30S ribosomal protein S8	
+2436	TAR02436	6715	30S ribosomal protein S5	
+2437	TAR02437	6769	DNA-directed RNA polymerase subunit alpha	
+2439	TAR02439	6514	Probable rRNA methylase	
+2440	TAR02440	2838	Ribose-5-phosphate isomerase A	
+2441	TAR02441	2350	3-isopropylmalate dehydrogenase	
+2442	TAR02442	6708	30S ribosomal protein S15	
+2443	TAR02443	6709	30S ribosomal protein S16	
+2445	TAR02445	4330	Hypothetical protein TTHA0667	
+2446	TAR02446	5412	ATP sulfurylase	
+2447	TAR02447	5776	RNA polymerase pricipal sigma factor	
+2449	TAR02449	6716	30S ribosomal protein S6	
+2450	TAR02450	6711	30S ribosomal protein S18	
+2452	TAR02452	3918	5,10-methylenetetrahydrofolate reductase	
+2454	TAR02454	319	Opioid receptor, sigma 1	
+2455	TAR02455	701	Isoleucine-tRNA synthetase	
+2458	TAR02458	5200	NADH dehydrogenase	
+2459	TAR02459	2541	Neopullulanase 1	
+2460	TAR02460	2929	(S)-2-haloacid dehalogenase	
+2461	TAR02461	6119	Penicillin-binding protein 3	
+2462	TAR02462	5414	Fiber protein	
+2464	TAR02464	4651	YvfO	
+2467	TAR02467	5758	Putative aminooxidase	
+2468	TAR02468	6795	Phosphoenolpyruvate-protein phosphotransferase	
+2469	TAR02469	3081	3-dehydroquinate synthase	
+2471	TAR02471	3080	3-dehydroquinate dehydratase	
+2472	TAR02472	4373	Medium-chain-fatty-acid--CoA ligase	
+2473	TAR02473	4037	Hypothetical protein	
+2474	TAR02474	4038	Glutathione peroxidase 4	
+2475	TAR02475	6698	Dehydrogenase/reductase SDR family member 4-like 2	
+2476	TAR02476	6848	Hepatitis B virus receptor binding protein	
+2477	TAR02477	6046	Voltage-gated calcium channel beta 1 subunit splice variant CavB1d	
+2478	TAR02478	6543	Putative uncharacterized protein	
+2479	TAR02479	2983	Methylmalonyl-CoA carboxyltransferase 5S subunit	
+2480	TAR02480	5413	5'-fluoro-5'-deoxyadenosine synthase	
+2481	TAR02481	6488	Histone deacetylase-like amidohydrolase	
+2483	TAR02483	6749	Polyprotein	
+2484	TAR02484	6751	Gag polyprotein	
+2485	TAR02485	6640	Reverse transcriptase/RNaseH	
+2486	TAR02486	6634	Cytochrome c nitrite reductase, catalytic subunit NfrA, putative	
+2487	TAR02487	5292	Putative partitioning protein	
+2489	TAR02489	5114	Putative acyl-CoA dehydrogenase	
+2491	TAR02491	6889	Thiosulfate reductase	
+2492	TAR02492	6888	NrfC protein	
+2493	TAR02493	6890	Hypothetical membrane spanning protein	
+2494	TAR02494	6808	Transcriptional regulator, GntR family	
+2496	TAR02496	4289	Cytochrome P450	
+2497	TAR02497	5295	2-keto-3-deoxy-gluconate kinase	
+2498	TAR02498	4414	Dehydrogenase	
+2499	TAR02499	4904	Cytochrome c family protein	
+2500	TAR02500	6814	GAF domain/HD domain protein	
+2501	TAR02501	4795	Nudix family protein	
+2502	TAR02502	4584	Aminotransferase	
+2503	TAR02503	5041	Ribose-5-phosphate isomerase B	
+2504	TAR02504	4302	METHOXY MYCOLIC ACID SYNTHASE 2 MMAA2	
+2505	TAR02505	6365	METHOXY MYCOLIC ACID SYNTHASE 4 MMAA4 (METHYL MYCOLIC ACID SYNTHASE 4) (MMA4) (HYDROXY MYCOLIC ACID SYNTHASE)	
+2506	TAR02506	4272	POSSIBLE CELLULASE CELA1	
+2507	TAR02507	6383	Bla-imp protein	
+2508	TAR02508	4589	3-hydroxy-3-methylglutaryl CoA synthase	
+2509	TAR02509	2904	Phosphatase yniC	
+2510	TAR02510	5765	2,3-dichloro-1-propanol dehalogenase	
+2511	TAR02511	6473	AiiA-like protein	
+2512	TAR02512	6696	VIM-2	
+2513	TAR02513	4837	Cag-alfa	
+2514	TAR02514	5582	Regulator of transcription; stringent starvation protein A	
+2516	TAR02516	4418	AGR_L_3209p	
+2517	TAR02517	6747	Chalcone/stilbene synthase family protein	
+2518	TAR02518	4316	Mycolic acid synthase	
+2519	TAR02519	6618	GrlR	
+2520	TAR02520	4528	Phenazine biosynthesis protein PhzD	
+2521	TAR02521	4134	Mercaptopyruvate sulfurtransferase	
+2522	TAR02522	6600	Dipeptidyl aminopeptidase IV, putative	
+2527	TAR02527	4676	CCA-adding enzyme	
+2528	TAR02528	5593	Transferase	
+2530	TAR02530	5023	Glycoside hydrolase	
+2533	TAR02533	4819	Hydrolase	
+2534	TAR02534	5565	Inorganic polyphosphate/ATP-glucomannokinase	
+2535	TAR02535	4281	Myo-inositol hexaphosphate phosphohydrolase	
+2539	TAR02539	6376	Peptide deformylase 1	
+2541	TAR02541	4566	Acyl-CoA hydrolase	
+2542	TAR02542	5202	Nitroreductase family protein	
+2543	TAR02543	4533	Glyoxalase family protein	
+2546	TAR02546	5359	Dihydropteroate synthase	
+2547	TAR02547	6810	Transketolase	
+2548	TAR02548	4615	Chain A, Red Copper Protein Nitrosocyanin	
+2552	TAR02552	6249	1-deoxypentalenic acid 11-beta hydroxylase	
+2554	TAR02554	4952	Catalase/peroxidase	
+2556	TAR02556	4491	DNA ligase, NAD-dependent	
+2557	TAR02557	2867	4-diphosphocytidyl-2-C-methyl-D-erythritol kinase	
+2558	TAR02558	6647	Geranyltranstransferase (Farnesyldiphosphate synthase)	
+2559	TAR02559	5283	D-alanine--D-alanine ligase B	
+2561	TAR02561	2572	Cell division protein zipA homolog	
+2563	TAR02563	4818	Beta-lactamase CTX-M-27	
+2564	TAR02564	3311	mRNA-capping enzyme	
+2565	TAR02565	4451	Vip2Ac	
+2567	TAR02567	5719	R-specific alcohol dehydrogenase	
+2569	TAR02569	4339	Sucrose phosphorylase	
+2570	TAR02570	6305	Terminal oxygenase component of carbazole	
+2571	TAR02571	5362	Chitinase	
+2572	TAR02572	6820	Putative uncharacterized protein VP2116	
+2574	TAR02574	5078	Amine oxidase, flavin-containing	
+2575	TAR02575	2591	Urocanate hydratase	
+2576	TAR02576	4498	Ornithine cyclodeaminase	
+2577	TAR02577	2988	Glutaminase-asparaginase	
+2578	TAR02578	6766	O-GlcNAcase BT_4395	
+2580	TAR02580	6267	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
+2583	TAR02583	5175	Hypothetical protein SMU.260	
+2584	TAR02584	4922	Cytochrome c, putative	
+2587	TAR02587	5211	Extracellular subtilisin-like serine proteinase	
+2588	TAR02588	3240	Methylmalonyl-CoA carboxyltransferase 12S subunit	
+2589	TAR02589	4387	Glycerol dehydratase	
+2590	TAR02590	4990	PpcA	
+2591	TAR02591	6304	Ferredoxin component of carbazole	
+2593	TAR02593	4669	Endo-1,4-beta-xylanase A	
+2594	TAR02594	6257	Histidine ammonia-lyase	
+2595	TAR02595	5420	4-chlorobenzoyl CoA ligase	
+2596	TAR02596	4956	Quinohemoprotein alcohol dehydrogenase ADH IIB	
+2597	TAR02597	3173	Enolase	
+2598	TAR02598	4780	Formylmethionine deformylase, putative	
+2599	TAR02599	5421	Uridine phosphorylase, putative	
+2600	TAR02600	4582	Putative pteridine reductase 2	
+2601	TAR02601	5741	Deoxyuridine 5'-triphosphate nucleotidohydrolase, putative	
+2602	TAR02602	6302	Putative FAD-monooxygenase	
+2603	TAR02603	4504	WbpP	
+2604	TAR02604	6774	FeeM	
+2605	TAR02605	3903	Aminolevulinate, delta-, synthase 2	
+2608	TAR02608	4377	NPQTN specific sortase B	
+2610	TAR02610	2776	N-acetylornithine carbamoyltransferase	
+2611	TAR02611	6394	Bacterioferritin comigratory protein	
+2612	TAR02612	5721	Pol protein	
+2613	TAR02613	4903	Methyl-accepting chemotaxis protein	
+2614	TAR02614	4285	Peptide amidase	
+2616	TAR02616	4606	Purine trans deoxyribosylase	
+2617	TAR02617	4764	Cytochrome P450 165C4	
+2618	TAR02618	4999	Cytochrome P450 165B3	
+2619	TAR02619	5775	DNA-directed RNA polymerase omega chain	
+2621	TAR02621	5773	DNA-directed RNA polymerase beta chain	
+2623	TAR02623	4482	UDP-galactose 4-epimerase	
+2624	TAR02624	4411	DNA protection during starvation protein	
+2625	TAR02625	4970	Cytochrome c nitrite reductase catalytic subunit	
+2626	TAR02626	4702	Alpha-glucuronidase	
+2627	TAR02627	4271	Anthranilate phosphoribosyltransferase	
+2628	TAR02628	4972	P450cin	
+2630	TAR02630	6868	Quinohemoprotein amine dehydrogenase 40 kDa subunit	
+2631	TAR02631	6866	Quinohemoprotein amine dehydrogenase subunit gamma	
+2632	TAR02632	6867	Quinohemoprotein amine dehydrogenase 60 kDa subunit	
+2635	TAR02635	3627	UPF0190 protein yedY	
+2636	TAR02636	633	Penicillin-binding proteins 1A/1B	
+2637	TAR02637	5745	O-GlcNAcase nagJ	
+2639	TAR02639	5631	Bacteriorhodopsin	
+2640	TAR02640	5635	Putative ABC transport protein, solute-binding component	
+2642	TAR02642	3489	Acetyl-coenzyme A synthetase	
+2643	TAR02643	5466	Putative sugar kinase	
+2644	TAR02644	2749	UDP-4-amino-4-deoxy-L-arabinose--oxoglutarate aminotransferase	
+2645	TAR02645	4563	Acetyl transferase	
+2646	TAR02646	3428	H(+)/Cl(-) exchange transporter clcA	
+2647	TAR02647	6507	NS3 protease	
+2648	TAR02648	4920	Peroxidase/catalase	
+2649	TAR02649	6643	Beta-lactamase AmpC	
+2650	TAR02650	5683	Halohydrin dehalogenase	
+2651	TAR02651	4896	LgtC	
+2652	TAR02652	5742	Phosphotriesterase	
+2654	TAR02654	3116	Bacterioferritin	
+2655	TAR02655	6385	H subunit of photosynthetic reaction center complex	
+2656	TAR02656	4832	6-oxocamphor hydrolase	
+2657	TAR02657	4623	Protease	
+2659	TAR02659	4774	NTPase P4	
+2660	TAR02660	3908	P-selectin cytoplasmic tail-associated protein	
+2661	TAR02661	2624	Probable 2-phosphosulfolactate phosphatase	
+2664	TAR02664	5602	LicC protein	
+2665	TAR02665	5252	Bifunctional protein glmU	
+2666	TAR02666	4760	Mll3241 protein	
+2668	TAR02668	6468	Pyruvate carboxylase	
+2670	TAR02670	939	50S ribosomal protein L3	
+2671	TAR02671	2361	Response regulator pleD	
+2672	TAR02672	4449	ADP-ribosyltransferase	
+2673	TAR02673	5690	Glycosyltransferase GtfD	
+2674	TAR02674	5072	N,N-dimethylglycine oxidase	
+2675	TAR02675	6599	HTH-type transcriptional regulator ttgR	
+2676	TAR02676	5637	Xanthan lyase	
+2677	TAR02677	3909	Hepatic peroxysomal alanine:glyoxylate aminotransferase	
+2678	TAR02678	5592	Ribonucleoside-diphosphate reductase subunit beta	
+2679	TAR02679	5275	Multidrug resistance ABC transporter ATP-binding and permease protein	
+2680	TAR02680	5190	Rubredoxin-oxygen oxidoreductase	
+2681	TAR02681	4937	Cytochrome oxidase subunit II	
+2682	TAR02682	4558	Iota-carrageenase, CgiA	
+2684	TAR02684	3137	Formaldehyde-activating enzyme	
+2686	TAR02686	4608	Putative cytochrome P450	
+2687	TAR02687	4601	HMG-CoA synthase	
+2688	TAR02688	4405	Nitric oxide reductase	
+2689	TAR02689	5634	IAG-nucleoside hydrolase	
+2690	TAR02690	5328	Prostaglandin F synthase	
+2691	TAR02691	4508	Alcohol dehydrogenase	
+2693	TAR02693	3292	Alanine racemase, catabolic	
+2696	TAR02696	6479	Vanillate porin OpdK	
+2697	TAR02697	6483	Probable outer membrane protein	
+2698	TAR02698	3439	Phosphoheptose isomerase	
+2700	TAR02700	4666	Fucose-binding lectin PA-IIL	
+2702	TAR02702	5670	Organic hydroperoxide resistance protein	
+2704	TAR02704	6265	Neutral ceramidase	
+2705	TAR02705	6729	FMN-dependent NADH-azoreductase 1	
+2706	TAR02706	6245	SDS hydrolase SdsA1	
+2709	TAR02709	5365	Metallo beta-lactamase	
+2710	TAR02710	4586	FEZ-1 protein	
+2711	TAR02711	6443	Outer membrane porin C	
+2712	TAR02712	5246	Xylanase Y	
+2713	TAR02713	6535	Ribonuclease H	
+2715	TAR02715	6880	Alpha-amylase G-6	
+2716	TAR02716	4667	BH0236 protein	
+2717	TAR02717	5115	FkbI	
+2718	TAR02718	4931	Cytochrome P450 167A1	
+2719	TAR02719	6702	Organic hydroperoxide resistance protein, putative	
+2720	TAR02720	5354	DevB protein	
+2721	TAR02721	6796	CAI-1 autoinducer synthase	
+2722	TAR02722	6393	5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase	
+2723	TAR02723	4829	Transcriptional regulator, HTH_3 family	
+2724	TAR02724	4538	Hypothetical protein VC1899	
+2725	TAR02725	6371	Beta-hexosaminidase	
+2726	TAR02726	4295	Hypothetical protein VC0232	
+2727	TAR02727	4560	AlgQ2	
+2728	TAR02728	4559	AlgQ1	
+2729	TAR02729	5696	Alginate lyase	
+2730	TAR02730	5660	Esterase EstB	
+2733	TAR02733	4960	Putative cytochrome P450-family protein	
+2734	TAR02734	4812	Extended-spectrum beta-lactamase CTX-M-14	
+2735	TAR02735	4629	Beta-lactamase CTX-M-9a	
+2736	TAR02736	6636	NADPH:ferredoxin reductase	
+2739	TAR02739	2573	Cocaine esterase	
+2740	TAR02740	4486	Phenol 2-hydroxylase component B	
+2741	TAR02741	3779	Alpha-2,3/8-sialyltransferase	
+2742	TAR02742	4423	Levodione reductase	
+2743	TAR02743	6770	D-Amino acid amidase	
+2744	TAR02744	5608	Carboxyethylarginine synthase	
+2745	TAR02745	4548	Gyrase B	
+2747	TAR02747	5265	FtsH	
+2748	TAR02748	3920	Methylenetetrahydrofolate reductase intermediate form	
+2749	TAR02749	6612	Serine/threonine-protein kinase MST4	
+2750	TAR02750	3188	IspD/ispF bifunctional enzyme [Includes: 2-C-methyl-D-erythritol 4- phosphate cytidylyltransferase	
+2752	TAR02752	5701	V-1 protease	
+2754	TAR02754	4565	Aminoglycoside 6'-N-acetyltransferase	
+2755	TAR02755	3050	Nucleoside deoxyribosyltransferase	
+2756	TAR02756	2885	Carboxyethyl-arginine beta-lactam-synthase	
+2758	TAR02758	5642	Chaperone clpB	
+2759	TAR02759	6481	TbuX	
+2760	TAR02760	5122	Mersacidin decarboxylase	
+2761	TAR02761	5410	Unsaturated glucuronyl hydrolase	
+2763	TAR02763	5000	HemO	
+2764	TAR02764	4561	Beta-agarase A	
+2765	TAR02765	5209	Maltose binding protein	
+2766	TAR02766	4784	Beta-mannosidase	
+2767	TAR02767	4652	Phosphoserine aminotransferase	
+2768	TAR02768	5487	Nogalonic acid methyl ester cyclase	
+2769	TAR02769	4902	Nine-heme cytochrome c	
+2770	TAR02770	4778	Surface protein A	
+2771	TAR02771	3152	Cytochrome c''	
+2772	TAR02772	2664	S-ribosylhomocysteine lyase	
+2774	TAR02774	3329	Tryptophanyl-tRNA synthetase 2	
+2775	TAR02775	5650	NimA-related protein	
+2776	TAR02776	5056	Maltooligosyltrehalose trehalohydrolase, putative	
+2778	TAR02778	5197	Trp repressor binding protein WrbA, putative	
+2779	TAR02779	5207	Agmatinase, putative	
+2781	TAR02781	5142	Protein-tyrosine-phosphatase	
+2782	TAR02782	3913	Glutamic acid decarboxylase	
+2783	TAR02783	3914	Alanine-glyoxylate aminotransferase homolog	
+2784	TAR02784	6858	Inactive carboxylesterase 4	
+2786	TAR02786	5437	Putative alkylsulfatase	
+2787	TAR02787	5304	UPF0166 protein TM_0021	
+2788	TAR02788	4668	Laminarinase	
+2789	TAR02789	4536	Transcriptional regulator, IclR family	
+2791	TAR02791	3082	Aminomethyltransferase	
+2792	TAR02792	5668	5-methyltetrahydrofolate S-homocysteine methyltransferase	
+2793	TAR02793	4264	Alpha-L-fucosidase, putative	
+2794	TAR02794	3134	Phospho-2-dehydro-3-deoxyheptonate aldolase	
+2795	TAR02795	5326	Oxidoreductase, short chain dehydrogenase/reductase family	
+2796	TAR02796	2567	Thymidylate synthase thyX	
+2797	TAR02797	4306	HemK protein	
+2798	TAR02798	5588	Cell division protein FtsY	
+2799	TAR02799	5641	Rod shape-determining protein MreB	
+2800	TAR02800	3038	Spermidine synthase	
+2803	TAR02803	5342	NADH-dependent butanol dehydrogenase, putative	
+2804	TAR02804	4366	Riboflavin kinase/FMN adenylyltransferase	
+2805	TAR02805	4309	S-adenosyl-L-methionine-dependent methyltransferase mraW	
+2806	TAR02806	5333	Alcohol dehydrogenase, iron-containing	
+2807	TAR02807	5346	Oxidoreductase, aldo/keto reductase family	
+2810	TAR02810	5366	Sugar-phosphate isomerase	
+2811	TAR02811	4546	Aminotransferase, putative	
+2812	TAR02812	3583	6-phosphogluconolactonase	
+2814	TAR02814	4495	3-oxoacyl-(Acyl carrier protein) reductase	
+2815	TAR02815	4526	Oligopeptide ABC transporter, periplasmic oligopeptide-binding protein	
+2816	TAR02816	2538	6-phospho-beta-glucosidase bglT	
+2817	TAR02817	2941	5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase	
+2818	TAR02818	6563	Sensor protein	
+2820	TAR02820	4506	Myo-inositol-1-phosphate synthase-related protein	
+2821	TAR02821	5598	Glycerol uptake operon antiterminator-related protein	
+2822	TAR02822	3366	GTP-binding protein engA	
+2823	TAR02823	5433	UPF0230 protein TM_1468	
+2825	TAR02825	2659	Dihydrodipicolinate synthase	
+2827	TAR02827	4435	L-aspartate dehydrogenase	
+2828	TAR02828	5628	Probable GTPase engC	
+2829	TAR02829	4823	L-allo-threonine aldolase	
+2830	TAR02830	4517	Probable butyrate kinase 2	
+2831	TAR02831	5590	N utilization substance protein B homolog	
+2832	TAR02832	4428	Redox-sensing transcriptional repressor rex	
+2833	TAR02833	5488	PPH	
+2834	TAR02834	4833	Propionyl-CoA carboxylase complex B subunit	
+2835	TAR02835	2262	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	
+2836	TAR02836	5450	Prolyl endopeptidase Pep	
+2839	TAR02839	5449	Hypothetical gliding protein	
+2840	TAR02840	4835	CarC	
+2841	TAR02841	4776	CarA	
+2842	TAR02842	3215	Alpha-N-arabinofuranosidase	
+2843	TAR02843	4971	Nonaheme cytochrome c	
+2844	TAR02844	3915	Cysteine sulfinic acid decarboxylase-related protein 1	
+2845	TAR02845	5165	Quinoprotein ethanol dehydrogenase	
+2846	TAR02846	4547	Iron binding protein FbpA	
+2850	TAR02850	3399	Limonene-1,2-epoxide hydrolase	
+2851	TAR02851	4830	Aldose 1-epimerase	
+2852	TAR02852	4811	Amylosucrase	
+2853	TAR02853	4877	Beta-mannanase	
+2855	TAR02855	4446	3alpha-hydroxysteroid dehydrogenase/carbonyl reductase	
+2856	TAR02856	4427	TDP-glucose-4,6-dehydratase	
+2857	TAR02857	6561	Type I polyketide synthase PikAIV	
+2858	TAR02858	4802	L-cysteine/cystine lyase C-DES	
+2859	TAR02859	4600	Malonamidase E2	
+2862	TAR02862	2808	Chloramphenicol acetyltransferase 3	
+2863	TAR02863	566	Serotransferrin	
+2864	TAR02864	2718	Chloramphenicol 3-O phosphotransferase	
+2865	TAR02865	6142	Solute carrier family 22 member 8	
+2866	TAR02866	397	Monocarboxylate transporter 3	
+2867	TAR02867	3986	Protein-glutamine gamma-glutamyltransferase 6	
+2868	TAR02868	914	Formimidoyltransferase-cyclodeaminase	
+2869	TAR02869	2119	Cytochrome b5	
+2870	TAR02870	201	Glutamate dehydrogenase 1, mitochondrial	
+2872	TAR02872	336	Ornithine carbamoyltransferase, mitochondrial	
+2873	TAR02873	6	Coagulation factor XIII A chain	
+2874	TAR02874	426	Aspartate aminotransferase, mitochondrial	
+2875	TAR02875	3814	Complement C1r subcomponent	
+2876	TAR02876	3095	Complement factor B	
+2877	TAR02877	6231	Pepsin A	
+2878	TAR02878	1128	Alpha-2-macroglobulin	
+2879	TAR02879	6574	GTPase KRas	
+2880	TAR02880	826	Oxytocin-neurophysin 1	
+2881	TAR02881	5666	Parathyroid hormone	
+2882	TAR02882	5961	Insulin	
+2883	TAR02883	3844	HLA class II histocompatibility antigen, DQ(6) alpha chain	
+2884	TAR02884	3863	Collagen alpha-1(II) chain	
+2885	TAR02885	3853	Collagen alpha-1(III) chain	
+2886	TAR02886	595	Fibrinogen alpha chain	
+2887	TAR02887	3812	Fibrinogen beta chain [Contains: Fibrinopeptide B]	
+2888	TAR02888	3813	Fibrinogen gamma chain	
+2889	TAR02889	3866	Serum amyloid A protein	
+2890	TAR02890	3815	Complement C1q subcomponent subunit A	
+2891	TAR02891	3816	Complement C1q subcomponent subunit B	
+2892	TAR02892	3817	Complement C1q subcomponent subunit C	
+2893	TAR02893	1200	AMBP protein	
+2894	TAR02894	1258	Platelet basic protein	
+2895	TAR02895	1959	Platelet factor 4	
+2896	TAR02896	95	Ferritin light chain	
+2897	TAR02897	443	Ferritin heavy chain	
+2898	TAR02898	798	Osteocalcin	
+2899	TAR02899	1733	Vitronectin	
+2900	TAR02900	3069	Fructose-bisphosphate aldolase A	
+2901	TAR02901	6400	Colipase	
+2902	TAR02902	2320	Thymidine kinase, cytosolic	
+2903	TAR02903	2132	Protein S100-B	
+2904	TAR02904	2565	Tubulin beta-4 chain	
+2906	TAR02906	577	Argininosuccinate lyase	
+2907	TAR02907	6648	Calpain small subunit 1	
+2908	TAR02908	3030	Salivary alpha-amylase	
+2909	TAR02909	1349	Plasminogen activator inhibitor 2	
+2910	TAR02910	5563	Galectin-2	
+2911	TAR02911	6823	Alkaline phosphatase, placental type	
+2912	TAR02912	3825	Tetranectin	
+2913	TAR02913	3826	Keratin, type II cytoskeletal 8	
+2914	TAR02914	2954	Uroporphyrinogen decarboxylase	
+2915	TAR02915	3846	Retinoblastoma-associated protein	
+2916	TAR02916	6343	ATP synthase subunit beta, mitochondrial	
+2917	TAR02917	788	Creatine kinase M-type	
+2918	TAR02918	10	Glycogen phosphorylase, liver form	
+2919	TAR02919	125	DNA polymerase beta	
+2920	TAR02920	1812	Kallikrein-1	
+2921	TAR02921	1245	Vitamin K-dependent protein S	
+2922	TAR02922	4240	Protein disulfide-isomerase	
+2923	TAR02923	3840	Asialoglycoprotein receptor 2	
+2924	TAR02924	2111	Annexin A2	
+2925	TAR02925	5591	Complement component C8 gamma chain	
+2926	TAR02926	5730	Calpain-1 catalytic subunit	
+2927	TAR02927	6122	Carbonic anhydrase 3	
+2928	TAR02928	3176	Trypsin-1	
+2929	TAR02929	2033	Beta-hexosaminidase beta chain	
+2930	TAR02930	128	Adenine phosphoribosyltransferase	
+2931	TAR02931	210	Bifunctional aminoacyl-tRNA synthetase [Includes: Glutamyl-tRNA synthetase	
+2932	TAR02932	167	L-lactate dehydrogenase C chain	
+2933	TAR02933	6358	Cytochrome b-c1 complex subunit 6, mitochondrial	
+2934	TAR02934	6824	Tyrosine-protein kinase Lyn	
+2935	TAR02935	5682	Ribonuclease pancreatic	
+2936	TAR02936	3864	Collagen alpha-2(I) chain	
+2937	TAR02937	1196	Complement decay-accelerating factor	
+2938	TAR02938	1354	Beta-glucuronidase	
+2939	TAR02939	3456	Heat shock protein HSP 90-beta	
+2940	TAR02940	242	Asparagine synthetase [glutamine-hydrolyzing]	
+2941	TAR02941	396	Alcohol dehydrogenase 4	
+2942	TAR02942	488	Integrin alpha-IIb	
+2943	TAR02943	6356	Cytochrome c1, heme protein, mitochondrial	
+2944	TAR02944	361	Fibroblast growth factor 4	
+2945	TAR02945	138	Interleukin-3	
+2946	TAR02946	4228	Keratin, type II cytoskeletal 7	
+2947	TAR02947	4609	U1 small nuclear ribonucleoprotein A	
+2948	TAR02948	153	Dopamine beta-hydroxylase	
+2949	TAR02949	597	Dihydropteridine reductase	
+2950	TAR02950	331	Retinol-binding protein I, cellular	
+2951	TAR02951	6459	Glycodelin	
+2952	TAR02952	896	Glutathione S-transferase Mu 1	
+2953	TAR02953	6493	Cytochrome c oxidase subunit 6C	
+2954	TAR02954	603	DNA polymerase alpha catalytic subunit	
+2955	TAR02955	4161	Furin	
+2956	TAR02956	269	Adrenodoxin, mitochondrial	
+2957	TAR02957	3354	Ras-related protein Rap-2a	
+2958	TAR02958	2390	Nonsecretory ribonuclease	
+2959	TAR02959	4032	Microsomal glutathione S-transferase 1	
+2960	TAR02960	1334	Tissue factor pathway inhibitor	
+2961	TAR02961	1075	Alkaline phosphatase, placental-like	
+2962	TAR02962	4033	S-formylglutathione hydrolase	
+2963	TAR02963	1847	78 kDa glucose-regulated protein	
+2964	TAR02964	974	Phenylethanolamine N-methyltransferase	
+2965	TAR02965	3875	Glycogen phosphorylase, brain form	
+2966	TAR02966	2347	Proto-oncogene serine/threonine-protein kinase Pim-1	
+2967	TAR02967	3185	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
+2968	TAR02968	6447	Guanine nucleotide-binding protein G(t) subunit alpha-1	
+2969	TAR02969	771	Pyruvate carboxylase, mitochondrial	
+2970	TAR02970	6798	Uteroglobin	
+2971	TAR02971	6120	Cation-independent mannose-6-phosphate receptor	
+2972	TAR02972	815	Histidyl-tRNA synthetase, cytoplasmic	
+2973	TAR02973	863	Cellular retinaldehyde-binding protein	
+2974	TAR02974	92	Creatine kinase B-type	
+2975	TAR02975	18	High affinity immunoglobulin epsilon receptor subunit alpha	
+2976	TAR02976	5483	Annexin A3	
+2977	TAR02977	192	Creatine kinase, ubiquitous mitochondrial	
+2978	TAR02978	1123	Eosinophil cationic protein	
+2979	TAR02979	6803	Myosin-7	
+2980	TAR02980	6272	Uracil-DNA glycosylase	
+2981	TAR02981	6489	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial	
+2982	TAR02982	2184	Cystic fibrosis transmembrane conductance regulator	
+2983	TAR02983	3836	Bone-marrow proteoglycan	
+2984	TAR02984	2129	Sucrase-isomaltase, intestinal	
+2985	TAR02985	3834	Nidogen-1	
+2986	TAR02986	98	Pyruvate kinase isozymes M1/M2	
+2987	TAR02987	2091	Endoplasmin	
+2988	TAR02988	6801	Myosin light chain 6B	
+2989	TAR02989	976	Platelet glycoprotein IX	
+2990	TAR02990	6498	Cytochrome c oxidase subunit 6B1	
+2991	TAR02991	799	Aspartyl-tRNA synthetase, cytoplasmic	
+2992	TAR02992	6645	D-amino-acid oxidase	
+2993	TAR02993	6362	Cytochrome b-c1 complex subunit 7	
+2994	TAR02994	6255	Carboxypeptidase A1	
+2995	TAR02995	5579	Carboxypeptidase B	
+2996	TAR02996	6755	Poliovirus receptor	
+2997	TAR02997	287	Beta-1,4-galactosyltransferase 1	
+2998	TAR02998	1859	Prostatic acid phosphatase	
+2999	TAR02999	4880	Membrane cofactor protein	
+3000	TAR03000	5294	Nucleoside diphosphate kinase A	
+3001	TAR03001	6495	Cytochrome c oxidase subunit 7C, mitochondrial	
+3002	TAR03002	6607	Aggrecan core protein	
+3003	TAR03003	1750	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 1	
+3004	TAR03004	839	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+3005	TAR03005	1374	Natriuretic peptides B	
+3006	TAR03006	1900	Bactericidal permeability-increasing protein	
+3007	TAR03007	487	Aldo-keto reductase family 1 member C4	
+3008	TAR03008	456	Creatine kinase, sarcomeric mitochondrial	
+3009	TAR03009	568	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	
+3011	TAR03011	2616	Ganglioside GM2 activator	
+3012	TAR03012	5618	ADP-ribosylation factor 4	
+3013	TAR03013	907	Glutathione peroxidase 2	
+3014	TAR03014	4098	Gamma-aminobutyric-acid receptor subunit beta-1	
+3015	TAR03015	5480	Pituitary adenylate cyclase-activating polypeptide	
+3016	TAR03016	6037	Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit gamma	
+3017	TAR03017	222	DNA ligase 1	
+3018	TAR03018	3943	Peptidyl-glycine alpha-amidating monooxygenase	
+3019	TAR03019	152	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondrial	
+3020	TAR03020	1056	Gamma-glutamyltranspeptidase 1	
+3022	TAR03022	6487	Casein kinase II subunit alpha'	
+3023	TAR03023	1787	Nuclear factor NF-kappa-B p105 subunit	
+3024	TAR03024	265	Transcobalamin-1	
+3025	TAR03025	6235	Cyclin-A2	
+3026	TAR03026	4101	Proteasome subunit beta type 1	
+3027	TAR03027	6491	Cytochrome c oxidase subunit 5A, mitochondrial	
+3028	TAR03028	1108	Calpastatin	
+3029	TAR03029	5901	T-cell surface glycoprotein CD3 zeta chain	
+3030	TAR03030	6315	V-type proton ATPase subunit B, brain isoform	
+3031	TAR03031	349	Serine--pyruvate aminotransferase	
+3032	TAR03032	4245	Voltage-dependent anion-selective channel protein 1	
+3033	TAR03033	4001	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mitochondrial	
+3034	TAR03034	911	Glutathione peroxidase 3	
+3035	TAR03035	5626	Nucleoside diphosphate kinase B	
+3036	TAR03036	6357	Cytochrome b-c1 complex subunit 2, mitochondrial	
+3037	TAR03037	3988	Protein-glutamine gamma-glutamyltransferase K	
+3038	TAR03038	3514	Granulysin	
+3039	TAR03039	604	Vitamin K-dependent protein Z	
+3040	TAR03040	6212	Tubulin gamma-1 chain	
+3041	TAR03041	252	Tryptophanyl-tRNA synthetase, cytoplasmic	
+3042	TAR03042	6680	Cofilin-1	
+3043	TAR03043	6115	Gamma-aminobutyric acid receptor subunit rho-3	
+3044	TAR03044	172	Potassium channel subfamily K member 1	
+3045	TAR03045	41	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitochondrial	
+3046	TAR03046	4814	Copper transport protein ATOX1	
+3047	TAR03047	4145	Phosphatidylinositol 3-kinase regulatory subunit beta	
+3048	TAR03048	190	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 4	
+3049	TAR03049	6090	Gamma-aminobutyric acid receptor subunit pi	
+3050	TAR03050	3999	Succinate dehydrogenase [ubiquinone] cytochrome b small subunit, mitochondrial	
+3051	TAR03051	794	Glyceraldehyde-3-phosphate dehydrogenase, testis-specific	
+3052	TAR03052	602	Acyl carrier protein, mitochondrial	
+3053	TAR03053	340	Apoptotic protease-activating factor 1	
+3054	TAR03054	1410	Oxidoreductase	
+3055	TAR03055	6418	Proteasome subunit alpha type-7	
+3056	TAR03056	4017	5-oxoprolinase	
+3057	TAR03057	759	Free fatty acid receptor 1	
+3058	TAR03058	4029	Microsomal glutathione S-transferase 3	
+3059	TAR03059	4515	Peripheral plasma membrane protein CASK	
+3060	TAR03060	3922	Phospholipase D2	
+3061	TAR03061	6359	Cytochrome b-c1 complex subunit 8	
+3062	TAR03062	6361	Cytochrome b-c1 complex subunit 10	
+3063	TAR03063	6761	Actin-related protein 2/3 complex subunit 3	
+3064	TAR03064	5676	Axin-1	
+3065	TAR03065	727	Serine palmitoyltransferase 2	
+3066	TAR03066	218	Monocarboxylate transporter 5	
+3067	TAR03067	429	Monocarboxylate transporter 6	
+3068	TAR03068	4123	Histone deacetylase 3	
+3069	TAR03069	195	Monocarboxylate transporter 7	
+3070	TAR03070	500	Monocarboxylate transporter 4	
+3071	TAR03071	6763	Actin-related protein 2/3 complex subunit 5	
+3072	TAR03072	180	D-3-phosphoglycerate dehydrogenase	
+3073	TAR03073	555	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitochondrial	
+3074	TAR03074	58	Cationic amino acid transporter 4	
+3075	TAR03075	4082	Proline oxidase, mitochondrial	
+3076	TAR03076	6290	Death-associated protein kinase 3	
+3077	TAR03077	4018	Glutamate receptor delta-2 subunit	
+3078	TAR03078	5432	Trafficking protein particle complex subunit 3	
+3079	TAR03079	270	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5, mitochondrial	
+3080	TAR03080	343	NADH dehydrogenase [ubiquinone] 1 subunit C1, mitochondrial	
+3082	TAR03082	4382	Sulfotransferase family cytosolic 1B member 1	
+3083	TAR03083	851	5'-AMP-activated protein kinase subunit beta-2	
+3084	TAR03084	4079	Lipoic acid synthetase, mitochondrial	
+3085	TAR03085	636	Mitochondrial carnitine/acylcarnitine carrier protein	
+3086	TAR03086	669	Asparaginyl-tRNA synthetase, cytoplasmic	
+3087	TAR03087	6862	Aldo-keto reductase family 1 member B10	
+3088	TAR03088	675	Leucine carboxyl methyltransferase 2	
+3089	TAR03089	591	Glutamate [NMDA] receptor subunit 3B	
+3090	TAR03090	1053	BC269730_2	
+3091	TAR03091	4011	Beta-1,4-galactosyltransferase 3	
+3092	TAR03092	5619	GDP-mannose 4,6 dehydratase	
+3093	TAR03093	6282	Glycylpeptide N-tetradecanoyltransferase 2	
+3094	TAR03094	6216	High affinity cAMP-specific and IBMX-insensitive 3',5'-cyclic phosphodiesterase 8A	
+3095	TAR03095	956	Mannose-6-phosphate receptor-binding protein 1	
+3096	TAR03096	1759	85 kDa calcium-independent phospholipase A2	
+3097	TAR03097	2101	Glutathione-requiring prostaglandin D synthase	
+3098	TAR03098	6010	Thiamine transporter 1	
+3099	TAR03099	4113	Voltage-dependent L-type calcium channel subunit alpha-1F	
+3100	TAR03100	1716	Tripartite motif-containing protein 13	
+3101	TAR03101	6195	Matrix metalloproteinase-20	
+3102	TAR03102	959	Receptor activity-modifying protein 1	
+3103	TAR03103	960	Receptor activity-modifying protein 2	
+3104	TAR03104	4013	Beta-1,4-galactosyltransferase 2	
+3105	TAR03105	3473	Cathepsin L2	
+3106	TAR03106	38	Cystinosin	
+3107	TAR03107	1102	Low affinity immunoglobulin gamma Fc region receptor III-B	
+3108	TAR03108	6697	Rho-associated protein kinase 2	
+3109	TAR03109	374	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1	
+3110	TAR03110	6341	Serine/threonine-protein kinase/endoribonuclease IRE1	
+3111	TAR03111	214	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitochondrial	
+3112	TAR03112	6129	Carbonic anhydrase-related protein 11	
+3113	TAR03113	6741	Peroxisomal 3,2-trans-enoyl-CoA isomerase	
+3114	TAR03114	262	Calcium-binding mitochondrial carrier protein Aralar1	
+3115	TAR03115	6783	Trafficking protein particle complex subunit 6A	
+3116	TAR03116	1202	10-formyltetrahydrofolate dehydrogenase	
+3117	TAR03117	4094	Gamma-aminobutyric acid type B receptor, subunit 2	
+3118	TAR03118	6197	Matrix metalloproteinase-23	
+3119	TAR03119	4071	Short-chain dehydrogenase/reductase 3	
+3120	TAR03120	3940	Gamma-butyrobetaine dioxygenase	
+3121	TAR03121	118	Organic cation/carnitine transporter 2	
+3122	TAR03122	5360	High-affinity cGMP-specific 3',5'-cyclic phosphodiesterase 9A	
+3123	TAR03123	3408	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3	
+3124	TAR03124	3985	Glucosamine--fructose-6-phosphate aminotransferase [isomerizing] 2	
+3125	TAR03125	3874	Proline synthetase co-transcribed bacterial homolog protein	
+3126	TAR03126	917	Glutaminase kidney isoform, mitochondrial	
+3127	TAR03127	746	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8, mitochondrial	
+3128	TAR03128	446	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	
+3129	TAR03129	3980	Ornithine decarboxylase antizyme 2	
+3130	TAR03130	1097	Lecithin retinol acyltransferase	
+3131	TAR03131	91	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 10, mitochondrial	
+3132	TAR03132	31	Phenylalanyl-tRNA synthetase, mitochondrial	
+3133	TAR03133	855	Sphingosine-1-phosphate lyase 1	
+3134	TAR03134	393	GDH/6PGL endoplasmic bifunctional protein [Includes: Glucose 1-dehydrogenase	
+3135	TAR03135	6234	Adenylate cyclase type 5	
+3136	TAR03136	516	Neurotensin receptor type 2	
+3137	TAR03137	3857	Glucagon-like peptide 2 receptor	
+3138	TAR03138	3993	Delta-6 fatty acid desaturase	
+3139	TAR03139	670	NG,NG-dimethylarginine dimethylaminohydrolase 2	
+3140	TAR03140	4030	Thioredoxin domain-containing protein 12	
+3141	TAR03141	2950	Inositol-trisphosphate 3-kinase A	
+3142	TAR03142	4076	Diacylglycerol kinase alpha	
+3143	TAR03143	200	Carnitine O-palmitoyltransferase 2, mitochondrial	
+3144	TAR03144	142	Gamma-aminobutyric-acid receptor subunit rho-1	
+3145	TAR03145	735	Alanine aminotransferase 1	
+3146	TAR03146	6494	Cytochrome c oxidase subunit 7B, mitochondrial	
+3147	TAR03147	4857	Zinc-alpha-2-glycoprotein	
+3148	TAR03148	6342	ATP synthase subunit alpha, mitochondrial	
+3149	TAR03149	6413	Proteasome subunit alpha type-2	
+3150	TAR03150	6414	Proteasome subunit alpha type-3	
+3151	TAR03151	2176	Protein S100-P	
+3152	TAR03152	4288	Probable ATP-dependent RNA helicase DDX6	
+3153	TAR03153	1064	DNA (cytosine-5)-methyltransferase 1	
+3154	TAR03154	66	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase type II	
+3155	TAR03155	6859	Protein S100-A4	
+3156	TAR03156	246	Valyl-tRNA synthetase	
+3157	TAR03157	4773	Deoxycytidine kinase	
+3158	TAR03158	3830	Calreticulin	
+3159	TAR03159	1516	Calnexin	
+3160	TAR03160	1281	Phosphatidylinositol 3-kinase regulatory subunit alpha	
+3161	TAR03161	6416	Proteasome subunit alpha type-5	
+3162	TAR03162	6420	Proteasome subunit beta type-4	
+3163	TAR03163	4102	Proteasome subunit beta type 5	
+3164	TAR03164	548	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
+3165	TAR03165	4099	Gamma-aminobutyric-acid receptor subunit beta-3	
+3166	TAR03166	6092	Gamma-aminobutyric acid receptor subunit rho-2	
+3167	TAR03167	6384	Cytosol aminopeptidase	
+3168	TAR03168	6097	Protein S100-A2	
+3169	TAR03169	1376	Tyrosine-protein phosphatase non-receptor type 4	
+3170	TAR03170	6586	Protein S100-G	
+3171	TAR03171	1379	Interleukin-12 subunit beta	
+3172	TAR03172	6650	Non-receptor tyrosine-protein kinase TYK2	
+3173	TAR03173	671	Pyruvate dehydrogenase E1 component alpha subunit, testis-specific form, mitochondrial	
+3174	TAR03174	1025	Aquaporin-1	
+3175	TAR03175	654	Flavin reductase	
+3176	TAR03176	537	ATP synthase delta chain, mitochondrial	
+3177	TAR03177	2554	Peptidyl-prolyl cis-trans isomerase, mitochondrial	
+3178	TAR03178	6838	Glycylpeptide N-tetradecanoyltransferase 1	
+3180	TAR03180	3972	Adenylosuccinate synthetase isozyme 2	
+3181	TAR03181	531	Aldehyde dehydrogenase X, mitochondrial	
+3182	TAR03182	197	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial	
+3183	TAR03183	6258	Protein S100-A7	
+3184	TAR03184	334	S-adenosylmethionine synthetase isoform type-2	
+3185	TAR03185	2116	RAC-beta serine/threonine-protein kinase	
+3186	TAR03186	3823	Cytokine receptor common gamma chain	
+3187	TAR03187	1495	Ubiquinol-cytochrome-c reductase complex core protein 1, mitochondrial	
+3188	TAR03188	4750	Protein S100-A11	
+3189	TAR03189	3820	Low affinity immunoglobulin gamma Fc region receptor II-b	
+3190	TAR03190	868	Cystathionine gamma-lyase	
+3191	TAR03191	704	Long-chain-fatty-acid--CoA ligase 1	
+3192	TAR03192	2223	Deoxyuridine 5'-triphosphate nucleotidohydrolase, mitochondrial	
+3193	TAR03193	6068	Guanylate cyclase soluble subunit alpha-2	
+3194	TAR03194	367	Serine hydroxymethyltransferase, cytosolic	
+3195	TAR03195	6804	Profilin-2	
+3196	TAR03196	6123	Carbonic anhydrase 5A, mitochondrial	
+3197	TAR03197	6127	Carbonic anhydrase-related protein	
+3198	TAR03198	3865	Serpin B6	
+3199	TAR03199	1875	Pulmonary surfactant-associated protein D	
+3200	TAR03200	1124	Sepiapterin reductase	
+3201	TAR03201	1116	Phosphoenolpyruvate carboxykinase, cytosolic [GTP]	
+3202	TAR03202	117	Sterol O-acyltransferase 1	
+3203	TAR03203	4034	Glutaredoxin-1	
+3204	TAR03204	6220	Aryl hydrocarbon receptor	
+3205	TAR03205	2639	Serine/threonine-protein phosphatase PP1-gamma catalytic subunit	
+3206	TAR03206	2516	GMP reductase 1	
+3207	TAR03207	1975	Phospholipid hydroperoxide glutathione peroxidase, mitochondrial	
+3208	TAR03208	9	Estradiol 17-beta-dehydrogenase 2	
+3209	TAR03209	6326	60S ribosomal protein L13a	
+3210	TAR03210	646	Malate dehydrogenase, cytoplasmic	
+3211	TAR03211	857	Malate dehydrogenase, mitochondrial	
+3212	TAR03212	288	Trifunctional enzyme subunit alpha, mitochondrial	
+3213	TAR03213	1466	Glycyl-tRNA synthetase	
+3214	TAR03214	6391	Protein kinase C iota type	
+3215	TAR03215	3211	3,2-trans-enoyl-CoA isomerase, mitochondrial	
+3216	TAR03216	921	Glutamate receptor 2	
+3218	TAR03218	4882	Dipeptidyl aminopeptidase-like protein 6	
+3219	TAR03219	4304	Wiskott-Aldrich syndrome protein	
+3220	TAR03220	1047	Excitatory amino acid transporter 2	
+3221	TAR03221	1671	Excitatory amino acid transporter 3	
+3222	TAR03222	6752	Guanylyl cyclase-activating protein 1	
+3223	TAR03223	551	Carnitine O-acetyltransferase	
+3224	TAR03224	496	Aldehyde dehydrogenase 3B1	
+3225	TAR03225	2398	Tyrosine-protein kinase ZAP-70	
+3226	TAR03226	4179	Nicotinamide phosphoribosyltransferase	
+3227	TAR03227	4085	Peptidyl-prolyl cis-trans isomerase C	
+3228	TAR03228	6034	Hydroxyindole O-methyltransferase	
+3229	TAR03229	2856	Glucosamine-6-phosphate isomerase	
+3230	TAR03230	640	Aldehyde dehydrogenase 1A3	
+3231	TAR03231	3989	Glutaminyl-tRNA synthetase	
+3232	TAR03232	1503	Galectin-7	
+3233	TAR03233	5300	Antigen peptide transporter 1	
+3234	TAR03234	5686	Potassium voltage-gated channel subfamily C member 4	
+3235	TAR03235	292	Activin receptor type-1	
+3236	TAR03236	139	Aldo-keto reductase family 1 member C1	
+3237	TAR03237	6082	Neuronal acetylcholine receptor subunit beta-3	
+3238	TAR03238	750	Voltage-dependent calcium channel gamma-1 subunit	
+3239	TAR03239	1963	Neutral and basic amino acid transport protein rBAT	
+3240	TAR03240	6109	DNA polymerase epsilon catalytic subunit A	
+3241	TAR03241	2339	Protein-glutamine gamma-glutamyltransferase E	
+3242	TAR03242	1950	Epithelial discoidin domain-containing receptor 1	
+3243	TAR03243	6392	Myotonin-protein kinase	
+3244	TAR03244	858	Potassium voltage-gated channel subfamily A member 1	
+3245	TAR03245	2290	ADP-ribosyl cyclase 2	
+3246	TAR03246	6779	Proto-oncogene tyrosine-protein kinase MER	
+3247	TAR03247	748	5'-AMP-activated protein kinase catalytic subunit alpha-1	
+3248	TAR03248	522	26S proteasome non-ATPase regulatory subunit 2	
+3249	TAR03249	1682	Chitotriosidase-1	
+3250	TAR03250	5760	Steroidogenic factor 1	
+3251	TAR03251	11	NAD(P) transhydrogenase, mitochondrial	
+3252	TAR03252	4086	Peptidyl-prolyl cis-trans isomerase G	
+3253	TAR03253	2578	Tubulin beta-3 chain	
+3254	TAR03254	6515	Dual specificity tyrosine-phosphorylation-regulated kinase 1A	
+3256	TAR03256	4111	Voltage-dependent L-type calcium channel subunit alpha-1S	
+3257	TAR03257	6547	Isopentenyl-diphosphate Delta-isomerase 1	
+3258	TAR03258	779	High-affinity cAMP-specific 3',5'-cyclic phosphodiesterase 7A	
+3259	TAR03259	6038	Retinal cone rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit gamma	
+3260	TAR03260	4055	Bile acid CoA:amino acid N-acyltransferase	
+3261	TAR03261	790	DNA polymerase subunit alpha B	
+3262	TAR03262	4056	N-arachidonyl glycine receptor	
+3263	TAR03263	1968	ATP-sensitive inward rectifier potassium channel 12	
+3264	TAR03264	5430	Hepatocyte nuclear factor 4-gamma	
+3265	TAR03265	411	Glycine N-methyltransferase	
+3266	TAR03266	227	Probable leucyl-tRNA synthetase, mitochondrial	
+3267	TAR03267	221	Lysyl-tRNA synthetase	
+3268	TAR03268	6639	Peroxisomal acyl-coenzyme A oxidase 1	
+3269	TAR03269	3303	Early endosome antigen 1	
+3270	TAR03270	6606	Platelet-activating factor acetylhydrolase IB subunit gamma	
+3271	TAR03271	1770	Phospholipase C	
+3272	TAR03272	6364	[Pyruvate dehydrogenase [lipoamide]] kinase isozyme 1, mitochondrial	
+3273	TAR03273	6857	[Pyruvate dehydrogenase [lipoamide]] kinase isozyme 2, mitochondrial	
+3275	TAR03275	6644	Ephrin type-A receptor 7	
+3276	TAR03276	6241	Nuclear receptor coactivator 2	
+3277	TAR03277	6891	Mediator of RNA polymerase II transcription subunit 1	
+3278	TAR03278	50	Sterol-4-alpha-carboxylate 3-dehydrogenase, decarboxylating	
+3279	TAR03279	6228	Nuclear receptor coactivator 1	
+3280	TAR03280	6081	Neuronal acetylcholine receptor subunit alpha-6	
+3281	TAR03281	4209	ATP-sensitive inward rectifier potassium channel 8	
+3282	TAR03282	6389	Electron transfer flavoprotein-ubiquinone oxidoreductase, mitochondrial	
+3283	TAR03283	2612	UDP-N-acetylhexosamine pyrophosphorylase	
+3284	TAR03284	841	Gamma-aminobutyric-acid receptor subunit alpha-6	
+3285	TAR03285	920	Glutamate receptor, ionotropic kainate 5	
+3286	TAR03286	6931	Calcium-activated potassium channel subunit beta-1	
+3287	TAR03287	982	Cocaine- and amphetamine-regulated transcript protein	
+3288	TAR03288	6567	MAP kinase-activated protein kinase 3	
+3289	TAR03289	6247	Prostasin	
+3290	TAR03290	5325	2,4-dienoyl-CoA reductase, mitochondrial	
+3291	TAR03291	525	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5	
+3292	TAR03292	4718	Putative ATP-dependent Clp protease proteolytic subunit, mitochondrial	
+3293	TAR03293	4048	Diacylglycerol kinase delta	
+3294	TAR03294	898	Glutathione S-transferase A3	
+3295	TAR03295	3319	Hydroxyacylglutathione hydrolase	
+3296	TAR03296	335	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9, mitochondrial	
+3297	TAR03297	4225	Uridine phosphorylase 1	
+3298	TAR03298	419	Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial	
+3299	TAR03299	626	Cysteine dioxygenase type 1	
+3300	TAR03300	3945	Prolyl 3-hydroxylase 1	
+3301	TAR03301	6792	Poly [ADP-ribose] polymerase 15	
+3302	TAR03302	4021	Probable glutamyl-tRNA synthetase, mitochondrial	
+3303	TAR03303	4070	Probable alanyl-tRNA synthetase, mitochondrial	
+3304	TAR03304	4022	Glutamate--ammonia ligase domain-containing protein 1	
+3305	TAR03305	3991	Glutamine-dependent NAD(+) synthetase	
+3306	TAR03306	4057	Glycine N-acyltransferase	
+3307	TAR03307	3946	Hypothetical protein DKFZp686H15154	
+3308	TAR03308	3948	Alpha-ketoglutarate-dependent dioxygenase alkB homolog 2	
+3309	TAR03309	4072	All-trans-retinol 13,14-reductase	
+3310	TAR03310	6836	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial	
+3311	TAR03311	6601	Arylacetamide deacetylase-like 2	
+3312	TAR03312	3894	KIAA0251 protein	
+3313	TAR03313	4065	Protein-arginine deiminase type-6	
+3314	TAR03314	5157	Dehydrogenase/reductase SDR family member 11	
+3315	TAR03315	1268	Neuropeptide S receptor	
+3316	TAR03316	326	L-lactate dehydrogenase A-like 6A	
+3317	TAR03317	3896	CDNA FLJ46802 fis, clone TRACH3032150, moderately similar to Cysteine sulfinic acid decarboxylase	
+3318	TAR03318	2449	Tubulin alpha-3 chain	
+3319	TAR03319	3977	ASRGL1 protein	
+3320	TAR03320	4088	Probable prolyl-tRNA synthetase, mitochondrial	
+3321	TAR03321	903	Glutathione S-transferase A5	
+3322	TAR03322	6556	Elongation factor Tu GTP-binding domain-containing protein 1	
+3323	TAR03323	989	L-xylulose reductase	
+3324	TAR03324	6784	Trafficking protein particle complex subunit 6B	
+3325	TAR03325	6933	Calcium-activated potassium channel subunit beta-4	
+3326	TAR03326	6504	Dihydrofolate reductase-like protein 1	
+3327	TAR03327	598	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 11	
+3328	TAR03328	6785	Trafficking protein particle complex subunit 5	
+3329	TAR03329	354	Methylmalonic aciduria type A protein, mitochondrial	
+3330	TAR03330	3949	Prolyl 3-hydroxylase 2	
+3331	TAR03331	3951	Prolyl 3-hydroxylase 3	
+3332	TAR03332	90	Tryptophan 5-hydroxylase 2	
+3333	TAR03333	4081	Vitamin K epoxide reductase complex subunit 1-like protein 1	
+3334	TAR03334	6196	Matrix metalloproteinase-21	
+3335	TAR03335	4023	N-acetylglutamate synthase, mitochondrial	
+3336	TAR03336	6087	Gamma-aminobutyric acid receptor subunit gamma-1	
+3337	TAR03337	6130	Carbonic anhydrase 13	
+3338	TAR03338	3927	Choline transporter-like protein 3	
+3339	TAR03339	3953	2-oxoglutarate and iron-dependent oxygenase domain containing 1	
+3340	TAR03340	6042	Prostaglandin reductase 2	
+3341	TAR03341	109	Mitochondrial carnitine/acylcarnitine carrier protein CACL	
+3342	TAR03342	3861	Synaptotagmin-2	
+3343	TAR03343	4824	Dehydrogenase/reductase SDR family member 8	
+3344	TAR03344	700	Choline dehydrogenase, mitochondrial	
+3345	TAR03345	6229	Phosphatidylinositol 3-kinase catalytic subunit type 3	
+3346	TAR03346	4190	NADPH oxidase organizer 1	
+3347	TAR03347	770	Retinoic acid-induced protein 3	
+3348	TAR03348	4073	Retinol dehydrogenase 11	
+3349	TAR03349	3929	Phosphoethanolamine/phosphocholine phosphatase	
+3350	TAR03350	706	Glutamate [NMDA] receptor subunit 3A	
+3351	TAR03351	3904	Alanine aminotransferase 2	
+3352	TAR03352	438	Taste receptor type 1 member 2	
+3353	TAR03353	4039	CDNA FLJ23636 fis, clone CAS07176	
+3354	TAR03354	4324	Histone-lysine N-methyltransferase, H3 lysine-4 specific SET7	
+3355	TAR03355	6005	Histone deacetylase 7a	
+3356	TAR03356	3186	Soluble calcium-activated nucleotidase 1	
+3357	TAR03357	1686	Choline transporter-like protein 1	
+3358	TAR03358	6662	Protein spire homolog 2	
+3359	TAR03359	4910	Cytoglobin	
+3360	TAR03360	6829	Epididymal-specific lipocalin-9	
+3361	TAR03361	150	Cationic amino acid transporter 3	
+3362	TAR03362	635	Estradiol 17-beta-dehydrogenase 8	
+3363	TAR03363	6575	Geranylgeranyl transferase type-2 subunit alpha	
+3364	TAR03364	627	11-cis retinol dehydrogenase	
+3365	TAR03365	4573	Histone acetyltransferase PCAF	
+3366	TAR03366	3506	Glutaryl-CoA dehydrogenase, mitochondrial	
+3367	TAR03367	6934	Small conductance calcium-activated potassium channel protein 1	
+3368	TAR03368	941	Betaine--homocysteine S-methyltransferase 1	
+3369	TAR03369	6063	Major histocompatibility complex class I-related gene protein	
+3370	TAR03370	408	Riboflavin kinase	
+3371	TAR03371	4059	Glycine N-acyltransferase-like protein 1	
+3372	TAR03372	102	DNA topoisomerase I, mitochondrial	
+3373	TAR03373	6661	MKL/myocardin-like protein 1	
+3374	TAR03374	499	Arginine decarboxylase	
+3375	TAR03375	3529	Interferon-stimulated gene 20 kDa protein	
+3376	TAR03376	802	Pyrroline-5-carboxylate reductase 2	
+3377	TAR03377	5206	Phosphopantothenoylcysteine decarboxylase	
+3378	TAR03378	3919	Methionyl-tRNA formyltransferase, mitochondrial	
+3379	TAR03379	4090	Chromosome 14 open reading frame 149	
+3380	TAR03380	3905	Molybdenum cofactor sulfurase	
+3381	TAR03381	507	Cob(I)yrinic acid a,c-diamide adenosyltransferase, mitochondrial	
+3382	TAR03382	303	Diamine acetyltransferase 2	
+3383	TAR03383	5424	Endonuclease VIII-like 1	
+3384	TAR03384	3906	Serine dehydratase-like	
+3385	TAR03385	3995	Methionyl-tRNA synthetase, mitochondrial	
+3386	TAR03386	3979	Aspartoacylase-2	
+3387	TAR03387	4092	Probable asparaginyl-tRNA synthetase, mitochondrial	
+3388	TAR03388	6325	60S ribosomal protein L10-like	
+3389	TAR03389	5254	Peptidoglycan recognition protein I-alpha	
+3390	TAR03390	800	Retinol dehydrogenase 12	
+3391	TAR03391	6651	Calcium/calmodulin-dependent protein kinase type 1G	
+3392	TAR03392	3992	Protein-glutamine gamma-glutamyltransferase Z	
+3393	TAR03393	486	Serine/threonine-protein kinase ALS2CR7	
+3394	TAR03394	3956	Alpha-ketoglutarate-dependent dioxygenase alkB homolog 3	
+3395	TAR03395	5995	Putative 1-aminocyclopropane-1-carboxylate synthase	
+3396	TAR03396	6218	Pannexin-1	
+3397	TAR03397	1636	Trace amine-associated receptor 1	
+3398	TAR03398	495	Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial	
+3399	TAR03399	4040	Glutathione peroxidase 7	
+3400	TAR03400	3333	Nicotinamide mononucleotide adenylyltransferase 3	
+3401	TAR03401	870	Granulocyte colony-stimulating factor receptor	
+3402	TAR03402	3802	Sodium channel protein type 2 subunit alpha	
+3403	TAR03403	6422	Proteasome subunit beta type-7	
+3404	TAR03404	515	26S proteasome non-ATPase regulatory subunit 1	
+3405	TAR03405	1434	Protein DJ-1	
+3406	TAR03406	6194	Matrix metalloproteinase-19	
+3407	TAR03407	1048	Protein S100-A13	
+3408	TAR03408	314	System N amino acid transporter 1	
+3409	TAR03409	4041	Microsomal glutathione S-transferase 2	
+3410	TAR03410	2444	Tubulin beta-4q chain	
+3411	TAR03411	797	Sodium-dependent proline transporter	
+3412	TAR03412	6088	Gamma-aminobutyric acid receptor subunit gamma-3	
+3413	TAR03413	6276	BAG family molecular chaperone regulator 1	
+3414	TAR03414	2536	Tubulin alpha-6 chain	
+3415	TAR03415	35	Dehydrogenase/reductase SDR family member 4	
+3416	TAR03416	5812	Tubulin beta-2B chain	
+3417	TAR03417	4051	Phosphatidylserine synthase 2	
+3418	TAR03418	6289	Dual specificity protein phosphatase 23	
+3419	TAR03419	4069	Threonyl-tRNA synthetase, mitochondrial	
+3420	TAR03420	2409	Acetyl-CoA acetyltransferase, cytosolic	
+3421	TAR03421	4007	Succinate receptor 1	
+3422	TAR03422	285	Mitochondrial ornithine transporter 2	
+3423	TAR03423	376	Amnionless protein	
+3424	TAR03424	4752	Peroxisomal trans-2-enoyl-CoA reductase	
+3425	TAR03425	3958	Jumonji/ARID domain-containing protein 1D	
+3426	TAR03426	4008	Succinyl-CoA:3-ketoacid-coenzyme A transferase 2, mitochondrial	
+3427	TAR03427	114	Alanine--glyoxylate aminotransferase 2, mitochondrial	
+3428	TAR03428	112	L-lactate dehydrogenase A-like 6B	
+3429	TAR03429	1314	Thiamine transporter 2	
+3430	TAR03430	2697	Uridine-cytidine kinase 2	
+3431	TAR03431	3994	Elongation of very long chain fatty acids protein 4	
+3432	TAR03432	431	Serine racemase	
+3433	TAR03433	3960	Egl nine homolog 1	
+3434	TAR03434	769	High-affinity choline transporter 1	
+3435	TAR03435	833	Organic cation/carnitine transporter 1	
+3436	TAR03436	6506	Stathmin-4	
+3437	TAR03437	4024	Mitochondrial glutamate carrier 2	
+3438	TAR03438	514	Potassium voltage-gated channel subfamily H member 6	
+3439	TAR03439	6544	STE20-like serine/threonine-protein kinase	
+3440	TAR03440	3996	Betaine--homocysteine S-methyltransferase 2	
+3441	TAR03441	53	Solute carrier family 12 member 5	
+3442	TAR03442	6201	Matrix metalloproteinase-27	
+3443	TAR03443	175	Thiamin pyrophosphokinase 1	
+3444	TAR03444	29	Tubulin beta-1 chain	
+3445	TAR03445	5369	Golgi-associated plant pathogenesis-related protein 1	
+3446	TAR03446	2348	Pleckstrin homology domain-containing family A member 4	
+3447	TAR03447	4042	Glutathione transferase omega-2	
+3448	TAR03448	4060	Vesicular inhibitory amino acid transporter	
+3449	TAR03449	3962	Egl nine homolog 3	
+3450	TAR03450	4025	Mitochondrial glutamate carrier 1	
+3451	TAR03451	4064	Probable cysteinyl-tRNA synthetase, mitochondrial	
+3452	TAR03452	3944	Peptide deformylase, mitochondrial	
+3453	TAR03453	6929	NmrA-like family domain-containing protein 1	
+3454	TAR03454	81	Methylcrotonoyl-CoA carboxylase beta chain, mitochondrial	
+3455	TAR03455	6560	Nuclear receptor coactivator 5	
+3456	TAR03456	6778	Casein kinase I isoform gamma-1	
+3457	TAR03457	6039	Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A	
+3458	TAR03458	3910	O-phosphoseryl-tRNA(Sec) selenium transferase	
+3459	TAR03459	691	cAMP-specific 3',5'-cyclic phosphodiesterase 7B	
+3460	TAR03460	6199	Matrix metalloproteinase-25	
+3461	TAR03461	2753	5'(3')-deoxyribonucleotidase, mitochondrial	
+3462	TAR03462	6885	Acyl-coenzyme A thioesterase 13	
+3463	TAR03463	6311	Inner centromere protein	
+3464	TAR03464	4532	Gephyrin	
+3465	TAR03465	6111	DNA polymerase epsilon subunit 4	
+3466	TAR03466	6200	Matrix metalloproteinase-26	
+3467	TAR03467	6112	DNA polymerase epsilon subunit 3	
+3468	TAR03468	353	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 4-like 2	
+3469	TAR03469	4043	Glutaredoxin-2, mitochondrial	
+3470	TAR03470	772	Potassium voltage-gated channel subfamily H member 7	
+3471	TAR03471	6128	Carbonic anhydrase-related protein 10	
+3472	TAR03472	618	Phenylalanyl-tRNA synthetase beta chain	
+3473	TAR03473	4080	Isoleucyl-tRNA synthetase, mitochondrial	
+3474	TAR03474	821	Acetyl-coenzyme A synthetase 2-like, mitochondrial	
+3475	TAR03475	3964	Trimethyllysine dioxygenase, mitochondrial	
+3476	TAR03476	203	Pyridoxine-5'-phosphate oxidase	
+3477	TAR03477	623	Spermine oxidase	
+3478	TAR03478	4290	Hypoxia-inducible factor 1 alpha inhibitor	
+3479	TAR03479	5766	NAD-dependent deacetylase sirtuin-5	
+3480	TAR03480	3966	Putative HIF-prolyl hydroxylase PH-4	
+3481	TAR03481	2480	Tubulin alpha-8 chain	
+3482	TAR03482	6134	Sodium channel subunit beta-3	
+3483	TAR03483	4075	Photoreceptor outer segment all-trans retinol dehydrogenase	
+3484	TAR03484	3382	Glycolipid transfer protein	
+3485	TAR03485	6270	Group IIE secretory phospholipase A2	
+3486	TAR03486	3921	Methionine adenosyltransferase 2 subunit beta	
+3487	TAR03487	317	Methionine-R-sulfoxide reductase	
+3488	TAR03488	582	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 13	
+3489	TAR03489	15	Voltage-dependent T-type calcium channel subunit alpha-1I	
+3490	TAR03490	4061	Peroxisomal sarcosine oxidase	
+3491	TAR03491	846	Leucyl-tRNA synthetase, cytoplasmic	
+3492	TAR03492	2291	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 1	
+3493	TAR03493	34	7-dehydrocholesterol reductase	
+3494	TAR03494	6372	DNA polymerase kappa	
+3495	TAR03495	4010	Mitochondrial dicarboxylate carrier	
+3496	TAR03496	6936	Small conductance calcium-activated potassium channel protein 3	
+3497	TAR03497	6300	Poly [ADP-ribose] polymerase 2	
+3498	TAR03498	6331	Probable ribosome biogenesis protein RLP24	
+3499	TAR03499	189	Solute carrier family 23 member 1	
+3500	TAR03500	829	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 12	
+3501	TAR03501	6211	Tubulin epsilon chain	
+3502	TAR03502	4015	N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase	
+3503	TAR03503	412	Peroxisomal carnitine O-octanoyltransferase	
+3504	TAR03504	2577	Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-mannosidase	
+3505	TAR03505	6374	Disintegrin and metalloproteinase domain-containing protein 28	
+3506	TAR03506	1039	Histone deacetylase 9	
+3507	TAR03507	4066	Protein-arginine deiminase type-1	
+3508	TAR03508	4067	Protein-arginine deiminase type-3	
+3509	TAR03509	395	ALK tyrosine kinase receptor	
+3510	TAR03510	2379	Dual adapter for phosphotyrosine and 3-phosphotyrosine and 3- phosphoinositide	
+3511	TAR03511	471	Sodium- and chloride-dependent neutral and basic amino acid transporter B(0+)	
+3512	TAR03512	6091	Gamma-aminobutyric acid receptor subunit theta	
+3513	TAR03513	6525	Group IID secretory phospholipase A2	
+3514	TAR03514	2072	Endothelial protein C receptor	
+3515	TAR03515	6332	60S ribosomal protein L26-like 1	
+3516	TAR03516	6291	C-jun-amino-terminal kinase-interacting protein 1	
+3517	TAR03517	45	Lipoyltransferase 1, mitochondrial	
+3518	TAR03518	42	Phenylalanyl-tRNA synthetase alpha chain	
+3519	TAR03519	2998	Sialic acid-binding Ig-like lectin 7	
+3520	TAR03520	6786	Trafficking protein particle complex subunit 4	
+3521	TAR03521	6124	Carbonic anhydrase 5B, mitochondrial	
+3522	TAR03522	6070	Nischarin	
+3523	TAR03523	4068	Protein-arginine deiminase type-2	
+3524	TAR03524	399	Tyrosyl-tRNA synthetase, mitochondrial	
+3525	TAR03525	480	Methionine-R-sulfoxide reductase B2	
+3526	TAR03526	6360	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+3527	TAR03527	709	ATP-sensitive inward rectifier potassium channel 1	
+3528	TAR03528	666	NADP-dependent malic enzyme	
+3529	TAR03529	530	Gamma-aminobutyric-acid receptor subunit alpha-4	
+3530	TAR03530	216	Aldehyde dehydrogenase 3B2	
+3531	TAR03531	1571	G protein-activated inward rectifier potassium channel 1	
+3532	TAR03532	207	Glutathione synthetase	
+3533	TAR03533	1848	Phosphatidylserine synthase 1	
+3534	TAR03534	4019	Excitatory amino acid transporter 4	
+3535	TAR03535	2009	Protein NOV homolog	
+3536	TAR03536	928	Nicotinic acid receptor 2	
+3537	TAR03537	2511	MAP kinase-activated protein kinase 2	
+3538	TAR03538	3990	Protein-glutamine gamma-glutamyltransferase 4	
+3539	TAR03539	3841	ERGIC-53 protein	
+3540	TAR03540	149	Alpha-aminoadipic semialdehyde dehydrogenase	
+3541	TAR03541	830	Glutamate dehydrogenase 2, mitochondrial	
+3542	TAR03542	677	Choline-phosphate cytidylyltransferase A	
+3543	TAR03543	323	Alanyl-tRNA synthetase, cytoplasmic	
+3544	TAR03544	72	Seryl-tRNA synthetase, cytoplasmic	
+3545	TAR03545	6419	Proteasome subunit beta type-3	
+3546	TAR03546	4103	Proteasome subunit beta type 2	
+3547	TAR03547	1089	Cartilage oligomeric matrix protein	
+3548	TAR03548	2684	Histidine triad nucleotide-binding protein 1	
+3549	TAR03549	719	Retinoic acid receptor responder protein 1	
+3550	TAR03550	539	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondrial	
+3551	TAR03551	187	DNA ligase 3	
+3552	TAR03552	14	Isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial	
+3553	TAR03553	383	Glycine amidinotransferase, mitochondrial	
+3554	TAR03554	177	Biotin--protein ligase	
+3555	TAR03555	3587	Gastrotropin	
+3556	TAR03556	6192	Matrix metalloproteinase-15	
+3557	TAR03557	2970	Matrix metalloproteinase-16	
+3558	TAR03558	5646	Galactokinase	
+3559	TAR03559	4988	Sulfite oxidase, mitochondrial	
+3560	TAR03560	1063	Signal transducer and activator of transcription 5B	
+3561	TAR03561	6105	3-oxo-5-beta-steroid 4-dehydrogenase	
+3562	TAR03562	6298	Serine/threonine-protein kinase Nek2	
+3563	TAR03563	619	Low-affinity cationic amino acid transporter 2	
+3564	TAR03564	1317	Spermine synthase	
+3565	TAR03565	1199	GPI-linked NAD(P)(+)--arginine ADP-ribosyltransferase 1	
+3566	TAR03566	6621	Methionine aminopeptidase 1	
+3567	TAR03567	4002	Succinyl-CoA ligase [GDP-forming] subunit alpha, mitochondrial	
+3568	TAR03568	1994	Geranylgeranyl transferase type-1 subunit beta	
+3569	TAR03569	4838	PMS1 protein homolog 2	
+3570	TAR03570	4114	Voltage-dependent L-type calcium channel subunit beta-3	
+3571	TAR03571	6530	Pancreatic lipase-related protein 2	
+3572	TAR03572	410	Ornithine decarboxylase antizyme	
+3573	TAR03573	256	Tyrosyl-tRNA synthetase, cytoplasmic	
+3574	TAR03574	915	Delta 1-pyrroline-5-carboxylate synthetase	
+3575	TAR03575	3320	Caspase-7	
+3576	TAR03576	4003	Succinyl-CoA:3-ketoacid-coenzyme A transferase 1, mitochondrial	
+3577	TAR03577	30	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondrial	
+3578	TAR03578	6110	DNA polymerase epsilon subunit 2	
+3579	TAR03579	236	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	
+3580	TAR03580	206	3-keto-steroid reductase	
+3581	TAR03581	1768	Guanine nucleotide-binding protein G(I)/G(S)/G(O) gamma-2 subunit	
+3582	TAR03582	4036	Glutathione peroxidase 6	
+3583	TAR03583	6417	Proteasome subunit alpha type-6	
+3584	TAR03584	6758	Actin-related protein 2	
+3585	TAR03585	6279	Beta-2-microglobulin	
+3586	TAR03586	6264	cAMP-dependent protein kinase inhibitor alpha	
+3587	TAR03587	6334	60S ribosomal protein L37	
+3588	TAR03588	3809	Estrogen-related receptor gamma	
+3589	TAR03589	4077	Serine/threonine-protein phosphatase 2A catalytic subunit beta isoform	
+3590	TAR03590	6330	60S ribosomal protein L23a	
+3591	TAR03591	6327	60S ribosomal protein L23	
+3592	TAR03592	6572	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1	
+3593	TAR03593	6333	60S ribosomal protein L8	
+3594	TAR03594	3860	Vesicle-associated membrane protein 2	
+3595	TAR03595	394	Calcineurin subunit B isoform 1	
+3596	TAR03596	6269	S-phase kinase-associated protein 1	
+3597	TAR03597	6571	Guanine nucleotide-binding protein G(T) subunit gamma-T1	
+3598	TAR03598	3822	Actin, alpha skeletal muscle	
+3599	TAR03599	2342	Tubulin alpha-ubiquitous chain	
+3600	TAR03600	2539	Tubulin alpha-1 chain	
+3601	TAR03601	2499	Tubulin beta-2C chain	
+3602	TAR03602	6832	Serine/threonine-protein kinase SRPK2	
+3603	TAR03603	5716	Casein kinase I isoform gamma-2	
+3604	TAR03604	905	Glutathione transferase omega-1	
+3605	TAR03605	5036	Small inducible cytokine A8	
+3606	TAR03606	1782	Neutrophil gelatinase-associated lipocalin	
+3607	TAR03607	3998	B(0,+)-type amino acid transporter 1	
+3608	TAR03608	6316	ADP-ribosylation factor 1	
+3609	TAR03609	6329	60S ribosomal protein L19	
+3610	TAR03610	241	Calcium-transporting ATPase type 2C member 1	
+3611	TAR03611	1507	Cytochrome c	
+3612	TAR03612	2739	Phosphatidylinositol transfer protein alpha isoform	
+3613	TAR03613	453	S-adenosylmethionine synthetase isoform type-1	
+3614	TAR03614	6580	Serine/threonine-protein kinase PCTAIRE-1	
+3615	TAR03615	6497	Cytochrome c oxidase subunit 6A2, mitochondrial	
+3616	TAR03616	258	Methylmalonate-semialdehyde dehydrogenase [acylating], mitochondrial	
+3617	TAR03617	196	D-beta-hydroxybutyrate dehydrogenase, mitochondrial	
+3618	TAR03618	1593	Mucin-2	
+3619	TAR03619	468	Cytochrome P450 4A11	
+3620	TAR03620	901	Glutathione S-transferase Mu 4	
+3621	TAR03621	533	Aminoacylase-1	
+3622	TAR03622	5482	Sialidase-2	
+3623	TAR03623	5447	Lethal(3)malignant brain tumor-like protein	
+3624	TAR03624	281	5'-AMP-activated protein kinase subunit beta-1	
+3625	TAR03625	3916	Methylmalonic aciduria and homocystinuria type C protein	
+3626	TAR03626	154	AFG3-like protein 2	
+3627	TAR03627	549	Choline-phosphate cytidylyltransferase B	
+3628	TAR03628	6787	Trafficking protein particle complex subunit 1	
+3629	TAR03629	89	Cysteine sulfinic acid decarboxylase	
+3631	TAR03631	224	Mitochondrial ornithine transporter 1	
+3632	TAR03632	2805	Heparan sulfate glucosamine 3-O-sulfotransferase 3A1	
+3633	TAR03633	304	Solute carrier family 12 member 7	
+3634	TAR03634	5463	Calcium-activated potassium channel subunit beta 2	
+3635	TAR03635	169	Cysteine desulfurase, mitochondrial	
+3636	TAR03636	6552	Poly [ADP-ribose] polymerase 3	
+3637	TAR03637	6460	Casein kinase I isoform gamma-3	
+3638	TAR03638	656	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9	
+3639	TAR03639	6248	Chymotrypsin-like elastase family member 2A	
+3640	TAR03640	4058	Glycine N-acyltransferase-like protein 2	
+3641	TAR03641	6780	Long-chain-fatty-acid--CoA ligase ACSBG1	
+3642	TAR03642	6363	Cytochrome b-c1 complex subunit 9	
+3643	TAR03643	4074	Retinol dehydrogenase 14	
+3644	TAR03644	6802	Myosin regulatory light chain 12A	
+3645	TAR03645	3933	Choline/ethanolaminephosphotransferase	
+3646	TAR03646	6656	UDP-glucuronosyltransferase 3A1	
+3647	TAR03647	3899	Alanine--glyoxylate aminotransferase 2-like 2	
+3648	TAR03648	3895	Kynurenine--oxoglutarate transaminase 3	
+3649	TAR03649	3868	Calcineurin subunit B isoform 2	
+3650	TAR03650	6470	Retinoid-inducible serine carboxypeptidase	
+3651	TAR03651	918	Glutamate receptor, ionotropic kainate 2	
+3652	TAR03652	651	Retinol dehydrogenase 13	
+3653	TAR03653	6614	Lactase-like protein	
+3654	TAR03654	3014	Ribonuclease UK114	
+3655	TAR03655	375	SEC14-like protein 3	
+3656	TAR03656	6314	Malonyl CoA-acyl carrier protein transacylase, mitochondrial	
+3657	TAR03657	743	Phosphatidylserine decarboxylase proenzyme	
+3658	TAR03658	6677	Myelin P2 protein	
+3659	TAR03659	1130	Lithostathine 1 alpha	
+3660	TAR03660	593	Proton-coupled amino acid transporter 1	
+3661	TAR03661	534	Threonine synthase-like 1	
+3662	TAR03662	5	Glutaminase liver isoform, mitochondrial	
+3663	TAR03663	86	SEC14-like protein 4	
+3664	TAR03664	3926	Choline transporter-like protein 2	
+3665	TAR03665	3976	Aspartyl-tRNA synthetase, mitochondrial	
+3666	TAR03666	860	Nicotinamide N-methyltransferase	
+3667	TAR03667	4035	Glutathione S-transferase Mu 5	
+3668	TAR03668	405	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	
+3669	TAR03669	272	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	
+3670	TAR03670	6048	Troponin C, skeletal muscle	
+3671	TAR03671	501	Leucine carboxyl methyltransferase 1	
+3672	TAR03672	123	Diamine acetyltransferase 1	
+3673	TAR03673	3911	Uncharacterized protein C20orf38	
+3674	TAR03674	3932	Glutathione S-transferase A2	
+3675	TAR03675	900	Glutathione S-transferase A4	
+3676	TAR03676	755	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3	
+3677	TAR03677	313	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3	
+3678	TAR03678	6622	Profilin-1	
+3679	TAR03679	6421	Proteasome subunit beta type-6	
+3680	TAR03680	2359	Triggering receptor expressed on myeloid cells 1	
+3681	TAR03681	3978	Adenylosuccinate synthetase isozyme 1	
+3682	TAR03682	6882	Iodotyrosine dehalogenase 1	
+3683	TAR03683	2601	Tubulin alpha-2 chain	
+3684	TAR03684	6126	Carbonic anhydrase 7	
+3685	TAR03685	421	Calcium signal-modulating cyclophilin ligand	
+3686	TAR03686	2906	Coatomer subunit gamma	
+3687	TAR03687	6672	Destrin	
+3688	TAR03688	2165	Glutathione S-transferase Mu 2	
+3689	TAR03689	4193	Atrial natriuretic peptide clearance receptor	
+3690	TAR03690	547	Propionyl-CoA carboxylase alpha chain, mitochondrial	
+3691	TAR03691	6250	Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit gamma isoform	
+3692	TAR03692	1912	Excitatory amino acid transporter 1	
+3693	TAR03693	662	Fatty aldehyde dehydrogenase	
+3694	TAR03694	574	Branched-chain-amino-acid aminotransferase, cytosolic	
+3695	TAR03695	774	Cysteinyl-tRNA synthetase, cytoplasmic	
+3696	TAR03696	473	L-lactate dehydrogenase A chain	
+3697	TAR03697	4000	Prolyl 4-hydroxylase subunit alpha-2	
+3698	TAR03698	6217	High affinity cAMP-specific and IBMX-insensitive 3',5'-cyclic phosphodiesterase 8B	
+3699	TAR03699	4006	Succinate dehydrogenase cytochrome b560 subunit, mitochondrial	
+3700	TAR03700	6750	ADP-ribosylation factor 6	
+3701	TAR03701	5455	Arylsulfatase A	
+3702	TAR03702	820	Glycine receptor subunit alpha-2	
+3703	TAR03703	2599	Tyrosine-protein kinase HCK	
+3704	TAR03704	6932	Calcium-activated potassium channel subunit beta-3	
+3705	TAR03705	6653	cDNA FLJ42801 fis, clone BRCAN2001223, highly similar to Mitogen-activated protein kinase 10 (EC 2.7.11.24)	
+3706	TAR03706	1141	Sialidase-1	
+3707	TAR03707	414	Sodium- and chloride-dependent creatine transporter 1	
+3708	TAR03708	6893	Calcium/calmodulin-dependent protein kinase type II gamma chain	
+3709	TAR03709	17	Proto-oncogene tyrosine-protein kinase ABL1	
+3710	TAR03710	6390	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1	
+3711	TAR03711	119	Carcinoembryonic antigen-related cell adhesion molecule 1	
+3712	TAR03712	1395	Sodium/calcium exchanger 1	
+3713	TAR03713	3393	TGF-beta receptor type-2	
+3714	TAR03714	576	Choline O-acetyltransferase	
+3715	TAR03715	1549	Heat shock 70 kDa protein 1	
+3716	TAR03716	1329	Apoptosis-inducing factor 1, mitochondrial	
+3717	TAR03717	1648	Elastin	
+3718	TAR03718	992	Protein tyrosine kinase 2 beta	
+3719	TAR03719	6294	Calcium/calmodulin-dependent protein kinase type II beta chain	
+3720	TAR03720	745	Anti-Muellerian hormone type-2 receptor	
+3721	TAR03721	6876	CREB-binding protein	
+3722	TAR03722	178	NADH-cytochrome b5 reductase 3	
+3723	TAR03723	609	15-hydroxyprostaglandin dehydrogenase [NAD+]	
+3724	TAR03724	663	Solute carrier family 12 member 4	
+3725	TAR03725	2921	Histone deacetylase 8	
+3726	TAR03726	4110	Voltage-dependent L-type calcium channel subunit beta-2	
+3727	TAR03727	610	Calcium-activated potassium channel subunit alpha 1	
+3728	TAR03728	5841	Insulin-like growth factor IB	
+3729	TAR03729	2126	Proactivator polypeptide	
+3730	TAR03730	6666	Gelsolin	
+3731	TAR03731	240	Gamma-aminobutyric acid type B receptor, subunit 1	
+3732	TAR03732	6321	Cyclin-dependent kinase 5 activator 1	
+3733	TAR03733	4078	Serine/threonine-protein phosphatase 2A catalytic subunit alpha isoform	
+3734	TAR03734	6251	Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A alpha isoform	
+3735	TAR03735	5006	RNASE4 protein	
+3736	TAR03736	585	Aspartyl/asparaginyl beta-hydroxylase	
+3737	TAR03737	4146	Phosphatidylinositol 3-kinase regulatory subunit gamma	
+3738	TAR03738	5586	Pleckstrin homology domain-containing family A member 1	
+3739	TAR03739	248	Pyrroline-5-carboxylate reductase 1	
+3740	TAR03740	282	Interphotoreceptor retinoid-binding protein	
+3741	TAR03741	3511	Ribonuclease 4	
+3742	TAR03742	1632	Solute carrier organic anion transporter family member 2B1	
+3743	TAR03743	4063	Tryptophanyl-tRNA synthetase, mitochondrial	
+3744	TAR03744	4053	Sphingomyelin phosphodiesterase 3	
+3745	TAR03745	5278	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthetase 1	
+3746	TAR03746	111	Cysteinyl leukotriene receptor 2	
+3747	TAR03747	6579	Calcium/calmodulin-dependent protein kinase type II alpha chain	
+3748	TAR03748	897	Glutathione S-transferase kappa 1	
+3749	TAR03749	630	Short/branched chain specific acyl-CoA dehydrogenase, mitochondrial	
+3750	TAR03750	12	Alcohol dehydrogenase class 3	
+3751	TAR03751	5630	ADP-ribosylation factor-like protein 5A	
+3752	TAR03752	209	Aspartoacylase	
+3753	TAR03753	843	NG,NG-dimethylarginine dimethylaminohydrolase 1	
+3754	TAR03754	4026	Aspartyl aminopeptidase	
+3755	TAR03755	575	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial	
+3756	TAR03756	4027	Glutamate receptor delta-1 subunit	
+3757	TAR03757	505	Glutamate [NMDA] receptor subunit epsilon-3	
+3758	TAR03758	144	Hemoglobin subunit alpha	
+3759	TAR03759	141	3-hydroxyisobutyrate dehydrogenase, mitochondrial	
+3760	TAR03760	5713	Hydroxymethylglutaryl-CoA lyase, mitochondrial	
+3761	TAR03761	6570	Hydroxymethylglutaryl-CoA synthase, cytoplasmic	
+3762	TAR03762	372	Estradiol 17-beta-dehydrogenase 3	
+3763	TAR03763	519	Interferon-gamma receptor beta chain	
+3764	TAR03764	6072	Potassium channel subfamily K member 3	
+3765	TAR03765	6193	Matrix metalloproteinase-17	
+3766	TAR03766	607	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	
+3767	TAR03767	337	NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitochondrial	
+3768	TAR03768	6337	NHP2-like protein 1	
+3769	TAR03769	25	Solute carrier family 13 member 1	
+3770	TAR03770	6573	Phosducin	
+3771	TAR03771	1119	Peroxiredoxin-5, mitochondrial	
+3772	TAR03772	6335	60S ribosomal protein L3	
+3773	TAR03773	6782	Ribosomal protein S6 kinase alpha-1	
+3774	TAR03774	1810	Protein S100-A1	
+3775	TAR03775	6837	Serine/threonine-protein kinase 17B	
+3776	TAR03776	4828	Zinc finger Y-chromosomal protein	
+3777	TAR03777	105	Sodium-dependent multivitamin transporter	
+3778	TAR03778	6762	Actin-related protein 2/3 complex subunit 4	
+3779	TAR03779	2159	Quinone oxidoreductase	
+3780	TAR03780	3837	Cytokine receptor common beta chain	
+3781	TAR03781	186	Glutamate--cysteine ligase catalytic subunit	
+3782	TAR03782	6058	Geranylgeranyl pyrophosphate synthetase	
+3783	TAR03783	439	Glutamate [NMDA] receptor subunit epsilon-4	
+3784	TAR03784	440	Isovaleryl-CoA dehydrogenase, mitochondrial	
+3785	TAR03785	751	Potassium channel subfamily K member 6	
+3786	TAR03786	5983	Alpha-mannosidase 2	
+3787	TAR03787	191	Peptide methionine sulfoxide reductase	
+3788	TAR03788	3525	ADP-ribose pyrophosphatase, mitochondrial	
+3789	TAR03789	110	Pyruvate dehydrogenase E1 component subunit beta, mitochondrial	
+3791	TAR03791	4083	Peptidyl-prolyl cis-trans isomerase H	
+3792	TAR03792	3599	Peroxiredoxin-2	
+3793	TAR03793	6271	Receptor-type tyrosine-protein phosphatase beta	
+3794	TAR03794	199	Monocarboxylate transporter 8	
+3795	TAR03795	782	ADP/ATP translocase 2	
+3796	TAR03796	391	Succinyl-CoA ligase [GDP-forming] beta-chain, mitochondrial	
+3797	TAR03797	6346	Triosephosphate isomerase	
+3799	TAR03799	333	Voltage-dependent L-type calcium channel subunit beta-1	
+3800	TAR03800	849	Activated CDC42 kinase 1	
+3801	TAR03801	2323	Adenylate kinase isoenzyme 1	
+3802	TAR03802	316	4-trimethylaminobutyraldehyde dehydrogenase	
+3803	TAR03803	4012	Beta-1,4-galactosyltransferase 4	
+3804	TAR03804	4109	cAMP-specific 3',5'-cyclic phosphodiesterase 4C	
+3805	TAR03805	588	Chromodomain-helicase-DNA-binding protein 1	
+3806	TAR03806	803	NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitochondrial	
+3807	TAR03807	3969	Multifunctional protein ADE2 [Includes: Phosphoribosylaminoimidazole- succinocarboxamide synthase	
+3808	TAR03808	3839	Phytanoyl-CoA dioxygenase, peroxisomal	
+3809	TAR03809	3935	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 2	
+3810	TAR03810	6135	Sodium channel subunit beta-4	
+3811	TAR03811	283	SEC14-like protein 2	
+3812	TAR03812	6788	Trafficking protein particle complex subunit 2	
+3813	TAR03813	263	Neutral amino acid transporter B(0)	
+3814	TAR03814	866	Large neutral amino acids transporter small subunit 2	
+3815	TAR03815	1360	Sphingomyelin phosphodiesterase	
+3816	TAR03816	673	Solute carrier family 13 member 3	
+3817	TAR03817	3842	Multiple coagulation factor deficiency protein 2	
+3818	TAR03818	2254	Thymidylate kinase	
+3819	TAR03819	271	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
+3820	TAR03820	13	Aminomethyltransferase, mitochondrial	
+3821	TAR03821	59	AMT protein	
+3822	TAR03822	1477	Probable phospholipid-transporting ATPase IA	
+3823	TAR03823	4112	Voltage-dependent L-type calcium channel subunit beta-4	
+3824	TAR03824	2206	Glucose-6-phosphate isomerase	
+3825	TAR03825	922	Glutamate receptor 4	
+3826	TAR03826	166	NAD-dependent malic enzyme, mitochondrial	
+3827	TAR03827	3938	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 3	
+3828	TAR03828	1882	Ras-related C3 botulinum toxin substrate 1	
+3829	TAR03829	6108	Ribonucleoside-diphosphate reductase subunit M2 B	
+3830	TAR03830	733	Activin receptor type 1B	
+3831	TAR03831	1088	5-aminolevulinate synthase, erythroid-specific, mitochondrial	
+3832	TAR03832	469	Annexin A1	
+3833	TAR03833	5899	T-cell surface glycoprotein CD3 delta chain	
+3834	TAR03834	461	Glycine receptor subunit alpha-3	
+3835	TAR03835	6098	Potassium voltage-gated channel subfamily D member 2	
+3836	TAR03836	6597	Mevalonate kinase	
+3837	TAR03837	67	Prolyl 4-hydroxylase subunit alpha-1	
+3838	TAR03838	628	Pyruvate dehydrogenase E1 component alpha subunit, somatic form, mitochondrial	
+3839	TAR03839	1367	Small inducible cytokine A5	
+3840	TAR03840	3884	SHMT2 protein	
+3841	TAR03841	3885	Hypothetical protein DKFZp686P09201	
+3843	TAR03843	305	Mitochondrial aspartate-glutamate carrier protein	
+3844	TAR03844	513	Calcium-binding mitochondrial carrier protein Aralar2	
+3845	TAR03845	3850	Synaptotagmin-like protein 4	
+3846	TAR03846	521	ATP-binding cassette transporter sub-family C member 9	
+3847	TAR03847	1742	D-HSCDK2	
+3848	TAR03848	6210	Tubulin delta chain	
+3849	TAR03849	6062	Rho-related GTP-binding protein RhoB	
+3850	TAR03850	6344	ATP synthase subunit gamma, mitochondrial	
+3851	TAR03851	253	Sodium/potassium-transporting ATPase gamma chain	
+3852	TAR03852	1881	Hexokinase-1	
+3853	TAR03853	363	NADP-dependent malic enzyme, mitochondrial	
+3854	TAR03854	182	2-oxoglutarate dehydrogenase E1 component, mitochondrial	
+3855	TAR03855	3981	Ornithine decarboxylase antizyme 3	
+3856	TAR03856	1814	Protein-arginine deiminase type-4	
+3857	TAR03857	3984	Probable glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+3858	TAR03858	6328	60S ribosomal protein L15	
+3859	TAR03859	801	Kynurenine/alpha-aminoadipate aminotransferase mitochondrial	
+3860	TAR03860	6759	Actin-related protein 3	
+3861	TAR03861	6757	Actin-related protein 2/3 complex subunit 1B	
+3862	TAR03862	6496	Cytochrome c oxidase subunit 8A, mitochondrial	
+3863	TAR03863	5285	Kinesin heavy chain	
+3864	TAR03864	194	NADH dehydrogenase [ubiquinone] 1 subunit C2	
+3865	TAR03865	104	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitochondrial	
+3866	TAR03866	3296	Nicotinamide mononucleotide adenylyltransferase 1	
+3867	TAR03867	1219	Phosphatidylcholine transfer protein	
+3868	TAR03868	695	cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A	
+3869	TAR03869	2256	cGMP-inhibited 3',5'-cyclic phosphodiesterase B	
+3870	TAR03870	5711	Glutaminyl-peptide cyclotransferase	
+3871	TAR03871	3838	Syndecan-2	
+3872	TAR03872	184	L-serine dehydratase	
+3873	TAR03873	4016	Excitatory amino acid transporter 5	
+3874	TAR03874	21	Beta-adrenergic receptor kinase 2	
+3875	TAR03875	6296	Serine/threonine-protein kinase haspin	
+3876	TAR03876	702	UMP-CMP kinase	
+3877	TAR03877	6760	Actin-related protein 2/3 complex subunit 2	
+3878	TAR03878	5312	Kinesin-like protein KIF1A	
+3879	TAR03879	264	Choline/ethanolamine kinase [Includes: Choline kinase beta	
+3880	TAR03880	6465	CHRNA7-FAM7A fusion protein	
+3881	TAR03881	3437	Eosinophil lysophospholipase	
+3882	TAR03882	6499	Cytochrome c oxidase polypeptide 7A1, mitochondrial	
+3883	TAR03883	6472	Cathepsin H	
+3884	TAR03884	6268	Hydroxyacid oxidase 1	
+3885	TAR03885	6842	Galectin-9	
+3886	TAR03886	247	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	
+3887	TAR03887	475	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 2, mitochondrial	
+3888	TAR03888	324	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4	
+3889	TAR03889	417	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 6	
+3890	TAR03890	5692	Calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1B	
+3891	TAR03891	6793	[Pyruvate dehydrogenase [lipoamide]] kinase isozyme 4, mitochondrial	
+3892	TAR03892	6313	Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B alpha isoform	
+3893	TAR03893	6415	Proteasome subunit alpha type-4	
+3894	TAR03894	6576	Geranylgeranyl transferase type-2 subunit beta	
+3895	TAR03895	1050	Bile salt sulfotransferase	
+3896	TAR03896	6035	Nuclear receptor ROR-beta	
+3897	TAR03897	6336	60S ribosomal protein L11	
+3898	TAR03898	2686	Tryptase beta-2	
+3899	TAR03899	6237	Tryptase beta-1	
+3900	TAR03900	6833	Calcium/calmodulin-dependent protein kinase type 1D	
+3903	TAR03903	6297	Prostaglandin reductase 1	
+3904	TAR03904	4311	tRNA	
+3905	TAR03905	455	5-aminolevulinate synthase, nonspecific, mitochondrial	
+3906	TAR03906	3886	Migration-inducing protein 4	
+3907	TAR03907	465	Calmodulin	
+3908	TAR03908	6546	Dual specificity protein kinase CLK3	
+3909	TAR03909	768	FK506-binding protein 1A	
+3910	TAR03910	624	Guanidinoacetate N-methyltransferase	
+3911	TAR03911	910	Epididymal secretory glutathione peroxidase	
+3912	TAR03912	6133	Sodium channel subunit beta-2	
+3913	TAR03913	77	L-lactate dehydrogenase B chain	
+3914	TAR03914	6198	Matrix metalloproteinase-24	
+3915	TAR03915	6202	Matrix metalloproteinase-28	
+3916	TAR03916	4014	N-acetylglucosamine kinase	
+3917	TAR03917	99	NADH dehydrogenase [ubiquinone] iron-sulfur protein 5	
+3918	TAR03918	4984	Neuroglobin	
+3919	TAR03919	601	Propionyl-CoA carboxylase beta chain, mitochondrial	
+3920	TAR03920	6839	[Pyruvate dehydrogenase [lipoamide]] kinase isozyme 3, mitochondrial	
+3921	TAR03921	4047	Diacylglycerol kinase gamma	
+3922	TAR03922	6093	Gamma-aminobutyric acid receptor subunit delta	
+3924	TAR03924	3890	Glutamate decarboxylase 2	
+3925	TAR03925	3987	Glutamine synthetase	
+3926	TAR03926	1157	Growth factor receptor-bound protein 2	
+3927	TAR03927	4106	Guanylate kinase	
+3928	TAR03928	6935	Small conductance calcium-activated potassium channel protein 2	
+3929	TAR03929	6674	Nuclear factor erythroid 2-related factor 1	
+3930	TAR03930	6412	Proteasome subunit alpha type-1	
+3931	TAR03931	6056	Receptor-type tyrosine-protein phosphatase epsilon	
+3932	TAR03932	107	C-4 methylsterol oxidase	
+3933	TAR03933	550	Amiloride-sensitive sodium channel subunit delta	
+3934	TAR03934	261	Threonyl-tRNA synthetase, cytoplasmic	
+3935	TAR03935	3983	Protein-glutamine gamma-glutamyltransferase 5	
+3936	TAR03936	1385	Angiotensin-converting enzyme 2	
+3937	TAR03937	4757	Cytochrome P450 2C9	
+3938	TAR03938	667	Acyl-CoA dehydrogenase family member 8, mitochondrial	
+3939	TAR03939	386	Acetyl-coenzyme A synthetase, cytoplasmic	
+3940	TAR03940	6577	Rab proteins geranylgeranyltransferase component A 1	
+3941	TAR03941	4132	Chloride channel protein ClC-Ka	
+3942	TAR03942	2473	Tyrosine-protein kinase CSK	
+3943	TAR03943	1818	Long-chain-fatty-acid--CoA ligase 3	
+3945	TAR03945	924	Glutamate receptor, ionotropic kainate 3	
+3946	TAR03946	506	4-hydroxyphenylpyruvate dioxygenase	
+3947	TAR03947	2305	Isocitrate dehydrogenase [NADP] cytoplasmic	
+3948	TAR03948	616	Isocitrate dehydrogenase [NAD] subunit beta, mitochondrial	
+3949	TAR03949	296	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohydrolase, mitochondrial	
+3950	TAR03950	6243	Nuclear receptor-interacting protein 1	
+3951	TAR03951	6312	Serine/threonine-protein phosphatase PP1-alpha catalytic subunit	
+3952	TAR03952	2886	Trypsin-3	
+3953	TAR03953	5271	Focal adhesion kinase 1	
+3954	TAR03954	961	Receptor activity-modifying protein 3	
+3955	TAR03955	491	Serine palmitoyltransferase 1	
+3956	TAR03956	4009	Succinyl-CoA ligase [ADP-forming] beta-chain, mitochondrial	
+3957	TAR03957	6106	Cytochrome P450 2C18	
+3958	TAR03958	6395	Myosin-14	
+3959	TAR03959	83	Alpha-aminoadipic semialdehyde synthase, mitochondrial	
+3960	TAR03960	6288	Low molecular weight phosphotyrosine protein phosphatase	
+3961	TAR03961	686	Aldo-keto reductase family 1 member C2	
+3962	TAR03962	301	Kynurenine--oxoglutarate transaminase 1	
+3963	TAR03963	3318	Dual specificity protein kinase CLK1	
+3964	TAR03964	1986	Ceruloplasmin	
+3965	TAR03965	4496	C-terminal-binding protein 1	
+3966	TAR03966	74	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial	
+3967	TAR03967	6089	Gamma-aminobutyric acid receptor subunit epsilon	
+3968	TAR03968	848	Isocitrate dehydrogenase [NAD] subunit gamma, mitochondrial	
+3969	TAR03969	6132	Sodium channel subunit beta-1	
+3970	TAR03970	4380	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferase 1	
+3971	TAR03971	6746	Serine/threonine-protein phosphatase 2B catalytic subunit alpha isoform	
+3972	TAR03972	532	Neutral amino acid transporter A	
+3973	TAR03973	688	ADP/ATP translocase 3	
+3974	TAR03974	398	Transcobalamin-2	
+3975	TAR03975	498	Solute carrier family 13 member 2	
+3976	TAR03976	350	3-hydroxyacyl-CoA dehydrogenase type-2	
+3977	TAR03977	225	NEDD8-activating enzyme E1 regulatory subunit	
+3978	TAR03978	1575	Interleukin-2	
+3979	TAR03979	5900	T-cell surface glycoprotein CD3 gamma chain	
+3980	TAR03980	3231	Death-associated protein kinase 1	
+3981	TAR03981	643	Peroxisomal bifunctional enzyme	
+3982	TAR03982	1457	Long-chain-fatty-acid--CoA ligase 4	
+3983	TAR03983	3900	Glutamate decarboxylase 1	
+3985	TAR03985	923	Glutamate receptor 3	
+3986	TAR03986	233	Potassium channel subfamily K member 2	
+3987	TAR03987	1852	Microtubule-associated protein 2	
+4632	TAR04632	125	DNA polymerase beta	
+4633	TAR04633	145	11-beta-hydroxysteroid dehydrogenase 2	
+4634	TAR04634	183	Vascular endothelial growth factor A	
+4635	TAR04635	279	Tyrosinase	
+4636	TAR04636	309	Antithrombin-III precursor	
+4637	TAR04637	364	11-beta-hydroxysteroid dehydrogenase 1	
+4638	TAR04638	603	DNA polymerase catalytic subunit	
+4639	TAR04639	760	Acidic fibroblast growth factor	
+4640	TAR04640	1152	Glycogen phosphorylase, muscle form	
+4641	TAR04641	1525	Basic fibroblast growth factor	
+4642	TAR04642	1756	Selectin E	
+4643	TAR04643	2404	PI3-kinase p110-gamma subunit	
+4644	TAR04644	3105	Dual specificity phosphatase Cdc25B	
+4645	TAR04645	3163	Cytochrome P450 51	
+4646	TAR04646	3840	Asialoglycoprotein receptor 2	
+4647	TAR04647	6140	Ileal bile acid transporter	
+4648	TAR04648	7305	Sodium/glucose cotransporter 2	
+20001	TAR20001		B-cell receptor CD22	933
+20002	TAR20002		Chymotrypsin C	11330
+20003	TAR20003		Dual specificity phosphatase Cdc25A	993
+20004	TAR20004		Galectin-4	3960
+20005	TAR20005		Galectin-8	3964
+20006	TAR20006		Glycogen debranching enzyme	178
+20007	TAR20007		Group IIF secretory phospholipase A2	64600
+20008	TAR20008		Myelin-associated glycoprotein	4099
+20009	TAR20009		Protein-tyrosine phosphatase 1C	5777
+20010	TAR20010		Sphingosine 1-phosphate receptor Edg-3	1903
+20011	TAR20011		T-cell protein-tyrosine phosphatase	5771

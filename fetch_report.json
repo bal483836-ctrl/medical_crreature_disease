@@ -61,9 +61,80 @@
       "files": []
     },
     "tcmsp": {
-      "note": "TCMSP（确认无下载链接，取数需爬虫）",
+      "note": "TCMSP（browse.php 内联全表，无需爬虫）",
       "discovered": [],
-      "files": []
+      "files": [
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=herbs",
+          "path": "/home/runner/work/_temp/out/tcmsp/herbs.json",
+          "ok": true,
+          "bytes": 98866,
+          "records": 502,
+          "columns": [
+            "herb_cn_name",
+            "herb_pinyin",
+            "herb_en_name",
+            "child_cn_name",
+            "child_en_name"
+          ],
+          "sha256": "2e769414792bff09dd8db565604582d2b1e9c14688850f126473dd9476d9b26b"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=ingredients",
+          "path": "/home/runner/work/_temp/out/tcmsp/ingredients.json",
+          "ok": true,
+          "bytes": 4650043,
+          "records": 13729,
+          "columns": [
+            "MOL_ID",
+            "molecule_ID",
+            "molecule_name",
+            "mw",
+            "hdon",
+            "hacc",
+            "alogp",
+            "halflife",
+            "ob",
+            "caco2",
+            "bbb",
+            "dl",
+            "FASA",
+            "tpsa",
+            "rbn"
+          ],
+          "sha256": "a4658cbfc2fcf7e7e623a7848c0c62d0cac6f7b6f1d19d3095c608787b1c6128"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=targets",
+          "path": "/home/runner/work/_temp/out/tcmsp/targets.json",
+          "ok": true,
+          "bytes": 482185,
+          "records": 3339,
+          "columns": [
+            "target_ID",
+            "TAR_ID",
+            "drugbank_ID",
+            "target_name",
+            "kegg"
+          ],
+          "sha256": "2d7167c84b99a83c6279d4b46039d2becbfbc33473df1b3a944db5bd1c7c93e8"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=diseases",
+          "path": "/home/runner/work/_temp/out/tcmsp/diseases.json",
+          "ok": true,
+          "bytes": 123571,
+          "records": 867,
+          "columns": [
+            "disease_ID",
+            "DIS_ID",
+            "disease_name",
+            "ICD9",
+            "ICD10"
+          ],
+          "sha256": "ef941bf4684d4dbec202ba796a880ae98ded846d8c1c3c0a65e25da3968361b3"
+        }
+      ]
     },
     "hit2": {
       "note": "HIT 2.0（真实站点在 badd-cao.net:2345，非标准端口）",
