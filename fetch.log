@@ -5,56 +5,10 @@
     扫描 http://www.symmap.org/download/
       命中 26 个候选数据文件链接（累计）
     共发现 26 个候选链接
-      OK  SymMap%20v2.0%2C%20SMHB%20file.xlsx  (0.10 MB)
-      OK  SymMap%20v2.0%2C%20SMHB%20key%20file.xlsx  (0.07 MB)
-      OK  SymMap%20v2.0%2C%20SMTS%20file.xlsx  (0.23 MB)
-      OK  SymMap%20v2.0%2C%20SMTS%20key%20file.xlsx  (0.10 MB)
-      OK  SymMap%20v2.0%2C%20SMMS%20file.xlsx  (0.26 MB)
-      OK  SymMap%20v2.0%2C%20SMMS%20key%20file.xlsx  (0.30 MB)
-      OK  SymMap%20v2.0%2C%20SMIT%20file.xlsx  (1.89 MB)
-      OK  SymMap%20v2.0%2C%20SMIT%20key%20file.xlsx  (3.69 MB)
-      OK  SymMap%20v2.0%2C%20SMTT%20file.xlsx  (1.68 MB)
-      OK  SymMap%20v2.0%2C%20SMTT%20key%20file.xlsx  (1.28 MB)
-      OK  SymMap%20v2.0%2C%20SMDE%20file.xlsx  (2.26 MB)
-      OK  SymMap%20v2.0%2C%20SMDE%20key%20file.xlsx  (0.74 MB)
-      OK  SymMap%20v2.0%2C%20SMSY%20file.xlsx  (0.03 MB)
-      OK  SymMap%20v2.0%2C%20SMSY%20key%20file.xlsx  (0.02 MB)
-      OK  SymMap%20v1.0%2C%20SMHB%20file.xlsx  (0.07 MB)
-      OK  SymMap%20v1.0%2C%20SMHB%20key%20file.xlsx  (0.06 MB)
-      OK  SymMap%20v1.0%2C%20SMTS%20file.xlsx  (0.18 MB)
-      OK  SymMap%20v1.0%2C%20SMTS%20key%20file.xlsx  (0.09 MB)
-      OK  SymMap%20v1.0%2C%20SMMS%20file.xlsx  (0.11 MB)
-      OK  SymMap%20v1.0%2C%20SMMS%20key%20file.xlsx  (0.35 MB)
-      OK  SymMap%20v1.0%2C%20SMIT%20file.xlsx  (1.98 MB)
-      OK  SymMap%20v1.0%2C%20SMIT%20key%20file.xlsx  (3.22 MB)
-      OK  SymMap%20v1.0%2C%20SMTT%20file.xlsx  (0.63 MB)
-      OK  SymMap%20v1.0%2C%20SMTT%20key%20file.xlsx  (0.64 MB)
-      OK  SymMap%20v1.0%2C%20SMDE%20file.xlsx  (0.43 MB)
-      OK  SymMap%20v1.0%2C%20SMDE%20key%20file.xlsx  (0.59 MB)
 
 ================================================================
 [herb]  HERB 2.0（站点为 SPA，靠直连候选文件名探测）
 ================================================================
-    直链候选 HERB_herb_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_herb_info.txt
-    直链候选 HERB_ingredient_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_ingredient_info.txt
-    直链候选 HERB_target_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_target_info.txt
-    直链候选 HERB_disease_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_disease_info.txt
-    直链候选 HERB_experiment_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_experiment_info.txt
-    直链候选 HERB_reference_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/HERB_reference_info.txt
-    直链候选 herb_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/herb_info.txt
-    直链候选 ingredient_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/ingredient_info.txt
-    直链候选 target_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/target_info.txt
-    直链候选 disease_info.txt
-      失败（返回 HTML 而非数据）: http://herb.ac.cn/download/disease_info.txt
     扫描 http://herb.ac.cn/Download/
       命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
@@ -62,18 +16,6 @@
 ================================================================
 [disbiome]  Disbiome（经 BioThings 镜像全量拉取）
 ================================================================
-      第 1 页 +1000 条（累计 1000）
-      第 2 页 +1000 条（累计 2000）
-      第 3 页 +1000 条（累计 3000）
-      第 4 页 +1000 条（累计 4000）
-      第 5 页 +1000 条（累计 5000）
-      第 6 页 +1000 条（累计 6000）
-      第 7 页 +1000 条（累计 7000）
-      第 8 页 +1000 条（累计 8000）
-      第 9 页 +1000 条（累计 9000）
-      第 10 页 +1000 条（累计 10000）
-      第 11 页 +866 条（累计 10866）
-      OK  experiments.json  (11.75 MB, 10866 条)
     共发现 0 个候选链接
 
 ================================================================
@@ -85,16 +27,6 @@
       命中 1325 个候选数据文件链接（累计）
       按 prefer 规则收窄: 1325 -> 10
     共发现 10 个候选链接
-      OK  PTH.sql.zip  (346.18 MB)
-      OK  Enzyme.zip  (297.80 MB)
-      OK  Epigenetic_Regulator.zip  (20.19 MB)
-      OK  Ion_Channel.zip  (16.62 MB)
-      OK  Membrane_Receptor.zip  (14.51 MB)
-      OK  Other_Cytosolic_Protein.zip  (67.40 MB)
-      OK  Secreted_Protein.zip  (8.98 MB)
-      OK  Transcription_Factor.zip  (22.86 MB)
-      OK  Transporter.zip  (12.05 MB)
-      OK  Other.zip  (125.78 MB)
 
 ================================================================
 [tcmid]  TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）
@@ -142,15 +74,15 @@
 ================================================================
 汇总
 ================================================================
-  symmap       发现  26 链接   26/26 成功             20.97 MB
-  herb         发现   0 链接   0/10 成功               0.00 MB
-  disbiome     发现   0 链接   1/1 成功               11.75 MB
-  dbpth        发现  10 链接   10/10 成功            932.36 MB
+  symmap       发现  26 链接   —                     0.00 MB
+  herb         发现   0 链接   —                     0.00 MB
+  disbiome     发现   0 链接   —                     0.00 MB
+  dbpth        发现  10 链接   —                     0.00 MB
   tcmid        发现   0 链接   —                     0.00 MB
   tcmsp        发现   0 链接   —                     0.00 MB
   hit2         发现   0 链接   —                     0.00 MB
   mdipid       发现   0 链接   —                     0.00 MB
   microbetcm   发现   0 链接   —                     0.00 MB
 
-  合计 37 个文件，965.09 MB（总量上限 8000 MB）
+  合计 0 个文件，0.00 MB（总量上限 8000 MB）
   报告: /home/runner/work/_temp/out/fetch_report.json
