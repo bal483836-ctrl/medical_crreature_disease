@@ -19,6 +19,13 @@
       · path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.zip  服务端拒绝: Sorry, unavailable path.
       · path=/home/Web_server/HERB_web/static/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
     探测完成：0/37 个返回可用内容
+    CDX 查询 herb.ac.cn
+      存档中的数据文件: 1 个
+    CDX 查询 www.herb.ac.cn
+      存档中的数据文件: 1 个
+    去重后 1 个唯一文件，下载前 60 个
+      失败（返回 HTML 而非数据）: https://web.archive.org/web/20211205052146id_/http://herb.ac.cn/robots.txt
+    取回 0/1 个文件
 
 ================================================================
 [microbetcm]
@@ -71,6 +78,12 @@
       https___www.microbetcm.com_microbetcm_static_js_to: 0.00MB -> 0 个候选
     合计 17 个候选接口，探测前 120 个
     探测完成：0/34 个返回可用内容
+    CDX 查询 microbetcm.com
+      存档中的数据文件: 0 个
+    CDX 查询 www.microbetcm.com
+      存档中的数据文件: 0 个
+    去重后 0 个唯一文件，下载前 60 个
+    取回 0/0 个文件
 
 ================================================================
 [tcmsp]
@@ -112,6 +125,17 @@
     发现 0 个 JS bundle
     合计 0 个候选接口，探测前 120 个
     探测完成：0/0 个返回可用内容
+    CDX 查询 hit2.badd-cao.net
+      存档中的数据文件: 1 个
+    CDX 查询 hit.badd-cao.net
+      存档中的数据文件: 0 个
+    CDX 查询 badd-cao.net
+      存档中的数据文件: 2 个
+    去重后 3 个唯一文件，下载前 60 个
+      失败（返回 HTML 而非数据）: https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt
+      OK  SMILES.txt  (0.00 MB)
+      OK  Submit%20local%20files%20in%20batch.tar.xz  (3.55 MB)
+    取回 2/3 个文件
 
 ================================================================
 [tcmid]
@@ -135,6 +159,7 @@
 [mdipid]
 ================================================================
     CDX 查询 mdipid.idrblab.net
+      页面不可达: http://web.archive.org/cdx/search/cdx?url=mdipid.idrblab.net/*&output=json&collapse=urlkey&filter=statuscode:200&limit=5000  (HTTPError: HTTP Error 429: Too Many Requests)
       存档中的数据文件: 0 个
     CDX 查询 idrblab.org/mdipid
       存档中的数据文件: 0 个
@@ -144,10 +169,10 @@
 ================================================================
 侦察汇总
 ================================================================
-  herb         [活站] bundle 1  候选   27  可用接口 0
-  microbetcm   [活站] bundle 20  候选   17  可用接口 0
+  herb         [活站] bundle 1  候选   27  可用接口 0  存档取回 0
+  microbetcm   [活站] bundle 20  候选   17  可用接口 0  存档取回 0
   tcmsp        [活站] bundle 7  候选   35  可用接口 0
-  hit2         [活站] bundle 0  候选    0  可用接口 0
+  hit2         [活站] bundle 0  候选    0  可用接口 0  存档取回 2
   tcmid        [死站] 存档数据文件    6  取回 6/6
   mdipid       [死站] 存档数据文件    0  取回 0/0
 
