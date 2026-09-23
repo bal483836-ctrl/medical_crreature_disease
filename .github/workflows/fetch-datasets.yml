@@ -63,10 +63,12 @@ jobs:
 
     # push 触发时 inputs.* 为空字符串，这里统一给默认值，下面各步只读这些环境变量
     env:
-      DATASETS: ${{ inputs.datasets || (github.event_name == 'schedule' && 'herb,tcmid,tcmsp,hit2,mdipid,microbetcm' || 'all') }}
+      # push 与 schedule 都只取尚未拿到的库：SymMap/Disbiome/dbPTH 已在 datasets 分支，
+      # 每次改脚本都重拉近 1GB 既慢又无谓地打扰源站。
+      DATASETS: ${{ inputs.datasets || ((github.event_name == 'schedule' || github.event_name == 'push') && 'herb,tcmid,tcmsp,hit2,mdipid,microbetcm' || 'all') }}
       # push 只做廉价校验（discover 不下载），避免每次改脚本都重拉近 1GB 打扰源站；
       # 真正的下载走手动 dispatch 或每日 schedule。
-      MODE: ${{ inputs.mode || (github.event_name == 'push' && 'discover' || 'download') }}
+      MODE: ${{ inputs.mode || 'download' }}
       IN_MAX_MB: ${{ inputs.max_mb || '90' }}
       RELEASE_LARGE: ${{ inputs.release_large || 'true' }}
       INCLUDE_HUGE: ${{ inputs.include_huge || 'false' }}

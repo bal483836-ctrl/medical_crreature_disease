@@ -45,18 +45,30 @@ SOURCES: dict[str, dict] = {
         "note": "SymMap 全套实体表 XLSX（已稳定下载）",
     },
     "herb": {
-        # run #2 实测：herb.ac.cn 是 umi.js 单页应用，HTML 里没有任何数据链接，
-        # 下载走接口。这里直接试常见的静态文件名 —— 猜错会被 HTML 校验挡下，不会假成功。
-        "pages": ["http://herb.ac.cn/Download/"],
-        "direct": [f"http://herb.ac.cn/download/{f}" for f in (
-            "HERB_herb_info.txt", "HERB_ingredient_info.txt",
-            "HERB_target_info.txt", "HERB_disease_info.txt",
-            "HERB_experiment_info.txt", "HERB_reference_info.txt",
-            "herb_info.txt", "ingredient_info.txt", "target_info.txt",
-            "disease_info.txt",
-        )],
+        # 侦察结论（recon run #1）：herb.ac.cn 的 umi.js bundle 里写着下载机制——
+        #   xd=(e,t)=>{cd({down:!0,data:e,type:"GET",base_url:"/download/file/",...})}
+        #   onClick:()=>Object(c["d"])({file_path:e})
+        # 即 GET /download/file/?file_path=<服务端路径>。裸调该端点会回 "Sorry, no path."，
+        # 正好印证它要 file_path 参数。file_path 用的是服务端文件系统路径，
+        # 直接当 URL 访问只会拿到 SPA 首页（前三轮就是栽在这里）。
+        # bundle 内嵌的清单还带行数，与论文公布的数字完全吻合：
+        #   herb 7263 / ingredient 49258 / target 12933 / disease 28212
+        "pages": [],
+        "direct": [
+            "http://herb.ac.cn/download/file/?file_path="
+            + urllib.parse.quote(f"/data/Web_server/HERB_web/static/download_data/{name}")
+            for name in (
+                "HERB_herb_info.txt",
+                "HERB_ingredient_info.txt",
+                "HERB_target_info.txt",
+                "HERB_disease_info.txt",
+                "HERB_experiment_info.txt",
+                "HERB_reference_info.txt",
+                "probe2gene.R",
+            )
+        ],
         "accept": None,
-        "note": "HERB 2.0（站点为 SPA，靠直连候选文件名探测）",
+        "note": "HERB 2.0（GET /download/file/?file_path=... ，路径来自 bundle 内嵌清单）",
     },
     "disbiome": {
         # run #2 实测：官方 disbiome.ugent.be/api/* 全部返回 Angular 首页（假 200），
@@ -201,11 +213,28 @@ def fetch_biothings(base: str, out_dir: Path) -> list[dict]:
              "sha256": hashlib.sha256(dest.read_bytes()).hexdigest()}]
 
 
+def target_filename(url: str) -> str:
+    """给直链定一个文件名。
+
+    不能只看 URL 路径：HERB 的 7 个文件全走 /download/file/?file_path=xxx，
+    路径部分完全相同，只看 path 会让它们互相覆盖、最后只剩一个文件。
+    真正的文件名在查询参数里。
+    """
+    parsed = urllib.parse.urlparse(url)
+    qs = urllib.parse.parse_qs(parsed.query)
+    for key in ("file_path", "path", "file", "filename", "name"):
+        if key in qs and qs[key]:
+            candidate = Path(urllib.parse.unquote(qs[key][0])).name
+            if candidate:
+                return candidate
+    return Path(parsed.path).name or "index"
+
+
 def fetch_direct(urls: list[str], out_dir: Path, max_bytes: int | None) -> list[dict]:
     """试一批候选直链。猜错的会被 HTML 校验挡下，不会产生假成功。"""
     results = []
     for url in urls:
-        fname = Path(urllib.parse.urlparse(url).path).name
+        fname = target_filename(url)
         log(f"    直链候选 {fname}")
         results.append(download(url, out_dir / fname, max_bytes))
     return results

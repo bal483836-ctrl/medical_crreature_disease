@@ -44,24 +44,55 @@ LIVE_SITES: dict[str, dict] = {
     "herb": {
         "origin": "http://herb.ac.cn",
         "entries": ["http://herb.ac.cn/", "http://herb.ac.cn/Download/"],
-        "note": "umi.js SPA，单一 bundle /static/umi.js",
+        "note": "umi.js SPA —— 第一轮已破解：GET /download/file/?file_path=...",
     },
     "microbetcm": {
         "origin": "https://www.microbetcm.com",
-        "entries": ["https://www.microbetcm.com/"],
-        "note": "Vue SPA，/microbetcm/js/app.*.js + chunk-vendors.*.js",
+        # 第一轮教训：/api/index/* 全 404，且从 bundle 看那组接口是文件上传用的，
+        # 不是取数接口。本轮补 /microbetcm 前缀，并扫更多入口页找真正的数据页。
+        "entries": [
+            "https://www.microbetcm.com/",
+            "https://www.microbetcm.com/microbetcm/",
+            "https://www.microbetcm.com/microbetcm/index.html",
+            "https://www.microbetcm.com/microbetcm/nazox/",
+        ],
+        "prefixes": ["", "/microbetcm"],
+        "note": "Vue SPA，第一轮 0 命中，本轮试 /microbetcm 前缀与更多入口",
     },
     "tcmsp": {
         "origin": "https://www.tcmsp-e.com",
-        "entries": ["https://www.tcmsp-e.com/", "https://www.tcmsp-e.com/tcmspsearch.php"],
-        "note": "检索界面，需找 AJAX 接口",
+        # 第一轮教训：7 个 bundle 全是 jQuery/bootstrap/kendo 等通用库，挖不出接口。
+        # TCMSP 用 Kendo UI Grid，数据源配置写在 PHP 页面的内联 <script> 里，
+        # 所以本轮改为扫页面内联脚本。
+        "entries": [
+            "https://www.tcmsp-e.com/",
+            "https://www.tcmsp-e.com/tcmspsearch.php",
+            "https://www.tcmsp-e.com/tcmspsearch.php?qr=Ma%20Huang&qsr=herb_en_name&token=",
+            "https://www.tcmsp-e.com/browse.php?qc=herbs",
+            "https://www.tcmsp-e.com/tcmsp.php",
+        ],
+        "note": "Kendo UI Grid，接口配置在页面内联脚本里",
+    },
+    "hit2": {
+        "origin": "http://hit2.badd-cao.net",
+        # 第一轮：badd-cao.net:2345 Connection refused；Wayback 只存到一个 SEPPA3
+        # 的批量提交工具和 9 行示例文件，都不是 HIT 的数据。本轮试其它主机/端口。
+        "entries": [
+            "http://hit2.badd-cao.net/",
+            "http://www.badd-cao.net/",
+            "http://badd-cao.net/",
+            "http://hit.badd-cao.net/",
+            "http://www.badd-cao.net:2345/",
+        ],
+        "note": "第一轮端口拒连，本轮探其它主机",
     },
 }
 
 # ---------------------------------------------------------------- B 类：死站
 DEAD_SITES: dict[str, list[str]] = {
     "tcmid": ["tcmid.org", "www.tcmid.org", "megabionet.org/tcmid"],
-    "hit2": ["hit.badd-cao.net", "hit2.badd-cao.net", "badd-cao.net"],
+    # hit2 不在此列：第一轮已查过 Wayback，只存到一个 SEPPA3 的批量提交工具
+    # 和 9 行示例文件，都不是 HIT 的数据。改到 LIVE_SITES 里探其它主机。
     "mdipid": ["mdipid.idrblab.net", "idrblab.org/mdipid"],
 }
 
@@ -147,13 +178,23 @@ def recon_live(name: str, cfg: dict, out_root: Path, delay: float,
     js_dir = out_root / "_recon" / "js" / name
     probe_dir = out_root / "_recon" / "probes" / name
 
-    # 1) 入口 HTML -> bundle 列表
+    # 1) 入口 HTML -> bundle 列表，同时挖内联脚本
+    #    第一轮 TCMSP 栽在这里：它的 bundle 全是通用库，接口配置在页面内联 <script> 中。
     bundles: list[str] = []
+    all_cands: set[str] = set()
+    html_dir = out_root / "_recon" / "html" / name
     for page in cfg["entries"]:
         log(f"    入口 {page}")
         html = fetch_text(page)
         if html is None:
             continue
+        html_dir.mkdir(parents=True, exist_ok=True)
+        safe = re.sub(r"[^A-Za-z0-9._-]", "_", page)[-110:]
+        (html_dir / f"{safe}.html").write_text(html[:400_000], encoding="utf-8")
+        inline = mine_endpoints(html)
+        if inline:
+            log(f"      页面内联脚本挖出 {len(inline)} 个候选")
+            all_cands.update(inline)
         parser = LinkParser()
         try:
             parser.feed(html)
@@ -166,7 +207,6 @@ def recon_live(name: str, cfg: dict, out_root: Path, delay: float,
     log(f"    发现 {len(bundles)} 个 JS bundle")
 
     # 2) 下载 bundle 并挖接口
-    all_cands: set[str] = set()
     for b in bundles[:20]:
         js_dir.mkdir(parents=True, exist_ok=True)
         fname = re.sub(r"[^A-Za-z0-9._-]", "_", b)[-100:] + ".js"
@@ -187,12 +227,20 @@ def recon_live(name: str, cfg: dict, out_root: Path, delay: float,
     origin = cfg["origin"]
     ordered = sorted(all_cands,
                      key=lambda c: (0 if re.search(r"(all|list|download|export|api)", c, re.I) else 1, len(c)))
+    prefixes = cfg.get("prefixes", [""])
     for cand in ordered[:max_probes]:
-        url = cand if cand.startswith("http") else urllib.parse.urljoin(origin, cand)
-        r = probe(url, probe_dir, delay)
-        entry["probes"].append(r)
-        if r.get("ok"):
-            log(f"      ✅ {url[:95]}  {r.get('verdict')}")
+        for pref in prefixes:
+            if cand.startswith("http"):
+                url = cand
+            else:
+                url = urllib.parse.urljoin(origin, pref + cand)
+            r = probe(url, probe_dir, delay)
+            entry["probes"].append(r)
+            if r.get("ok"):
+                log(f"      ✅ {url[:95]}  {r.get('verdict')}")
+                break
+            if cand.startswith("http"):
+                break
     hits = [p for p in entry["probes"] if p.get("ok")]
     log(f"    探测完成：{len(hits)}/{len(entry['probes'])} 个返回可用内容")
     return entry
@@ -293,7 +341,7 @@ def main() -> int:
     args = ap.parse_args()
 
     socket.setdefaulttimeout(300)
-    known = list(LIVE_SITES) + list(DEAD_SITES)
+    known = list(dict.fromkeys(list(LIVE_SITES) + list(DEAD_SITES)))
     names = known if args.targets.strip().lower() == "all" else [
         n.strip().lower() for n in args.targets.split(",") if n.strip()]
     unknown = [n for n in names if n not in known]
