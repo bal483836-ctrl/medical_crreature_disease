@@ -1,0 +1,796 @@
+{
+  "targets": {
+    "herb": {
+      "kind": "live",
+      "note": "umi.js SPA，单一 bundle /static/umi.js",
+      "bundles": [
+        {
+          "url": "http://herb.ac.cn/static/umi.js?version=474",
+          "ok": true,
+          "bytes": 4369860
+        }
+      ],
+      "candidates": [
+        "/Browse",
+        "/CMAPFigure",
+        "/Connect",
+        "/Contact",
+        "/Detail",
+        "/Download",
+        "/EncryptionInfo",
+        "/Experiments",
+        "/Experiments/detail",
+        "/Paper/detail",
+        "/Papers",
+        "/Reference",
+        "/Reference/detail",
+        "/Search",
+        "/app/siRNA/create",
+        "/chedi/api/",
+        "/data/Web_server/HERB_web/static/download_data/HERB_disease_info.txt",
+        "/data/Web_server/HERB_web/static/download_data/HERB_experiment_info.txt",
+        "/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+        "/data/Web_server/HERB_web/static/download_data/HERB_ingredient_info.txt",
+        "/data/Web_server/HERB_web/static/download_data/HERB_reference_info.txt",
+        "/data/Web_server/HERB_web/static/download_data/HERB_target_info.txt",
+        "/data/Web_server/HERB_web/static/download_data/probe2gene.R",
+        "/download/file/",
+        "/file/content/",
+        "/picTest",
+        "http://www.w3.org/2003/g/data-view#"
+      ],
+      "probes": [
+        {
+          "url": "http://herb.ac.cn/Download",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/chedi/api/",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 405: METHOD NOT ALLOWED"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 15,
+          "is_html": false,
+          "head": "Sorry, no path.",
+          "is_json": false,
+          "verdict": "非 JSON 非 HTML（可能是 TSV/二进制）"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/probe2gene.R",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_target_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_disease_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_reference_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_ingredient_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_experiment_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Search",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Detail",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Papers",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Browse",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Connect",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/picTest",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Contact",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Reference",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/CMAPFigure",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Experiments",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Paper/detail",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/file/content/",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 405: METHOD NOT ALLOWED"
+        },
+        {
+          "url": "http://herb.ac.cn/EncryptionInfo",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/app/siRNA/create",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Reference/detail",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Experiments/detail",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://www.w3.org/2003/g/data-view#",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    "microbetcm": {
+      "kind": "live",
+      "note": "Vue SPA，/microbetcm/js/app.*.js + chunk-vendors.*.js",
+      "bundles": [
+        {
+          "url": "https://www.microbetcm.com/microbetcm/js/app.434d2e5b.js",
+          "ok": true,
+          "bytes": 159896
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/js/chunk-vendors.69c59704.js",
+          "ok": true,
+          "bytes": 4106646
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/js/pages/form-wizard.init.js",
+          "ok": true,
+          "bytes": 279
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/bootstrap-editable/js/index.js",
+          "ok": true,
+          "bytes": 231292
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js",
+          "ok": true,
+          "bytes": 8424
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/bootstrap/js/bootstrap.bundle.min.js",
+          "ok": true,
+          "bytes": 81084
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/dropzone/min/dropzone.min.js",
+          "ok": true,
+          "bytes": 48149
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/jquery/jquery.min.js",
+          "ok": true,
+          "bytes": 88145
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/magnific-popup/jquery.magnific-popup.min.js",
+          "ok": true,
+          "bytes": 20216
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/metismenu/metisMenu.min.js",
+          "ok": true,
+          "bytes": 4792
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/moment/min/moment.min.js",
+          "ok": true,
+          "bytes": 53324
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/node-waves/waves.min.js",
+          "ok": true,
+          "bytes": 6329
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/parsleyjs/parsley.min.js",
+          "ok": true,
+          "bytes": 60082
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/select2/js/select2.min.js",
+          "ok": true,
+          "bytes": 120014
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/simplebar/simplebar.min.js",
+          "ok": true,
+          "bytes": 46363
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/sweetalert2/sweetalert2.min.js",
+          "ok": true,
+          "bytes": 41210
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js",
+          "ok": true,
+          "bytes": 5988
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/nazox/assets/libs/twitter-bootstrap-wizard/prettify.js",
+          "ok": true,
+          "bytes": 13631
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/static/js/bootstrap-typeahead.js",
+          "ok": true,
+          "bytes": 10291
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/static/js/toast.js",
+          "ok": true,
+          "bytes": 1414
+        }
+      ],
+      "candidates": [
+        "/api/index/download",
+        "/api/index/submit",
+        "/api/index/upload",
+        "/browse",
+        "/browse/all",
+        "/correlation",
+        "/download",
+        "/getCountries",
+        "/help",
+        "/home",
+        "/microbetcm/Search",
+        "/microbetcm/open_sars_platform/download",
+        "/post",
+        "/search",
+        "/searchDetail",
+        "/similarity",
+        "/submit"
+      ],
+      "probes": [
+        {
+          "url": "https://www.microbetcm.com/download",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/browse/all",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/api/index/submit",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/api/index/upload",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/api/index/download",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/open_sars_platform/download",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/post",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/help",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/home",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/submit",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/search",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/browse",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/similarity",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/correlation",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/getCountries",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/searchDetail",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/Search",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        }
+      ]
+    },
+    "tcmsp": {
+      "kind": "live",
+      "note": "检索界面，需找 AJAX 接口",
+      "bundles": [
+        {
+          "url": "https://www.tcmsp-e.com/cytoscape/js/cytoscapeweb.min.js",
+          "ok": true,
+          "bytes": 13743
+        },
+        {
+          "url": "https://www.tcmsp-e.com/js/bootstrap.min.js",
+          "ok": true,
+          "bytes": 56941
+        },
+        {
+          "url": "https://www.tcmsp-e.com/js/jquery-ui.min1.8.24.js",
+          "ok": true,
+          "bytes": 240427
+        },
+        {
+          "url": "https://www.tcmsp-e.com/js/jquery.highlight-4.js",
+          "ok": true,
+          "bytes": 794
+        },
+        {
+          "url": "https://www.tcmsp-e.com/js/jquery.min1.8.3.js",
+          "ok": true,
+          "bytes": 93636
+        },
+        {
+          "url": "https://www.tcmsp-e.com/js/kendo.web.min.js",
+          "ok": true,
+          "bytes": 736509
+        },
+        {
+          "url": "https://www.tcmsp-e.com/js/myjs_CancerHSP.js",
+          "ok": true,
+          "bytes": 101525
+        }
+      ],
+      "candidates": [],
+      "probes": []
+    },
+    "tcmid": {
+      "kind": "dead",
+      "domains": [
+        "tcmid.org",
+        "www.tcmid.org",
+        "megabionet.org/tcmid"
+      ],
+      "archived": [
+        {
+          "timestamp": "20151014022259",
+          "original": "http://www.megabionet.org/tcmid/static/downloads/ingredients.zip",
+          "mimetype": "application/zip",
+          "length": "798686",
+          "fetch_url": "https://web.archive.org/web/20151014022259id_/http://www.megabionet.org/tcmid/static/downloads/ingredients.zip"
+        },
+        {
+          "timestamp": "20151013210053",
+          "original": "http://www.megabionet.org/tcmid/static/downloads/prescriptions.zip",
+          "mimetype": "application/zip",
+          "length": "6909267",
+          "fetch_url": "https://web.archive.org/web/20151013210053id_/http://www.megabionet.org/tcmid/static/downloads/prescriptions.zip"
+        },
+        {
+          "timestamp": "20151013202027",
+          "original": "http://www.megabionet.org/tcmid/static/downloads/compound_protein.zip",
+          "mimetype": "application/zip",
+          "length": "859561",
+          "fetch_url": "https://web.archive.org/web/20151013202027id_/http://www.megabionet.org/tcmid/static/downloads/compound_protein.zip"
+        },
+        {
+          "timestamp": "20151013185854",
+          "original": "http://www.megabionet.org/tcmid/static/downloads/herbs.zip",
+          "mimetype": "application/zip",
+          "length": "686013",
+          "fetch_url": "https://web.archive.org/web/20151013185854id_/http://www.megabionet.org/tcmid/static/downloads/herbs.zip"
+        },
+        {
+          "timestamp": "20121121044017",
+          "original": "http://www.tcmid.org/robots.txt",
+          "mimetype": "text/plain",
+          "length": "303",
+          "fetch_url": "https://web.archive.org/web/20121121044017id_/http://www.tcmid.org/robots.txt"
+        },
+        {
+          "timestamp": "20110201231131",
+          "original": "http://www.tcmid.org/flash_text.txt",
+          "mimetype": "text/plain",
+          "length": "585",
+          "fetch_url": "https://web.archive.org/web/20110201231131id_/http://www.tcmid.org/flash_text.txt"
+        }
+      ],
+      "files": [
+        {
+          "url": "https://web.archive.org/web/20151014022259id_/http://www.megabionet.org/tcmid/static/downloads/ingredients.zip",
+          "path": "/home/runner/work/_temp/out/tcmid/ingredients.zip",
+          "ok": true,
+          "bytes": 797899,
+          "sha256": "d1e394dc5f206a6a4ba81b9c7fd46c5697e0bec5526da13f11220f31ae2db747",
+          "wayback_timestamp": "20151014022259",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/ingredients.zip"
+        },
+        {
+          "url": "https://web.archive.org/web/20151013210053id_/http://www.megabionet.org/tcmid/static/downloads/prescriptions.zip",
+          "path": "/home/runner/work/_temp/out/tcmid/prescriptions.zip",
+          "ok": true,
+          "bytes": 6906622,
+          "sha256": "62e3404e647729daef3764827259eea1f18cf8f8178628c7ee22d3574048ff2a",
+          "wayback_timestamp": "20151013210053",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/prescriptions.zip"
+        },
+        {
+          "url": "https://web.archive.org/web/20151013202027id_/http://www.megabionet.org/tcmid/static/downloads/compound_protein.zip",
+          "path": "/home/runner/work/_temp/out/tcmid/compound_protein.zip",
+          "ok": true,
+          "bytes": 866389,
+          "sha256": "468b0dc5a0f5aeb8e8e142fa23ecb7a04603c5d25f697daa61e782cd8bb9f06a",
+          "wayback_timestamp": "20151013202027",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/compound_protein.zip"
+        },
+        {
+          "url": "https://web.archive.org/web/20151013185854id_/http://www.megabionet.org/tcmid/static/downloads/herbs.zip",
+          "path": "/home/runner/work/_temp/out/tcmid/herbs.zip",
+          "ok": true,
+          "bytes": 685262,
+          "sha256": "2eee3d77aafce6d335e2ce73e4ddb55a610f1905caea7ad1003708664464a92a",
+          "wayback_timestamp": "20151013185854",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/herbs.zip"
+        },
+        {
+          "url": "https://web.archive.org/web/20121121044017id_/http://www.tcmid.org/robots.txt",
+          "path": "/home/runner/work/_temp/out/tcmid/robots.txt",
+          "ok": true,
+          "bytes": 28,
+          "sha256": "87c2a1af587cb99b7b98c107c6169fa07f9a02d0f9762907277cf82730117f3d",
+          "wayback_timestamp": "20121121044017",
+          "original_url": "http://www.tcmid.org/robots.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20110201231131id_/http://www.tcmid.org/flash_text.txt",
+          "path": "/home/runner/work/_temp/out/tcmid/flash_text.txt",
+          "ok": true,
+          "bytes": 235,
+          "sha256": "258eecb767135f814f7f9ced042ffe43de638dd4636e7b799fc99a3141c3a9ad",
+          "wayback_timestamp": "20110201231131",
+          "original_url": "http://www.tcmid.org/flash_text.txt"
+        }
+      ],
+      "provenance": [
+        {
+          "file": "ingredients.zip",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20151014022259",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/ingredients.zip",
+          "fetch_url": "https://web.archive.org/web/20151014022259id_/http://www.megabionet.org/tcmid/static/downloads/ingredients.zip"
+        },
+        {
+          "file": "prescriptions.zip",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20151013210053",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/prescriptions.zip",
+          "fetch_url": "https://web.archive.org/web/20151013210053id_/http://www.megabionet.org/tcmid/static/downloads/prescriptions.zip"
+        },
+        {
+          "file": "compound_protein.zip",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20151013202027",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/compound_protein.zip",
+          "fetch_url": "https://web.archive.org/web/20151013202027id_/http://www.megabionet.org/tcmid/static/downloads/compound_protein.zip"
+        },
+        {
+          "file": "herbs.zip",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20151013185854",
+          "original_url": "http://www.megabionet.org/tcmid/static/downloads/herbs.zip",
+          "fetch_url": "https://web.archive.org/web/20151013185854id_/http://www.megabionet.org/tcmid/static/downloads/herbs.zip"
+        },
+        {
+          "file": "robots.txt",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20121121044017",
+          "original_url": "http://www.tcmid.org/robots.txt",
+          "fetch_url": "https://web.archive.org/web/20121121044017id_/http://www.tcmid.org/robots.txt"
+        },
+        {
+          "file": "flash_text.txt",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20110201231131",
+          "original_url": "http://www.tcmid.org/flash_text.txt",
+          "fetch_url": "https://web.archive.org/web/20110201231131id_/http://www.tcmid.org/flash_text.txt"
+        }
+      ]
+    },
+    "hit2": {
+      "kind": "dead",
+      "domains": [
+        "hit.badd-cao.net",
+        "hit2.badd-cao.net",
+        "badd-cao.net"
+      ],
+      "archived": [
+        {
+          "timestamp": "20250101103758",
+          "original": "http://hit2.badd-cao.net/robots.txt",
+          "mimetype": "text/html",
+          "length": "477",
+          "fetch_url": "https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt"
+        },
+        {
+          "timestamp": "20231209124335",
+          "original": "http://www.badd-cao.net/h-racs/SMILES.txt",
+          "mimetype": "text/plain",
+          "length": "1029",
+          "fetch_url": "https://web.archive.org/web/20231209124335id_/http://www.badd-cao.net/h-racs/SMILES.txt"
+        },
+        {
+          "timestamp": "20210926221550",
+          "original": "http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz",
+          "mimetype": "application/x-xz",
+          "length": "3547989",
+          "fetch_url": "https://web.archive.org/web/20210926221550id_/http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz"
+        }
+      ],
+      "files": [
+        {
+          "url": "https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt",
+          "path": "/home/runner/work/_temp/out/hit2/robots.txt",
+          "ok": false,
+          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）",
+          "wayback_timestamp": "20250101103758",
+          "original_url": "http://hit2.badd-cao.net/robots.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20231209124335id_/http://www.badd-cao.net/h-racs/SMILES.txt",
+          "path": "/home/runner/work/_temp/out/hit2/SMILES.txt",
+          "ok": true,
+          "error": "URLError: <urlopen error [Errno 110] Connection timed out>",
+          "bytes": 756,
+          "sha256": "4af1cadbdc0a6566f769be47a872ba9d774feeb9421b79765e7abcd9e7b363df",
+          "wayback_timestamp": "20231209124335",
+          "original_url": "http://www.badd-cao.net/h-racs/SMILES.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20210926221550id_/http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz",
+          "path": "/home/runner/work/_temp/out/hit2/Submit%20local%20files%20in%20batch.tar.xz",
+          "ok": true,
+          "bytes": 3546292,
+          "sha256": "409d83962d82da5eca3eb156054ca283c9d08dcc9b3663c8a5c4c3477fdd3746",
+          "wayback_timestamp": "20210926221550",
+          "original_url": "http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz"
+        }
+      ],
+      "provenance": [
+        {
+          "file": "SMILES.txt",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20231209124335",
+          "original_url": "http://www.badd-cao.net/h-racs/SMILES.txt",
+          "fetch_url": "https://web.archive.org/web/20231209124335id_/http://www.badd-cao.net/h-racs/SMILES.txt"
+        },
+        {
+          "file": "Submit%20local%20files%20in%20batch.tar.xz",
+          "source": "Internet Archive Wayback Machine",
+          "snapshot": "20210926221550",
+          "original_url": "http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz",
+          "fetch_url": "https://web.archive.org/web/20210926221550id_/http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz"
+        }
+      ]
+    },
+    "mdipid": {
+      "kind": "dead",
+      "domains": [
+        "mdipid.idrblab.net",
+        "idrblab.org/mdipid"
+      ],
+      "archived": [],
+      "files": [],
+      "provenance": []
+    }
+  },
+  "delay": 1.0
+}

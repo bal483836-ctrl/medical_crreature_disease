@@ -1,0 +1,137 @@
+
+================================================================
+[herb]
+================================================================
+    入口 http://herb.ac.cn/
+    入口 http://herb.ac.cn/Download/
+    发现 1 个 JS bundle
+      OK  http___herb.ac.cn_static_umi.js_version_474.js  (4.37 MB)
+      http___herb.ac.cn_static_umi.js_version_474.js: 4.37MB -> 27 个候选
+    合计 27 个候选接口，探测前 120 个
+    探测完成：0/27 个返回可用内容
+
+================================================================
+[microbetcm]
+================================================================
+    入口 https://www.microbetcm.com/
+    发现 20 个 JS bundle
+      OK  https___www.microbetcm.com_microbetcm_js_app.434d2e5b.js.js  (0.16 MB)
+      https___www.microbetcm.com_microbetcm_js_app.434d2: 0.16MB -> 15 个候选
+      OK  https___www.microbetcm.com_microbetcm_js_chunk-vendors.69c59704.js.js  (4.11 MB)
+      https___www.microbetcm.com_microbetcm_js_chunk-ven: 4.11MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_js_pages_form-wizard.init.js.js  (0.00 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.00MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_bootstrap-editable_js_index.js.js  (0.23 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.23MB -> 2 个候选
+      OK  tps___www.microbetcm.com_microbetcm_nazox_assets_libs_bootstrap-maxlength_bootstrap-maxlength.min.js.js  (0.01 MB)
+      tps___www.microbetcm.com_microbetcm_nazox_assets_l: 0.01MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_bootstrap_js_bootstrap.bundle.min.js.js  (0.08 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.08MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_dropzone_min_dropzone.min.js.js  (0.05 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.05MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_jquery_jquery.min.js.js  (0.09 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.09MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_magnific-popup_jquery.magnific-popup.min.js.js  (0.02 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.02MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_metismenu_metisMenu.min.js.js  (0.00 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.00MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_moment_min_moment.min.js.js  (0.05 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.05MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_node-waves_waves.min.js.js  (0.01 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.01MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_parsleyjs_parsley.min.js.js  (0.06 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.06MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_select2_js_select2.min.js.js  (0.12 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.12MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_simplebar_simplebar.min.js.js  (0.05 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.05MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_sweetalert2_sweetalert2.min.js.js  (0.04 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.04MB -> 0 个候选
+      OK  .microbetcm.com_microbetcm_nazox_assets_libs_twitter-bootstrap-wizard_jquery.bootstrap.wizard.min.js.js  (0.01 MB)
+      .microbetcm.com_microbetcm_nazox_assets_libs_twitt: 0.01MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_nazox_assets_libs_twitter-bootstrap-wizard_prettify.js.js  (0.01 MB)
+      https___www.microbetcm.com_microbetcm_nazox_assets: 0.01MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_static_js_bootstrap-typeahead.js.js  (0.01 MB)
+      https___www.microbetcm.com_microbetcm_static_js_bo: 0.01MB -> 0 个候选
+      OK  https___www.microbetcm.com_microbetcm_static_js_toast.js.js  (0.00 MB)
+      https___www.microbetcm.com_microbetcm_static_js_to: 0.00MB -> 0 个候选
+    合计 17 个候选接口，探测前 120 个
+    探测完成：0/17 个返回可用内容
+
+================================================================
+[tcmsp]
+================================================================
+    入口 https://www.tcmsp-e.com/
+    入口 https://www.tcmsp-e.com/tcmspsearch.php
+    发现 7 个 JS bundle
+      OK  https___www.tcmsp-e.com_cytoscape_js_cytoscapeweb.min.js.js  (0.01 MB)
+      https___www.tcmsp-e.com_cytoscape_js_cytoscapeweb.: 0.01MB -> 0 个候选
+      OK  https___www.tcmsp-e.com_js_bootstrap.min.js.js  (0.06 MB)
+      https___www.tcmsp-e.com_js_bootstrap.min.js.js: 0.06MB -> 0 个候选
+      OK  https___www.tcmsp-e.com_js_jquery-ui.min1.8.24.js.js  (0.24 MB)
+      https___www.tcmsp-e.com_js_jquery-ui.min1.8.24.js.: 0.24MB -> 0 个候选
+      OK  https___www.tcmsp-e.com_js_jquery.highlight-4.js.js  (0.00 MB)
+      https___www.tcmsp-e.com_js_jquery.highlight-4.js.j: 0.00MB -> 0 个候选
+      OK  https___www.tcmsp-e.com_js_jquery.min1.8.3.js.js  (0.09 MB)
+      https___www.tcmsp-e.com_js_jquery.min1.8.3.js.js: 0.09MB -> 0 个候选
+      OK  https___www.tcmsp-e.com_js_kendo.web.min.js.js  (0.74 MB)
+      https___www.tcmsp-e.com_js_kendo.web.min.js.js: 0.74MB -> 0 个候选
+      OK  https___www.tcmsp-e.com_js_myjs_CancerHSP.js.js  (0.10 MB)
+      https___www.tcmsp-e.com_js_myjs_CancerHSP.js.js: 0.10MB -> 0 个候选
+    合计 0 个候选接口，探测前 120 个
+    探测完成：0/0 个返回可用内容
+
+================================================================
+[tcmid]
+================================================================
+    CDX 查询 tcmid.org
+      存档中的数据文件: 2 个
+    CDX 查询 www.tcmid.org
+      存档中的数据文件: 2 个
+    CDX 查询 megabionet.org/tcmid
+      存档中的数据文件: 4 个
+    去重后 6 个唯一文件，下载前 60 个
+      OK  ingredients.zip  (0.80 MB)
+      OK  prescriptions.zip  (6.91 MB)
+      OK  compound_protein.zip  (0.87 MB)
+      OK  herbs.zip  (0.69 MB)
+      OK  robots.txt  (0.00 MB)
+      OK  flash_text.txt  (0.00 MB)
+    取回 6/6 个文件
+
+================================================================
+[hit2]
+================================================================
+    CDX 查询 hit.badd-cao.net
+      存档中的数据文件: 0 个
+    CDX 查询 hit2.badd-cao.net
+      存档中的数据文件: 1 个
+    CDX 查询 badd-cao.net
+      存档中的数据文件: 2 个
+    去重后 3 个唯一文件，下载前 60 个
+      失败（返回 HTML 而非数据）: https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt
+      OK  SMILES.txt  (0.00 MB)
+      OK  Submit%20local%20files%20in%20batch.tar.xz  (3.55 MB)
+    取回 2/3 个文件
+
+================================================================
+[mdipid]
+================================================================
+    CDX 查询 mdipid.idrblab.net
+      存档中的数据文件: 0 个
+    CDX 查询 idrblab.org/mdipid
+      存档中的数据文件: 0 个
+    去重后 0 个唯一文件，下载前 60 个
+    取回 0/0 个文件
+
+================================================================
+侦察汇总
+================================================================
+  herb         [活站] bundle 1  候选   27  可用接口 0
+  microbetcm   [活站] bundle 20  候选   17  可用接口 0
+  tcmsp        [活站] bundle 7  候选    0  可用接口 0
+  tcmid        [死站] 存档数据文件    6  取回 6/6
+  hit2         [死站] 存档数据文件    3  取回 2/3
+  mdipid       [死站] 存档数据文件    0  取回 0/0
+
+  报告: /home/runner/work/_temp/out/_recon/recon_report.json
