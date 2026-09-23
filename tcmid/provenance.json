@@ -26,19 +26,5 @@
     "snapshot": "20151013185854",
     "original_url": "http://www.megabionet.org/tcmid/static/downloads/herbs.zip",
     "fetch_url": "https://web.archive.org/web/20151013185854id_/http://www.megabionet.org/tcmid/static/downloads/herbs.zip"
-  },
-  {
-    "file": "robots.txt",
-    "source": "Internet Archive Wayback Machine",
-    "snapshot": "20121121044017",
-    "original_url": "http://www.tcmid.org/robots.txt",
-    "fetch_url": "https://web.archive.org/web/20121121044017id_/http://www.tcmid.org/robots.txt"
-  },
-  {
-    "file": "flash_text.txt",
-    "source": "Internet Archive Wayback Machine",
-    "snapshot": "20110201231131",
-    "original_url": "http://www.tcmid.org/flash_text.txt",
-    "fetch_url": "https://web.archive.org/web/20110201231131id_/http://www.tcmid.org/flash_text.txt"
   }
 ]

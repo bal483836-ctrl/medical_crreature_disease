@@ -23,9 +23,9 @@
       存档中的数据文件: 1 个
     CDX 查询 www.herb.ac.cn
       存档中的数据文件: 1 个
-    去重后 1 个唯一文件，下载前 60 个
-      失败（返回 HTML 而非数据）: https://web.archive.org/web/20211205052146id_/http://herb.ac.cn/robots.txt
-    取回 0/1 个文件
+    跳过 1 个非数据文件（站点杂项/工具包）
+    去重后 0 个唯一文件，下载前 60 个
+    取回 0/0 个文件
 
 ================================================================
 [microbetcm]
@@ -131,11 +131,9 @@
       存档中的数据文件: 0 个
     CDX 查询 badd-cao.net
       存档中的数据文件: 2 个
-    去重后 3 个唯一文件，下载前 60 个
-      失败（返回 HTML 而非数据）: https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt
-      OK  SMILES.txt  (0.00 MB)
-      OK  Submit%20local%20files%20in%20batch.tar.xz  (3.55 MB)
-    取回 2/3 个文件
+    跳过 3 个非数据文件（站点杂项/工具包）
+    去重后 0 个唯一文件，下载前 60 个
+    取回 0/0 个文件
 
 ================================================================
 [tcmid]
@@ -146,20 +144,18 @@
       存档中的数据文件: 2 个
     CDX 查询 megabionet.org/tcmid
       存档中的数据文件: 4 个
-    去重后 6 个唯一文件，下载前 60 个
+    跳过 2 个非数据文件（站点杂项/工具包）
+    去重后 4 个唯一文件，下载前 60 个
       OK  ingredients.zip  (0.80 MB)
       OK  prescriptions.zip  (6.91 MB)
       OK  compound_protein.zip  (0.87 MB)
       OK  herbs.zip  (0.69 MB)
-      OK  robots.txt  (0.00 MB)
-      OK  flash_text.txt  (0.00 MB)
-    取回 6/6 个文件
+    取回 4/4 个文件
 
 ================================================================
 [mdipid]
 ================================================================
     CDX 查询 mdipid.idrblab.net
-      页面不可达: http://web.archive.org/cdx/search/cdx?url=mdipid.idrblab.net/*&output=json&collapse=urlkey&filter=statuscode:200&limit=5000  (HTTPError: HTTP Error 429: Too Many Requests)
       存档中的数据文件: 0 个
     CDX 查询 idrblab.org/mdipid
       存档中的数据文件: 0 个
@@ -172,8 +168,8 @@
   herb         [活站] bundle 1  候选   27  可用接口 0  存档取回 0
   microbetcm   [活站] bundle 20  候选   17  可用接口 0  存档取回 0
   tcmsp        [活站] bundle 7  候选   35  可用接口 0
-  hit2         [活站] bundle 0  候选    0  可用接口 0  存档取回 2
-  tcmid        [死站] 存档数据文件    6  取回 6/6
+  hit2         [活站] bundle 0  候选    0  可用接口 0  存档取回 0
+  tcmid        [死站] 存档数据文件    4  取回 4/4
   mdipid       [死站] 存档数据文件    0  取回 0/0
 
   报告: /home/runner/work/_temp/out/_recon/recon_report.json
