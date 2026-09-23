@@ -2,7 +2,7 @@
   "targets": {
     "herb": {
       "kind": "live",
-      "note": "umi.js SPA，单一 bundle /static/umi.js",
+      "note": "umi.js SPA —— 第一轮已破解：GET /download/file/?file_path=...",
       "bundles": [
         {
           "url": "http://herb.ac.cn/static/umi.js?version=474",
@@ -117,16 +117,6 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_ingredient_info.txt",
-          "ok": false,
-          "status": 200,
-          "content_type": "text/html; charset=utf-8",
-          "bytes": 911,
-          "is_html": true,
-          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
-          "verdict": "HTML 兜底页，不是接口"
-        },
-        {
           "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_experiment_info.txt",
           "ok": false,
           "status": 200,
@@ -137,7 +127,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/Search",
+          "url": "http://herb.ac.cn/data/Web_server/HERB_web/static/download_data/HERB_ingredient_info.txt",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -148,6 +138,16 @@
         },
         {
           "url": "http://herb.ac.cn/Detail",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 911,
+          "is_html": true,
+          "head": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"/static/umi.css?version=100\">\n    <meta charset=\"utf-8\">\n    <meta HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-cache\">\n    <meta HTTP-EQUIV=\"Expires\" CONTENT=\"-1\">\n    <meta name=\"viewport\" co",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "http://herb.ac.cn/Search",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -187,7 +187,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/picTest",
+          "url": "http://herb.ac.cn/Contact",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -197,7 +197,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/Contact",
+          "url": "http://herb.ac.cn/picTest",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -262,7 +262,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/app/siRNA/create",
+          "url": "http://herb.ac.cn/Reference/detail",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -272,7 +272,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/Reference/detail",
+          "url": "http://herb.ac.cn/app/siRNA/create",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -300,7 +300,7 @@
     },
     "microbetcm": {
       "kind": "live",
-      "note": "Vue SPA，/microbetcm/js/app.*.js + chunk-vendors.*.js",
+      "note": "Vue SPA，第一轮 0 命中，本轮试 /microbetcm 前缀与更多入口",
       "bundles": [
         {
           "url": "https://www.microbetcm.com/microbetcm/js/app.434d2e5b.js",
@@ -429,7 +429,17 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/download",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/browse/all",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/browse/all",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -439,7 +449,17 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/api/index/submit",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/api/index/upload",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/api/index/upload",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -449,7 +469,17 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/api/index/download",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/microbetcm/open_sars_platform/download",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/microbetcm/open_sars_platform/download",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -459,7 +489,17 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/post",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/help",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/help",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -469,7 +509,7 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
-          "url": "https://www.microbetcm.com/submit",
+          "url": "https://www.microbetcm.com/microbetcm/home",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -479,7 +519,27 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/search",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/submit",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/submit",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/browse",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/browse",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -489,7 +549,17 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/similarity",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/correlation",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/correlation",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -499,7 +569,17 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/microbetcm/getCountries",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/searchDetail",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/searchDetail",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -507,12 +587,17 @@
           "url": "https://www.microbetcm.com/microbetcm/Search",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/microbetcm/Search",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
         }
       ]
     },
     "tcmsp": {
       "kind": "live",
-      "note": "检索界面，需找 AJAX 接口",
+      "note": "Kendo UI Grid，接口配置在页面内联脚本里",
       "bundles": [
         {
           "url": "https://www.tcmsp-e.com/cytoscape/js/cytoscapeweb.min.js",
@@ -550,6 +635,13 @@
           "bytes": 101525
         }
       ],
+      "candidates": [],
+      "probes": []
+    },
+    "hit2": {
+      "kind": "live",
+      "note": "第一轮端口拒连，本轮探其它主机",
+      "bundles": [],
       "candidates": [],
       "probes": []
     },
@@ -636,6 +728,7 @@
           "url": "https://web.archive.org/web/20151013185854id_/http://www.megabionet.org/tcmid/static/downloads/herbs.zip",
           "path": "/home/runner/work/_temp/out/tcmid/herbs.zip",
           "ok": true,
+          "error": "URLError: <urlopen error [Errno 111] Connection refused>",
           "bytes": 685262,
           "sha256": "2eee3d77aafce6d335e2ce73e4ddb55a610f1905caea7ad1003708664464a92a",
           "wayback_timestamp": "20151013185854",
@@ -702,82 +795,6 @@
           "snapshot": "20110201231131",
           "original_url": "http://www.tcmid.org/flash_text.txt",
           "fetch_url": "https://web.archive.org/web/20110201231131id_/http://www.tcmid.org/flash_text.txt"
-        }
-      ]
-    },
-    "hit2": {
-      "kind": "dead",
-      "domains": [
-        "hit.badd-cao.net",
-        "hit2.badd-cao.net",
-        "badd-cao.net"
-      ],
-      "archived": [
-        {
-          "timestamp": "20250101103758",
-          "original": "http://hit2.badd-cao.net/robots.txt",
-          "mimetype": "text/html",
-          "length": "477",
-          "fetch_url": "https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt"
-        },
-        {
-          "timestamp": "20231209124335",
-          "original": "http://www.badd-cao.net/h-racs/SMILES.txt",
-          "mimetype": "text/plain",
-          "length": "1029",
-          "fetch_url": "https://web.archive.org/web/20231209124335id_/http://www.badd-cao.net/h-racs/SMILES.txt"
-        },
-        {
-          "timestamp": "20210926221550",
-          "original": "http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz",
-          "mimetype": "application/x-xz",
-          "length": "3547989",
-          "fetch_url": "https://web.archive.org/web/20210926221550id_/http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz"
-        }
-      ],
-      "files": [
-        {
-          "url": "https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt",
-          "path": "/home/runner/work/_temp/out/hit2/robots.txt",
-          "ok": false,
-          "error": "ContentMismatch: 返回的是 HTML 页面而非数据文件（该路径可能不存在，被前端路由兜底为首页）",
-          "wayback_timestamp": "20250101103758",
-          "original_url": "http://hit2.badd-cao.net/robots.txt"
-        },
-        {
-          "url": "https://web.archive.org/web/20231209124335id_/http://www.badd-cao.net/h-racs/SMILES.txt",
-          "path": "/home/runner/work/_temp/out/hit2/SMILES.txt",
-          "ok": true,
-          "error": "URLError: <urlopen error [Errno 110] Connection timed out>",
-          "bytes": 756,
-          "sha256": "4af1cadbdc0a6566f769be47a872ba9d774feeb9421b79765e7abcd9e7b363df",
-          "wayback_timestamp": "20231209124335",
-          "original_url": "http://www.badd-cao.net/h-racs/SMILES.txt"
-        },
-        {
-          "url": "https://web.archive.org/web/20210926221550id_/http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz",
-          "path": "/home/runner/work/_temp/out/hit2/Submit%20local%20files%20in%20batch.tar.xz",
-          "ok": true,
-          "bytes": 3546292,
-          "sha256": "409d83962d82da5eca3eb156054ca283c9d08dcc9b3663c8a5c4c3477fdd3746",
-          "wayback_timestamp": "20210926221550",
-          "original_url": "http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz"
-        }
-      ],
-      "provenance": [
-        {
-          "file": "SMILES.txt",
-          "source": "Internet Archive Wayback Machine",
-          "snapshot": "20231209124335",
-          "original_url": "http://www.badd-cao.net/h-racs/SMILES.txt",
-          "fetch_url": "https://web.archive.org/web/20231209124335id_/http://www.badd-cao.net/h-racs/SMILES.txt"
-        },
-        {
-          "file": "Submit%20local%20files%20in%20batch.tar.xz",
-          "source": "Internet Archive Wayback Machine",
-          "snapshot": "20210926221550",
-          "original_url": "http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz",
-          "fetch_url": "https://web.archive.org/web/20210926221550id_/http://www.badd-cao.net/seppa3/Submit%20local%20files%20in%20batch.tar.xz"
         }
       ]
     },

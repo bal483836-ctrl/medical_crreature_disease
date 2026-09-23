@@ -14,6 +14,10 @@
 [microbetcm]
 ================================================================
     入口 https://www.microbetcm.com/
+    入口 https://www.microbetcm.com/microbetcm/
+    入口 https://www.microbetcm.com/microbetcm/index.html
+    入口 https://www.microbetcm.com/microbetcm/nazox/
+      页面不可达: https://www.microbetcm.com/microbetcm/nazox/  (HTTPError: HTTP Error 404: )
     发现 20 个 JS bundle
       OK  https___www.microbetcm.com_microbetcm_js_app.434d2e5b.js.js  (0.16 MB)
       https___www.microbetcm.com_microbetcm_js_app.434d2: 0.16MB -> 15 个候选
@@ -56,13 +60,16 @@
       OK  https___www.microbetcm.com_microbetcm_static_js_toast.js.js  (0.00 MB)
       https___www.microbetcm.com_microbetcm_static_js_to: 0.00MB -> 0 个候选
     合计 17 个候选接口，探测前 120 个
-    探测完成：0/17 个返回可用内容
+    探测完成：0/34 个返回可用内容
 
 ================================================================
 [tcmsp]
 ================================================================
     入口 https://www.tcmsp-e.com/
     入口 https://www.tcmsp-e.com/tcmspsearch.php
+    入口 https://www.tcmsp-e.com/tcmspsearch.php?qr=Ma%20Huang&qsr=herb_en_name&token=
+    入口 https://www.tcmsp-e.com/browse.php?qc=herbs
+    入口 https://www.tcmsp-e.com/tcmsp.php
     发现 7 个 JS bundle
       OK  https___www.tcmsp-e.com_cytoscape_js_cytoscapeweb.min.js.js  (0.01 MB)
       https___www.tcmsp-e.com_cytoscape_js_cytoscapeweb.: 0.01MB -> 0 个候选
@@ -78,6 +85,21 @@
       https___www.tcmsp-e.com_js_kendo.web.min.js.js: 0.74MB -> 0 个候选
       OK  https___www.tcmsp-e.com_js_myjs_CancerHSP.js.js  (0.10 MB)
       https___www.tcmsp-e.com_js_myjs_CancerHSP.js.js: 0.10MB -> 0 个候选
+    合计 0 个候选接口，探测前 120 个
+    探测完成：0/0 个返回可用内容
+
+================================================================
+[hit2]
+================================================================
+    入口 http://hit2.badd-cao.net/
+    入口 http://www.badd-cao.net/
+    入口 http://badd-cao.net/
+      页面不可达: http://badd-cao.net/  (URLError: <urlopen error [Errno -5] No address associated with hostname>)
+    入口 http://hit.badd-cao.net/
+      页面不可达: http://hit.badd-cao.net/  (URLError: <urlopen error [Errno -2] Name or service not known>)
+    入口 http://www.badd-cao.net:2345/
+      页面不可达: http://www.badd-cao.net:2345/  (URLError: <urlopen error [Errno 111] Connection refused>)
+    发现 0 个 JS bundle
     合计 0 个候选接口，探测前 120 个
     探测完成：0/0 个返回可用内容
 
@@ -100,21 +122,6 @@
     取回 6/6 个文件
 
 ================================================================
-[hit2]
-================================================================
-    CDX 查询 hit.badd-cao.net
-      存档中的数据文件: 0 个
-    CDX 查询 hit2.badd-cao.net
-      存档中的数据文件: 1 个
-    CDX 查询 badd-cao.net
-      存档中的数据文件: 2 个
-    去重后 3 个唯一文件，下载前 60 个
-      失败（返回 HTML 而非数据）: https://web.archive.org/web/20250101103758id_/http://hit2.badd-cao.net/robots.txt
-      OK  SMILES.txt  (0.00 MB)
-      OK  Submit%20local%20files%20in%20batch.tar.xz  (3.55 MB)
-    取回 2/3 个文件
-
-================================================================
 [mdipid]
 ================================================================
     CDX 查询 mdipid.idrblab.net
@@ -130,8 +137,8 @@
   herb         [活站] bundle 1  候选   27  可用接口 0
   microbetcm   [活站] bundle 20  候选   17  可用接口 0
   tcmsp        [活站] bundle 7  候选    0  可用接口 0
+  hit2         [活站] bundle 0  候选    0  可用接口 0
   tcmid        [死站] 存档数据文件    6  取回 6/6
-  hit2         [死站] 存档数据文件    3  取回 2/3
   mdipid       [死站] 存档数据文件    0  取回 0/0
 
   报告: /home/runner/work/_temp/out/_recon/recon_report.json
