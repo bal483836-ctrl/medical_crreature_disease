@@ -27,10 +27,10 @@ Wayback 快照为 2015 年，文件日期 2012，对应 **TCMID 1.0**。
 
 | 库 | 原因（均为实测） |
 |---|---|
-| **HERB** | 下载接口 `/download/file/?file_path=` 本身可用，但它指向的文件在服务端已不存在（`static/...` 形式返回 `file_path dose not exists`，说明路径格式合法、文件已删）。**官方下载功能损坏。** |
+| **HERB** | 下载接口 `/download/file/?file_path=` 本身可用，但它指向的文件在服务端已不存在（`static/...` 形式返回 `file_path dose not exists`，说明路径格式合法、文件已删）。**官方下载功能损坏。** Wayback 兜底亦无：该域存档中唯一「数据文件」是 `robots.txt`。 |
 | **HIT 2.0** | 课题组 Resources 页给出的唯一地址是 `hit2.badd-cao.net`，而它只是指向 `badd-cao.net:2345` 的 frameset，该端口 Connection refused。**服务已停。** |
 | **MDIPID** | `mdipid.idrblab.net` 持续返回 HTTP 500；Wayback 无任何数据文件存档。 |
-| **MicrobeTCM** | Vue SPA，`/api/index/*` 经查是**文件上传**接口而非取数接口，页面无任何数据链接。 |
+| **MicrobeTCM** | Vue SPA，`/api/index/*` 经查是**文件上传**接口而非取数接口，页面无任何数据链接。Wayback 无任何存档数据文件。 |
 
 > 曾短暂出现在本分支、现已删除的非数据文件：
 > - `disbiome/{diseases,methods,organisms,publications}.json` — run #1 的 Angular 首页 HTML（假 200）
@@ -39,6 +39,7 @@ Wayback 快照为 2015 年，文件日期 2012，对应 **TCMID 1.0**。
 > - `tcmid/{robots.txt,flash_text.txt}` — 存档里顺带抓到的站点杂项
 >
 > 保留它们会让人误以为这些库已取得，故一并清除。
+> 抓取脚本已加入非数据黑名单（`NOT_DATA`），这些文件不会再被重新下载提交。
 
 ## 侦察证据
 
