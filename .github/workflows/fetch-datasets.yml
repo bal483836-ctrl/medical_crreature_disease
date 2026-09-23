@@ -7,11 +7,17 @@ name: Fetch datasets
 on:
   # push 触发：workflow_dispatch 需要工作流位于默认分支才能手动触发，
   # push 则直接用分支自身的这份文件，因此开发分支上也能跑通。
+  # 每日重试：MDIPID 的 500 可能是临时故障，HIT 2.0 端口可能恢复，
+  # 站点一好就自动抓到。默认分支即本分支，schedule 可正常触发。
+  schedule:
+    - cron: "17 3 * * *"
   push:
     branches: [claude/beautiful-fermi-qyx9iv]
     paths:
       - ".github/workflows/fetch-datasets.yml"
       - "scripts/gh_fetch.py"
+      - "scripts/gh_recon.py"
+      - "scripts/fetchlib.py"
   workflow_dispatch:
     inputs:
       datasets:
@@ -19,10 +25,18 @@ on:
         default: "all"
         type: string
       mode:
-        description: "discover = 只探测链接不下载；download = 实际下载"
+        description: "download = 下载；discover = 只探链接；recon = 侦察剩余 6 个库的取数路径"
         default: "download"
         type: choice
-        options: [download, discover]
+        options: [download, discover, recon]
+      recon_targets:
+        description: "recon 模式的目标（herb,microbetcm,tcmsp,tcmid,hit2,mdipid 或 all）"
+        default: "all"
+        type: string
+      delay:
+        description: "请求间隔秒（对学术站点限速）"
+        default: "1.0"
+        type: string
       max_mb:
         description: "单文件大小上限 MB（GitHub 单文件硬限 100MB，默认 90 留余量）"
         default: "90"
@@ -50,12 +64,16 @@ jobs:
 
     # push 触发时 inputs.* 为空字符串，这里统一给默认值，下面各步只读这些环境变量
     env:
-      DATASETS: ${{ inputs.datasets || 'all' }}
-      MODE: ${{ inputs.mode || 'download' }}
+      DATASETS: ${{ inputs.datasets || (github.event_name == 'schedule' && 'herb,tcmid,tcmsp,hit2,mdipid,microbetcm' || 'all') }}
+      # push 只做廉价校验（discover 不下载），避免每次改脚本都重拉近 1GB 打扰源站；
+      # 真正的下载走手动 dispatch 或每日 schedule。
+      MODE: ${{ inputs.mode || (github.event_name == 'push' && 'discover' || 'download') }}
       IN_MAX_MB: ${{ inputs.max_mb || '90' }}
       RELEASE_LARGE: ${{ inputs.release_large || 'true' }}
       INCLUDE_HUGE: ${{ inputs.include_huge || 'false' }}
       TARGET_BRANCH: ${{ inputs.target_branch || 'datasets' }}
+      RECON_TARGETS: ${{ inputs.recon_targets || 'all' }}
+      DELAY: ${{ inputs.delay || '1.0' }}
 
     steps:
       - name: Checkout code
@@ -95,21 +113,54 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p "${RUNNER_TEMP}/out"
-          python3 scripts/gh_fetch.py \
-            --out "${RUNNER_TEMP}/out" \
-            --datasets "${DATASETS}" \
-            --max-mb "${{ steps.opts.outputs.max_mb }}" \
-            --max-total-mb 8000 \
-            ${{ steps.opts.outputs.flags }} 2>&1 | tee "${RUNNER_TEMP}/fetch.log"
+          if [ "${MODE}" = "recon" ]; then
+            python3 scripts/gh_recon.py \
+              --out "${RUNNER_TEMP}/out" \
+              --targets "${RECON_TARGETS}" \
+              --delay "${DELAY}" \
+              --max-mb "${{ steps.opts.outputs.max_mb }}" 2>&1 | tee "${RUNNER_TEMP}/fetch.log"
+          else
+            python3 scripts/gh_fetch.py \
+              --out "${RUNNER_TEMP}/out" \
+              --datasets "${DATASETS}" \
+              --max-mb "${{ steps.opts.outputs.max_mb }}" \
+              --max-total-mb 8000 \
+              ${{ steps.opts.outputs.flags }} 2>&1 | tee "${RUNNER_TEMP}/fetch.log"
+          fi
 
       - name: Build job summary
         if: always()
         run: |
           python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json, os, pathlib
-          p = pathlib.Path(os.environ["RUNNER_TEMP"], "out", "fetch_report.json")
+          root = pathlib.Path(os.environ["RUNNER_TEMP"], "out")
+          recon_p = root / "_recon" / "recon_report.json"
+          if recon_p.exists():
+              rep = json.loads(recon_p.read_text(encoding="utf-8"))
+              print("## 侦察结果\n")
+              print("| 目标 | 类型 | 候选接口 / 存档文件 | 可用 |")
+              print("|---|---|---:|---:|")
+              for name, e in rep["targets"].items():
+                  if e["kind"] == "live":
+                      hits = [x for x in e["probes"] if x.get("ok")]
+                      print(f"| `{name}` | 活站 | {len(e['candidates'])} 候选 | **{len(hits)}** 个接口可用 |")
+                  else:
+                      ok = [f for f in e["files"] if f.get("ok")]
+                      print(f"| `{name}` | 死站 | {len(e['archived'])} 存档文件 | **{len(ok)}** 个取回 |")
+              print("\n<details><summary>可用接口与存档来源</summary>\n")
+              for name, e in rep["targets"].items():
+                  if e["kind"] == "live":
+                      for h in [x for x in e["probes"] if x.get("ok")][:25]:
+                          print(f"- `{name}` ✅ `{h['url']}` — {h.get('verdict')}"
+                                + (f" payload `{h.get('payload_key')}` × {h.get('payload_len')}" if h.get("payload_key") else ""))
+                  else:
+                      for pr in e.get("provenance", [])[:25]:
+                          print(f"- `{name}` 📦 `{pr['file']}` ← 快照 {pr['snapshot']} `{pr['original_url']}`")
+              print("\n</details>")
+              raise SystemExit(0)
+          p = root / "fetch_report.json"
           if not p.exists():
-              print("## 抓取报告缺失\n\n脚本未能产出 `fetch_report.json`，请看上一步日志。")
+              print("## 抓取报告缺失\n\n脚本未能产出报告，请看上一步日志。")
               raise SystemExit(0)
           rep = json.loads(p.read_text(encoding="utf-8"))
           print("## 数据集抓取结果\n")

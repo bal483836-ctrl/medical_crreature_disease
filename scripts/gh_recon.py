@@ -1,0 +1,340 @@
+#!/usr/bin/env python3
+"""侦察剩余 6 个库的取数路径，并顺手把能拿的数据拿下来。
+
+背景：开发会话的出口网络拦截了这 6 个站，无法交互式探查，只能让 runner 带证据回来。
+run #3 已定位失败原因，分两类，对应两套办法：
+
+  A. 站活着、数据藏在 JS 里（HERB / MicrobeTCM / TCMSP）
+     → 下载前端 bundle，从中挖出接口路由，逐个探测，返回实质 JSON 的当场存盘。
+
+  B. 站已死（TCMID 域名易主 / HIT 2.0 端口拒连 / MDIPID 持续 500）
+     → 只用 Wayback Machine 存档，且必须记录快照时间与原始 URL。
+
+所有原始证据（bundle 原文、探测响应样本、CDX 清单）都落盘，因为下一步写什么
+完全取决于这一轮带回什么。
+
+用法:
+    python3 gh_recon.py --out data --targets all
+    python3 gh_recon.py --out data --targets herb,microbetcm --delay 1.0
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import socket
+import sys
+import time
+import urllib.parse
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from fetchlib import (  # noqa: E402
+    DATA_EXT,
+    LinkParser,
+    download,
+    fetch_text,
+    log,
+    looks_like_html,
+    open_url,
+)
+
+# ---------------------------------------------------------------- A 类：活站
+LIVE_SITES: dict[str, dict] = {
+    "herb": {
+        "origin": "http://herb.ac.cn",
+        "entries": ["http://herb.ac.cn/", "http://herb.ac.cn/Download/"],
+        "note": "umi.js SPA，单一 bundle /static/umi.js",
+    },
+    "microbetcm": {
+        "origin": "https://www.microbetcm.com",
+        "entries": ["https://www.microbetcm.com/"],
+        "note": "Vue SPA，/microbetcm/js/app.*.js + chunk-vendors.*.js",
+    },
+    "tcmsp": {
+        "origin": "https://www.tcmsp-e.com",
+        "entries": ["https://www.tcmsp-e.com/", "https://www.tcmsp-e.com/tcmspsearch.php"],
+        "note": "检索界面，需找 AJAX 接口",
+    },
+}
+
+# ---------------------------------------------------------------- B 类：死站
+DEAD_SITES: dict[str, list[str]] = {
+    "tcmid": ["tcmid.org", "www.tcmid.org", "megabionet.org/tcmid"],
+    "hit2": ["hit.badd-cao.net", "hit2.badd-cao.net", "badd-cao.net"],
+    "mdipid": ["mdipid.idrblab.net", "idrblab.org/mdipid"],
+}
+
+# 从 JS 里挖接口路由的正则
+ENDPOINT_PATTERNS = [
+    re.compile(r"""["'](/[\w\-./]{3,}?(?:api|list|search|query|download|data|all|info|detail)[\w\-./]*)["']""", re.I),
+    re.compile(r"""["'](https?://[^"'\s]+?/(?:api|data|download)[^"'\s]*)["']""", re.I),
+    re.compile(r"""baseURL\s*[:=]\s*["']([^"']+)["']""", re.I),
+    re.compile(r"""(?:url|path)\s*:\s*["'](/[\w\-./]{4,})["']"""),
+]
+
+# 明显不是接口的静态资源，别浪费探测预算
+NOISE = re.compile(r"\.(js|css|png|jpe?g|gif|svg|ico|woff2?|ttf|eot|map|mp4)(\?|$)", re.I)
+
+
+def mine_endpoints(js: str) -> list[str]:
+    """从 bundle 文本里抽候选接口路径。"""
+    found: set[str] = set()
+    for pat in ENDPOINT_PATTERNS:
+        for m in pat.finditer(js):
+            cand = m.group(1).strip()
+            if len(cand) < 4 or NOISE.search(cand):
+                continue
+            if cand.startswith(("//", "http")) or cand.startswith("/"):
+                found.add(cand)
+    return sorted(found)
+
+
+def probe(url: str, out_dir: Path, delay: float) -> dict:
+    """GET 一个候选接口，记录它到底返回了什么。"""
+    rec: dict = {"url": url, "ok": False}
+    time.sleep(delay)
+    try:
+        with open_url(url, timeout=45, accept="application/json, text/plain, */*") as resp:
+            body = resp.read(512_000)
+            rec["status"] = resp.status
+            rec["content_type"] = resp.headers.get("Content-Type", "")
+            rec["bytes"] = len(body)
+    except Exception as exc:  # noqa: BLE001
+        rec["error"] = f"{type(exc).__name__}: {exc}"
+        return rec
+
+    rec["is_html"] = looks_like_html(body[:512])
+    rec["head"] = body[:300].decode("utf-8", "replace")
+    if rec["is_html"]:
+        rec["verdict"] = "HTML 兜底页，不是接口"
+        return rec
+    try:
+        parsed = json.loads(body.decode("utf-8"))
+        rec["is_json"] = True
+        if isinstance(parsed, list):
+            rec["json_len"] = len(parsed)
+        elif isinstance(parsed, dict):
+            rec["json_keys"] = sorted(parsed.keys())[:25]
+            for k in ("data", "results", "hits", "rows", "list", "records"):
+                v = parsed.get(k)
+                if isinstance(v, list):
+                    rec["payload_key"] = k
+                    rec["payload_len"] = len(v)
+                    break
+        rec["ok"] = True
+        rec["verdict"] = "返回合法 JSON ✅"
+        # 存样本，供我分析结构
+        out_dir.mkdir(parents=True, exist_ok=True)
+        safe = re.sub(r"[^A-Za-z0-9._-]", "_", url)[-120:]
+        (out_dir / f"{safe}.json").write_bytes(body)
+    except (json.JSONDecodeError, UnicodeDecodeError):
+        rec["is_json"] = False
+        rec["verdict"] = "非 JSON 非 HTML（可能是 TSV/二进制）"
+        rec["ok"] = rec["bytes"] > 200
+        if rec["ok"]:
+            out_dir.mkdir(parents=True, exist_ok=True)
+            safe = re.sub(r"[^A-Za-z0-9._-]", "_", url)[-120:]
+            (out_dir / f"{safe}.bin").write_bytes(body)
+    return rec
+
+
+def recon_live(name: str, cfg: dict, out_root: Path, delay: float,
+               max_probes: int) -> dict:
+    """A 类：挖 JS bundle 里的接口并探测。"""
+    entry = {"kind": "live", "note": cfg["note"], "bundles": [],
+             "candidates": [], "probes": []}
+    js_dir = out_root / "_recon" / "js" / name
+    probe_dir = out_root / "_recon" / "probes" / name
+
+    # 1) 入口 HTML -> bundle 列表
+    bundles: list[str] = []
+    for page in cfg["entries"]:
+        log(f"    入口 {page}")
+        html = fetch_text(page)
+        if html is None:
+            continue
+        parser = LinkParser()
+        try:
+            parser.feed(html)
+        except Exception:  # noqa: BLE001, S110
+            pass
+        for href in parser.links:
+            if re.search(r"\.js(\?|$)", href, re.I):
+                bundles.append(urllib.parse.urljoin(page, href))
+    bundles = sorted(set(bundles))
+    log(f"    发现 {len(bundles)} 个 JS bundle")
+
+    # 2) 下载 bundle 并挖接口
+    all_cands: set[str] = set()
+    for b in bundles[:20]:
+        js_dir.mkdir(parents=True, exist_ok=True)
+        fname = re.sub(r"[^A-Za-z0-9._-]", "_", b)[-100:] + ".js"
+        rec = download(b, js_dir / fname, 40_000_000)
+        entry["bundles"].append({"url": b, "ok": rec.get("ok"),
+                                 "bytes": rec.get("bytes")})
+        if not rec.get("ok"):
+            continue
+        text = (js_dir / fname).read_text(encoding="utf-8", errors="replace")
+        cands = mine_endpoints(text)
+        log(f"      {fname[:50]}: {rec.get('bytes', 0)/1e6:.2f}MB -> {len(cands)} 个候选")
+        all_cands.update(cands)
+
+    entry["candidates"] = sorted(all_cands)
+    log(f"    合计 {len(all_cands)} 个候选接口，探测前 {max_probes} 个")
+
+    # 3) 逐个探测
+    origin = cfg["origin"]
+    ordered = sorted(all_cands,
+                     key=lambda c: (0 if re.search(r"(all|list|download|export|api)", c, re.I) else 1, len(c)))
+    for cand in ordered[:max_probes]:
+        url = cand if cand.startswith("http") else urllib.parse.urljoin(origin, cand)
+        r = probe(url, probe_dir, delay)
+        entry["probes"].append(r)
+        if r.get("ok"):
+            log(f"      ✅ {url[:95]}  {r.get('verdict')}")
+    hits = [p for p in entry["probes"] if p.get("ok")]
+    log(f"    探测完成：{len(hits)}/{len(entry['probes'])} 个返回可用内容")
+    return entry
+
+
+def wayback_list(domain: str, limit: int = 5000) -> list[dict]:
+    """查 Wayback CDX，列出该域存档过的数据文件。"""
+    url = ("http://web.archive.org/cdx/search/cdx"
+           f"?url={urllib.parse.quote(domain)}/*&output=json"
+           f"&collapse=urlkey&filter=statuscode:200&limit={limit}")
+    txt = fetch_text(url, retries=3)
+    if not txt:
+        return []
+    try:
+        rows = json.loads(txt)
+    except json.JSONDecodeError:
+        return []
+    if not rows or len(rows) < 2:
+        return []
+    header, *data = rows
+    idx = {k: i for i, k in enumerate(header)}
+    out = []
+    for r in data:
+        original = r[idx["original"]]
+        if not DATA_EXT.search(urllib.parse.urlparse(original).path):
+            continue
+        out.append({
+            "timestamp": r[idx["timestamp"]],
+            "original": original,
+            "mimetype": r[idx.get("mimetype", 3)],
+            "length": r[idx.get("length", 6)] if "length" in idx else None,
+            # id_ 后缀取原始未改写文件；不加会拿到注入了 Wayback 工具栏的 HTML
+            "fetch_url": f"https://web.archive.org/web/{r[idx['timestamp']]}id_/{original}",
+        })
+    return out
+
+
+def recon_dead(name: str, domains: list[str], out_root: Path,
+               delay: float, max_bytes: int | None, max_files: int) -> dict:
+    """B 类：从 Wayback 存档恢复。"""
+    entry: dict = {"kind": "dead", "domains": domains,
+                   "archived": [], "files": [], "provenance": []}
+    all_rows: list[dict] = []
+    for d in domains:
+        log(f"    CDX 查询 {d}")
+        rows = wayback_list(d)
+        log(f"      存档中的数据文件: {len(rows)} 个")
+        all_rows.extend(rows)
+        time.sleep(delay)
+
+    # 同一 original URL 只取最新快照
+    latest: dict[str, dict] = {}
+    for r in all_rows:
+        prev = latest.get(r["original"])
+        if prev is None or r["timestamp"] > prev["timestamp"]:
+            latest[r["original"]] = r
+    rows = sorted(latest.values(), key=lambda r: -int(r["timestamp"]))
+    entry["archived"] = rows[:400]
+    log(f"    去重后 {len(rows)} 个唯一文件，下载前 {max_files} 个")
+
+    out_dir = out_root / name
+    for r in rows[:max_files]:
+        fname = Path(urllib.parse.urlparse(r["original"]).path).name or "index"
+        time.sleep(delay)
+        rec = download(r["fetch_url"], out_dir / fname, max_bytes)
+        rec["wayback_timestamp"] = r["timestamp"]
+        rec["original_url"] = r["original"]
+        entry["files"].append(rec)
+        if rec.get("ok"):
+            entry["provenance"].append({
+                "file": fname,
+                "source": "Internet Archive Wayback Machine",
+                "snapshot": r["timestamp"],
+                "original_url": r["original"],
+                "fetch_url": r["fetch_url"],
+            })
+    ok = [f for f in entry["files"] if f.get("ok")]
+    log(f"    取回 {len(ok)}/{len(entry['files'])} 个文件")
+    if entry["provenance"]:
+        pdir = out_root / name
+        pdir.mkdir(parents=True, exist_ok=True)
+        (pdir / "provenance.json").write_text(
+            json.dumps(entry["provenance"], ensure_ascii=False, indent=2),
+            encoding="utf-8")
+    return entry
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--out", default="data")
+    ap.add_argument("--targets", default="all",
+                    help="逗号分隔，或 all。可选: " + ", ".join(list(LIVE_SITES) + list(DEAD_SITES)))
+    ap.add_argument("--delay", type=float, default=1.0, help="请求间隔秒（对学术站点限速）")
+    ap.add_argument("--max-probes", type=int, default=120, help="每个活站最多探测多少个候选接口")
+    ap.add_argument("--max-files", type=int, default=60, help="每个死站最多从存档取多少文件")
+    ap.add_argument("--max-mb", type=float, default=90.0)
+    args = ap.parse_args()
+
+    socket.setdefaulttimeout(300)
+    known = list(LIVE_SITES) + list(DEAD_SITES)
+    names = known if args.targets.strip().lower() == "all" else [
+        n.strip().lower() for n in args.targets.split(",") if n.strip()]
+    unknown = [n for n in names if n not in known]
+    if unknown:
+        print(f"未知目标: {', '.join(unknown)}\n可选: {', '.join(known)}", file=sys.stderr)
+        return 2
+
+    out_root = Path(args.out)
+    out_root.mkdir(parents=True, exist_ok=True)
+    max_bytes = int(args.max_mb * 1e6) if args.max_mb > 0 else None
+    report: dict = {"targets": {}, "delay": args.delay}
+
+    for name in names:
+        log(f"\n{'=' * 64}\n[{name}]\n{'=' * 64}")
+        if name in LIVE_SITES:
+            report["targets"][name] = recon_live(
+                name, LIVE_SITES[name], out_root, args.delay, args.max_probes)
+        else:
+            report["targets"][name] = recon_dead(
+                name, DEAD_SITES[name], out_root, args.delay, max_bytes, args.max_files)
+
+    rdir = out_root / "_recon"
+    rdir.mkdir(parents=True, exist_ok=True)
+    (rdir / "recon_report.json").write_text(
+        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    log(f"\n{'=' * 64}\n侦察汇总\n{'=' * 64}")
+    for name, e in report["targets"].items():
+        if e["kind"] == "live":
+            hits = [p for p in e["probes"] if p.get("ok")]
+            log(f"  {name:12} [活站] bundle {len(e['bundles'])}  "
+                f"候选 {len(e['candidates']):4}  可用接口 {len(hits)}")
+            for h in hits[:5]:
+                log(f"               ✅ {h['url'][:88]}")
+        else:
+            ok = [f for f in e["files"] if f.get("ok")]
+            log(f"  {name:12} [死站] 存档数据文件 {len(e['archived']):4}  "
+                f"取回 {len(ok)}/{len(e['files'])}")
+    log(f"\n  报告: {rdir / 'recon_report.json'}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
