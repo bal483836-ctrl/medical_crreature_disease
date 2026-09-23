@@ -1,32 +1,22 @@
 
 ================================================================
-[symmap]  SymMap 全套实体表 XLSX（已稳定下载）
+[herb]  HERB 2.0（GET /download/file/?file_path=... ，路径来自 bundle 内嵌清单）
 ================================================================
-    扫描 http://www.symmap.org/download/
-      命中 26 个候选数据文件链接（累计）
-    共发现 26 个候选链接
-
-================================================================
-[herb]  HERB 2.0（站点为 SPA，靠直连候选文件名探测）
-================================================================
-    扫描 http://herb.ac.cn/Download/
-      命中 0 个候选数据文件链接（累计）
+    直链候选 HERB_herb_info.txt
+      OK  HERB_herb_info.txt  (0.00 MB)
+    直链候选 HERB_ingredient_info.txt
+      OK  HERB_ingredient_info.txt  (0.00 MB)
+    直链候选 HERB_target_info.txt
+      OK  HERB_target_info.txt  (0.00 MB)
+    直链候选 HERB_disease_info.txt
+      OK  HERB_disease_info.txt  (0.00 MB)
+    直链候选 HERB_experiment_info.txt
+      OK  HERB_experiment_info.txt  (0.00 MB)
+    直链候选 HERB_reference_info.txt
+      OK  HERB_reference_info.txt  (0.00 MB)
+    直链候选 probe2gene.R
+      OK  probe2gene.R  (0.00 MB)
     共发现 0 个候选链接
-
-================================================================
-[disbiome]  Disbiome（经 BioThings 镜像全量拉取）
-================================================================
-    共发现 0 个候选链接
-
-================================================================
-[dbpth]  dbPTH 1.0，取 ProtGrp 分片（整库 PTH.zip 约 21.4GB，需 --include-huge）
-================================================================
-    扫描 http://dbpth.biocuckoo.cn/Download.php
-      命中 1325 个候选数据文件链接（累计）
-    扫描 http://dbpth.biocuckoo.cn/
-      命中 1325 个候选数据文件链接（累计）
-      按 prefer 规则收窄: 1325 -> 10
-    共发现 10 个候选链接
 
 ================================================================
 [tcmid]  TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）
@@ -74,15 +64,12 @@
 ================================================================
 汇总
 ================================================================
-  symmap       发现  26 链接   —                     0.00 MB
-  herb         发现   0 链接   —                     0.00 MB
-  disbiome     发现   0 链接   —                     0.00 MB
-  dbpth        发现  10 链接   —                     0.00 MB
+  herb         发现   0 链接   7/7 成功                0.00 MB
   tcmid        发现   0 链接   —                     0.00 MB
   tcmsp        发现   0 链接   —                     0.00 MB
   hit2         发现   0 链接   —                     0.00 MB
   mdipid       发现   0 链接   —                     0.00 MB
   microbetcm   发现   0 链接   —                     0.00 MB
 
-  合计 0 个文件，0.00 MB（总量上限 8000 MB）
+  合计 7 个文件，0.00 MB（总量上限 8000 MB）
   报告: /home/runner/work/_temp/out/fetch_report.json

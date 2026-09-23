@@ -1,62 +1,59 @@
 {
   "datasets": {
-    "symmap": {
-      "note": "SymMap 全套实体表 XLSX（已稳定下载）",
-      "discovered": [
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMHB%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMHB%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMTS%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMTS%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMMS%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMMS%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMIT%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMIT%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMTT%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMTT%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMDE%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMDE%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMSY%20file.xlsx",
-        "http://www.symmap.org/static/download/V2.0/SymMap%20v2.0%2C%20SMSY%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMHB%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMHB%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMTS%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMTS%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMMS%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMMS%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMIT%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMIT%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMTT%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMTT%20key%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMDE%20file.xlsx",
-        "http://www.symmap.org/static/download/SymMap%20v1.0%2C%20SMDE%20key%20file.xlsx"
-      ],
-      "files": []
-    },
     "herb": {
-      "note": "HERB 2.0（站点为 SPA，靠直连候选文件名探测）",
+      "note": "HERB 2.0（GET /download/file/?file_path=... ，路径来自 bundle 内嵌清单）",
       "discovered": [],
-      "files": []
-    },
-    "disbiome": {
-      "note": "Disbiome（经 BioThings 镜像全量拉取）",
-      "discovered": [],
-      "files": []
-    },
-    "dbpth": {
-      "note": "dbPTH 1.0，取 ProtGrp 分片（整库 PTH.zip 约 21.4GB，需 --include-huge）",
-      "discovered": [
-        "http://dbpth.biocuckoo.cn/Download/PTH.sql.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Enzyme.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Epigenetic_Regulator.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Ion_Channel.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Membrane_Receptor.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Other_Cytosolic_Protein.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Secreted_Protein.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Transcription_Factor.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Transporter.zip",
-        "http://dbpth.biocuckoo.cn/Download/ProtGrp/Other.zip"
-      ],
-      "files": []
+      "files": [
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_herb_info.txt",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_ingredient_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_ingredient_info.txt",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_target_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_target_info.txt",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_disease_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_disease_info.txt",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_experiment_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_experiment_info.txt",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_reference_info.txt",
+          "path": "/home/runner/work/_temp/out/herb/HERB_reference_info.txt",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/probe2gene.R",
+          "path": "/home/runner/work/_temp/out/herb/probe2gene.R",
+          "ok": true,
+          "bytes": 24,
+          "sha256": "504bf42ae1206d57b7f5dcf4232cc61c6b5b00cacc11ce1980dd95e432da18a9"
+        }
+      ]
     },
     "tcmid": {
       "note": "TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）",
@@ -86,5 +83,5 @@
   },
   "max_mb": 1900.0,
   "max_total_mb": 8000.0,
-  "discover_only": true
+  "discover_only": false
 }
