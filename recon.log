@@ -8,7 +8,17 @@
       OK  http___herb.ac.cn_static_umi.js_version_474.js  (4.37 MB)
       http___herb.ac.cn_static_umi.js_version_474.js: 4.37MB -> 27 个候选
     合计 27 个候选接口，探测前 120 个
-    探测完成：0/27 个返回可用内容
+      · path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+      · _path=data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+      · c.cn/download/file/?file_path=/static/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+      · ac.cn/download/file/?file_path=static/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, file_path dose not exists.
+      · /herb.ac.cn/download/file/?file_path=/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+      · //herb.ac.cn/download/file/?file_path=download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+      · http://herb.ac.cn/download/file/?file_path=HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+      · h=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt.gz  服务端拒绝: Sorry, unavailable path.
+      · path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.zip  服务端拒绝: Sorry, unavailable path.
+      · path=/home/Web_server/HERB_web/static/download_data/HERB_herb_info.txt  服务端拒绝: Sorry, unavailable path.
+    探测完成：0/37 个返回可用内容
 
 ================================================================
 [microbetcm]
@@ -66,10 +76,15 @@
 [tcmsp]
 ================================================================
     入口 https://www.tcmsp-e.com/
+      页面内联脚本挖出 19 个候选
     入口 https://www.tcmsp-e.com/tcmspsearch.php
+      页面内联脚本挖出 28 个候选
     入口 https://www.tcmsp-e.com/tcmspsearch.php?qr=Ma%20Huang&qsr=herb_en_name&token=
+      页面内联脚本挖出 28 个候选
     入口 https://www.tcmsp-e.com/browse.php?qc=herbs
+      页面内联脚本挖出 32 个候选
     入口 https://www.tcmsp-e.com/tcmsp.php
+      页面内联脚本挖出 28 个候选
     发现 7 个 JS bundle
       OK  https___www.tcmsp-e.com_cytoscape_js_cytoscapeweb.min.js.js  (0.01 MB)
       https___www.tcmsp-e.com_cytoscape_js_cytoscapeweb.: 0.01MB -> 0 个候选
@@ -85,20 +100,15 @@
       https___www.tcmsp-e.com_js_kendo.web.min.js.js: 0.74MB -> 0 个候选
       OK  https___www.tcmsp-e.com_js_myjs_CancerHSP.js.js  (0.10 MB)
       https___www.tcmsp-e.com_js_myjs_CancerHSP.js.js: 0.10MB -> 0 个候选
-    合计 0 个候选接口，探测前 120 个
-    探测完成：0/0 个返回可用内容
+    合计 35 个候选接口，探测前 120 个
+    探测完成：0/35 个返回可用内容
 
 ================================================================
 [hit2]
 ================================================================
-    入口 http://hit2.badd-cao.net/
+    入口 http://www.badd-cao.net/resources.html
     入口 http://www.badd-cao.net/
-    入口 http://badd-cao.net/
-      页面不可达: http://badd-cao.net/  (URLError: <urlopen error [Errno -5] No address associated with hostname>)
-    入口 http://hit.badd-cao.net/
-      页面不可达: http://hit.badd-cao.net/  (URLError: <urlopen error [Errno -2] Name or service not known>)
-    入口 http://www.badd-cao.net:2345/
-      页面不可达: http://www.badd-cao.net:2345/  (URLError: <urlopen error [Errno 111] Connection refused>)
+    入口 http://hit2.badd-cao.net/
     发现 0 个 JS bundle
     合计 0 个候选接口，探测前 120 个
     探测完成：0/0 个返回可用内容
@@ -136,7 +146,7 @@
 ================================================================
   herb         [活站] bundle 1  候选   27  可用接口 0
   microbetcm   [活站] bundle 20  候选   17  可用接口 0
-  tcmsp        [活站] bundle 7  候选    0  可用接口 0
+  tcmsp        [活站] bundle 7  候选   35  可用接口 0
   hit2         [活站] bundle 0  候选    0  可用接口 0
   tcmid        [死站] 存档数据文件    6  取回 6/6
   mdipid       [死站] 存档数据文件    0  取回 0/0

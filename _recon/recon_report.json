@@ -2,7 +2,7 @@
   "targets": {
     "herb": {
       "kind": "live",
-      "note": "umi.js SPA —— 第一轮已破解：GET /download/file/?file_path=...",
+      "note": "umi.js SPA；下载走 GET /download/file/?file_path=，本轮试路径变体",
       "bundles": [
         {
           "url": "http://herb.ac.cn/static/umi.js?version=474",
@@ -40,6 +40,126 @@
         "http://www.w3.org/2003/g/data-view#"
       ],
       "probes": [
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/static/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=static/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 33,
+          "is_html": false,
+          "head": "Sorry, file_path dose not exists.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, file_path dose not exists.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt.gz",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/data/Web_server/HERB_web/static/download_data/HERB_herb_info.zip",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
+        {
+          "url": "http://herb.ac.cn/download/file/?file_path=/home/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24,
+          "is_html": false,
+          "head": "Sorry, unavailable path.",
+          "is_json": false,
+          "verdict": "服务端拒绝: Sorry, unavailable path.",
+          "targeted": true
+        },
         {
           "url": "http://herb.ac.cn/Download",
           "ok": false,
@@ -137,7 +257,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/Detail",
+          "url": "http://herb.ac.cn/Browse",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -147,7 +267,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/Search",
+          "url": "http://herb.ac.cn/Detail",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -167,7 +287,7 @@
           "verdict": "HTML 兜底页，不是接口"
         },
         {
-          "url": "http://herb.ac.cn/Browse",
+          "url": "http://herb.ac.cn/Search",
           "ok": false,
           "status": 200,
           "content_type": "text/html; charset=utf-8",
@@ -444,22 +564,22 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
-          "url": "https://www.microbetcm.com/api/index/submit",
-          "ok": false,
-          "error": "HTTPError: HTTP Error 404: "
-        },
-        {
-          "url": "https://www.microbetcm.com/microbetcm/api/index/submit",
-          "ok": false,
-          "error": "HTTPError: HTTP Error 404: "
-        },
-        {
           "url": "https://www.microbetcm.com/api/index/upload",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
         {
           "url": "https://www.microbetcm.com/microbetcm/api/index/upload",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/api/index/submit",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/api/index/submit",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -514,6 +634,16 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
+          "url": "https://www.microbetcm.com/browse",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/browse",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
           "url": "https://www.microbetcm.com/search",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
@@ -530,16 +660,6 @@
         },
         {
           "url": "https://www.microbetcm.com/microbetcm/submit",
-          "ok": false,
-          "error": "HTTPError: HTTP Error 404: "
-        },
-        {
-          "url": "https://www.microbetcm.com/browse",
-          "ok": false,
-          "error": "HTTPError: HTTP Error 404: "
-        },
-        {
-          "url": "https://www.microbetcm.com/microbetcm/browse",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -564,22 +684,22 @@
           "error": "HTTPError: HTTP Error 404: "
         },
         {
-          "url": "https://www.microbetcm.com/getCountries",
-          "ok": false,
-          "error": "HTTPError: HTTP Error 404: "
-        },
-        {
-          "url": "https://www.microbetcm.com/microbetcm/getCountries",
-          "ok": false,
-          "error": "HTTPError: HTTP Error 404: "
-        },
-        {
           "url": "https://www.microbetcm.com/searchDetail",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
         {
           "url": "https://www.microbetcm.com/microbetcm/searchDetail",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/getCountries",
+          "ok": false,
+          "error": "HTTPError: HTTP Error 404: "
+        },
+        {
+          "url": "https://www.microbetcm.com/microbetcm/getCountries",
           "ok": false,
           "error": "HTTPError: HTTP Error 404: "
         },
@@ -635,12 +755,399 @@
           "bytes": 101525
         }
       ],
-      "candidates": [],
-      "probes": []
+      "candidates": [
+        "CancerHSP.php",
+        "articles.php?id=1",
+        "articles.php?id=11",
+        "articles.php?id=15",
+        "articles.php?id=2",
+        "articles.php?id=30",
+        "articles.php?id=37",
+        "articles.php?id=52",
+        "articles.php?id=63",
+        "articles.php?id=65",
+        "browse.php?qc=diseases",
+        "browse.php?qc=herbs",
+        "browse.php?qc=ingredients",
+        "browse.php?qc=targets",
+        "cvdsp.php",
+        "index.php",
+        "load_intro.php?id=27",
+        "load_intro.php?id=29",
+        "load_intro.php?id=30",
+        "load_intro.php?id=31",
+        "load_intro.php?id=32",
+        "load_intro.php?id=33",
+        "load_intro.php?id=39",
+        "load_intro.php?id=40",
+        "load_intro.php?id=41",
+        "load_intro.php?id=42",
+        "load_intro.php?id=43",
+        "load_intro.php?id=64",
+        "members.php",
+        "news.php",
+        "predc.php",
+        "reference.php",
+        "tcmsp.php",
+        "tcmspsearch.php",
+        "tcmspsearch.php?qr=${herb_en_name}&qsr=herb_en_name&token=cfbca3efc0929c170ae0115a3db49da3"
+      ],
+      "probes": [
+        {
+          "url": "https://www.tcmsp-e.com/news.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 15499,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (forme",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/tcmsp.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 19545,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/index.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 20420,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (forme",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/cvdsp.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 9258,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <meta name=\"description\" content=\"CvdSP\" />\n    <m",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/predc.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 17247,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (forme",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/members.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 20592,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (forme",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/CancerHSP.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 10107,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"CancerHSP is",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/reference.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 15249,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (forme",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/tcmspsearch.php",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 15502,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=1",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 41290,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=2",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 114167,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=11",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 16291,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=52",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 17976,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=63",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 91693,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=37",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 21166,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=65",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 18546,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=15",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 16670,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/articles.php?id=30",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 13762,
+          "is_html": true,
+          "head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n    <!--<meta name=\"description\" content=\"TCMSP (for",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=herbs",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 114311,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=64",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 39934,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=41",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 25197,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=29",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 39158,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=31",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 19133,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=33",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 22997,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=40",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 17551,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=27",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 17081,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=43",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 37061,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=32",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 18395,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=39",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 16803,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=42",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 20017,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/load_intro.php?id=30",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 16088,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=targets",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 418782,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=diseases",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 119336,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/browse.php?qc=ingredients",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 512000,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        },
+        {
+          "url": "https://www.tcmsp-e.com/tcmspsearch.php?qr=${herb_en_name}&qsr=herb_en_name&token=cfbca3efc0929c170ae0115a3db49da3",
+          "ok": false,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 25961,
+          "is_html": true,
+          "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\r\n    <!--<meta name=\"description\" content=\"TCMSP (f",
+          "verdict": "HTML 兜底页，不是接口"
+        }
+      ]
     },
     "hit2": {
       "kind": "live",
-      "note": "第一轮端口拒连，本轮探其它主机",
+      "note": "根域是 Cao-Lab 主页，从 Resources 页找 HIT 现址",
       "bundles": [],
       "candidates": [],
       "probes": []
@@ -728,7 +1235,6 @@
           "url": "https://web.archive.org/web/20151013185854id_/http://www.megabionet.org/tcmid/static/downloads/herbs.zip",
           "path": "/home/runner/work/_temp/out/tcmid/herbs.zip",
           "ok": true,
-          "error": "URLError: <urlopen error [Errno 111] Connection refused>",
           "bytes": 685262,
           "sha256": "2eee3d77aafce6d335e2ce73e4ddb55a610f1905caea7ad1003708664464a92a",
           "wayback_timestamp": "20151013185854",

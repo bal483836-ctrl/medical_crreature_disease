@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cao-Lab</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />	
+	<link rel="Shortcut Icon" href="images/index.ico" type="image/x-icon" />
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" charset="utf-8" />	
+	<![endif]-->
+</head>
+
+<body>
+	<div id="header">
+		<a href="index.html" id="logo"><img src="images/logo.jpg" alt="LOGO" /></a>
+		<div id="navigation">
+			<ul>
+				<li class="first"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About PI</a></li>
+				<li><a href="papers.html">Papers</a></li>
+				<li><a href="funding.html">Funding</a></li>
+				<li class="selected"><a href="resources.html">Resources</a></li>
+				<li><a href="members.html">Members</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="/zh/">CHINESE</a></li>
+			</ul>
+		</div>
+	</div> <!-- /#header -->
+	<div id="contents">
+		<div class="background">
+			<div id="solutions">
+				<span>SEPPA-mAb<br/>[<a href="http://www.badd-cao.net/seppa-mab" target="_blank"><font color="blue">http://www.badd-cao.net/seppa-mab</font></a>]</span>
+				<p>
+					<b>Abstract</b>
+					Identifying the exact epitope positions for a monoclonal antibody (mAb) is of critical importance yet highly challenging to the Ab design of biomedical research. Based on previous versions of SEPPA 3.0, we present SEPPA-mAb for the above purpose with high accuracy and low false positive rate (FPR), suitable for both experimental and modelled structures. In practice, SEPPA-mAb appended a fingerprints-based patch model to SEPPA 3.0, considering the structural and physic-chemical complementarity between a possible epitope patch and the complementarity-determining region of mAb and trained on 860 representative antigen-antibody complexes. On independent testing of 193 antigen-antibody pairs, SEPPA-mAb achieved an accuracy of 0.873 with an FPR of 0.097 in classifying epitope and non-epitope residues under the default threshold, while docking-based methods gave the best AUC of 0.691, and the top epitope prediction tool gave AUC of 0.730 with balanced accuracy of 0.635. A study on 36 independent HIV glycoproteins displayed a high accuracy of 0.918 and a low FPR of 0.058. Further testing illustrated outstanding robustness on new antigens and modelled antibodies. Being the first online tool predicting mAb-specific epitopes, SEPPA-mAb may help to discover new epitopes and design better mAbs for therapeutic and diagnostic purposes. SEPPA-mAb can be accessed at <a href="http://www.badd-cao.net/seppa-mab" target="_blank"><font color="blue">http://www.badd-cao.net/seppa-mab/</font></a>.
+					<b>Citation</b>
+					<font color="darkblue">Qiu Tianyi #</font>, <font color="darkblue">Zhang Lu #</font>, <font color="darkblue">Chen Zikun #</font>, et al. SEPPA-mAb: spatial epitope prediction of protein antigens for mAbs. <br/> Nucleic Acids Res. 2023;51(W1):W528-W534. <br/> doi:10.1093/nar/gkad427
+				</p>
+				<hr>
+
+
+				<span>HIT 2.0 <br/>[<a href="http://hit2.badd-cao.net/" target="_blank"><font color="blue">http://hit2.badd-cao.net/</font></a>]</span>
+				<p>
+					<b>Abstract</b>
+					Literature-described targets of herbal ingredients have been explored to facilitate the mechanistic study of herbs, as well as the new drug discovery. Though several databases provided similar information, the majority of them are limited to literatures before 2010 and need to be updated urgently. HIT 2.0 was here constructed as the latest curated dataset focusing on Herbal Ingredients' Targets covering PubMed literatures 2000-2020. Currently, HIT 2.0 hosts 10 031 compound-target activity pairs with quality indicators between 2208 targets and 1237 ingredients from more than 1250 reputable herbs. The molecular targets cover those genes/proteins being directly/indirectly activated/inhibited, protein binders, and enzymes substrates or products. Also included are those genes regulated under the treatment of individual ingredient. Crosslinks were made to databases of TTD, DrugBank, KEGG, PDB, UniProt, Pfam, NCBI, TCM-ID and others. More importantly, HIT enables automatic Target-mining and My-target curation from daily released PubMed literatures. Thus, users can retrieve and download the latest abstracts containing potential targets for interested compounds, even for those not yet covered in HIT. Further, users can log into 'My-target' system, to curate personal target-profiling on line based on retrieved abstracts. HIT can be accessible at <a href="http://hit2.badd-cao.net/" target="_blank"><font color="blue">http://hit2.badd-cao.net</font></a>.
+					<b>Citation</b>
+					<font color="darkblue">Yan Deyu #</font>, <font color="darkblue">Zheng Genhui #</font>, Wang Caicui, et al. HIT 2.0: an enhanced platform for Herbal Ingredients' Targets. <br/>Nucleic Acids Res. 2022;50(D1):D1238-D1243. <br/>doi:10.1093/nar/gkab1011
+				</p>
+				<hr>
+
+				<span>RANK-IN <br/>[<a href="http://www.badd-cao.net/rank-in/" target="_blank"><font color="blue">http://www.badd-cao.net/rank-in/</font></a>]</span>
+				<p>
+					<b>Abstract</b>
+					Though transcriptomics technologies evolve rapidly in the past decades, integrative analysis of mixed data between microarray and RNA-seq remains challenging due to the inherent variability difference between them. Here, Rank-In was proposed to correct the nonbiological effects across the two technologies, enabling freely blended data for consolidated analysis. Rank-In was rigorously validated via the public cell and tissue samples tested by both technologies. On the two reference samples of the SEQC project, Rank-In not only perfectly classified the 44 profiles but also achieved the best accuracy of 0.9 on predicting TaqMan-validated DEGs. More importantly, on 327 Glioblastoma (GBM) profiles and 248, 523 heterogeneous colon cancer profiles respectively, only Rank-In can successfully discriminate every single cancer profile from normal controls, while the others cannot. Further on different sizes of mixed seq-array GBM profiles, Rank-In can robustly reproduce a median range of DEG overlapping from 0.74 to 0.83 among top genes, whereas the others never exceed 0.72. Being the first effective method enabling mixed data of cross-technology analysis, Rank-In welcomes hybrid of array and seq profiles for integrative study on large/small, paired/unpaired and balanced/imbalanced samples, opening possibility to reduce sampling space of clinical cancer patients. Rank-In can be accessed at <a href="http://www.badd-cao.net/rank-in/" target="_blank"><font color="blue">http://www.badd-cao.net/rank-in/index.html</font></a>.
+					<b>Citation</b>
+					<font color="darkblue">Tang Kailin #</font>, Ji Xuejie, Zhou Mengdi, et al. Rank-in: enabling integrative analysis across microarray and RNA-seq for cancer. <br />Nucleic Acids Res. 2021;49(17):e99. <br />doi:10.1093/nar/gkab554
+				</p>
+				<hr>
+
+				<span>SEPPA3 <br/>[<a href="http://www.badd-cao.net/seppa3/" target="_blank"><font color="blue">http://www.badd-cao.net/seppa3/</font></a>]</span>
+				<p>
+					<b>Abstract</b>
+					B-cell epitope information is critical to immune therapy and vaccine design. Protein epitopes can be significantly affected by glycosylation, while no methods have considered this till now. Based on previous versions of Spatial Epitope Prediction of Protein Antigens (SEPPA), we here present an enhanced tool SEPPA 3.0, enabling glycoprotein antigens. Parameters were updated based on the latest and largest dataset. Then, additional micro-environmental features of glycosylation triangles and glycosylation-related amino acid indexes were added as important classifiers, coupled with final calibration based on neighboring antigenicity. Logistic regression model was retained as SEPPA 2.0. The AUC value of 0.794 was obtained through 10-fold cross-validation on internal validation. Independent testing on general protein antigens resulted in AUC of 0.740 with BA (balanced accuracy) of 0.657 as baseline of SEPPA 3.0. Most importantly, when tested on independent glycoprotein antigens only, SEPPA 3.0 gave an AUC of 0.749 and BA of 0.665, leading the top performance among peers. As the first server enabling accurate epitope prediction for glycoproteins, SEPPA 3.0 shows significant advantages over popular peers on both general protein and glycoprotein antigens. It can be accessed at <a href="http://www.badd-cao.net/seppa3/"><font color="blue">http://www.badd-cao.net/seppa3/index.html.</font></a> Batch query is supported.
+					<b>Citation</b>
+					<font color="darkblue">Zhou Chen #</font>, <font color="darkblue">Chen Zikun #</font>, Zhang Lu, et al. SEPPA 3.0 - enhanced spatial epitope prediction enabling glycoprotein antigens. <br />Nucleic Acids Res. 2019;47(W1):W388-W394. <br />doi:10.1093/nar/gkz413
+				</p>
+				<hr>
+
+				<span>CE-Blast <br/>[<a href="#" target="_blank"><font color="blue">...</font></a>]</span>
+				<p>
+					<b>Abstract</b>
+					Major challenges in vaccine development include rapidly selecting or designing immunogens for raising cross-protective immunity against different intra- or inter-subtypic pathogens, especially for the newly emerging varieties. Here we propose a computational method, Conformational Epitope (CE)-BLAST, for calculating the antigenic similarity among different pathogens with stable and high performance, which is independent of the prior binding-assay information, unlike the currently available models that heavily rely on the historical experimental data. Tool validation incorporates influenza-related experimental data sufficient for stability and reliability determination. Application to dengue-related data demonstrates high harmonization between the computed clusters and the experimental serological data, undetectable by classical grouping. CE-BLAST identifies the potential cross-reactive epitope between the recent zika pathogen and the dengue virus, precisely corroborated by experimental data. The high performance of the pathogens without the experimental binding data suggests the potential utility of CE-BLAST to rapidly design cross-protective vaccines or promptly determine the efficacy of the currently marketed vaccine against emerging pathogens, which are the critical factors for containing emerging disease outbreaks.
+					<b>Citation</b>
+					<font color="darkblue">Qiu Tianyi # </font>, <font color="darkblue">Yang Yiyan #</font>, <font color="darkblue">Qiu Jingxuan #</font>, et al. CE-BLAST: Making it possible to compute antigenic similarity for newly emerging pathogens, <br />Nat Commun. 2018;9(1):1772. Published 2018 May 2. <br />doi:10.1038/s41467-018-04171-2
+				</p>
+
+			</div>
+		</div>
+	</div> <!-- /#contents -->
+	<div id="footer">
+		<ul class="contacts">
+			<h3>Contact Us</h3>
+			<li><span>Email</span><p>: zwcao@tongji.edu.cn</p></li>
+			<li><span>Address</span><p>: School of Life Science and Biotechnology, Tongji University, No.1239 Siping Road, Shanghai, China</p></li>
+			<li><span>Phone</span><p>: 021-65980296</p></li>
+		</ul>
+		<span class="footnote">Copyright &copy; Zhiwei Cao</span>
+	</div> <!-- /#footer -->
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div></body>
+</html>
