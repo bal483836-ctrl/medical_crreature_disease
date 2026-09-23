@@ -116,10 +116,25 @@ DEAD_SITES: dict[str, list[str]] = {
     "microbetcm": ["microbetcm.com", "www.microbetcm.com"],
     # HIT 2.0：课题组 Resources 页确认官方地址就是 hit2.badd-cao.net，
     # 而它只是个指向 2345 端口的 frameset，该端口拒连 —— 服务已停。存档兜底。
+    # HIT 2.0：存档里只有一个 9 行的演示文件（SMILES.txt）和 SEPPA3 的批量提交
+    # 工具包，都不是 HIT 的数据，一并列入跳过。
     "hit2": ["hit2.badd-cao.net", "hit.badd-cao.net", "badd-cao.net"],
     # hit2 不在此列：第一轮已查过 Wayback，只存到一个 SEPPA3 的批量提交工具
     # 和 9 行示例文件，都不是 HIT 的数据。改到 LIVE_SITES 里探其它主机。
     "mdipid": ["mdipid.idrblab.net", "idrblab.org/mdipid"],
+}
+
+# 存档里常混入的「不是数据」的文件：站点杂项、工具包、可执行文件。
+# 不过滤的话，每跑一次 recon 就会把它们重新下载并提交，
+# 看文件数会误以为该库已取得。
+NOT_DATA = re.compile(
+    r"(robots\.txt|sitemap|favicon|crossdomain|flash_text|"
+    r"\.exe$|geckodriver|Submit[%_ ]*local[%_ ]*files|batch\.tar)",
+    re.I,
+)
+
+SKIP_PER_SITE = {
+    "hit2": re.compile(r"SMILES\.txt$", re.I),
 }
 
 # 从 JS 里挖接口路由的正则
@@ -337,6 +352,19 @@ def recon_dead(name: str, domains: list[str], out_root: Path,
         if prev is None or r["timestamp"] > prev["timestamp"]:
             latest[r["original"]] = r
     rows = sorted(latest.values(), key=lambda r: -int(r["timestamp"]))
+    site_skip = SKIP_PER_SITE.get(name)
+    kept, skipped = [], []
+    for r in rows:
+        fname = Path(urllib.parse.urlparse(r["original"]).path).name
+        if NOT_DATA.search(fname) or NOT_DATA.search(r["original"]) or (
+                site_skip and site_skip.search(fname)):
+            skipped.append(r["original"])
+            continue
+        kept.append(r)
+    if skipped:
+        log(f"    跳过 {len(skipped)} 个非数据文件（站点杂项/工具包）")
+        entry["skipped_not_data"] = skipped[:50]
+    rows = kept
     entry["archived"] = rows[:400]
     log(f"    去重后 {len(rows)} 个唯一文件，下载前 {max_files} 个")
 
