@@ -44,7 +44,25 @@ LIVE_SITES: dict[str, dict] = {
     "herb": {
         "origin": "http://herb.ac.cn",
         "entries": ["http://herb.ac.cn/", "http://herb.ac.cn/Download/"],
-        "note": "umi.js SPA —— 第一轮已破解：GET /download/file/?file_path=...",
+        # bundle 里的 file_path 是服务端绝对路径，但服务端回 "Sorry, unavailable path."，
+        # 说明清单已过时或路径要换一种写法。这里定向试各种变体，
+        # 由响应内容判断哪一种被接受（裸调回 "Sorry, no path."，可作阴性对照）。
+        "extra_probes": [
+            "http://herb.ac.cn/download/file/?file_path=" + v
+            for v in (
+                "/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+                "data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+                "/static/download_data/HERB_herb_info.txt",
+                "static/download_data/HERB_herb_info.txt",
+                "/download_data/HERB_herb_info.txt",
+                "download_data/HERB_herb_info.txt",
+                "HERB_herb_info.txt",
+                "/data/Web_server/HERB_web/static/download_data/HERB_herb_info.txt.gz",
+                "/data/Web_server/HERB_web/static/download_data/HERB_herb_info.zip",
+                "/home/Web_server/HERB_web/static/download_data/HERB_herb_info.txt",
+            )
+        ],
+        "note": "umi.js SPA；下载走 GET /download/file/?file_path=，本轮试路径变体",
     },
     "microbetcm": {
         "origin": "https://www.microbetcm.com",
@@ -77,14 +95,13 @@ LIVE_SITES: dict[str, dict] = {
         "origin": "http://hit2.badd-cao.net",
         # 第一轮：badd-cao.net:2345 Connection refused；Wayback 只存到一个 SEPPA3
         # 的批量提交工具和 9 行示例文件，都不是 HIT 的数据。本轮试其它主机/端口。
+        # www.badd-cao.net 是 Cao-Lab 课题组主页（可达），HIT 的现址应挂在 Resources 页上。
         "entries": [
-            "http://hit2.badd-cao.net/",
+            "http://www.badd-cao.net/resources.html",
             "http://www.badd-cao.net/",
-            "http://badd-cao.net/",
-            "http://hit.badd-cao.net/",
-            "http://www.badd-cao.net:2345/",
+            "http://hit2.badd-cao.net/",
         ],
-        "note": "第一轮端口拒连，本轮探其它主机",
+        "note": "根域是 Cao-Lab 主页，从 Resources 页找 HIT 现址",
     },
 }
 
@@ -102,6 +119,9 @@ ENDPOINT_PATTERNS = [
     re.compile(r"""["'](https?://[^"'\s]+?/(?:api|data|download)[^"'\s]*)["']""", re.I),
     re.compile(r"""baseURL\s*[:=]\s*["']([^"']+)["']""", re.I),
     re.compile(r"""(?:url|path)\s*:\s*["'](/[\w\-./]{4,})["']"""),
+    # 相对路径的服务端脚本（TCMSP 的 browse.php?qc=herbs 就是这样，
+    # 第一轮因为只认以 / 或 http 开头的路径而整个漏掉）
+    re.compile(r"""["']((?:\.{0,2}/)?[\w\-./]{2,}\.(?:php|jsp|aspx|cgi)(?:\?[^"'\s]*)?)["']"""),
 ]
 
 # 明显不是接口的静态资源，别浪费探测预算
@@ -116,8 +136,7 @@ def mine_endpoints(js: str) -> list[str]:
             cand = m.group(1).strip()
             if len(cand) < 4 or NOISE.search(cand):
                 continue
-            if cand.startswith(("//", "http")) or cand.startswith("/"):
-                found.add(cand)
+            found.add(cand)
     return sorted(found)
 
 
@@ -227,6 +246,17 @@ def recon_live(name: str, cfg: dict, out_root: Path, delay: float,
     origin = cfg["origin"]
     ordered = sorted(all_cands,
                      key=lambda c: (0 if re.search(r"(all|list|download|export|api)", c, re.I) else 1, len(c)))
+    for extra in cfg.get("extra_probes", []):
+        r = probe(extra, probe_dir, delay)
+        # 这类定向探测要看响应正文而非状态码：服务端用 200 + 文案表达失败
+        body = (r.get("head") or "").strip()
+        r["targeted"] = True
+        if body.lower().startswith("sorry"):
+            r["ok"] = False
+            r["verdict"] = f"服务端拒绝: {body[:60]}"
+        entry["probes"].append(r)
+        log(f"      {'✅' if r.get('ok') else '·'} {extra[-70:]}  {r.get('verdict') or r.get('error','')}"[:150])
+
     prefixes = cfg.get("prefixes", [""])
     for cand in ordered[:max_probes]:
         for pref in prefixes:

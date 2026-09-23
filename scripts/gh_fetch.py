@@ -95,10 +95,18 @@ SOURCES: dict[str, dict] = {
         "note": "TCMID 2.0（原域名已易主，仅试历史地址，疑似已下线）",
     },
     "tcmsp": {
-        # run #2：站点可达但页面是检索界面，无任何下载链接 —— 与文档结论一致
-        "pages": ["https://www.tcmsp-e.com/", "https://www.tcmsp-e.com/tcmspsearch.php"],
+        # 侦察结论（recon round #2）：TCMSP 确实没有下载接口，但 browse.php 把整张表
+        # 内联在 Kendo Grid 的 dataSource.data 里 —— 4 次请求即可拿到四张主表，
+        # 不必逐个草药翻页爬取。
+        "inline": {
+            "herbs": "https://www.tcmsp-e.com/browse.php?qc=herbs",
+            "ingredients": "https://www.tcmsp-e.com/browse.php?qc=ingredients",
+            "targets": "https://www.tcmsp-e.com/browse.php?qc=targets",
+            "diseases": "https://www.tcmsp-e.com/browse.php?qc=diseases",
+        },
+        "pages": [],
         "accept": None,
-        "note": "TCMSP（确认无下载链接，取数需爬虫）",
+        "note": "TCMSP（browse.php 内联全表，无需爬虫）",
     },
     "hit2": {
         # run #2 实测：hit2.badd-cao.net 只是个 frameset，真正的站在 2345 端口
@@ -240,6 +248,82 @@ def fetch_direct(urls: list[str], out_dir: Path, max_bytes: int | None) -> list[
     return results
 
 
+def extract_inline_json(html: str) -> list | None:
+    """从页面内联脚本里抠出 Kendo Grid 的 data: [...] 数组。
+
+    TCMSP 没有任何下载接口，但 browse.php 把整张表直接内联在 kendoGrid 的
+    dataSource.data 里 —— 一次请求就能拿到全表，不必逐条爬。
+    """
+    marker = re.search(r"data\s*:\s*\[", html)
+    if not marker:
+        return None
+    start = marker.end() - 1  # 指向 '['
+    depth = 0
+    in_str = False
+    esc = False
+    for i in range(start, len(html)):
+        ch = html[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "[":
+            depth += 1
+        elif ch == "]":
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(html[start:i + 1])
+                except json.JSONDecodeError:
+                    return None
+    return None
+
+
+def fetch_inline(pages: dict, out_dir: Path) -> list[dict]:
+    """抓页面并抽内联表格数据，存 JSON + TSV。"""
+    results = []
+    for key, url in pages.items():
+        log(f"    内联表 {key}  <- {url}")
+        html = fetch_text(url, retries=3)
+        if html is None:
+            results.append({"url": url, "ok": False, "error": "页面不可达"})
+            continue
+        rows = extract_inline_json(html)
+        if not rows:
+            results.append({"url": url, "ok": False,
+                            "error": "页面里没找到 kendoGrid 的 data 数组"})
+            log("      未找到内联数据数组")
+            continue
+        out_dir.mkdir(parents=True, exist_ok=True)
+        jp = out_dir / f"{key}.json"
+        jp.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
+        # 顺手落一份 TSV，便于直接用
+        cols: list[str] = []
+        for row in rows:
+            for c in row:
+                if c not in cols:
+                    cols.append(c)
+        tp = out_dir / f"{key}.tsv"
+        with tp.open("w", encoding="utf-8", newline="") as fh:
+            fh.write("\t".join(cols) + "\n")
+            for row in rows:
+                fh.write("\t".join(
+                    str(row.get(c, "")).replace("\t", " ").replace("\n", " ")
+                    for c in cols) + "\n")
+        size = jp.stat().st_size
+        log(f"      OK  {len(rows)} 行 × {len(cols)} 列  ({size/1e6:.2f} MB)")
+        results.append({"url": url, "path": str(jp), "ok": True, "bytes": size,
+                        "records": len(rows), "columns": cols,
+                        "sha256": hashlib.sha256(jp.read_bytes()).hexdigest()})
+    return results
+
+
 def fetch_api(name: str, endpoints: dict, out_dir: Path) -> list[dict]:
     """拉 JSON API。每个端点给多个候选 base，命中一个就停。"""
     results = []
@@ -306,6 +390,8 @@ def main() -> int:
                 entry["files"] += fetch_api(name, cfg["api"], out_dir)
             if cfg.get("biothings"):
                 entry["files"] += fetch_biothings(cfg["biothings"], out_dir)
+            if cfg.get("inline"):
+                entry["files"] += fetch_inline(cfg["inline"], out_dir)
             if cfg.get("direct"):
                 entry["files"] += fetch_direct(cfg["direct"], out_dir, max_bytes)
 
