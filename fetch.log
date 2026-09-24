@@ -53,7 +53,7 @@
 [mdipid]  MDIPID（站点持续返回 500，服务疑似故障）
 ================================================================
     扫描 https://mdipid.idrblab.net/
-      页面不可达: https://mdipid.idrblab.net/  (HTTPError: HTTP Error 500: 500 Service unavailable (with message))
+      命中 0 个候选数据文件链接（累计）
     扫描 https://idrblab.org/mdipid/
       命中 0 个候选数据文件链接（累计）
     共发现 0 个候选链接
