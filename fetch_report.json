@@ -67,7 +67,7 @@
         {
           "url": "https://www.tcmsp-e.com/browse.php?qc=herbs",
           "ok": false,
-          "error": "页面里没找到 kendoGrid 的 data 数组"
+          "error": "页面不可达"
         },
         {
           "url": "https://www.tcmsp-e.com/browse.php?qc=ingredients",

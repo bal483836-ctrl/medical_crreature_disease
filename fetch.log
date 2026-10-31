@@ -29,7 +29,7 @@
 [tcmsp]  TCMSP（browse.php 内联全表，无需爬虫）
 ================================================================
     内联表 herbs  <- https://www.tcmsp-e.com/browse.php?qc=herbs
-      未找到内联数据数组
+      页面不可达: https://www.tcmsp-e.com/browse.php?qc=herbs  (URLError: <urlopen error timed out>)
     内联表 ingredients  <- https://www.tcmsp-e.com/browse.php?qc=ingredients
       未找到内联数据数组
     内联表 targets  <- https://www.tcmsp-e.com/browse.php?qc=targets
