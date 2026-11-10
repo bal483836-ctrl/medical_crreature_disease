@@ -2,8 +2,8 @@
 
 由 `.github/workflows/fetch-datasets.yml` 在 GitHub runner 上抓取并提交。
 
-- 最近一次运行: 42611130795（cfdc63efc10c10baf8ecc3bf6830df9152b68892）
-- 抓取时间 (UTC): 2026-11-09 11:47:48
+- 最近一次运行: 42806504519（cfdc63efc10c10baf8ecc3bf6830df9152b68892）
+- 抓取时间 (UTC): 2026-11-10 11:24:50
 - 每个数据源一个子目录，`fetch_report.json` 记录发现的链接、文件大小与 sha256
 - 超过 90MB 的文件不在此分支，见仓库 Releases
 
